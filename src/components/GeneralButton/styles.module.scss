@@ -1,0 +1,45 @@
+@import '../../../public/styles/index.scss';
+
+._buttonContainer{
+  width:15.313rem;
+  height:2.5rem;
+  box-sizing: border-box;
+  border: 1px solid $white;
+  border-radius: 1.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+ 
+ 
+}
+._text{
+  font-size: 1.25rem;
+  color: white;
+  font-family: $helvetica;
+
+}
+
+._textContainer{
+  width: 50%;
+}
+
+
+
+._image{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@keyframes slidein {
+  from {
+    left: 1rem;
+  }
+
+  to {
+   left: 100%
+  }
+}

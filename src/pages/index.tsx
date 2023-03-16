@@ -1,15 +1,24 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Navbar, FirstBanner, SecondBanner, Services, Products, Portfolio, Contact, Footer } from '@/components';
+import { useRef } from 'react';
 import styles from './styles.module.scss';
 
-
 export default function Home() {
+  const services = useRef(null);
   return (
     <>
-      <main className={styles.main}>
-       
+      <Navbar />
+
+      <main className={styles._main}>
+        <FirstBanner />
+        <SecondBanner />
+
+        <Services ref={services} />
+
+        <Products />
+        <Portfolio />
+        <Contact />
       </main>
+      <Footer />
     </>
-  )
+  );
 }

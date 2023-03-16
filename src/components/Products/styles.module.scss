@@ -1,0 +1,27 @@
+@import '../../../public/styles/index.scss';
+
+._main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+._content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+._image{
+  margin: 1rem 0.5rem;
+  filter: grayscale(1);
+  &:hover {
+    transition: all 0.5s;
+    filter: grayscale(0);
+  }
+}
+
+

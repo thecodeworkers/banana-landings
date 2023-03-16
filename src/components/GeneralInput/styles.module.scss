@@ -1,0 +1,19 @@
+@import '../../../public/styles/index.scss';
+
+._inputContainer{
+    border-bottom: 1px solid $white;
+    width: 100%;
+   
+    background-color: transparent;
+}
+
+._input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    color: $white;
+    font-size: 1.875rem;
+    &::placeholder {
+        color: $white;  
+    }
+}

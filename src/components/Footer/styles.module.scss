@@ -1,0 +1,43 @@
+@import '../../../public/styles/index.scss';
+
+._content{
+    background-color: $heliotrope;
+    width:100%;
+    height:4.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+._imageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+._imageBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+._imageBoxTwo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    padding-left: 2rem;
+}
+
+._iconsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    padding-right: 2rem;
+}
+
