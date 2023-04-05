@@ -12,7 +12,7 @@ export default function Home() {
         <FirstBanner />
         <SecondBanner />
 
-        <Services ref={services} />
+        <Services />
 
         <Products />
         <Portfolio />
