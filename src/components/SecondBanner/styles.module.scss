@@ -5,14 +5,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 ._content{
   width:100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  height: 95vh;
 }
 
 ._textBox{
@@ -42,18 +42,21 @@
   font-size: 4.5rem;
   color:$white;
   width: 70%;
+  z-index: 1;
   font-family: $helvetica;
   & span {
     color: $apple;
     font-size: 4.5rem;
     font-family: $helvetica;
+    width: 100%;
   }
   
 }
 
 ._backgroundImage{
 opacity: 0.3;
-position: absolute
+position: absolute;
+z-index: 0;
 
 }
 
@@ -66,13 +69,11 @@ position: absolute
   color:$white;
   margin-top: 1rem;
   font-family: $helvetica;
+  z-index: 1;
 }
-
-
 
 ._paragraphContainer{
   width: 100%;
-  margin-top: 2rem;
 }
 
 ._paragraph{

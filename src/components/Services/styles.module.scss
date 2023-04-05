@@ -13,46 +13,39 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  height: 93vh;
 }
 
 ._leftContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 50%;
   height: 18.875rem;
   position: relative;
 
-  &:hover ._imageLeft {
-    animation: slidein 0.5s linear forwards;
-    -webkit-animation: linear forwards;
-    -webkit-animation-name: slidein;
-    -webkit-animation-duration: 0.5s;
-
+  ._imageLeft {
+    transition: transform 750ms;
+    will-change: transform;
   }
-}
 
-._leftContainer {
+  &:hover ._imageLeft {
+    transform: translateX(-70%);
+  }
+
+  ._textLeftContainer {
+    position: absolute;
+    right: -30%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
 
   &:hover ._textLeftContainer  {
-    animation: fadeIn 0.7s linear forwards;
+    animation: fadeIn 0.55s linear forwards;
     -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 0.7;
+    -webkit-animation-duration: 0.55;
   }
-}
-
-._textLeftContainer {
-  position: absolute;
-  right: -30%;
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
-}
-
-._imageLeft {
-  position: absolute;
-  left: 40%;
 }
 
 ._rightContainer {
@@ -62,36 +55,29 @@
   width: 50%;
   height: 18.875rem;
   position: relative;
+  
+  ._imageRight {
+    transition: transform 750ms;
+    will-change: transform;
+  }
 
   &:hover ._imageRight {
-    animation: slidein 0.5s linear forwards;
-    -webkit-animation: linear forwards;
-    -webkit-animation-name: slidein;
-    -webkit-animation-duration: 0.5s;
-
+    transform: translateX(-70%);
   }
-}
 
-._rightContainer {
+  ._textRightContainer {
+    position: absolute;
+    right: -30%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+  }
 
   &:hover ._textRightContainer  {
-    animation: fadeIn 0.7s linear forwards;
+    animation: fadeIn 0.55s linear forwards;
     -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 0.7;
+    -webkit-animation-duration: 0.55;
   }
-}
-
-._textRightContainer {
-  position: absolute;
-  right: -30%;
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
-}
-
-._imageRight {
-  position: absolute;
-  left: 50%;
 }
 
 ._leftTitle {
@@ -111,44 +97,33 @@
 ._text {
   font-size: 1.875rem;
   margin: 0.5rem;
-  font-family: $helvetica;
+  font-family: $helveticaLight;
   color: $white;
-}
-
-@keyframes slidein {
-
-  0%{
-    left: 50%;
-  }
-  25%{
-    left: 35%;
-  }
-  50%{
-    left: 25%;
-  }
-  75%{
-    left: 15%;
-  }
-  100%{
-    left: 0%;
-  }
 }
 
 @keyframes fadeIn {
   0%{
-    left: 100%;
+    left: 75%;
     opacity: 0;
   }
-  25%{
-    left: 85%;
-    opacity: 0.25;
-  }
-  50%{
+  20%{
     left: 70%;
-    opacity: 0.5;
+    opacity: 0.2;
+  }
+  40%{
+    left: 65%;
+    opacity: 0.4;
+  }
+  60%{
+    left: 60%;
+    opacity: 0.6;
+  }
+  80%{
+    left: 55%;
+    opacity: 0.8;
   }
   100%{
-    left: 55%;
+    left: 50%;
     opacity: 1;
   }
 

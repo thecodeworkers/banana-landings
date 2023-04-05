@@ -17,13 +17,13 @@ const SecondBanner = () => {
           </p>
         </div>
         <div className={styles._rightBox}>
-          <div className={styles._arrowBox}>
+          {/* <div className={styles._arrowBox}>
             <div className={styles._image}>
               <Image src={arrowGreen} alt={'arrow'} width={43} height={38} quality={100} />
             </div>
             <p className={styles._text}>UX Research_</p>
-          </div>
-
+          </div> */}
+          <p className={styles._text}>UX Research_</p>
           <p className={styles._text}>Desing System_</p>
           <p className={styles._text}>Wireframing_</p>
           <p className={styles._text}>Development_</p>

@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className={styles._content}>
       <div className={styles._imageBox}>
-        <Image src={logo} alt={'Banana Tech'} width={255} height={37} quality={100} />
+        <Image src={logo} alt={'Banana Tech'} width={200} height={37} quality={100} />
       </div>
 
       <div className={styles._textBox}>

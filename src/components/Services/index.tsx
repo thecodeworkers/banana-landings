@@ -15,7 +15,7 @@ const Services = () => {
             <Image src={services} alt={'arrow'} width={228} height={302} quality={100} />
           </div>
           <div className={styles._textLeftContainer}>
-            <p className={styles?._leftTitle}>Standard</p>
+            <p className={styles?._leftTitle}>STANDARD</p>
             <p className={styles?._text}>_Landing </p>
             <p className={styles?._text}>_Website</p>
             <p className={styles?._text}>_Blog</p>

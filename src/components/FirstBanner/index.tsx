@@ -20,7 +20,7 @@ const FirstBanner = () => {
           </div>
         </div>
         <div className={styles._imageBox}>
-          <Image src={banana} alt={'Banana Tech'} width={409} height={659} quality={100} />
+          <Image src={banana} alt={'Banana Tech'} width={500} height={800} quality={100} />
         </div>
       </div>
       <div className={styles._paragraphContainer}>
