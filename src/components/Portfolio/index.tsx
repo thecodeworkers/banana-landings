@@ -2,8 +2,10 @@ import Image from 'next/image';
 import React from 'react';
 import styles from './styles.module.scss';
 import puntu from '../../../public/resources/portfolio/puntu.png';
+
 import puntuHover from '../../../public/resources/portfolio/puntu-hover.gif';
 import vippo from '../../../public/resources/portfolio/vippo.png';
+
 import vippoHover from '../../../public/resources/portfolio/vippo-hover.gif';
 import graysquare from '../../../public/resources/graysquare.png';
 import GeneralButton from '../GeneralButton';
