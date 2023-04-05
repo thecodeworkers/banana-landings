@@ -1,8 +1,8 @@
 @import '../../../public/styles/index.scss';
 
-._buttonContainer{
-  width:15.313rem;
-  height:2.5rem;
+._buttonContainer {
+  width: 15.313rem;
+  height: 2.5rem;
   box-sizing: border-box;
   border: 1px solid $white;
   border-radius: 1.25rem;
@@ -12,15 +12,6 @@
   padding: 1rem;
   cursor: pointer;
   position: relative;
- 
-  
-}
-._button{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  width: 50%;
 
   ._image {
     transition: transform 750ms;
@@ -28,14 +19,24 @@
   }
 
   &:hover ._image {
-    transform: translateX(100px);
+    transform: translateX(100%);
   }
+
+
 }
-._text{
+
+._button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 50%;
+
+}
+
+._text {
   font-size: 0.875rem;
   color: white;
   font-family: $helvetica;
   margin-right: 1rem;
 }
-
-

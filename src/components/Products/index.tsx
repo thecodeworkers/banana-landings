@@ -1,16 +1,16 @@
 import Image from 'next/image';
 import React from 'react';
 import styles from './styles.module.scss';
-import javascript from '../../../public/resources/js.svg';
-import python from '../../../public/resources/py.svg';
-import figma from '../../../public/resources/figma.svg';
-import photo from '../../../public/resources/ps.svg';
-import ilustrator from '../../../public/resources/ai.svg';
-import goland from '../../../public/resources/go.svg';
-import tailwind from '../../../public/resources/tail.svg';
-import sass from '../../../public/resources/sass.svg';
-import gsap from '../../../public/resources/gsap.svg';
-import xd from '../../../public/resources/xd.svg';
+import javascript from '../../../public/resources/technologies/js.svg';
+import python from '../../../public/resources/technologies/py.svg';
+import figma from '../../../public/resources/technologies/figma.svg';
+import photo from '../../../public/resources/technologies/ps.svg';
+import ilustrator from '../../../public/resources/technologies/ai.svg';
+import goland from '../../../public/resources/technologies/go.svg';
+import tailwind from '../../../public/resources/technologies/tail.svg';
+import sass from '../../../public/resources/technologies/sass.svg';
+import gsap from '../../../public/resources/technologies/gsap.svg';
+import xd from '../../../public/resources/technologies/xd.svg';
 
 const Products = () => {
   const rowOne = [javascript, python, tailwind, goland, sass, gsap];

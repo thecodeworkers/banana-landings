@@ -15,34 +15,58 @@
   align-items: center;
 }
 
-._imageLeftContainer{
+._imageLeftContainer {
   margin: 1rem 0.5rem 4rem 0;
   position: relative;
   height: 21.813rem;
-  width:38.875rem
+  width: 38.875rem
 }
 
-._imageRightContainer{
-  margin: 1rem 0  4rem 0.5rem ;
+._imageRightContainer {
+  margin: 1rem 0 4rem 0.5rem;
   position: relative;
   height: 21.813rem;
   width: 38.875rem;
 }
 
-._image{
-  width: 100%;
+._image {
+
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  opacity: 1;
+
+  &:hover {
+    transition: all 0.5s;
+    opacity: 0;
+  }
 }
 
-._hiddenImage{
+._hover-image {
+
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  opacity: 0;
+
+  &:hover {
+    transition: all 0.5s;
+    opacity: 1;
+  }
+}
+
+._hiddenImage {
   display: hidden;
 }
-._text{
+
+._text {
   color: $white;
   font-size: 1.875rem;
   margin-bottom: 1rem;
+  font-family: $pixel;
 }
 
-._buttonContainer{
+._buttonContainer {
   margin-top: 2rem;
   display: flex;
   width: 100%;

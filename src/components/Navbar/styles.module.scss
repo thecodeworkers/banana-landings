@@ -1,19 +1,19 @@
 @import '../../../public/styles/index.scss';
 
-._content{
+._content {
     background-color: $black;
     position: fixed;
-    width:100%;
-    height:5rem;
+    width: 100%;
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $gray;
-    z-index: 1;
+    z-index: 2;
 }
 
 
-._imageBox{
+._imageBox {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@
     padding-left: 2rem;
 }
 
-._textBox{
+._textBox {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +29,7 @@
     padding-right: 2rem;
 }
 
-._text{
+._text {
     color: $gallery;
     font-size: 0.875rem;
     cursor: pointer;

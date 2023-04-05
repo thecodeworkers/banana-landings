@@ -1,15 +1,15 @@
 @import '../../../public/styles/index.scss';
 
-._main{
-  width:100%;
+._main {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 5rem;
 }
 
-._content{
-  width:100%;
+._content {
+  width: 100%;
   height: 95vh;
   display: flex;
   justify-content: space-between;
@@ -17,7 +17,7 @@
 
 }
 
-._textBox{
+._textBox {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -26,35 +26,36 @@
 }
 
 
-._title{
+._title {
   font-size: 4.5rem;
-  color:$white;
+  color: $white;
   font-family: $helvetica;
   margin-bottom: 1rem;
   width: 60%;
+
   & span {
     color: $heliotrope;
     font-size: 4.5rem;
     font-family: $helvetica;
   }
-  
+
 }
 
-._text{
-  font-size:1.875rem;
-  color:$white;
+._text {
+  font-size: 1rem;
+  color: $white;
   margin-top: 0.5rem;
   font-family: $helvetica;
   width: 70%;
 }
 
-._buttonContainer{
+._buttonContainer {
   margin-top: 2rem;
   display: flex;
   justify-content: flex-start;
 }
 
-._formContainer{
+._formContainer {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -62,7 +63,7 @@
   width: 50%;
 }
 
-._form{
+._form {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -70,7 +71,7 @@
   width: 70%;
 }
 
-._input{
+._input {
   width: 100%;
   margin: 1.5rem 0;
 }
