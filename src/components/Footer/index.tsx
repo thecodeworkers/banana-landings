@@ -18,15 +18,22 @@ const Navbar = () => {
         <div className={styles._imageBoxTwo}>
           <Image src={logo} alt={'Banana Tech'} width={173} height={17} quality={100} />
         </div>
+        <div className={styles._imageBoxResponsive}>
+          <Image src={bananaBy} alt={'bananaBy'} width={90} height={17} quality={100} />
+        </div>
+
+        <div className={styles._imageBoxTwoResponsive}>
+          <Image src={logo} alt={'Banana Tech'} width={120} height={17} quality={100} />
+        </div>
       </div>
 
       <div className={styles._iconsContainer}>
-        <div>
+        <div className={styles._icon}>
           <a href={'https://www.linkedin.com/company/bananacreative/mycompany/'} target='_blank' rel='noreferrer'>
             <Image src={linkeind} alt={'linkeind'} width={19} height={19} quality={100} />
           </a>
         </div>
-        <div>
+        <div className={styles._icon}>
           <a
             href={'https://www.behance.net/Bananacreative?tracking_source=search_users%7Cbanana+creative'}
             target='_blank'
@@ -34,7 +41,7 @@ const Navbar = () => {
             <Image src={behance} alt={'behance'} width={28} height={17} quality={100} />
           </a>
         </div>
-        <div>
+        <div className={styles._icon}>
           <a href={'https://www.instagram.com/_bananacreative/'} target='_blank' rel='noreferrer'>
             <Image src={instagram} alt={'instagram'} width={23} height={23} quality={100} />
           </a>

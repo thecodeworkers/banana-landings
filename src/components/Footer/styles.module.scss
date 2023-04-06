@@ -35,8 +35,66 @@
 
 ._iconsContainer {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding-right: 2rem;
+}
+
+._icon {
+    margin: 0 0.5rem 0 0.5rem;
+
+    &:last-child {
+        margin-right: 0;
+
+    }
+}
+
+._imageBoxResponsive {
+    display: none;
+}
+
+._imageBoxTwoResponsive {
+    display: none;
+}
+
+@include responsive(lg) {
+    ._imageBox {
+        padding-left: 1rem;
+    }
+
+    ._imageBoxTwo {
+        padding-left: 1rem;
+    }
+
+    ._imageBoxResponsive {
+        
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 10%;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+        
+    }
+
+    ._imageBoxTwoResponsive {
+
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    }
+    ._imageBox {
+        display: none;
+        
+    }
+
+    ._imageBoxTwo {
+        display: none;
+    }
+    ._iconsContainer{
+        padding-right: 1rem;
+    }
+
 }

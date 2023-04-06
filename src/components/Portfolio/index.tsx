@@ -40,7 +40,14 @@ const Portfolio = () => {
         <div className={styles._imageLeftContainer}>
           <p className={styles._text}>Banco Activo</p>
           <Image className={styles._image} src={graysquare} width={500} height={349} alt={'activo'} quality={100} />
-          <Image className={styles.hover_image} src={graysquare} width={500} height={349} alt={'vippo'} quality={100} />
+          <Image
+            className={styles.hover_image}
+            src={graysquare}
+            width={500}
+            height={349}
+            alt={'activo'}
+            quality={100}
+          />
         </div>
         <div className={styles._imageRightContainer}>
           <p className={styles._text}>Sudeca</p>
