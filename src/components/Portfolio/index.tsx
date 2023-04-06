@@ -11,7 +11,6 @@ import graysquare from '../../../public/resources/graysquare.png';
 import GeneralButton from '../GeneralButton';
 
 const Portfolio = () => {
-  
   return (
     <div className={styles._main}>
       <div className={styles._content}>
@@ -24,27 +23,34 @@ const Portfolio = () => {
           <p className={styles._text}>Vippo</p>
           <Image className={styles._image} src={vippo} width={500} height={349} alt={'vippo'} quality={100} />
           <Image className={styles.hover_image} src={vippoHover} width={500} height={349} alt={'vippo'} quality={100} />
-    
         </div>
-        
+
+        <div className={styles._imageLeftContainerResponsive}>
+          <p className={styles._text}>Puntu</p>
+          <Image className={styles._image} src={puntu} width={350} height={250} alt={'puntu'} quality={100} />
+          <Image className={styles.hover_image} src={puntuHover} width={350} height={250} alt={'puntu'} quality={100} />
+        </div>
+        <div className={styles._imageRightContainerResponsive}>
+          <p className={styles._text}>Vippo</p>
+          <Image className={styles._image} src={vippo} width={350} height={250} alt={'vippo'} quality={100} />
+          <Image className={styles.hover_image} src={vippoHover} width={350} height={250} alt={'vippo'} quality={100} />
+        </div>
       </div>
       <div className={styles._content}>
-      <div className={styles._imageLeftContainer}>
+        <div className={styles._imageLeftContainer}>
           <p className={styles._text}>Banco Activo</p>
-          <Image className={styles._image} src={graysquare}  width={500} height={349} alt={'activo'} quality={100} />
+          <Image className={styles._image} src={graysquare} width={500} height={349} alt={'activo'} quality={100} />
           <Image className={styles.hover_image} src={graysquare} width={500} height={349} alt={'vippo'} quality={100} />
-    
         </div>
         <div className={styles._imageRightContainer}>
           <p className={styles._text}>Sudeca</p>
-          <Image className={styles._image} src={graysquare}  width={500} height={349} alt={'activo'} quality={100} />
+          <Image className={styles._image} src={graysquare} width={500} height={349} alt={'activo'} quality={100} />
           <Image className={styles.hover_image} src={graysquare} width={500} height={349} alt={'vippo'} quality={100} />
-    
         </div>
       </div>
-      <div className={styles._buttonContainer}>
+      {/* <div className={styles._buttonContainer}>
         <GeneralButton text={'See more'} />
-      </div>
+      </div> */}
     </div>
   );
 };

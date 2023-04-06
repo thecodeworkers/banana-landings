@@ -16,6 +16,11 @@ const Products = () => {
   const rowOne = [javascript, python, tailwind, goland, sass, gsap];
   const rowTwo = [figma, photo, ilustrator, xd];
 
+  const rowOneResponsive = [javascript, figma, python];
+  const rowTwoResponsive = [photo, ilustrator, xd];
+  const rowThreeResponsive = [goland, sass];
+  const rowFourResponsive = [tailwind, gsap];
+
   return (
     <div className={styles._main}>
       <div className={styles._content}>
@@ -33,6 +38,34 @@ const Products = () => {
           </div>
         ))}
         <div className={styles._image} />
+      </div>
+      <div className={styles._contentResponsive}>
+        {rowOneResponsive.map((logo, index) => (
+          <div key={index} className={styles._image}>
+            <Image src={logo} alt={`logo${index}`} width={90} height={90} quality={100} />
+          </div>
+        ))}
+      </div>
+      <div className={styles._contentResponsive}>
+        {rowTwoResponsive.map((logo, index) => (
+          <div key={index} className={styles._image}>
+            <Image src={logo} alt={`logo${index}`} width={90} height={90} quality={100} />
+          </div>
+        ))}
+      </div>
+      <div className={styles._contentResponsiveCenter}>
+        {rowThreeResponsive.map((logo, index) => (
+          <div key={index} className={styles._image}>
+            <Image src={logo} alt={`logo${index}`} width={90} height={90} quality={100} />
+          </div>
+        ))}
+      </div>
+      <div className={styles._contentResponsive}>
+        {rowFourResponsive.map((logo, index) => (
+          <div key={index} className={styles._image}>
+            <Image src={logo} alt={`logo${index}`} width={150} height={90} quality={100} />
+          </div>
+        ))}
       </div>
     </div>
   );

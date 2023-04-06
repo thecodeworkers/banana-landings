@@ -29,6 +29,10 @@
     will-change: transform;
   }
 
+  ._imageLeftResponsive {
+    display: none;
+  }
+
   &:hover ._imageLeft {
     transform: translateX(-70%);
   }
@@ -59,6 +63,10 @@
   ._imageRight {
     transition: transform 750ms;
     will-change: transform;
+  }
+
+  ._imageRightResponsive {
+    display: none;
   }
 
   &:hover ._imageRight {
@@ -125,6 +133,65 @@
   100%{
     left: 50%;
     opacity: 1;
+  }
+
+}
+
+@include responsive(lg) {
+  ._content{
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  ._leftContainer{
+
+    ._imageLeftResponsive {
+      transition: transform 750ms;
+      will-change: transform;
+      display: block;
+    }
+  
+    ._imageLeft {
+      display: none;
+
+    } &:hover ._imageLeftResponsive {
+      transform: translateX(-70%);
+    }
+  }
+
+  ._rightContainer{
+    ._imageRightResponsive {
+      transition: transform 750ms;
+      will-change: transform;
+      display: block;
+    }
+  
+    ._imageRight {
+      display: none;
+    }
+  
+    &:hover ._imageRightResponsive {
+      transform: translateX(-70%);
+    }
+  
+  }
+  ._leftTitle{
+    font-size: 1.50rem;
+  }
+  ._rightTitle{
+    font-size: 1.50rem;
+  }
+  ._text{
+    font-size: 1.25rem;
+  }
+  ._textRightContainer{
+    width: 80%;
+    
+  }
+  ._textLeftContainer{
+    width: 80%;
+    right: 0;
   }
 
 }

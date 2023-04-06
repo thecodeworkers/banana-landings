@@ -15,12 +15,36 @@
   align-items: center;
 }
 
+._contentResponsive{
+  display: none;
+}
+
 ._image{
   margin: 1rem 0.5rem;
   filter: grayscale(1);
   &:hover {
     transition: all 0.5s;
     filter: grayscale(0);
+  }
+}
+
+@include responsive(lg) {
+  ._contentResponsive{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  ._contentResponsiveCenter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  
+  ._content{
+    display: none;
   }
 }
 

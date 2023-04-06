@@ -9,6 +9,9 @@ const Navbar = () => {
       <div className={styles._imageBox}>
         <Image src={logo} alt={'Banana Tech'} width={200} height={37} quality={100} />
       </div>
+      <div className={styles._imageBoxResponsive}>
+        <Image src={logo} alt={'Banana Tech'} width={150} height={26} quality={100} />
+      </div>
 
       <div className={styles._textBox}>
         <p className={styles._text}>About Us</p>

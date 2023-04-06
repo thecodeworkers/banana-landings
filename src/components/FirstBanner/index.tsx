@@ -22,6 +22,9 @@ const FirstBanner = () => {
         <div className={styles._imageBox}>
           <Image src={banana} alt={'Banana Tech'} width={500} height={800} quality={100} />
         </div>
+        <div className={styles._imageBoxResponsive}>
+          <Image src={banana} alt={'Banana Tech'} width={250} height={270} quality={100} />
+        </div>
       </div>
       <div className={styles._paragraphContainer}>
         <p className={styles._paragraph}>

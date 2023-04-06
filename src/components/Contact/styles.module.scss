@@ -75,3 +75,36 @@
   width: 100%;
   margin: 1.5rem 0;
 }
+
+@include responsive(lg) {
+  ._content{
+    flex-direction: column;
+    height: 100%;
+  }
+  ._textBox{
+    width: 100%;
+    align-items: center;
+    
+  }
+
+  ._title{
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+  }
+  ._text{
+   text-align: center;
+  }
+  ._formContainer{
+    margin-top: 5rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  ._form{
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2.5%;
+  }
+}

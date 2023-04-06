@@ -12,7 +12,10 @@ const Services = () => {
       <div className={styles._content}>
         <div className={styles._leftContainer}>
           <div className={styles._imageLeft}>
-            <Image src={services} alt={'arrow'} width={228} height={302} quality={100} />
+            <Image src={services} alt={'standar'} width={228} height={302} quality={100} />
+          </div>
+          <div className={styles._imageLeftResponsive}>
+            <Image src={services} alt={'standar'} width={148} height={196} quality={100} />
           </div>
           <div className={styles._textLeftContainer}>
             <p className={styles?._leftTitle}>STANDARD</p>
@@ -24,7 +27,10 @@ const Services = () => {
         </div>
         <div className={styles._rightContainer}>
           <div className={styles._imageRight}>
-            <Image src={customs} alt={'arrow'} width={228} height={302} quality={100} />
+            <Image src={customs} alt={'custom'} width={228} height={302} quality={100} />
+          </div>
+          <div className={styles._imageRightResponsive}>
+            <Image src={customs} alt={'custom'} width={148} height={196} quality={100} />
           </div>
           <div className={styles._textRightContainer}>
             <p className={styles?._rightTitle}>CUSTOM</p>

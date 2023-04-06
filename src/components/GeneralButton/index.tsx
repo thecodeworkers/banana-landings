@@ -11,7 +11,7 @@ const GeneralButton = ({ text, method }: any) => {
         </div>
 
         <div className={styles._image}>
-          <Image src={arrowRight} alt={'arrow'} width={15} height={15} quality={100} />
+          <Image src={arrowRight} alt={'arrow'} width={15} height={12} quality={100} />
         </div>
       </div>
     </div>

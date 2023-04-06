@@ -20,6 +20,9 @@
     width: 45%;
     padding-left: 2rem;
 }
+._imageBoxResponsive{
+   display: none; 
+}
 
 ._textBox {
     display: flex;
@@ -33,4 +36,25 @@
     color: $gallery;
     font-size: 0.875rem;
     cursor: pointer;
+}
+
+@include responsive(lg) {
+
+    ._content{
+        height: 4rem;
+    }
+    ._imageBoxResponsive{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-left: 1rem;
+    }
+
+    ._imageBox{
+        display: none;
+    }
+    ._text{
+        display: none;
+    }
 }

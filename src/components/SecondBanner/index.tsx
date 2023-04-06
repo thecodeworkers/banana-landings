@@ -12,6 +12,9 @@ const SecondBanner = () => {
           <div className={styles._backgroundImage}>
             <Image src={crystal} alt={'arrow'} width={470} height={332} quality={100} />
           </div>
+          <div className={styles._backgroundImageResponsive}>
+            <Image src={crystal} alt={'arrow'} width={400} height={300} quality={100} />
+          </div>
           <p className={styles._title}>
             WE CREATE <span>FUNCTIONAL & BEAUTIFUL </span>WEBSITES
           </p>
