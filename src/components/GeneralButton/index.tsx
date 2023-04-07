@@ -2,19 +2,32 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './styles.module.scss';
 import arrowRight from '../../../public/resources/arrow-right.svg';
+import { motion, Variants } from 'framer-motion';
+
 const GeneralButton = ({ text, method }: any) => {
+  const arrowAnimation: Variants = {
+    initial: {
+      x: 0,
+    },
+    hover: {
+      x: 100,
+      transition: {
+        duration: 1,
+      },
+    },
+  };
   return (
-    <div className={styles._buttonContainer} onClick={method}>
+    <motion.div whileHover='hover' className={styles._buttonContainer} onClick={method}>
       <div className={styles._button}>
         <div className={styles._textContainer}>
           <p className={styles._text}>{text}</p>
         </div>
 
-        <div className={styles._image}>
+        <motion.div variants={arrowAnimation}>
           <Image src={arrowRight} alt={'arrow'} width={15} height={12} quality={100} />
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
