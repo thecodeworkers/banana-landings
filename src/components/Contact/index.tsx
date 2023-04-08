@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './styles.module.scss';
 
-import { GeneralButton, GeneralInput } from '../';
+import { FadeIn, GeneralButton, GeneralInput } from '../';
 
 const Contact = () => {
   return (
     <div className={styles._main}>
-      <div className={styles._content}>
+      <FadeIn className={styles._content}>
         <div className={styles._textBox}>
           <p className={styles._title}>LETS GET IN TOUCH</p>
           <p className={styles._text}>Avenida Eugenio Mendoza</p>
@@ -32,7 +32,7 @@ const Contact = () => {
             </div>
           </form>
         </div>
-      </div>
+      </FadeIn>
     </div>
   );
 };

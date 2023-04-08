@@ -4,6 +4,7 @@ import styles from './styles.module.scss';
 import banana from '../../../public/resources/banana.svg';
 import GeneralButton from '../GeneralButton';
 import { motion, Variants } from 'framer-motion';
+import FadeIn from '../FadeIn';
 
 const FirstBanner = () => {
   const textAnimation: Variants = {
@@ -45,12 +46,12 @@ const FirstBanner = () => {
           <Image src={banana} alt={'Banana Tech'} width={250} height={270} quality={100} />
         </div>
       </div>
-      <div className={styles._paragraphContainer}>
-        <motion.p className={styles._paragraph} initial='hide' whileInView='show' variants={textAnimation}>
+      <FadeIn className={styles._paragraphContainer}>
+        <p className={styles._paragraph}>
           <b>BANANA TECH</b> IS A TEAM OF EXPERTS FORMED BY SPECIALISTS IN SYSTEM ENGINEERING, UI-UX DESIGN,
           INFRASTRUCTURE AND INFORMATION SECURITY.
-        </motion.p>
-      </div>
+        </p>
+      </FadeIn>
     </div>
   );
 };

@@ -11,6 +11,7 @@ import tailwind from '../../../public/resources/technologies/tail.svg';
 import sass from '../../../public/resources/technologies/sass.svg';
 import gsap from '../../../public/resources/technologies/gsap.svg';
 import xd from '../../../public/resources/technologies/xd.svg';
+import FadeIn from '../FadeIn';
 
 const Products = () => {
   const rowOne = [javascript, python, tailwind, goland, sass, gsap];
@@ -22,7 +23,7 @@ const Products = () => {
   const rowFourResponsive = [tailwind, gsap];
 
   return (
-    <div className={styles._main}>
+    <FadeIn className={styles._main}>
       <div className={styles._content}>
         {rowOne.map((logo, index) => (
           <div key={index} className={styles._image}>
@@ -67,7 +68,7 @@ const Products = () => {
           </div>
         ))}
       </div>
-    </div>
+    </FadeIn>
   );
 };
 

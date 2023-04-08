@@ -3,13 +3,14 @@ import React, { useRef } from 'react';
 import styles from './styles.module.scss';
 import services from '../../../public/resources/services.svg';
 import customs from '../../../public/resources/customs.svg';
+import FadeIn from '../FadeIn';
 
 const Services = () => {
   const serviceRef = useRef(null);
 
   return (
     <div className={styles._main} ref={serviceRef}>
-      <div className={styles._content}>
+      <FadeIn className={styles._content}>
         <div className={styles._leftContainer}>
           <div className={styles._imageLeft}>
             <Image src={services} alt={'standar'} width={228} height={302} quality={100} />
@@ -40,7 +41,7 @@ const Services = () => {
             <p className={styles?._text}>_A.I</p>
           </div>
         </div>
-      </div>
+      </FadeIn>
     </div>
   );
 };

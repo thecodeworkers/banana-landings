@@ -3,11 +3,12 @@ import React from 'react';
 import styles from './styles.module.scss';
 
 import crystal from '../../../public/resources/crystal.svg';
+import FadeIn from '../FadeIn';
 
 const SecondBanner = () => {
   return (
     <div className={styles._main}>
-      <div className={styles._content}>
+      <FadeIn className={styles._content}>
         <div className={styles._textBox}>
           <div className={styles._backgroundImage}>
             <Image src={crystal} alt={'arrow'} width={470} height={332} quality={100} />
@@ -26,12 +27,13 @@ const SecondBanner = () => {
           <p className={styles._text}>Development_</p>
           <p className={styles._text}>Q/A_</p>
         </div>
-      </div>
-      <div className={styles._paragraphContainer}>
+      </FadeIn>
+
+      <FadeIn className={styles._paragraphContainer}>
         <p className={styles._paragraph}>
           THERE’S TWO WAYS TO APROACH YOUR PROJECT, CHOOSE THE ONE THAT BEST FITS YOUR NEEDS
         </p>
-      </div>
+      </FadeIn>
     </div>
   );
 };

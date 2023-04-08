@@ -7,10 +7,10 @@ import { motion, Variants } from 'framer-motion';
 const GeneralButton = ({ text, method }: any) => {
   const arrowAnimation: Variants = {
     initial: {
-      x: 0,
+      width: '50%',
     },
     hover: {
-      x: 100,
+      x: '90%',
       transition: {
         duration: 1,
       },
@@ -23,7 +23,7 @@ const GeneralButton = ({ text, method }: any) => {
           <p className={styles._text}>{text}</p>
         </div>
 
-        <motion.div variants={arrowAnimation}>
+        <motion.div variants={arrowAnimation} className={styles._image}>
           <Image src={arrowRight} alt={'arrow'} width={15} height={12} quality={100} />
         </motion.div>
       </div>

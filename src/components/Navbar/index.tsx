@@ -3,7 +3,11 @@ import React from 'react';
 import { scrolling } from '../../utils/common';
 import styles from './styles.module.scss';
 import logo from '../../../public/resources/logo.svg';
+
 const Navbar = () => {
+  const setScroll = (ref: any) => {
+    localStorage.setItem('ref', ref);
+  };
   return (
     <div className={styles._content}>
       <div className={styles._imageBox}>
@@ -14,7 +18,9 @@ const Navbar = () => {
       </div>
 
       <div className={styles._textBox}>
-        <p className={styles._text}>About Us</p>
+        <p className={styles._text} onClick={() => setScroll('aboutRef')}>
+          About Us
+        </p>
         <p className={styles._text} onClick={() => scrolling('servicesRef')}>
           What we do?
         </p>
