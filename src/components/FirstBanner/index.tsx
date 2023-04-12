@@ -1,23 +1,20 @@
 import Image from 'next/image';
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import styles from './styles.module.scss';
 import banana from '../../../public/resources/banana.svg';
 import GeneralButton from '../GeneralButton';
-import { motion, Variants } from 'framer-motion';
+import { motion, Variants, useAnimate, useInView } from 'framer-motion';
 import FadeIn from '../FadeIn';
 
 const FirstBanner = () => {
-  const textAnimation: Variants = {
-    hide: {
-      opacity: 0,
-    },
-    show: {
-      opacity: 1,
-      transition: {
-        duration: 2,
-      },
-    },
-  };
+
+  const [scope, animate] = useAnimate()
+  const isInView = useInView(scope, { once: true })
+
+  useEffect(() => {
+    if (isInView) animate(scope.current, { opacity: 1, marginTop: 0 }, { duration: 1, delay: 0.3, ease: 'linear' })
+  }, [isInView])
+
   return (
     <div className={styles._main}>
       <div className={styles._content}>
@@ -46,12 +43,12 @@ const FirstBanner = () => {
           <Image src={banana} alt={'Banana Tech'} width={250} height={270} quality={100} />
         </div>
       </div>
-      <FadeIn className={styles._paragraphContainer}>
+      <div className={styles._paragraphContainer} ref={scope}>
         <p className={styles._paragraph}>
           <b>BANANA TECH</b> IS A TEAM OF EXPERTS FORMED BY SPECIALISTS IN SYSTEM ENGINEERING, UI-UX DESIGN,
           INFRASTRUCTURE AND INFORMATION SECURITY.
         </p>
-      </FadeIn>
+      </div>
     </div>
   );
 };
