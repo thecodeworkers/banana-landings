@@ -12,6 +12,8 @@ const Contact = () => {
           <p className={styles._text}>Avenida Eugenio Mendoza</p>
           <p className={styles._text}>Torre IASA, Piso 8 Oficina 802-A</p>
           <p className={styles._text}>La Castellana, Caracas, Venezuela</p>
+          <p className={styles._text}>+1 (786) 819-1151</p>
+          <p className={styles._text}>+58 412-6350200</p>
         </div>
         <div className={styles._formContainer}>
           <form className={styles._form}>
