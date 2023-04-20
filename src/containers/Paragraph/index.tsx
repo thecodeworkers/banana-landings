@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.scss';
 
-import FadeIn from '../FadeIn';
+import { FadeIn } from '@/components';
 
 const Paragraph = ({ content, bolded }: any) => {
   return (

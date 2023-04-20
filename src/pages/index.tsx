@@ -1,5 +1,5 @@
 import { Navbar, Footer } from '@/components';
-import { Hero, AboutUs, Services, Products, Portfolio, Contact } from '@/containers';
+import { Hero, AboutUs, Services, Products, Portfolio, Contact, Paragraph } from '@/containers';
 
 import styles from './styles.module.scss';
 import { useRef } from 'react';
