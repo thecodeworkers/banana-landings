@@ -61,18 +61,7 @@
   margin-top: 2rem;
 }
 
-._paragraphContainer {
-  width: 100%;
-  opacity: 0;
-  margin-top: 1.5625rem;
-}
 
-._paragraph {
-  color: $white;
-  font-family: $helvetica;
-  font-size: 2.5rem;
-  text-align: center;
-}
 
 @include responsive(lg) {
   
@@ -115,10 +104,4 @@
     width: 100%;
   }
 
-  ._paragraph{
-    font-size: 1.25rem;
-    text-align: center;
-    width: 90%;
-    margin: 5rem auto 0 auto;
-  }
 }

@@ -20,8 +20,9 @@
     width: 45%;
     padding-left: 2rem;
 }
-._imageBoxResponsive{
-   display: none; 
+
+._imageBoxResponsive {
+    display: none;
 }
 
 ._textBox {
@@ -39,12 +40,18 @@
     font-family: $helvetica;
 }
 
+._menu ._menuIcon {
+    display: none;
+}
+
+
 @include responsive(lg) {
 
-    ._content{
+    ._content {
         height: 4rem;
     }
-    ._imageBoxResponsive{
+
+    ._imageBoxResponsive {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -52,10 +59,42 @@
         padding-left: 1rem;
     }
 
-    ._imageBox{
+    ._imageBox {
         display: none;
+    }
+
+    ._textBox{
+        display: none;
+    }
+
+    ._menu{
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: flex-start;
+        height: 40vh;
+        min-height: 40vh;
+        flex-direction: column;
+        width: 100%;
+        background-color: $black;
+        margin-top: 3.5rem;
+        z-index: 3;
+    }
+    ._textContainer{
+        width: 100%;
+        border-bottom: 1px solid $gray;
     }
     ._text{
-        display: none;
+        margin: 1rem 0;
+       
+        width: 100%;
     }
+    ._menuIcon{
+        display: flex;
+       color: $white;
+       padding-right: 2rem;
+       
+    }
+
+   
 }

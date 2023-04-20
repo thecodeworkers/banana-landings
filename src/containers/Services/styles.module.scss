@@ -147,32 +147,40 @@
   ._leftContainer{
 
     ._imageLeftResponsive {
-      transition: transform 750ms;
-      will-change: transform;
+
       display: block;
+      transform: translateX(-50%);
     }
   
     ._imageLeft {
       display: none;
+    } 
+     
+  ._textLeftContainer{
+    width: 100%;
+    transition:none;
+    opacity: 1;
+    position: unset;
+  }
 
-    } &:hover ._imageLeftResponsive {
-      transform: translateX(-70%);
-    }
   }
 
   ._rightContainer{
+    width: 100%;
     ._imageRightResponsive {
-      transition: transform 750ms;
-      will-change: transform;
+ 
       display: block;
+      transform: translateX(-50%);
     }
   
     ._imageRight {
       display: none;
     }
-  
-    &:hover ._imageRightResponsive {
-      transform: translateX(-70%);
+    ._textRightContainer{
+      
+      opacity: 1;
+      position: unset;
+      transition:none
     }
   
   }
@@ -185,13 +193,6 @@
   ._text{
     font-size: 1.25rem;
   }
-  ._textRightContainer{
-    width: 80%;
-    
-  }
-  ._textLeftContainer{
-    width: 80%;
-    right: 0;
-  }
+
 
 }

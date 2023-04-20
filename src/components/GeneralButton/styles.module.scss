@@ -32,6 +32,15 @@
 
 ._image{
  width: 100%;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
 color:white;
-margin-top: 0.313rem;
+
+}
+
+._container{
+  background-color: transparent;
+  border: none;
+  
 }

@@ -17,7 +17,8 @@ const AboutUs = forwardRef<HTMLDivElement>((props, ref) => {
             <Image src={crystal} alt={'arrow'} width={400} height={300} quality={100} />
           </div>
           <p className={styles._title}>
-            WE CREATE <span>FUNCTIONAL & BEAUTIFUL </span>WEBSITES
+            WE CREATE <span className={styles._greenTitleFirst}>FUNCTIONAL</span>
+            <span className={styles._greenTitleSecond}> & BEAUTIFUL </span>WEBSITES
           </p>
         </div>
         <div className={styles._rightBox}>
@@ -27,12 +28,6 @@ const AboutUs = forwardRef<HTMLDivElement>((props, ref) => {
           <p className={styles._text}>Development_</p>
           <p className={styles._text}>Q/A_</p>
         </div>
-      </FadeIn>
-
-      <FadeIn className={styles._paragraphContainer}>
-        <p className={styles._paragraph}>
-          THERE’S TWO WAYS TO APROACH YOUR PROJECT, CHOOSE THE ONE THAT BEST FITS YOUR NEEDS
-        </p>
       </FadeIn>
     </div>
   );

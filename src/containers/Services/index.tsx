@@ -42,8 +42,8 @@ const Services = forwardRef<HTMLDivElement>((props, ref) => {
       </FadeIn>
     </div>
   );
-})
+});
 
-Services.displayName = 'Services'
+Services.displayName = 'Services';
 
 export default Services;
