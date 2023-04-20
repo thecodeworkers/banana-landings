@@ -1,13 +1,20 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { FC } from 'react';
 import { scrolling } from '../../utils/common';
 import styles from './styles.module.scss';
 import logo from '../../../public/resources/logo.svg';
 
-const Navbar = () => {
-  const setScroll = (ref: any) => {
-    localStorage.setItem('ref', ref);
-  };
+type Props = {
+  refs: {
+    aboutUs: any
+    services: any
+    products: any
+    portfolio: any
+    contact: any
+  }
+}
+
+const Navbar: FC<Props> = ({ refs }) => {
   return (
     <div className={styles._content}>
       <div className={styles._imageBox}>
@@ -18,15 +25,21 @@ const Navbar = () => {
       </div>
 
       <div className={styles._textBox}>
-        <p className={styles._text} onClick={() => setScroll('aboutRef')}>
+        <p className={styles._text} onClick={() => scrolling(refs.aboutUs)}>
           About Us
         </p>
-        <p className={styles._text} onClick={() => scrolling('servicesRef')}>
+        <p className={styles._text} onClick={() => scrolling(refs.services)}>
           What we do?
         </p>
-        <p className={styles._text}>Technologies</p>
-        <p className={styles._text}>Briefcase</p>
-        <p className={styles._text}>Contact Us</p>
+        <p className={styles._text} onClick={() => scrolling(refs.products)}>
+          Technologies
+        </p>
+        <p className={styles._text} onClick={() => scrolling(refs.portfolio)}>
+          Briefcase
+        </p>
+        <p className={styles._text} onClick={() => scrolling(refs.contact)}>
+          Contact Us
+        </p>
       </div>
     </div>
   );

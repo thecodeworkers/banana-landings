@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Image from 'next/image';
 import styles from './styles.module.scss';
 import arrowRight from '../../../public/resources/arrow-right.svg';
 import { motion, Variants } from 'framer-motion';
 import { Icon } from '@iconify/react';
 
-const GeneralButton = ({ text, method }: any) => {
+type Props = {
+  text: string;
+  method?: () => {}
+}
+
+const GeneralButton: FC<Props> = ({ text, method }) => {
   const textAnimation: Variants = {
     initial: {
       color: 'white',

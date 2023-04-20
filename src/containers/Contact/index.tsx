@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { forwardRef, useState } from 'react';
 import styles from './styles.module.scss';
 
-import { FadeIn, GeneralButton, GeneralInput } from '../';
+import { FadeIn, GeneralButton, GeneralInput } from '../../components';
 
-const Contact = () => {
+const Contact = forwardRef<HTMLDivElement>((props, ref) => {
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  })
+
+  const onHandle = ({target}: any) => {
+    setForm({
+      ...form,
+      [target.name]: target.value
+    })
+  }
+
   return (
-    <div className={styles._main}>
+    <div ref={ref} className={styles._main}>
       <FadeIn className={styles._content}>
         <div className={styles._textBox}>
           <p className={styles._title}>LETS GET IN TOUCH</p>
@@ -18,16 +32,16 @@ const Contact = () => {
         <div className={styles._formContainer}>
           <form className={styles._form}>
             <div className={styles._input}>
-              <GeneralInput name={'name'} value={''} placeholder={'Company o startup*'} onhandle={() => {}} />
+              <GeneralInput name={'name'} value={form.name} placeholder={'Company o startup*'} onHandle={onHandle} />
             </div>
             <div className={styles._input}>
-              <GeneralInput name={'email'} value={''} placeholder={'Email*'} onhandle={() => {}} />
+              <GeneralInput name={'email'} value={form.email} placeholder={'Email*'} onHandle={onHandle} />
             </div>
             <div className={styles._input}>
-              <GeneralInput name={'name'} value={''} placeholder={'Subject*'} onhandle={() => {}} />
+              <GeneralInput name={'subject'} value={form.subject} placeholder={'Subject*'} onHandle={onHandle} />
             </div>
             <div className={styles._input}>
-              <GeneralInput name={'name'} value={''} placeholder={'Message*'} onhandle={() => {}} />
+              <GeneralInput name={'message'} value={form.message} placeholder={'Message*'} onHandle={onHandle} />
             </div>
             <div className={styles._buttonContainer}>
               <GeneralButton text={'Send'} />
@@ -37,6 +51,8 @@ const Contact = () => {
       </FadeIn>
     </div>
   );
-};
+});
+
+Contact.displayName = 'Contact'
 
 export default Contact;

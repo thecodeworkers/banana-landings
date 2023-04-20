@@ -1,15 +1,13 @@
 import Image from 'next/image';
-import React, { useRef } from 'react';
+import React, { forwardRef } from 'react';
 import styles from './styles.module.scss';
 import services from '../../../public/resources/services.svg';
 import customs from '../../../public/resources/customs.svg';
-import FadeIn from '../FadeIn';
+import FadeIn from '../../components/FadeIn';
 
-const Services = () => {
-  const serviceRef = useRef(null);
-
+const Services = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div className={styles._main} ref={serviceRef}>
+    <div ref={ref} className={styles._main}>
       <FadeIn className={styles._content}>
         <div className={styles._leftContainer}>
           <div className={styles._imageLeft}>
@@ -44,6 +42,8 @@ const Services = () => {
       </FadeIn>
     </div>
   );
-};
+})
+
+Services.displayName = 'Services'
 
 export default Services;

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styles from './styles.module.scss';
 import javascript from '../../../public/resources/technologies/js.svg';
 import python from '../../../public/resources/technologies/py.svg';
@@ -11,9 +11,9 @@ import tailwind from '../../../public/resources/technologies/tail.svg';
 import sass from '../../../public/resources/technologies/sass.svg';
 import gsap from '../../../public/resources/technologies/gsap.svg';
 import xd from '../../../public/resources/technologies/xd.svg';
-import FadeIn from '../FadeIn';
+import FadeIn from '../../components/FadeIn';
 
-const Products = () => {
+const Products = forwardRef<HTMLDivElement>((props, ref) => {
   const rowOne = [javascript, python, tailwind, goland, sass, gsap];
   const rowTwo = [figma, photo, ilustrator, xd];
 
@@ -24,7 +24,7 @@ const Products = () => {
 
   return (
     <FadeIn className={styles._main}>
-      <div className={styles._content}>
+      <div ref={ref} className={styles._content}>
         {rowOne.map((logo, index) => (
           <div key={index} className={styles._image}>
             <Image src={logo} alt={`logo${index}`} width={90} height={90} quality={100} />
@@ -70,6 +70,8 @@ const Products = () => {
       </div>
     </FadeIn>
   );
-};
+});
+
+Products.displayName = 'Products'
 
 export default Products;

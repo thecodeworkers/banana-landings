@@ -1,17 +1,17 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styles from './styles.module.scss';
 import puntu from '../../../public/resources/portfolio/puntu.png';
 // import puntuHover from '../../../public/resources/portfolio/puntu-hover.gif';
 import vippo from '../../../public/resources/portfolio/vippo.png';
 // import vippoHover from '../../../public/resources/portfolio/vippo-hover.gif'; d
 import graysquare from '../../../public/resources/graysquare.png';
-import GeneralButton from '../GeneralButton';
-import FadeIn from '../FadeIn';
+import GeneralButton from '../../components/GeneralButton';
+import FadeIn from '../../components/FadeIn';
 
-const Portfolio = () => {
+const Portfolio = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div className={styles._main}>
+    <div ref={ref} className={styles._main}>
       <FadeIn className={styles._content}>
         <div className={styles._imageLeftContainer}>
           <p className={styles._text}>Puntu</p>
@@ -59,6 +59,8 @@ const Portfolio = () => {
       </div> */}
     </div>
   );
-};
+});
+
+Portfolio.displayName = 'Portfolio'
 
 export default Portfolio;

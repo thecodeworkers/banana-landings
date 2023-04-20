@@ -2,11 +2,11 @@ import Image from 'next/image';
 import React, { useRef, useEffect } from 'react';
 import styles from './styles.module.scss';
 import banana from '../../../public/resources/banana.svg';
-import GeneralButton from '../GeneralButton';
+import GeneralButton from '../../components/GeneralButton';
 import { motion, Variants, useAnimate, useInView } from 'framer-motion';
-import FadeIn from '../FadeIn';
+import FadeIn from '../../components/FadeIn';
 
-const FirstBanner = () => {
+const Hero = () => {
 
   const [scope, animate] = useAnimate()
   const isInView = useInView(scope, { once: true })
@@ -16,7 +16,7 @@ const FirstBanner = () => {
   }, [isInView])
 
   return (
-    <div className={styles._main}>
+    <div id="Hero" className={styles._main}>
       <div className={styles._content}>
         <div className={styles._textBox}>
           <p className={styles._title}>
@@ -53,4 +53,4 @@ const FirstBanner = () => {
   );
 };
 
-export default FirstBanner;
+export default Hero;

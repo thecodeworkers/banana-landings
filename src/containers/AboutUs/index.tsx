@@ -1,13 +1,13 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styles from './styles.module.scss';
 
 import crystal from '../../../public/resources/crystal.svg';
-import FadeIn from '../FadeIn';
+import FadeIn from '../../components/FadeIn';
 
-const SecondBanner = () => {
+const AboutUs = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div className={styles._main}>
+    <div ref={ref} className={styles._main}>
       <FadeIn className={styles._content}>
         <div className={styles._textBox}>
           <div className={styles._backgroundImage}>
@@ -36,6 +36,8 @@ const SecondBanner = () => {
       </FadeIn>
     </div>
   );
-};
+});
 
-export default SecondBanner;
+AboutUs.displayName = 'AboutUs'
+
+export default AboutUs;
