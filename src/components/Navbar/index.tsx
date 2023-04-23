@@ -51,7 +51,7 @@ const Navbar: FC<Props> = ({ refs }) => {
             Contact Us
           </p>
         </div>
-        <div className={styles._menu}>
+        {/* <div className={styles._menu}>
           {options.map((route, index) => (
             <div key={index} className={styles._textContainer}>
               <p className={styles._text} onClick={() => scrolling(route?.scrollTo)}>
@@ -59,7 +59,7 @@ const Navbar: FC<Props> = ({ refs }) => {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </>
   );
