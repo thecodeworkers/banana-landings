@@ -1,5 +1,5 @@
 import { Navbar, Footer } from '@/components';
-import { Hero, AboutUs, Services, Products, Portfolio, Contact, Paragraph } from '@/containers';
+import { Hero, AboutUs, Services, Products, Portfolio, Contact, Paragraph, Packs } from '@/containers';
 
 import styles from './styles.module.scss';
 import { useRef } from 'react';
@@ -35,6 +35,7 @@ export default function Home() {
           bolded={'BANANA TECH'}
         />
         <Services ref={servicesRef} />
+        <Packs />
         <Products ref={productsRef} />
         <Portfolio ref={portfolioRef} />
         <Contact ref={contactRef} />

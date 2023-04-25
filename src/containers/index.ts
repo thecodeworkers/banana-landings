@@ -5,3 +5,4 @@ export { default as Products } from './Products';
 export { default as Portfolio } from './Portfolio';
 export { default as Contact } from './Contact';
 export { default as Paragraph } from './Paragraph';
+export { default as Packs } from './Packs';
