@@ -12,6 +12,7 @@ type Props = {
     products: any;
     portfolio: any;
     contact: any;
+    packs: any;
   };
 };
 
@@ -22,6 +23,7 @@ const Navbar: FC<Props> = ({ refs }) => {
     { name: 'Technologies', scrollTo: 'products' },
     { name: 'Briefcase', scrollTo: 'portfolio' },
     { name: 'Contact Us', scrollTo: 'contact' },
+    { name: 'Packs', scrollTo: 'packs' },
   ];
 
   return (
@@ -38,8 +40,12 @@ const Navbar: FC<Props> = ({ refs }) => {
           <p className={styles._text} onClick={() => scrolling(refs.aboutUs)}>
             About Us
           </p>
+
           <p className={styles._text} onClick={() => scrolling(refs.services)}>
             What we do?
+          </p>
+          <p className={styles._text} onClick={() => scrolling(refs.packs)}>
+            Packs
           </p>
           <p className={styles._text} onClick={() => scrolling(refs.products)}>
             Technologies

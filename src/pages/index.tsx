@@ -10,6 +10,7 @@ export default function Home() {
   const productsRef = useRef(null);
   const portfolioRef = useRef(null);
   const contactRef = useRef(null);
+  const packsRef = useRef(null);
 
   const refs = {
     aboutUs: aboutRef,
@@ -17,6 +18,7 @@ export default function Home() {
     products: productsRef,
     portfolio: portfolioRef,
     contact: contactRef,
+    packs: packsRef,
   };
 
   return (
@@ -35,7 +37,7 @@ export default function Home() {
           bolded={'BANANA TECH'}
         />
         <Services ref={servicesRef} />
-        <Packs />
+        <Packs ref={packsRef} />
         <Products ref={productsRef} />
         <Portfolio ref={portfolioRef} />
         <Contact ref={contactRef} />

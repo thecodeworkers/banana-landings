@@ -1,96 +1,166 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styles from './styles.module.scss';
 import { FadeIn, GeneralButton } from '@/components';
 import { Icon } from '@iconify/react';
+import Slider from 'react-slick';
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
 
-const Packs = () => {
+const Packs = forwardRef<HTMLDivElement>((props, ref) => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+  };
   const packages = [
     {
       title: 'One page',
-      text: 'A partir de $1.425',
+      text: 'From $1.425',
       props: [
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Plantilla que comprende 4 secciones por vista' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Plantilla de wordpress' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Personalización de banners para todas las vistas' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Personalización de tipografías ' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Modificación de iconos' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Formulario de contacto' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Look and feel de la web' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Copy de la web' },
         {
           icon: 'material-symbols:check',
           color: '#D380FF',
-          name: 'Las interacciones web serán en base a las que trae la plantilla por defecto',
+          name: 'TEMPLATE COMPRISING A SINGLE VIEW WITH A MINIMUM OF 4 SECTIONS AND A MAXIMUM OF 8 SECTIONS',
         },
-        { icon: 'material-symbols:close', color: '#BCE5A1', name: 'Manual de como administrar la plataforma' },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'WORDPRESS TEMPLATE' },
+        {
+          icon: 'material-symbols:check',
+          color: '#D380FF',
+          name: 'TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW',
+        },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'BANNER CUSTOMIZATION FOR ALL VIEWS' },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'FONT CUSTOMIZATION' },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'ICON MODIFICATION' },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'CONTACT FORM' },
+        { icon: 'material-symbols:check', color: '#D380FF', name: "WEBSITE'S LOOK AND FEEL" },
+        {
+          icon: 'material-symbols:check',
+          color: '#D380FF',
+          name: "WEBSITE'S COPIES",
+        },
+        {
+          icon: 'material-symbols:check',
+          color: '#D380FF',
+          name: 'WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM',
+        },
       ],
     },
     {
       title: 'Landing Page',
-      text: 'A partir de $2.250',
+      text: 'From $2.250',
       props: [
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Plantilla que comprende 4 secciones por vista' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Plantilla de wordpress' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Personalización de banners para todas las vistas' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Personalización de tipografías ' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Modificación de iconos' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Formulario de contacto' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Look and feel de la web' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Copy de la web' },
         {
           icon: 'material-symbols:check',
           color: '#D380FF',
-          name: 'Las interacciones web serán en base a las que trae la plantilla por defecto',
+          name: 'TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW',
         },
-        { icon: 'material-symbols:close', color: '#BCE5A1', name: 'Manual de como administrar la plataforma' },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'WORDPRESS TEMPLATE' },
+        {
+          icon: 'material-symbols:check',
+          color: '#D380FF',
+          name: 'TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW',
+        },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'BANNER CUSTOMIZATION FOR ALL VIEWS' },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'FONT CUSTOMIZATION' },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'ICON MODIFICATION' },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'CONTACT FORM' },
+        { icon: 'material-symbols:check', color: '#D380FF', name: "WEBSITE'S LOOK AND FEEL" },
+        {
+          icon: 'material-symbols:check',
+          color: '#D380FF',
+          name: "WEBSITE'S COPIES",
+        },
+        {
+          icon: 'material-symbols:check',
+          color: '#D380FF',
+          name: 'WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM',
+        },
       ],
     },
     {
       title: 'E- commerce',
-      text: 'A patir de $3.200',
+      text: 'From $3.200  ',
       props: [
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Plantilla que comprende 4 secciones por vista' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Plantilla de wordpress' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Personalización de banners para todas las vistas' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Personalización de tipografías ' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Modificación de iconos' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Formulario de contacto' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Look and feel de la web' },
-        { icon: 'material-symbols:check', color: '#D380FF', name: 'Copy de la web' },
         {
           icon: 'material-symbols:check',
           color: '#D380FF',
-          name: 'Las interacciones web serán en base a las que trae la plantilla por defecto',
+          name: 'TEMPLATE INCLUDING MAIN PAGE, SHOP, INDIVIDUAL PRODUCT, CART AND PAYMENT GATEWAY (9 TO 11 VIEWS)',
         },
-        { icon: 'material-symbols:close', color: '#BCE5A1', name: 'Manual de como administrar la plataforma' },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'SHOPIFY TEMPLATE' },
+        {
+          icon: 'material-symbols:check',
+          color: '#D380FF',
+          name: 'CUSTOMIZATION OF BANNERS FOR ALL VIEWS (DESIGNED FOR WEB AND RESPONSIVE)',
+        },
+        {
+          icon: 'material-symbols:check',
+          color: '#D380FF',
+          name: 'FONT CUSTOMIZATION (NEW FONTS APPLIED TO THE BRAND)',
+        },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'ICON MODIFICATION (ICONS DESIGNED FOR THE BRAND)' },
+        {
+          icon: 'material-symbols:check',
+          color: '#D380FF',
+          name: 'LOOK AND FEEL OF THE ENTIRE WEB (VIDEO WITH THE DESIGN PROPOSAL OF THE ENTIRE WEB BEFORE PROCEEDING TO DEVELOPMENT)',
+        },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'CONTACT FORM' },
+        {
+          icon: 'material-symbols:check',
+          color: '#D380FF',
+          name: 'WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM',
+        },
+        {
+          icon: 'material-symbols:check',
+          color: '#D380FF',
+          name: "WEBSITE'S COPIES",
+        },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'WEBSITE ELEMENTS' },
+        { icon: 'material-symbols:check', color: '#D380FF', name: '50 PRODUCTS UPLOADS' },
+        { icon: 'material-symbols:check', color: '#D380FF', name: 'MANUAL ON HOW TO ADMINISTRATE THE PLATFORM' },
       ],
     },
   ];
   return (
-    <FadeIn className={styles._main}>
-      <p className={styles._title}>PACKS</p>
-      <div className={styles._packages}>
-        {packages.map((pack, index) => (
-          <div key={index} style={{ width: `100% /${packages?.length}` }} className={styles._packageContainer}>
-            <p className={styles._packTitle}>{pack?.title}</p>
-            <p className={styles._packSubTitle}>{pack?.text}</p>
-            <div className={styles._divider} />
-            {pack?.props.map((prop, idx) => (
-              <div key={idx} className={styles._propContainer}>
-                <Icon icon={prop?.icon} color={prop?.color} width={22} height={22} />
-                <p className={prop?.icon == 'material-symbols:close' ? styles._disableText : styles._text}>
-                  {prop?.name}
-                </p>
+    <div ref={ref} className={styles._main}>
+      <FadeIn>
+        <p className={styles._title}>PACKS</p>
+        {/* <Slider {...settings}> */}
+        <div className={styles._packages}>
+          {packages.map((pack, index) => (
+            <div key={index} style={{ width: `${100 / packages.length}%` }} className={styles._packageContainer}>
+              <div className={styles._packageContent}>
+                <div className={styles._textContent}>
+                  <p className={styles._packTitle}>{pack?.title}</p>
+                  <p className={styles._packSubTitle}>{pack?.text}</p>
+                  <div className={styles._divider} />
+                </div>
+                <div className={styles._packagesTextContent}>
+                  {pack?.props.map((prop, idx) => (
+                    <div key={idx} className={styles._propContainer}>
+                      <Icon icon={prop?.icon} color={prop?.color} width={22} height={22} />
+                      <p className={prop?.icon == 'material-symbols:close' ? styles._disableText : styles._text}>
+                        {prop?.name}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+                <div className={styles._buttonMainContainer}>
+                  <div className={styles._buttonContainer}>
+                    <GeneralButton text={'Book a Call'} />
+                  </div>
+                </div>
               </div>
-            ))}
-            <div className={styles._buttonContainer}>
-              <GeneralButton text={'Book a Call'} />
             </div>
-          </div>
-        ))}
-      </div>
-    </FadeIn>
+          ))}
+        </div>
+        {/* </Slider> */}
+      </FadeIn>
+    </div>
   );
-};
+});
+Packs.displayName = 'Packs';
 
 export default Packs;
