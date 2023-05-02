@@ -5,7 +5,7 @@ import banana from '../../../public/resources/banana.svg';
 import { GeneralButton } from '@/components/';
 import { motion, useAnimate, useInView } from 'framer-motion';
 
-const Hero = () => {
+const Hero = ({ data }: any) => {
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope, { once: true });
 
@@ -18,10 +18,10 @@ const Hero = () => {
       <div className={styles._content}>
         <div className={styles._textBox}>
           <p className={styles._title}>
-            WE HELP YOU BOOST YOUR <span> BUSSINES </span>
+            {data.title} <span> {data.bold} </span>
           </p>
 
-          <p className={styles._text}>We develop, create and innovate your ideas.</p>
+          <p className={styles._text}>{data.subtitle}</p>
 
           <div className={styles._buttonContainer}>
             <GeneralButton text={'Contact us'} />

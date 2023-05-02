@@ -4,7 +4,11 @@ import { Hero, AboutUs, Services, Products, Portfolio, Contact, Paragraph } from
 import styles from './styles.module.scss';
 import { useRef } from 'react';
 
-export default function Home() {
+import content from '@/content/data.json'
+
+type DomainType = keyof typeof content
+
+export default function Home({ data }: any) {
   const aboutRef = useRef(null);
   const servicesRef = useRef(null);
   const productsRef = useRef(null);
@@ -24,7 +28,7 @@ export default function Home() {
       <Navbar refs={refs} />
 
       <main className={styles._main}>
-        <Hero />
+        <Hero data={data.hero} />
         <Paragraph content={'THERE’S TWO WAYS TO APROACH YOUR PROJECT, CHOOSE THE ONE THAT BEST FITS YOUR NEEDS'} />
 
         <AboutUs ref={aboutRef} />
@@ -42,4 +46,15 @@ export default function Home() {
       <Footer />
     </>
   );
+}
+
+export async function getStaticProps() {
+  // const domain: string = process.env.DOMAIN || "TECH"
+  const domain: string = "TECH"
+
+  return {
+    props: {
+      data: content[domain as DomainType]
+    }
+  }
 }

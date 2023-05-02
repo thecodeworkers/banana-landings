@@ -1,0 +1,24 @@
+{
+    "TECH": {
+        "hero": {
+            "title": "WE HELP YOU BOOST YOUR",
+            "bold": "BUSSINES",
+            "subtitle": "We develop, create and innovate your ideas."
+        }
+    },
+    "BRAND": {
+        "hero": {
+            "title": "WE HELP YOU SHAPE YOUR",
+            "bold": "BUSSINES",
+            "subtitle": "We develop, create and innovate your ideas."
+        }
+    },
+    "MOTION": {
+        "hero": {
+            "title": "WE HELP BRING YOUR BRAND",
+            "bold": "TO LIVE",
+            "subtitle": "We develop, create and innovate your ideas."
+        }
+    },
+    "PRODUCTION": {}
+}
