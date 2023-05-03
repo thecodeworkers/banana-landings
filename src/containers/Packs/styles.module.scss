@@ -49,7 +49,7 @@
 
 ._packageContainer {
   display: table-cell;
-  height: 1250px;
+  height: 1350px;
 }
 
 ._packageContent {
@@ -120,9 +120,5 @@
   ._packageContainer,
   ._packageContent {
     max-width: 100vw;
-  }
-
-  ._packageContainer {
-    height: 1350px;
   }
 }
