@@ -4,9 +4,9 @@ import { Hero, AboutUs, Services, Products, Portfolio, Contact, Paragraph, Packs
 import styles from './styles.module.scss';
 import { useRef } from 'react';
 
-import content from '@/content/data.json'
+import content from '@/content/data.json';
 
-type DomainType = keyof typeof content
+type DomainType = keyof typeof content;
 
 export default function Home({ data }: any) {
   const aboutRef = useRef(null);
@@ -30,18 +30,13 @@ export default function Home({ data }: any) {
       <Navbar refs={refs} />
 
       <main className={styles._main}>
-        <Hero data={data.hero} />
-        <Paragraph content={'THERE’S TWO WAYS TO APROACH YOUR PROJECT, CHOOSE THE ONE THAT BEST FITS YOUR NEEDS'} />
+        <Hero data={data?.hero} />
+        <Paragraph data={data?.firstParagraph} />
 
-        <AboutUs ref={aboutRef} />
-        <Paragraph
-          content={
-            'IS A TEAM OF EXPERTS FORMED BY SPECIALISTS IN SYSTEM ENGINEERING, UI-UX DESIGN, INFRASTRUCTURE AND INFORMATION SECURITY.'
-          }
-          bolded={'BANANA TECH'}
-        />
-        <Services ref={servicesRef} />
-        <Packs ref={packsRef} />
+        <AboutUs {...data?.aboutUs} ref={aboutRef} />
+        <Paragraph data={data?.secondParagraph} />
+        <Services {...data?.services} ref={servicesRef} />
+        <Packs {...data?.packs} ref={packsRef} />
         <Products ref={productsRef} />
         <Portfolio ref={portfolioRef} />
         <Contact ref={contactRef} />
@@ -53,11 +48,11 @@ export default function Home({ data }: any) {
 
 export async function getStaticProps() {
   // const domain: string = process.env.DOMAIN || "TECH"
-  const domain: string = "TECH"
+  const domain: string = 'TECH';
 
   return {
     props: {
-      data: content[domain as DomainType]
-    }
-  }
+      data: content[domain as DomainType],
+    },
+  };
 }

@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React, { useRef, useEffect } from 'react';
 import styles from './styles.module.scss';
-import banana from '../../../public/resources/banana.svg';
 import { GeneralButton } from '@/components/';
 import { motion, useAnimate, useInView } from 'framer-motion';
 
@@ -18,13 +17,13 @@ const Hero = ({ data }: any) => {
       <div className={styles._content}>
         <div className={styles._textBox}>
           <p className={styles._title}>
-            {data.title} <span> {data.bold} </span>
+            {data?.title} <span> {data?.bold} </span>
           </p>
 
-          <p className={styles._text}>{data.subtitle}</p>
+          <p className={styles._text}>{data?.subtitle}</p>
 
           <div className={styles._buttonContainer}>
-            <GeneralButton text={'Contact us'} />
+            <GeneralButton text={data?.button} />
           </div>
         </div>
         <motion.div
@@ -35,10 +34,10 @@ const Hero = ({ data }: any) => {
             duration: 1.5,
             delay: 0.3,
           }}>
-          <Image src={banana} alt={'Banana Tech'} width={500} height={800} quality={100} />
+          <Image src={data?.image} alt={data?.altImage} width={500} height={800} quality={100} />
         </motion.div>
         <div className={styles._imageBoxResponsive}>
-          <Image src={banana} alt={'Banana Tech'} width={250} height={270} quality={100} />
+          <Image src={data?.image} alt={data?.altImage} width={250} height={270} quality={100} />
         </div>
       </div>
     </div>

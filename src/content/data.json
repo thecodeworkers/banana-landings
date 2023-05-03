@@ -1,24 +1,188 @@
 {
-    "TECH": {
-        "hero": {
-            "title": "WE HELP YOU BOOST YOUR",
-            "bold": "BUSSINES",
-            "subtitle": "We develop, create and innovate your ideas."
-        }
+  "TECH": {
+    "hero": {
+      "title": "WE HELP YOU BOOST YOUR",
+      "bold": "BUSSINES",
+      "subtitle": "We develop, create and innovate your ideas.",
+      "button": "Contact Us",
+      "image": "/resources/banana.svg",
+      "altImage": "Banana"
     },
-    "BRAND": {
-        "hero": {
-            "title": "WE HELP YOU SHAPE YOUR",
-            "bold": "BUSSINES",
-            "subtitle": "We develop, create and innovate your ideas."
-        }
+    "firstParagraph": {
+      "content": "IS A TEAM OF EXPERTS FORMED BY SPECIALISTS IN SYSTEM ENGINEERING, UI-UX DESIGN, INFRASTRUCTURE AND INFORMATION SECURITY.",
+      "bolded": "BANANA TECH"
     },
-    "MOTION": {
-        "hero": {
-            "title": "WE HELP BRING YOUR BRAND",
-            "bold": "TO LIVE",
-            "subtitle": "We develop, create and innovate your ideas."
-        }
+    "aboutUs": {
+      "firstTitle": "WE CREATE",
+      "firstBold": "FUNCTIONAL",
+      "secondBold": "& BEAUTIFUL",
+      "secondTitle": "WEBSITES",
+      "phases": ["UX Research_", "Desing System_", "Wireframing_", "Development_", "Q/A_"],
+      "image": "/resources/crystal.svg",
+      "altImage": "crystal"
     },
-    "PRODUCTION": {}
+    "secondParagraph": {
+      "content": "THERE’S TWO WAYS TO APROACH YOUR PROJECT, CHOOSE THE ONE THAT BEST FITS YOUR NEEDS"
+    },
+    "services": {
+      "standar": "/resources/services.svg",
+      "altStandar": "standar",
+      "standarTitle": "STANDARD",
+      "standarTypes": ["_Landing", "_Website", "_Blog", "_E-commerce"],
+      "altSCustom": "custom",
+      "custom": "/resources/customs.svg",
+      "customTitle": "CUSTOM",
+      "customTypes": ["_Mobile Apps ", "_API’S", "_Web Apps", "_A.I"]
+    },
+    "packs": {
+      "title": "PACKS",
+      "packsContent": [
+        {
+          "title": "One page",
+          "text": "From $1.425",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TEMPLATE COMPRISING A SINGLE VIEW WITH A MINIMUM OF 4 SECTIONS AND A MAXIMUM OF 8 SECTIONS"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WORDPRESS TEMPLATE" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "BANNER CUSTOMIZATION FOR ALL VIEWS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "ICON MODIFICATION" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE'S LOOK AND FEEL" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "WEBSITE'S COPIES"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM"
+            }
+          ]
+        },
+        {
+          "title": "Landing Page",
+          "text": "From $2.250",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WORDPRESS TEMPLATE" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "BANNER CUSTOMIZATION FOR ALL VIEWS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "ICON MODIFICATION" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE'S LOOK AND FEEL" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "WEBSITE'S COPIES"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM"
+            }
+          ]
+        },
+        {
+          "title": "E- commerce",
+          "text": "From $3.200  ",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TEMPLATE INCLUDING MAIN PAGE, SHOP, INDIVIDUAL PRODUCT, CART AND PAYMENT GATEWAY (9 TO 11 VIEWS)"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "SHOPIFY TEMPLATE" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "CUSTOMIZATION OF BANNERS FOR ALL VIEWS (DESIGNED FOR WEB AND RESPONSIVE)"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "FONT CUSTOMIZATION (NEW FONTS APPLIED TO THE BRAND)"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "ICON MODIFICATION ('ICON'S DESIGNED FOR THE BRAND)"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "LOOK AND FEEL OF THE ENTIRE WEB (VIDEO WITH THE DESIGN PROPOSAL OF THE ENTIRE WEB BEFORE PROCEEDING TO DEVELOPMENT)"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "WEBSITE'S COPIES"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE ELEMENTS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "50 PRODUCTS UPLOADS" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "MANUAL ON HOW TO ADMINISTRATE THE PLATFORM"
+            }
+          ]
+        }
+      ]
+    },
+    "products": "",
+    "portfolio": [
+      {
+        "name": "Puntu",
+        "image": "/portfolio/puntu.svg",
+        "hoverImage": "/portfolio/puntu-hover.gif",
+        "link": "https://puntu.io",
+        "backgroundColor": "#E6427A"
+      }
+    ]
+  },
+  "BRAND": {
+    "hero": {
+      "title": "WE HELP YOU SHAPE YOUR",
+      "bold": "BUSSINES",
+      "subtitle": "We develop, create and innovate your ideas."
+    }
+  },
+  "MOTION": {
+    "hero": {
+      "title": "WE HELP BRING YOUR BRAND",
+      "bold": "TO LIVE",
+      "subtitle": "We develop, create and innovate your ideas."
+    }
+  },
+  "PRODUCTION": {}
 }
