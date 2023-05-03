@@ -118,6 +118,8 @@ $size: 2rem;
 		z-index: 3;
 		animation: opacity .6s forwards;
 		transition: all .6s;
+		left: 0;
+		
 	}
 
 	._menu {
@@ -144,11 +146,11 @@ $size: 2rem;
 	._textContainer {
 		width: 100%;
 		border-bottom: 1px solid $gray;
+		padding-left: 1rem;
 	}
 
 	._text {
 		margin: 1rem 0;
-
 		width: 100%;
 	}
 
