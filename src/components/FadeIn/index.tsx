@@ -17,7 +17,7 @@ const FadeIn = ({ className, children }: any) => {
     },
   };
   return (
-    <motion.div className={className} initial='hide' whileInView='show' variants={fadeInAnimation} viewport={{ once: true }}>
+    <motion.div className={className} style={{maxWidth: '100%'}} initial='hide' whileInView='show' variants={fadeInAnimation} viewport={{ once: true }}>
       {children}
     </motion.div>
   );

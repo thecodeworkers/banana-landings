@@ -1,20 +1,35 @@
 import React, { forwardRef } from 'react';
-import styles from './styles.module.scss';
 import { FadeIn, GeneralButton } from '@/components';
 import { Icon } from '@iconify/react';
 import Slider from 'react-slick';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import styles from './styles.module.scss';
 
 const Packs = forwardRef<HTMLDivElement>((props, ref) => {
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     autoplay: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          className: "center",
+          centerMode: true,
+          centerPadding: "60px",
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false,
+        }
+      }
+    ]
   };
+  
   const packages = [
     {
       title: 'One page',
@@ -123,40 +138,41 @@ const Packs = forwardRef<HTMLDivElement>((props, ref) => {
       ],
     },
   ];
+  
   return (
     <div ref={ref} className={styles._main}>
       <FadeIn>
         <p className={styles._title}>PACKS</p>
-        {/* <Slider {...settings}> */}
-        <div className={styles._packages}>
-          {packages.map((pack, index) => (
-            <div key={index} style={{ width: `${100 / packages.length}%` }} className={styles._packageContainer}>
-              <div className={styles._packageContent}>
-                <div className={styles._textContent}>
-                  <p className={styles._packTitle}>{pack?.title}</p>
-                  <p className={styles._packSubTitle}>{pack?.text}</p>
-                  <div className={styles._divider} />
-                </div>
-                <div className={styles._packagesTextContent}>
-                  {pack?.props.map((prop, idx) => (
-                    <div key={idx} className={styles._propContainer}>
-                      <Icon icon={prop?.icon} color={prop?.color} width={22} height={22} />
-                      <p className={prop?.icon == 'material-symbols:close' ? styles._disableText : styles._text}>
-                        {prop?.name}
-                      </p>
+          <div className={styles._packages}>
+          <Slider {...settings}>
+              {packages.map((pack, index) => (
+                <div key={index} style={{ width: `${100 / packages.length}%` }} className={styles._packageContainer}>
+                  <div className={styles._packageContent}>
+                    <div className={styles._textContent}>
+                      <p className={styles._packTitle}>{pack?.title}</p>
+                      <p className={styles._packSubTitle}>{pack?.text}</p>
+                      <div className={styles._divider} />
                     </div>
-                  ))}
-                </div>
-                <div className={styles._buttonMainContainer}>
-                  <div className={styles._buttonContainer}>
-                    <GeneralButton text={'Book a Call'} />
+                    <div className={styles._packagesTextContent}>
+                      {pack?.props.map((prop, idx) => (
+                        <div key={idx} className={styles._propContainer}>
+                          <Icon icon={prop?.icon} color={prop?.color} width={22} height={22} />
+                          <p className={prop?.icon == 'material-symbols:close' ? styles._disableText : styles._text}>
+                            {prop?.name}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                    <div className={styles._buttonMainContainer}>
+                      <div className={styles._buttonContainer}>
+                        <GeneralButton text={'Book a Call'} />
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
-        {/* </Slider> */}
+              ))}
+          </Slider>
+          </div>
       </FadeIn>
     </div>
   );
