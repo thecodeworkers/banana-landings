@@ -20,7 +20,7 @@ const Packs = forwardRef<HTMLDivElement>((props, ref) => {
         settings: {
           className: "center",
           centerMode: true,
-          centerPadding: "60px",
+          centerPadding: "30px",
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: false,
