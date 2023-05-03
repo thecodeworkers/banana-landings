@@ -21,7 +21,7 @@ const AboutUs = forwardRef<HTMLDivElement>((props: any, ref): any => {
           </p>
         </div>
         <div className={styles._rightBox}>
-          {props?.phases.map((phase: string, index: string | number) => (
+          {props?.phases?.map((phase: string, index: string | number) => (
             <p key={index} className={styles._text}>
               {phase}
             </p>
