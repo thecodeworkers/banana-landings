@@ -1,100 +1,170 @@
 @import '../../../public/styles/index.scss';
 
-._content {
-    background-color: $black;
-    position: fixed;
-    width: 100%;
-    height: 7rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid $gray;
-    z-index: 2;
+$size: 2rem;
+
+@mixin baseStyle() {
+	display: flex;
+	flex-direction: column;
+	width: $size;
+	height: $size;
+	border: 0;
+	background: transparent;
+	gap: .55rem;
+	cursor: pointer;
+
+	& div {
+		height: 0.125rem;
+		background-color: $white;
+		width: 100%;
+		border-radius: 0.3125rem;
+		transition: all .5s;
+		transform-origin: right;
+	}
+} 
+
+@mixin burguerAnimation() {
+	& div:first-child {
+		rotate: -45deg;
+	}
+
+	& div:nth-child(2) {
+		opacity: 0;
+	}
+
+	& div:last-child {
+		rotate: 45deg;
+	}
 }
 
+._content {
+	background-color: $black;
+	position: fixed;
+	width: 100%;
+	height: 7rem;
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	border-bottom: 1px solid $gray;
+	z-index: 2;
+}
 
 ._imageBox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 45%;
-    padding-left: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 45%;
+	padding-left: 2rem;
 }
 
 ._imageBoxResponsive {
-    display: none;
+	display: none;
 }
 
 ._textBox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 45%;
-    padding-right: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 45%;
+	padding-right: 2rem;
 }
 
 ._text {
-    color: $gallery;
-    font-size: 0.875rem;
-    cursor: pointer;
-    font-family: $helvetica;
+	color: $gallery;
+	font-size: 0.875rem;
+	cursor: pointer;
+	font-family: $helvetica;
 }
 
 ._menu ._menuIcon {
-    display: none;
+	display: none;
 }
 
+._menuBurguer {
+	display: none;
+}
 
 @include responsive(lg) {
+	._content {
+		height: 5rem;
+		padding: 0 1rem;
+	}
 
-    ._content {
-        height: 5rem;
-    }
+	._imageBoxResponsive {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
 
-    ._imageBoxResponsive {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding-left: 1rem;
-    }
+	._imageBox {
+		display: none;
+	}
 
-    ._imageBox {
-        display: none;
-    }
+	._textBox {
+		display: none;
+	}
 
-    ._textBox{
-        display: none;
-    }
+	._menu {
+		display: flex;
+		position: fixed;
+		justify-content: center;
+		align-items: flex-start;
+		height: 40vh;
+		min-height: 40vh;
+		flex-direction: column;
+		width: 100%;
+		background-color: $black;
+		top: 5rem;
+		z-index: 3;
+		animation: opacity .6s forwards;
+		transition: all .6s;
+	}
 
-    ._menu{
-        display: flex;
-        position: fixed;
-        justify-content: center;
-        align-items: flex-start;
-        height: 40vh;
-        min-height: 40vh;
-        flex-direction: column;
-        width: 100%;
-        background-color: $black;
-        margin-top: 3.5rem;
-        z-index: 3;
-    }
-    ._textContainer{
-        width: 100%;
-        border-bottom: 1px solid $gray;
-    }
-    ._text{
-        margin: 1rem 0;
-       
-        width: 100%;
-    }
-    ._menuIcon{
-        display: flex;
-       color: $white;
-       padding-right: 2rem;
-       
-    }
+	._menu {
+		display: flex;
+		position: fixed;
+		justify-content: center;
+		align-items: flex-start;
+		height: 40vh;
+		min-height: 40vh;
+		flex-direction: column;
+		width: 100%;
+		background-color: $black;
+		top: 5rem;
+		z-index: 3;
+		animation: opacity .6s forwards;
+		transition: all .6s;
+	}
 
-   
+	@keyframes opacity {
+		from { opacity: 0 };
+		to { opacity: 1 };
+	}
+
+	._textContainer {
+		width: 100%;
+		border-bottom: 1px solid $gray;
+	}
+
+	._text {
+		margin: 1rem 0;
+
+		width: 100%;
+	}
+
+	._menuIcon {
+		display: flex;
+		color: $white;
+		padding-right: 2rem;
+	}
+
+	._menuBurguer {
+		@include baseStyle()
+	}
+
+	._closedMenu {
+		@include baseStyle();
+		@include burguerAnimation();
+	}
+	
 }
