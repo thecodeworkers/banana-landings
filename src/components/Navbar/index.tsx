@@ -5,7 +5,6 @@ import styles from './styles.module.scss';
 import logo from '../../../public/resources/logo.svg';
 import { Icon } from '@iconify/react';
 
-
 type Props = {
   refs: {
     aboutUs: any;
@@ -17,16 +16,30 @@ type Props = {
   };
 };
 
+type Option = {
+  name: string
+  scrollTo: string
+}
+
+type ScrollOption = {
+  aboutUs: any;
+  services: any;
+  products: any;
+  portfolio: any;
+  contact: any;
+  packs: any;
+}
+
 const Navbar: FC<Props> = ({ refs }) => {
 
   const [show, setShow] = useState<boolean>(false);
-  const options = [
+  const options: Option[] = [
     { name: 'About Us', scrollTo: 'aboutUs' },
     { name: 'What we do?', scrollTo: 'services' },
+    { name: 'Packs', scrollTo: 'packs' },
     { name: 'Technologies', scrollTo: 'products' },
     { name: 'Briefcase', scrollTo: 'portfolio' },
     { name: 'Contact Us', scrollTo: 'contact' },
-    { name: 'Packs', scrollTo: 'packs' },
   ];
 
   const handleShowMenu = () => setShow((show) => !show);
@@ -72,10 +85,13 @@ const Navbar: FC<Props> = ({ refs }) => {
         {
           show && (
             <div className={styles._menu}>
-            {options.map((route, index) => (
+            {options.map(({name, scrollTo}: Option, index) => (
               <div key={index} className={styles._textContainer}>
-                <p className={styles._text} onClick={() => scrolling(route?.scrollTo)}>
-                  {route?.name}
+                <p className={styles._text} onClick={() => {
+                  scrolling(refs[scrollTo as keyof ScrollOption])
+                  setShow(false)
+                  }}>
+                  {name}
                 </p>
               </div>
             ))}
