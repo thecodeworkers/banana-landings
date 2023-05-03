@@ -119,23 +119,8 @@ $size: 2rem;
 		animation: opacity .6s forwards;
 		transition: all .6s;
 		left: 0;
+		padding: 1.5625rem;
 		
-	}
-
-	._menu {
-		display: flex;
-		position: fixed;
-		justify-content: center;
-		align-items: flex-start;
-		height: 40vh;
-		min-height: 40vh;
-		flex-direction: column;
-		width: 100%;
-		background-color: $black;
-		top: 5rem;
-		z-index: 3;
-		animation: opacity .6s forwards;
-		transition: all .6s;
 	}
 
 	@keyframes opacity {
@@ -146,7 +131,6 @@ $size: 2rem;
 	._textContainer {
 		width: 100%;
 		border-bottom: 1px solid $gray;
-		padding-left: 1rem;
 	}
 
 	._text {
@@ -157,7 +141,7 @@ $size: 2rem;
 	._menuIcon {
 		display: flex;
 		color: $white;
-		padding-right: 2rem;
+		padding: 2rem;
 	}
 
 	._menuBurguer {
