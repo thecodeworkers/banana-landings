@@ -16,18 +16,19 @@
   flex-wrap: wrap;
 }
 
-._contentResponsive{
+._contentResponsive {
   display: none;
 }
 
-._contentResponsiveCenter{
+._contentResponsiveCenter {
   display: none;
 }
 
-._image{
+._image {
   margin: 1.5rem 0;
-  flex-basis:16.6%;
+  flex-basis: 16.6%;
   filter: grayscale(1);
+
   &:hover {
     transition: all 0.5s;
     filter: grayscale(0);
@@ -36,25 +37,32 @@
 
 @include responsive(lg) {
 
-  ._contentResponsive{
+  ._main,
+  ._contentResponsive,
+  ._contentResponsive>* {
+    max-width: 100vw;
+  }
+
+  ._contentResponsive {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
   }
-  ._contentResponsiveCenter{
+
+  ._contentResponsiveCenter {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
   }
 
-  ._image{
+  ._image {
     margin: 0 2rem 0 0;
   }
-  ._content{
+
+  ._content {
     display: none;
   }
 }

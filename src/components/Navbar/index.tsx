@@ -59,22 +59,6 @@ const Navbar: FC<Props> = ({ data, refs }) => {
               {route?.name}
             </p>
           ))}
-
-          {/* <p className={styles._text} onClick={() => scrolling(refs.services)}>
-            What we do?
-          </p>
-          <p className={styles._text} onClick={() => scrolling(refs.packs)}>
-            Packs
-          </p>
-          <p className={styles._text} onClick={() => scrolling(refs.products)}>
-            Technologies
-          </p>
-          <p className={styles._text} onClick={() => scrolling(refs.portfolio)}>
-            Briefcase
-          </p>
-          <p className={styles._text} onClick={() => scrolling(refs.contact)}>
-            Contact Us
-          </p> */}
         </div>
 
         <button className={!show ? styles._menuBurguer : styles._closedMenu} onClick={handleShowMenu}>

@@ -37,10 +37,11 @@
 }
 
 ._title {
- 
+
   font-size: $helvetica90;
   color: $white;
   font-family: $helvetica;
+
   & span {
     color: $heliotrope;
     font-size: $helvetica90;
@@ -89,7 +90,7 @@
     width: 100%;
     text-align: center;
     margin-top: 2rem;
-    font-size: $helvetica40
+    font-size: $helvetica40;
 
     & span {
       font-size: $helvetica40

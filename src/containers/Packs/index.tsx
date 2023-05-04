@@ -25,6 +25,7 @@ const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
           slidesToScroll: 1,
           infinite: false,
           dots: false,
+          arrows: false
         },
       },
     ],
