@@ -7,7 +7,7 @@ import behance from '../../../public/resources/behance.svg';
 import linkeind from '../../../public/resources/linkedin.svg';
 import instagram from '../../../public/resources/instagram.svg';
 
-const Navbar = () => {
+const Footer = () => {
   return (
     <div className={styles._content}>
       <div className={styles._imageContainer}>
@@ -51,4 +51,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Footer;

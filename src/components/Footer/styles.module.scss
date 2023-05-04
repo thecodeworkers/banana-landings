@@ -1,12 +1,13 @@
 @import '../../../public/styles/index.scss';
 
 ._content {
-    background-color: $heliotrope;
-    width: 100%;
+    background-color: $black;
+    width: 100vw;
     height: 4.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 ._imageContainer {
@@ -68,32 +69,34 @@
     }
 
     ._imageBoxResponsive {
-        
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 1rem;
-    padding-bottom: 0.5rem;
-        
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1rem;
+        padding-bottom: 0.5rem;
+
     }
 
     ._imageBoxTwoResponsive {
 
         display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 1rem;
-    padding-bottom: 0.5rem;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1rem;
+        padding-bottom: 0.5rem;
     }
+
     ._imageBox {
         display: none;
-        
+
     }
 
     ._imageBoxTwo {
         display: none;
     }
-    ._iconsContainer{
+
+    ._iconsContainer {
         padding-right: 1rem;
     }
 

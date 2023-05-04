@@ -41,7 +41,6 @@ export default function Home({ data }: any) {
         <Portfolio {...data?.portfolio} ref={portfolioRef} />
         <Contact ref={contactRef} />
       </main>
-      <Footer />
     </>
   );
 }

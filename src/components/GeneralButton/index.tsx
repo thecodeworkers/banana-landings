@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 
 type Props = {
   text: string;
-  method?: () => {};
+  method?: any;
 };
 
 const GeneralButton: FC<Props> = ({ text, method }) => {

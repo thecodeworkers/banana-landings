@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 10rem;
+  margin-bottom: 12rem;
 }
 
 ._content {
@@ -19,13 +20,13 @@
 ._imageContainer {
   margin: 1rem 0.5rem 4rem 0;
   flex-direction: column;
-  width: 49% ;
- 
+  width: 49%;
+
   cursor: pointer;
- 
+
 }
 
-._imageLeftContent{
+._imageLeftContent {
   height: 45vh;
   position: relative;
 }
@@ -34,24 +35,25 @@
   margin: 1rem 0.5rem 4rem 0;
   position: relative;
   flex-direction: column;
-  width: 49% ;
+  width: 49%;
   margin-left: 1%;
   cursor: pointer;
 }
 
-._imageRightContent{
+._imageRightContent {
   height: 45vh;
   position: relative;
 }
 
 ._imageBox {
-  margin:0 4rem;
+  margin: 0 4rem;
   height: 100%;
   position: relative;
 }
 
 ._imageHoverBox {
-   opacity: 0;
+  opacity: 0;
+
   &:hover {
     transition: all 0.5s;
     opacity: 1;
@@ -89,8 +91,8 @@
   display: none;
 }
 
-._logoContainer{
-  
+._logoContainer {
+
   height: 100%;
 }
 
@@ -101,19 +103,22 @@
 
   }
 
-  ._imageLeftContainer, ._imageRightContainer{
+  ._imageLeftContainer,
+  ._imageRightContainer {
     width: 100%;
-   margin:1rem 0 1rem 0
+    margin: 1rem 0 1rem 0
   }
 
-  ._imageLeftContent, ._imageRightContent {
+  ._imageLeftContent,
+  ._imageRightContent {
     height: 25vh;
   }
 
-  ._text{
+  ._text {
     font-size: $pixel16
   }
-  ._emptyText{
+
+  ._emptyText {
     font-size: $pixel16;
   }
 

@@ -5,14 +5,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 15% 4rem 15%;
-    width: 70%;
-   
+    margin: 0 auto;
+    max-width: 1200px;
+
 }
-  
+
 @include responsive(lg) {
-    ._main{
+    ._main {
         width: 95%;
         margin: 0 2.5% 4rem 2.5%;
     }
-  }
+}
