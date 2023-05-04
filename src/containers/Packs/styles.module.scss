@@ -9,7 +9,7 @@
 }
 
 ._title {
-  font-size: 5.625rem;
+  font-size: $helvetica90;
   color: $white;
   text-align: center;
   font-family: $helvetica;
@@ -19,7 +19,7 @@
 ._packTitle {
   font-family: $editorial;
   color: $white;
-  font-size: 1.875rem;
+  font-size: $editorial30;
   text-align: center;
   margin-top: 2rem;
 }
@@ -28,7 +28,7 @@
   font-family: $editorial;
   color: $white;
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: $editorial24;
   margin-top: 0.5rem;
   text-align: center;
 }
@@ -70,7 +70,6 @@
 
 ._packagesTextContent {
   display: flex;
-
   justify-content: space-between;
   flex-direction: column;
 
@@ -87,7 +86,7 @@
 ._text {
   color: $white;
   font-family: $helvetica;
-  font-size: 1rem;
+  font-size: $helvetica16;
   margin: 1rem 0 1rem 0.5rem;
   width: 100%;
 }
@@ -113,7 +112,19 @@
 }
 
 @include responsive(lg) {
-
+  ._title{
+    font-size: $helvetica40;
+  }
+  ._packTitle{
+    font-size: $editorial24;
+  }
+  ._packSubTitle{
+    font-size: $editorial16;
+  }
+  ._text{
+    font-size: $helvetica12;
+  }
+  
   ._main,
   ._packages,
   ._packages>*,

@@ -82,21 +82,21 @@
 }
 
 ._leftTitle {
-  font-size: 2.5rem;
+  font-size: $helvetica36;
   font-family: $helvetica;
   color: $heliotrope;
   margin-bottom: 1rem;
 }
 
 ._rightTitle {
-  font-size: 2.5rem;
+  font-size: $helvetica36;
   font-family: $helvetica;
   color: $apple;
   margin-bottom: 1rem;
 }
 
 ._text {
-  font-size: 1.875rem;
+  font-size: $helvetica25;
   margin: 0.5rem;
   font-family: $helvetica;
   color: $white;
@@ -178,13 +178,13 @@
   
   }
   ._leftTitle{
-    font-size: 1.50rem;
+    font-size: $helvetica20
   }
   ._rightTitle{
-    font-size: 1.50rem;
+    font-size: $helvetica20
   }
   ._text{
-    font-size: 1.25rem;
+    font-size: $helvetica16
   }
 
   ._leftContainerResponsive{

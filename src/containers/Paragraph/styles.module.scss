@@ -14,14 +14,14 @@
 ._paragraph {
   color: $white;
   font-family: $helvetica;
-  font-size: 2.5rem;
+  font-size: $helvetica36;
   text-align: center;
 }
 
 @include responsive(lg) {
   
   ._paragraph{
-    font-size: 1.25rem;
+    font-size: $helvetica16;
     text-align: center;
     width: 90%;
     margin: 5rem auto 0 auto;

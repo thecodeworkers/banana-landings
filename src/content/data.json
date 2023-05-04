@@ -1,5 +1,8 @@
 {
   "TECH": {
+    "colors": {
+      "black": "red"
+    },
     "navbar": {
       "routes": [
         { "name": "About Us", "ref": "aboutUs" },

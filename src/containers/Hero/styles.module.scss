@@ -37,21 +37,19 @@
 }
 
 ._title {
-  // font-size: 7rem;
-  font-size: 5.625rem;
+ 
+  font-size: $helvetica90;
   color: $white;
   font-family: $helvetica;
-  // width: 580px;
-
   & span {
     color: $heliotrope;
-    font-size: inherit;
+    font-size: $helvetica90;
     font-family: $helvetica;
   }
 }
 
 ._text {
-  font-size: 1.875rem;
+  font-size: $helvetica24;
   color: $white;
   margin-top: 1rem;
   font-family: $helvetica;
@@ -61,7 +59,6 @@
 ._buttonContainer {
   margin-top: 2rem;
 }
-
 
 
 @include responsive(lg) {
@@ -92,17 +89,17 @@
     width: 100%;
     text-align: center;
     margin-top: 2rem;
-    font-size: 3rem;
+    font-size: $helvetica40
 
     & span {
-      font-size: 3rem
+      font-size: $helvetica40
     }
   }
 
   ._text {
     width: 100%;
     text-align: center;
-    font-size: 1rem
+    font-size: $helvetica16
   }
 
   ._buttonContainer {
