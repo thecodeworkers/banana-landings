@@ -32,13 +32,13 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
   };
 
   const toForm = () => {
-    animateForm(form.current, {left: 0}, {duration: .5, ease: 'linear'})
-    animateProject(haveProject.current, {left: '-100vw'}, {duration: .5, ease: 'linear'})
+    animateForm(form.current, {left: 0}, {duration: .75, ease: 'linear', type: "spring"})
+    animateProject(haveProject.current, {left: '-100vw'}, {duration: .75, ease: 'linear', type: "spring"})
   }
 
   const toHaveProject = () => {
-    animateForm(form.current, {left: '100vw'}, {duration: .5, ease: 'linear'})
-    animateProject(haveProject.current, {left: 0}, {duration: .5, ease: 'linear'})
+    animateForm(form.current, {left: '100vw'}, {duration: .75, ease: 'linear', type: "spring"})
+    animateProject(haveProject.current, {left: 0}, {duration: .75, ease: 'linear', type: "spring"})
   }
 
   return (
