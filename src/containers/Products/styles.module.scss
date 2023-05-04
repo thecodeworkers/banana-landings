@@ -13,6 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 ._contentResponsive{
@@ -24,7 +25,8 @@
 }
 
 ._image{
-  margin: 1rem 0.5rem;
+  margin: 1.5rem 0;
+  flex-basis:16.6%;
   filter: grayscale(1);
   &:hover {
     transition: all 0.5s;
@@ -33,11 +35,14 @@
 }
 
 @include responsive(lg) {
+
   ._contentResponsive{
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
   }
   ._contentResponsiveCenter{
     display: flex;
@@ -46,10 +51,10 @@
     width: 100%;
   }
 
-  
+  ._image{
+    margin: 0 2rem 0 0;
+  }
   ._content{
     display: none;
   }
 }
-
-

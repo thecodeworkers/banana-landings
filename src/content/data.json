@@ -1,5 +1,15 @@
 {
   "TECH": {
+    "navbar": {
+      "routes": [
+        { "name": "About Us", "ref": "aboutUs" },
+        { "name": "What we do?", "ref": "services" },
+        { "name": "Packs", "ref": "packs" },
+        { "name": "Technologies", "ref": "products" },
+        { "name": "Briefcase", "ref": "portfolio" },
+        { "name": "Contact Us", "ref": "contact" }
+      ]
+    },
     "hero": {
       "title": "WE HELP YOU BOOST YOUR",
       "bold": "BUSSINES",
@@ -159,16 +169,58 @@
         }
       ]
     },
-    "products": "",
-    "portfolio": [
-      {
-        "name": "Puntu",
-        "image": "/portfolio/puntu.svg",
-        "hoverImage": "/portfolio/puntu-hover.gif",
-        "link": "https://puntu.io",
-        "backgroundColor": "#E6427A"
-      }
-    ]
+    "products": {
+      "logos": [
+        { "image": "/resources/technologies/js.svg", "alt": "js" },
+        { "image": "/resources/technologies/py.svg", "alt": "py" },
+        { "image": "/resources/technologies/tail.svg", "alt": "tail" },
+        { "image": "/resources/technologies/go.svg", "alt": "go" },
+        { "image": "/resources/technologies/sass.svg", "alt": "sass" },
+        { "image": "/resources/technologies/gsap.svg", "alt": "gasp" },
+        { "image": "", "alt": "" },
+        { "image": "/resources/technologies/figma.svg", "alt": "figma" },
+        { "image": "/resources/technologies/ps.svg", "alt": "ps" },
+        { "image": "/resources/technologies/ai.svg", "alt": "ai" },
+        { "image": "/resources/technologies/xd.svg", "alt": "xd" },
+        { "image": "", "alt": "" }
+      ]
+    },
+    "portfolio": {
+      "projects": [
+        {
+          "name": "Puntu - Finance Platform",
+          "image": "/resources/portfolio/puntu.svg",
+          "alt": "puntu",
+          "hoverImage": "/resources/portfolio/puntu-hover.gif",
+          "link": "https://puntu.io",
+          "backgroundColor": "#E6427A"
+        },
+        {
+          "name": "Vippo - Finance Platform",
+          "image": "/resources/portfolio/vippo.svg",
+          "alt": "vippo",
+          "hoverImage": "/resources/portfolio/vippo-hover.gif",
+          "link": "https://play.google.com/store/search?q=vippo&c=apps&hl=es_VE&gl=US",
+          "backgroundColor": "#A5BC51"
+        },
+        {
+          "name": "Pix - Crypto Wallet",
+          "image": "/resources/portfolio/pix.svg",
+          "alt": "pix",
+          "hoverImage": "/resources/portfolio/puntu-hover.gif",
+          "link": "https://main--cool-sfogliatella-bfdf8f.netlify.app/",
+          "backgroundColor": "#57D6AF"
+        },
+        {
+          "name": "empty",
+          "image": "",
+          "alt": "",
+          "hoverImage": "",
+          "link": "",
+          "backgroundColor": "gray"
+        }
+      ]
+    }
   },
   "BRAND": {
     "hero": {

@@ -3,9 +3,9 @@ import React, { FC, useState } from 'react';
 import { scrolling } from '../../utils/common';
 import styles from './styles.module.scss';
 import logo from '../../../public/resources/logo.svg';
-import { Icon } from '@iconify/react';
 
 type Props = {
+  data: any;
   refs: {
     aboutUs: any;
     services: any;
@@ -17,9 +17,9 @@ type Props = {
 };
 
 type Option = {
-  name: string
-  scrollTo: string
-}
+  name: string;
+  scrollTo: string;
+};
 
 type ScrollOption = {
   aboutUs: any;
@@ -28,10 +28,9 @@ type ScrollOption = {
   portfolio: any;
   contact: any;
   packs: any;
-}
+};
 
-const Navbar: FC<Props> = ({ refs }) => {
-
+const Navbar: FC<Props> = ({ data, refs }) => {
   const [show, setShow] = useState<boolean>(false);
   const options: Option[] = [
     { name: 'About Us', scrollTo: 'aboutUs' },
@@ -53,13 +52,15 @@ const Navbar: FC<Props> = ({ refs }) => {
         <div className={styles._imageBoxResponsive}>
           <Image src={logo} alt={'Banana Tech'} width={150} height={26} quality={100} />
         </div>
-   
-        <div className={styles._textBox}>
-          <p className={styles._text} onClick={() => scrolling(refs.aboutUs)}>
-            About Us
-          </p>
 
-          <p className={styles._text} onClick={() => scrolling(refs.services)}>
+        <div className={styles._textBox}>
+          {data?.routes?.map((route: any, index: number | string) => (
+            <p key={index} className={styles._text} onClick={() => scrolling(route?.ref)}>
+              {route?.name}
+            </p>
+          ))}
+
+          {/* <p className={styles._text} onClick={() => scrolling(refs.services)}>
             What we do?
           </p>
           <p className={styles._text} onClick={() => scrolling(refs.packs)}>
@@ -73,7 +74,7 @@ const Navbar: FC<Props> = ({ refs }) => {
           </p>
           <p className={styles._text} onClick={() => scrolling(refs.contact)}>
             Contact Us
-          </p>
+          </p> */}
         </div>
 
         <button className={!show ? styles._menuBurguer : styles._closedMenu} onClick={handleShowMenu}>
@@ -82,23 +83,22 @@ const Navbar: FC<Props> = ({ refs }) => {
           <div></div>
         </button>
 
-        {
-          show && (
-            <div className={styles._menu}>
-            {options.map(({name, scrollTo}: Option, index) => (
+        {show && (
+          <div className={styles._menu}>
+            {options.map(({ name, scrollTo }: Option, index) => (
               <div key={index} className={styles._textContainer}>
-                <p className={styles._text} onClick={() => {
-                  scrolling(refs[scrollTo as keyof ScrollOption])
-                  setShow(false)
+                <p
+                  className={styles._text}
+                  onClick={() => {
+                    scrolling(refs[scrollTo as keyof ScrollOption]);
+                    setShow(false);
                   }}>
                   {name}
                 </p>
               </div>
             ))}
           </div>
-          )
-        }
-    
+        )}
       </div>
     </>
   );

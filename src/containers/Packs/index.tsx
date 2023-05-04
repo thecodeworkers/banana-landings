@@ -33,7 +33,7 @@ const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
   return (
     <div ref={ref} className={styles._main}>
       <FadeIn>
-        <p className={styles._title}>{props?.packs?.title}</p>
+        <p className={styles._title}>{props?.title}</p>
         <div className={styles._packages}>
           <Slider {...settings}>
             {props?.packsContent?.map((pack: any, index: number) => (
@@ -59,7 +59,7 @@ const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
                   </div>
                   <div className={styles._buttonMainContainer}>
                     <div className={styles._buttonContainer}>
-                      <GeneralButton text={props?.buttonText} />
+                      <GeneralButton text={pack?.buttonText} />
                     </div>
                   </div>
                 </div>

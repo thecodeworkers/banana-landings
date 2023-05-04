@@ -27,7 +27,7 @@ export default function Home({ data }: any) {
 
   return (
     <>
-      <Navbar refs={refs} />
+      <Navbar data={data?.navbar} refs={refs} />
 
       <main className={styles._main}>
         <Hero data={data?.hero} />
@@ -37,8 +37,8 @@ export default function Home({ data }: any) {
         <Paragraph data={data?.secondParagraph} />
         <Services {...data?.services} ref={servicesRef} />
         <Packs {...data?.packs} ref={packsRef} />
-        <Products ref={productsRef} />
-        <Portfolio ref={portfolioRef} />
+        <Products {...data?.products} ref={productsRef} />
+        <Portfolio {...data?.portfolio} ref={portfolioRef} />
         <Contact ref={contactRef} />
       </main>
       <Footer />
