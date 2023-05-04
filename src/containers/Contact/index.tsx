@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 import { FormikConfig } from './formik';
 import { FadeIn, Footer, GeneralButton, GeneralInput } from '@/components';
 import { motion, useAnimate, Variants } from 'framer-motion';
+import { Icon } from '@iconify/react';
 
 const Contact = forwardRef<HTMLDivElement>((props, ref) => {
   const handleSubmit = (formValues: any) => {
@@ -60,7 +61,7 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
         <div ref={form} className={styles._animationFormWrapper}>
           <div className={styles._formWrapper}>
             <div className={styles._textBox}>
-              <p className={styles._text} onClick={toHaveProject}>Go Back</p>
+              <p className={styles._goBack} onClick={toHaveProject}><Icon icon='mdi:arrow-left' width={22} />Go Back</p>
               <p className={styles._title}>LETS GET IN TOUCH</p>
               <p className={styles._text}>Avenida Eugenio Mendoza</p>
               <p className={styles._text}>Torre IASA, Piso 8 Oficina 802-A</p>
