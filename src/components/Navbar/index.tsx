@@ -55,7 +55,7 @@ const Navbar: FC<Props> = ({ data, refs }) => {
 
         <div className={styles._textBox}>
           {data?.routes?.map((route: any, index: number | string) => (
-            <p key={index} className={styles._text} onClick={() => scrolling(route?.ref)}>
+            <p key={index} className={styles._text} onClick={() => scrolling(refs[route?.ref as keyof ScrollOption])}>
               {route?.name}
             </p>
           ))}
