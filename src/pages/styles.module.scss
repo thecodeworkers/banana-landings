@@ -7,7 +7,7 @@
     align-items: center;
     margin: 0 auto;
     max-width: $max-width;
-    overflow-x:hidden
+    overflow:hidden;
 }
 
 @include responsive(lg) {

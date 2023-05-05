@@ -77,7 +77,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
           </div>
         </div>
         {/* Form */}
-        <div ref={form} className={styles._animationFormWrapper}>
+        {/* <div ref={form} className={styles._animationFormWrapper}>
           <div className={styles._formWrapper}>
             <div className={styles._textBox}>
               <p className={styles._goBack} onClick={toHaveProject}>
@@ -124,7 +124,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
