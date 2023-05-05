@@ -6,7 +6,7 @@ const FadeIn = ({ className, children }: any) => {
   const fadeInAnimation: Variants = {
     hide: {
       opacity: 0,
-      y: 35
+      y: 35,
     },
     show: {
       opacity: 1,
@@ -17,7 +17,13 @@ const FadeIn = ({ className, children }: any) => {
     },
   };
   return (
-    <motion.div className={className} style={{maxWidth: '100%'}} initial='hide' whileInView='show' variants={fadeInAnimation} viewport={{ once: true }}>
+    <motion.div
+      className={className}
+      style={{ maxWidth: '100%' }}
+      initial='hide'
+      whileInView='show'
+      variants={fadeInAnimation}
+      viewport={{ once: true }}>
       {children}
     </motion.div>
   );

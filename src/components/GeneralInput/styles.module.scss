@@ -19,7 +19,9 @@
     width: 100%;
     color: $white;
     font-size: 0.875rem;
+    margin-bottom: 1rem;
     &::placeholder {
-        color: $white;  
+        color: $white; 
+      
     }
 }

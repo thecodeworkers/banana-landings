@@ -43,6 +43,14 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
     animateProject(haveProject.current, { left: 0 }, { duration: 0.75, ease: 'linear', type: 'spring' });
   };
 
+  type FormType = {
+    key: 'company' | 'email' | 'subject';
+    name: string;
+  };
+  type ErrorType = {
+    key: 'company' | 'email' | 'subject';
+  };
+
   return (
     <div ref={ref} className={styles._main}>
       <FadeIn className={styles._content}>
@@ -52,11 +60,20 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
             <div className={styles._haveProject}>
               <p className={styles._haveProjectText}>{props?.gotTitle}</p>
               <div className={styles._haveProjectButtons}>
-                <GeneralButton text={props?.touchButton} method={toForm} />
-                <GeneralButton text={props?.callButton} />
+                <div className={styles._button}>
+                  <GeneralButton text={props?.touchButton} method={toForm} />
+                </div>
+                <div className={styles._button}>
+                  <GeneralButton text={props?.callButton} />
+                </div>
               </div>
             </div>
-            <Footer media={props?.media} phone={props?.phone} copyright={props?.copyright} />
+            <Footer
+              media={props?.media}
+              phone={props?.phone}
+              copyright={props?.copyright}
+              mediaText={props?.mediaText}
+            />
           </div>
         </div>
         {/* Form */}
@@ -74,52 +91,34 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
                 </p>
               ))}
             </div>
+
             <div className={styles._formContainer}>
               <form className={styles._form} onSubmit={formikSubmit}>
-                {props?.form?.map((field: any, index: number | string) => (
+                {props?.form?.map((field: FormType, index: number | string) => (
                   <div key={index} className={styles._input}>
                     <GeneralInput
                       name={field?.key}
                       id={field?.key}
-                      value={`${values}.${field?.key}`}
+                      value={values[field.key]}
                       onChange={handleChange}
                       onFocus={() => handleOnTouched(field?.key)}
                       placeholder={field?.name}
-                      error={`${errors}.${field?.key}` && `${touched}.${field?.key}` ? true : false}
-                      errorMessage={`${errors}.${field?.key}`}
+                      error={errors[field.key] && touched[field.key] ? true : false}
+                      errorMessage={errors[field.key]}
                     />
                   </div>
                 ))}
-
-                <div className={styles._input}>
-                  <GeneralInput
-                    name={'email'}
-                    id={'email'}
-                    value={values?.email}
-                    onFocus={() => handleOnTouched('email')}
-                    placeholder={'Email*'}
-                    onChange={handleChange}
-                    error={errors.email && touched.email ? true : false}
-                    errorMessage={errors?.email}
-                  />
-                </div>
-                <div className={styles._input}>
-                  <GeneralInput
-                    name={'subject'}
-                    id={'subject'}
-                    value={values?.subject}
-                    placeholder={'Subject*'}
-                    onFocus={() => handleOnTouched('subject')}
-                    onChange={handleChange}
-                    error={errors.subject && touched.subject ? true : false}
-                    errorMessage={errors?.subject}
-                  />
-                </div>
 
                 <div className={styles._buttonContainer}>
                   <GeneralButton text={props?.sendButton} />
                 </div>
               </form>
+
+              {props?.address?.map((address: any, index: number | string) => (
+                <p key={index} className={styles._textResponsive}>
+                  {address}
+                </p>
+              ))}
             </div>
           </div>
         </div>

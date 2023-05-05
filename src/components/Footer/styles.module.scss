@@ -14,22 +14,31 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 2rem;
 }
 
 ._textContainer {
-    padding-left: 2rem;
+  
     padding-bottom: 0.5rem;
 }
 
 
 
+._mediaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+}
+
 ._iconsContainer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
-    padding-right: 2rem;
+   margin-top: 1rem;
 }
+
 
 ._icon {
     margin: 0 0.5rem 0 0.5rem;
@@ -40,13 +49,7 @@
     }
 }
 
-._imageBoxResponsive {
-    display: none;
-}
 
-._imageBoxTwoResponsive {
-    display: none;
-}
 
 ._text{
     color: $white;
@@ -54,44 +57,26 @@
 }
 
 @include responsive(lg) {
-    ._imageBox {
-        padding-left: 1rem;
-    }
-
-    ._imageBoxTwo {
-        padding-left: 1rem;
-    }
-
-    ._imageBoxResponsive {
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 1rem;
-        padding-bottom: 0.5rem;
-
-    }
-
-    ._imageBoxTwoResponsive {
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 1rem;
-        padding-bottom: 0.5rem;
-    }
-
-    ._imageBox {
-        display: none;
-
-    }
-
-    ._imageBoxTwo {
-        display: none;
-    }
+   
 
     ._iconsContainer {
         padding-right: 1rem;
+    }
+    ._textBox{
+       align-items: center;
+       padding-left: 0;
+    }
+
+    ._text{
+        font-size: $helvetica14;
+        text-align: center;
+    }
+    ._content{
+        flex-direction: column;
+        height: 0;
+    }
+    ._mediaContainer{
+        padding-right: 0;
     }
 
 }
