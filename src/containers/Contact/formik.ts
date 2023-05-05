@@ -10,7 +10,6 @@ export const FormikConfig = (handleSubmit: any) =>
       company: '',
       email: '',
       subject: '',
-      message: '',
     },
 
     validationSchema: Yup.object({
@@ -22,10 +21,6 @@ export const FormikConfig = (handleSubmit: any) =>
         .required('Campo requerido')
         .matches(emailRegex, 'Ingrese un formato válido, por ejemplo email@gmail.com'),
       subject: Yup.string()
-        .required('Campo requerido')
-        .min(3, `Este campo debe poseer un minimo de ${3} caracteres `)
-        .max(255, `Este campo no debe tener más de ${255} caracteres`),
-      message: Yup.string()
         .required('Campo requerido')
         .min(3, `Este campo debe poseer un minimo de ${3} caracteres `)
         .max(255, `Este campo no debe tener más de ${255} caracteres`),

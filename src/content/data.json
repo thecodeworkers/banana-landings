@@ -1,7 +1,7 @@
 {
   "TECH": {
-    "colors": {
-      "black": "red"
+    "general": {
+      "phone": "+58 (424) XXXXXXX"
     },
     "navbar": {
       "routes": [
@@ -223,8 +223,42 @@
           "backgroundColor": "gray"
         }
       ]
+    },
+    "contactUs": {
+      "address": ["Avenida Eugenio Mendoza", "Torre IASA, Piso 8 Oficina 802-A", "La Castellana, Caracas, Venezuela"],
+      "copyright": "Copyright © BananaCreative 2023",
+      "touchButton": "Get in touch",
+      "callButton": "Book a Call",
+      "sendButton": "Send",
+      "gotTitle": "GOT A PROJECT?",
+      "mediaText": "You can follow us at:",
+      "contactTitle": "LET’S GET IN TOUCH",
+      "goBackText": "Go Back",
+      "form": [
+        { "name": "Company o Startup*", "key": "company" },
+        { "name": "Email*", "key": "email" },
+        { "name": "Message*", "key": "message" }
+      ],
+      "media": [
+        {
+          "image": "/resources/behance.svg",
+          "alt": "behance",
+          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users%7Cbanana+creative"
+        },
+        {
+          "image": "/resources/instagram.svg",
+          "alt": "instagram",
+          "link": "https://www.instagram.com/_bananacreative/"
+        },
+        {
+          "image": "/resources/linkedin.svg",
+          "alt": "linkein",
+          "link": "https://www.linkedin.com/company/bananacreative/mycompany/"
+        }
+      ]
     }
   },
+
   "BRAND": {
     "hero": {
       "title": "WE HELP YOU SHAPE YOUR",
