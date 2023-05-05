@@ -21,9 +21,7 @@
   margin: 1rem 0.5rem 4rem 0;
   flex-direction: column;
   width: 49%;
-
   cursor: pointer;
-
 }
 
 ._imageLeftContent {
@@ -31,14 +29,7 @@
   position: relative;
 }
 
-._imageRightContainer {
-  margin: 1rem 0.5rem 4rem 0;
-  position: relative;
-  flex-direction: column;
-  width: 49%;
-  margin-left: 1%;
-  cursor: pointer;
-}
+
 
 ._imageRightContent {
   height: 45vh;
@@ -64,7 +55,7 @@
   color: $white;
   font-size: $pixel;
   margin-bottom: 1rem;
-  font-family: $pixel20;
+  font-family: $pixel;
 }
 
 ._emptyText {
@@ -83,16 +74,7 @@
 }
 
 
-._imageLeftContainerResponsive {
-  display: none;
-}
-
-._imageRightContainerResponsive {
-  display: none;
-}
-
 ._logoContainer {
-
   height: 100%;
 }
 
@@ -100,14 +82,14 @@
   ._content {
     flex-direction: column;
     justify-content: center;
-
   }
 
-  ._imageLeftContainer,
-  ._imageRightContainer {
-    width: 100%;
-    margin: 1rem 0 1rem 0
+  ._imageContainer{
+    width: 98%;
+    margin: 1rem  0.5rem;
+    background-color: red;
   }
+
 
   ._imageLeftContent,
   ._imageRightContent {

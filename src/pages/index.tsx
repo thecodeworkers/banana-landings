@@ -39,7 +39,7 @@ export default function Home({ data }: any) {
         <Packs {...data?.packs} ref={packsRef} />
         <Products {...data?.products} ref={productsRef} />
         <Portfolio {...data?.portfolio} ref={portfolioRef} />
-        <Contact ref={contactRef} />
+        <Contact {...data?.contactUs} {...data?.general} ref={contactRef} />
       </main>
     </>
   );

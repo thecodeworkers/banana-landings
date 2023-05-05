@@ -5,17 +5,19 @@ import { FadeIn, Footer, GeneralButton, GeneralInput } from '@/components';
 import { motion, useAnimate, Variants } from 'framer-motion';
 import { Icon } from '@iconify/react';
 
-const Contact = forwardRef<HTMLDivElement>((props, ref) => {
+const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
+  console.log({ props });
+
   const handleSubmit = (formValues: any) => {
     console.log(formValues);
     window.open(
-      `https://api.whatsapp.com/send?phone=+584126350200&text=!Hi team Banana! I would like more information about your products and services, I have attached my contact information. Company: ${formValues?.company} , Email: ${formValues?.email} , Subject: ${formValues?.subject} , Message: ${formValues?.message}`,
+      `https://api.whatsapp.com/send?phone=+584126350200&text=!Hi team Banana! I would like more information about your products and services, I have attached my contact information. Company: ${formValues?.company} , Email: ${formValues?.email} , Subject: ${formValues?.subject}`,
     );
     resetForm();
   };
 
-  const [form, animateForm] = useAnimate()
-  const [haveProject, animateProject] = useAnimate()
+  const [form, animateForm] = useAnimate();
+  const [haveProject, animateProject] = useAnimate();
 
   const {
     values,
@@ -32,14 +34,14 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
   };
 
   const toForm = () => {
-    animateForm(form.current, {left: 0}, {duration: .75, ease: 'linear', type: "spring"})
-    animateProject(haveProject.current, {left: '-100vw'}, {duration: .75, ease: 'linear', type: "spring"})
-  }
+    animateForm(form.current, { left: 0 }, { duration: 0.75, ease: 'linear', type: 'spring' });
+    animateProject(haveProject.current, { left: '-100vw' }, { duration: 0.75, ease: 'linear', type: 'spring' });
+  };
 
   const toHaveProject = () => {
-    animateForm(form.current, {left: '100vw'}, {duration: .75, ease: 'linear', type: "spring"})
-    animateProject(haveProject.current, {left: 0}, {duration: .75, ease: 'linear', type: "spring"})
-  }
+    animateForm(form.current, { left: '100vw' }, { duration: 0.75, ease: 'linear', type: 'spring' });
+    animateProject(haveProject.current, { left: 0 }, { duration: 0.75, ease: 'linear', type: 'spring' });
+  };
 
   return (
     <div ref={ref} className={styles._main}>
@@ -48,41 +50,46 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
         <div ref={haveProject} className={styles._animationHaveProjectWrapper}>
           <div className={styles._haveProjectWrapper}>
             <div className={styles._haveProject}>
-              <p className={styles._haveProjectText}>GOT A PROJECT?</p>
+              <p className={styles._haveProjectText}>{props?.gotTitle}</p>
               <div className={styles._haveProjectButtons}>
-                <GeneralButton text={'Get in touch'} method={toForm} />
-                <GeneralButton text={'Book a Call'} />
+                <GeneralButton text={props?.touchButton} method={toForm} />
+                <GeneralButton text={props?.callButton} />
               </div>
             </div>
-            <Footer />
+            <Footer media={props?.media} phone={props?.phone} copyright={props?.copyright} />
           </div>
         </div>
         {/* Form */}
         <div ref={form} className={styles._animationFormWrapper}>
           <div className={styles._formWrapper}>
             <div className={styles._textBox}>
-              <p className={styles._goBack} onClick={toHaveProject}><Icon icon='mdi:arrow-left' width={22} />Go Back</p>
-              <p className={styles._title}>LETS GET IN TOUCH</p>
-              <p className={styles._text}>Avenida Eugenio Mendoza</p>
-              <p className={styles._text}>Torre IASA, Piso 8 Oficina 802-A</p>
-              <p className={styles._text}>La Castellana, Caracas, Venezuela</p>
-              <p className={styles._text}>+1 (786) 819-1151</p>
-              <p className={styles._text}>+58 412-6350200</p>
+              <p className={styles._goBack} onClick={toHaveProject}>
+                <Icon icon='mdi:arrow-left' width={22} />
+                {props?.goBackText}
+              </p>
+              <p className={styles._title}>{props?.contactTitle}</p>
+              {props?.address?.map((address: any, index: number | string) => (
+                <p key={index} className={styles._text}>
+                  {address}
+                </p>
+              ))}
             </div>
             <div className={styles._formContainer}>
               <form className={styles._form} onSubmit={formikSubmit}>
-                <div className={styles._input}>
-                  <GeneralInput
-                    name={'company'}
-                    id={'company'}
-                    value={values?.company}
-                    onChange={handleChange}
-                    onFocus={() => handleOnTouched('company')}
-                    placeholder={'Company o startup*'}
-                    error={errors.company && touched.company ? true : false}
-                    errorMessage={errors?.company}
-                  />
-                </div>
+                {props?.form?.map((field: any, index: number | string) => (
+                  <div key={index} className={styles._input}>
+                    <GeneralInput
+                      name={field?.key}
+                      id={field?.key}
+                      value={`${values}.${field?.key}`}
+                      onChange={handleChange}
+                      onFocus={() => handleOnTouched(field?.key)}
+                      placeholder={field?.name}
+                      error={`${errors}.${field?.key}` && `${touched}.${field?.key}` ? true : false}
+                      errorMessage={`${errors}.${field?.key}`}
+                    />
+                  </div>
+                ))}
 
                 <div className={styles._input}>
                   <GeneralInput
@@ -108,20 +115,9 @@ const Contact = forwardRef<HTMLDivElement>((props, ref) => {
                     errorMessage={errors?.subject}
                   />
                 </div>
-                <div className={styles._input}>
-                  <GeneralInput
-                    name={'message'}
-                    id={'message'}
-                    value={values?.message}
-                    placeholder={'Message*'}
-                    onFocus={() => handleOnTouched('message')}
-                    onChange={handleChange}
-                    error={errors.message && touched.message ? true : false}
-                    errorMessage={errors?.message}
-                  />
-                </div>
+
                 <div className={styles._buttonContainer}>
-                  <GeneralButton text={'Send'} />
+                  <GeneralButton text={props?.sendButton} />
                 </div>
               </form>
             </div>

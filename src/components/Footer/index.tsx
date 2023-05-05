@@ -7,45 +7,26 @@ import behance from '../../../public/resources/behance.svg';
 import linkeind from '../../../public/resources/linkedin.svg';
 import instagram from '../../../public/resources/instagram.svg';
 
-const Footer = () => {
+const Footer = ({ copyright, phone, media }: any) => {
   return (
     <div className={styles._content}>
-      <div className={styles._imageContainer}>
-        <div className={styles._imageBox}>
-          <Image src={bananaBy} alt={'bananaBy'} width={130} height={17} quality={100} />
+      <div className={styles._textBox}>
+        <div className={styles._textContainer}>
+          <p className={styles._text}>{phone}</p>
         </div>
 
-        <div className={styles._imageBoxTwo}>
-          <Image src={logo} alt={'Banana Tech'} width={173} height={17} quality={100} />
-        </div>
-        <div className={styles._imageBoxResponsive}>
-          <Image src={bananaBy} alt={'bananaBy'} width={90} height={17} quality={100} />
-        </div>
-
-        <div className={styles._imageBoxTwoResponsive}>
-          <Image src={logo} alt={'Banana Tech'} width={120} height={17} quality={100} />
+        <div className={styles._textContainer}>
+          <p className={styles._text}>{copyright}</p>
         </div>
       </div>
-
       <div className={styles._iconsContainer}>
-        <div className={styles._icon}>
-          <a href={'https://www.linkedin.com/company/bananacreative/mycompany/'} target='_blank' rel='noreferrer'>
-            <Image src={linkeind} alt={'linkeind'} width={19} height={19} quality={100} />
-          </a>
-        </div>
-        <div className={styles._icon}>
-          <a
-            href={'https://www.behance.net/Bananacreative?tracking_source=search_users%7Cbanana+creative'}
-            target='_blank'
-            rel='noreferrer'>
-            <Image src={behance} alt={'behance'} width={28} height={17} quality={100} />
-          </a>
-        </div>
-        <div className={styles._icon}>
-          <a href={'https://www.instagram.com/_bananacreative/'} target='_blank' rel='noreferrer'>
-            <Image src={instagram} alt={'instagram'} width={23} height={23} quality={100} />
-          </a>
-        </div>
+        {media?.map((media: any, index: number | string) => (
+          <div key={index} className={styles._icon}>
+            <a href={media?.link} target='_blank' rel='noreferrer'>
+              <Image src={media?.image} alt={media?.alt} width={19} height={19} quality={100} />
+            </a>
+          </div>
+        ))}
       </div>
     </div>
   );
