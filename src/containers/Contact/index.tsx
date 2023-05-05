@@ -53,7 +53,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
 
   return (
     <div ref={ref} className={styles._main}>
-      <FadeIn className={styles._content}>
+      <div className={styles._content}>
         {/* Have a Project */}
         <div ref={haveProject} className={styles._animationHaveProjectWrapper}>
           <div className={styles._haveProjectWrapper}>
@@ -85,11 +85,13 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
                 {props?.goBackText}
               </p>
               <p className={styles._title}>{props?.contactTitle}</p>
-              {props?.address?.map((address: any, index: number | string) => (
-                <p key={index} className={styles._text}>
-                  {address}
-                </p>
-              ))}
+              <div className={styles._textContainer}>
+                {props?.address?.map((address: any, index: number | string) => (
+                  <p key={index} className={styles._text}>
+                    {address}
+                  </p>
+                ))}
+              </div>
             </div>
 
             <div className={styles._formContainer}>
@@ -113,16 +115,17 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
                   <GeneralButton text={props?.sendButton} />
                 </div>
               </form>
-
-              {props?.address?.map((address: any, index: number | string) => (
-                <p key={index} className={styles._textResponsive}>
-                  {address}
-                </p>
-              ))}
+              <div>
+                {props?.address?.map((address: any, index: number | string) => (
+                  <p key={index} className={styles._textResponsive}>
+                    {address}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </FadeIn>
+      </div>
     </div>
   );
 });

@@ -2,7 +2,8 @@
 
 ._content {
     background-color: $black;
-    width: 100vw;
+    width: 100%;
+    max-width: $max-width;
     height: 4.25rem;
     display: flex;
     justify-content: space-between;
@@ -18,7 +19,6 @@
 }
 
 ._textContainer {
-  
     padding-bottom: 0.5rem;
 }
 

@@ -50,6 +50,10 @@
   width: 70%;
 }
 
+._textContainer{
+width: 100%;
+}
+
 ._goBack {
   display: flex;
   align-items: center;
@@ -117,9 +121,10 @@
 
 ._formWrapper {
   display: flex;
-  max-width: 1200px;
+  max-width: $max-width;
   margin: 0 auto;
   height: 100%;
+  margin-top: -2rem;
 }
 
 ._haveProjectText {
