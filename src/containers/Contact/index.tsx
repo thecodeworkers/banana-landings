@@ -8,11 +8,15 @@ import { Icon } from '@iconify/react';
 const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
   const handleSubmit = (formValues: any) => {
     window.open(
-      `https://api.whatsapp.com/send?phone=+584126350200&text=!Hi team Banana! I would like more information about your products and services, I have attached my contact information. Company: ${formValues?.company} , Email: ${formValues?.email} , Subject: ${formValues?.subject}`,
+      `https://api.whatsapp.com/send?phone=${props?.phone}&text=${props?.contactMessage} Company: ${formValues?.company} , Email: ${formValues?.email} , Subject: ${formValues?.subject}`,
     );
     resetForm();
   };
 
+  const bookACall = () => {
+    window.open(`https://api.whatsapp.com/send?phone=${props?.phone}&text=${props?.haveProjectMessage}`);
+    resetForm();
+  };
   const [form, animateForm] = useAnimate();
   const [haveProject, animateProject] = useAnimate();
 
@@ -58,7 +62,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
                   <GeneralButton text={props?.touchButton} method={toForm} />
                 </div>
                 <div className={styles._button}>
-                  <GeneralButton text={props?.callButton} />
+                  <GeneralButton method={() => bookACall()} text={props?.callButton} />
                 </div>
               </div>
             </div>
@@ -71,7 +75,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
           </div>
         </div>
         {/* Form */}
-        <div ref={form} className={styles._animationFormWrapper}>
+        {/* <div ref={form} className={styles._animationFormWrapper}>
           <div className={styles._formWrapper}>
             <div className={styles._textBox}>
               <p className={styles._goBack} onClick={toHaveProject}>
@@ -118,7 +122,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

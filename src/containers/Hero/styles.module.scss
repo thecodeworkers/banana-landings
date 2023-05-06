@@ -42,11 +42,12 @@
   font-size: $helvetica90;
   color: $white;
   font-family: $helvetica;
-
+  line-height: 1;
   & span {
     color: $heliotrope;
     font-size: $helvetica90;
     font-family: $helvetica;
+    line-height: 1;
   }
 }
 
@@ -55,7 +56,7 @@
   color: $white;
   margin-top: 1rem;
   font-family: $helvetica;
-  width: 50%;
+  width: 48%;
 }
 
 ._buttonContainer {

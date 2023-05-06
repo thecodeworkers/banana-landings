@@ -25,10 +25,14 @@ const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
           slidesToScroll: 1,
           infinite: false,
           dots: false,
-          arrows: false
+          arrows: false,
         },
       },
     ],
+  };
+
+  const bookACall = (pack: string) => {
+    window.open(`https://api.whatsapp.com/send?phone=${props?.phone}&text=${props?.packsMessage} "${pack}"`);
   };
 
   return (
@@ -60,7 +64,12 @@ const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
                   </div>
                   <div className={styles._buttonMainContainer}>
                     <div className={styles._buttonContainer}>
-                      <GeneralButton text={pack?.buttonText} />
+                      <GeneralButton
+                        method={() => {
+                          bookACall(pack?.title);
+                        }}
+                        text={pack?.buttonText}
+                      />
                     </div>
                   </div>
                 </div>

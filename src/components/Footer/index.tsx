@@ -21,7 +21,7 @@ const Footer = ({ copyright, phone, media, mediaText }: any) => {
           {media?.map((media: any, index: number | string) => (
             <div key={index} className={styles._icon}>
               <a href={media?.link} target='_blank' rel='noreferrer'>
-                <Image src={media?.image} alt={media?.alt} width={19} height={19} quality={100} />
+                <Image src={media?.image} alt={media?.alt} width={19} height={15} quality={100} />
               </a>
             </div>
           ))}

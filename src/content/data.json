@@ -1,7 +1,10 @@
 {
   "TECH": {
     "general": {
-      "phone": "+58 (424) XXXXXXX"
+      "phone": "+584126350200",
+      "contactMessage": "!Hi team Banana! I would like more information about your products and services, I have attached my contact information.",
+      "packsMessage": "!Hi team Banana! I would like more information about your product",
+      "haveProjectMessage": "!Hi team Banana! I would like more information about your products, i have a project"
     },
     "navbar": {
       "routes": [
@@ -253,6 +256,16 @@
         },
         {
           "image": "/resources/linkedin.svg",
+          "alt": "linkein",
+          "link": "https://www.linkedin.com/company/bananacreative/mycompany/"
+        },
+        {
+          "image": "/resources/tiktok.svg",
+          "alt": "tiktok",
+          "link": "https://twitter.com/_bananacreative?lang=es"
+        },
+        {
+          "image": "/resources/twitter.svg",
           "alt": "linkein",
           "link": "https://www.linkedin.com/company/bananacreative/mycompany/"
         }

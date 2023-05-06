@@ -12,7 +12,7 @@ const AboutUs = forwardRef<HTMLDivElement>((props: any, ref): any => {
             <Image src={props?.image} alt={props?.altImage} width={470} height={332} quality={100} />
           </div>
           <div className={styles._backgroundImageResponsive}>
-            <Image src={props?.image} alt={props?.altImage} width={400} height={300} quality={100} />
+            <Image src={props?.image} alt={props?.altImage} width={184} height={155} quality={100} />
           </div>
           <p className={styles._title}>
             {props?.firstTitle} <span className={styles._greenTitleFirst}>{props?.firstBold}</span>
