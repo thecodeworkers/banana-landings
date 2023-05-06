@@ -8,8 +8,11 @@ const Portfolio = forwardRef<HTMLDivElement>((props: any, ref) => {
     <div ref={ref} className={styles._main}>
       <FadeIn className={styles._content}>
         {props?.projects?.map((project: any, index: string | number) => (
-          <div key={index} className={styles._imageContainer}>
-            <a href={project?.link} target='_blank' rel='noreferrer'>
+          <div
+            key={index}
+            className={styles._imageContainer}
+            style={{ cursor: project?.link !== '' ? 'pointer' : 'inherit' }}>
+            <a href={project?.link !== '' ? project?.link : null} target='_blank' rel='noreferrer'>
               <p className={project?.name !== 'empty' ? styles._text : styles._emptyText}>{project?.name}</p>
 
               <div className={styles._imageLeftContent} style={{ backgroundColor: project?.backgroundColor }}>
