@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styles from './styles.module.scss';
 
 import { FadeIn } from '@/components';
 
-const Paragraph = ({ data }: any) => {
+const Paragraph = forwardRef<HTMLDivElement>((props: any, ref): any => {
   return (
-    <FadeIn className={styles._paragraphContainer}>
-      <p className={styles._paragraph}>
-        <b>{data?.bolded}</b> {data?.content}
-      </p>
-    </FadeIn>
+    <div ref={ref}>
+      <FadeIn className={styles._paragraphContainer}>
+        <p className={styles._paragraph}>
+          <b>{props?.bolded}</b> {props?.content}
+        </p>
+      </FadeIn>
+    </div>
   );
-};
+});
+
+Paragraph.displayName = 'Paragraph';
 
 export default Paragraph;

@@ -3,8 +3,9 @@ import React, { useRef, useEffect } from 'react';
 import styles from './styles.module.scss';
 import { GeneralButton } from '@/components/';
 import { motion, useAnimate, useInView } from 'framer-motion';
+import { scrolling } from '../../utils/common';
 
-const Hero = ({ data }: any) => {
+const Hero = ({ data, action }: any) => {
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope, { once: true });
 
@@ -23,7 +24,7 @@ const Hero = ({ data }: any) => {
           <p className={styles._text}>{data?.subtitle}</p>
 
           <div className={styles._buttonContainer}>
-            <GeneralButton text={data?.button} />
+            <GeneralButton method={() => scrolling(action)} text={data?.button} />
           </div>
         </div>
         <motion.div

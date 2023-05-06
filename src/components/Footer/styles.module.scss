@@ -22,8 +22,6 @@
     padding-bottom: 0.5rem;
 }
 
-
-
 ._mediaContainer {
     display: flex;
     flex-direction: column;
@@ -54,6 +52,8 @@
 ._text{
     color: $white;
     font-size: $helvetica16;
+    font-family: $helvetica;
+
 }
 
 @include responsive(lg) {

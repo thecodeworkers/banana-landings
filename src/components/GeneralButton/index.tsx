@@ -20,6 +20,7 @@ const GeneralButton: FC<Props> = ({ text, method }) => {
       },
     },
   };
+
   const buttonAnimation: Variants = {
     initial: {
       backgroundColor: '#000000',
@@ -33,6 +34,7 @@ const GeneralButton: FC<Props> = ({ text, method }) => {
       },
     },
   };
+
   const arrowAnimation: Variants = {
     initial: {
       width: '50%',
@@ -46,6 +48,7 @@ const GeneralButton: FC<Props> = ({ text, method }) => {
       },
     },
   };
+
   return (
     <button type='submit' className={styles._container} onClick={method}>
       <motion.div whileHover='hover' variants={buttonAnimation} className={styles._buttonContainer}>

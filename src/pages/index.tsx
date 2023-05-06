@@ -15,6 +15,7 @@ export default function Home({ data }: any) {
   const portfolioRef = useRef(null);
   const contactRef = useRef(null);
   const packsRef = useRef(null);
+  const weDoRef = useRef(null);
 
   const refs = {
     aboutUs: aboutRef,
@@ -23,6 +24,7 @@ export default function Home({ data }: any) {
     portfolio: portfolioRef,
     contact: contactRef,
     packs: packsRef,
+    weDo: weDoRef,
   };
 
   return (
@@ -30,11 +32,10 @@ export default function Home({ data }: any) {
       <Navbar data={data?.navbar} refs={refs} />
 
       <main className={styles._main}>
-        <Hero data={data?.hero} />
-        <Paragraph data={data?.firstParagraph} />
-
-        <AboutUs {...data?.aboutUs} ref={aboutRef} />
-        <Paragraph data={data?.secondParagraph} />
+        <Hero data={data?.hero} action={contactRef} />
+        <Paragraph {...data?.firstParagraph} ref={aboutRef} />
+        <AboutUs {...data?.aboutUs} ref={weDoRef} />
+        <Paragraph {...data?.secondParagraph} />
         <Services {...data?.services} ref={servicesRef} />
         <Packs {...data?.packs} ref={packsRef} />
         <Products {...data?.products} ref={productsRef} />

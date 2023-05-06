@@ -13,6 +13,7 @@ type Props = {
     portfolio: any;
     contact: any;
     packs: any;
+    weDo: any;
   };
 };
 
@@ -28,13 +29,14 @@ type ScrollOption = {
   portfolio: any;
   contact: any;
   packs: any;
+  weDo: any;
 };
 
 const Navbar: FC<Props> = ({ data, refs }) => {
   const [show, setShow] = useState<boolean>(false);
   const options: Option[] = [
     { name: 'About Us', scrollTo: 'aboutUs' },
-    { name: 'What we do?', scrollTo: 'services' },
+    { name: 'What we do?', scrollTo: 'weDo' },
     { name: 'Packs', scrollTo: 'packs' },
     { name: 'Technologies', scrollTo: 'products' },
     { name: 'Briefcase', scrollTo: 'portfolio' },

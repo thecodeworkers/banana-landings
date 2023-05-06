@@ -1,15 +1,12 @@
 import React, { forwardRef, useState } from 'react';
 import styles from './styles.module.scss';
 import { FormikConfig } from './formik';
-import { FadeIn, Footer, GeneralButton, GeneralInput } from '@/components';
-import { motion, useAnimate, Variants } from 'framer-motion';
+import { Footer, GeneralButton, GeneralInput } from '@/components';
+import { useAnimate } from 'framer-motion';
 import { Icon } from '@iconify/react';
 
 const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
-  console.log({ props });
-
   const handleSubmit = (formValues: any) => {
-    console.log(formValues);
     window.open(
       `https://api.whatsapp.com/send?phone=+584126350200&text=!Hi team Banana! I would like more information about your products and services, I have attached my contact information. Company: ${formValues?.company} , Email: ${formValues?.email} , Subject: ${formValues?.subject}`,
     );
@@ -47,9 +44,6 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
     key: 'company' | 'email' | 'subject';
     name: string;
   };
-  type ErrorType = {
-    key: 'company' | 'email' | 'subject';
-  };
 
   return (
     <div ref={ref} className={styles._main}>
@@ -77,7 +71,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
           </div>
         </div>
         {/* Form */}
-        {/* <div ref={form} className={styles._animationFormWrapper}>
+        <div ref={form} className={styles._animationFormWrapper}>
           <div className={styles._formWrapper}>
             <div className={styles._textBox}>
               <p className={styles._goBack} onClick={toHaveProject}>
@@ -124,7 +118,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );

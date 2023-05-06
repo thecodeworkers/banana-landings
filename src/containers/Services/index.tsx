@@ -43,7 +43,7 @@ const Services = forwardRef<HTMLDivElement>((props: any, ref) => {
       {/* responsive */}
       <FadeIn className={styles._contentResponsive}>
         <div className={styles._leftContainerResponsive}>
-          <Image src={props?.standar} alt={props?.altStandar} width={178} height={220} quality={100} />
+          <Image src={props?.standar} alt={props?.altStandar} width={158} height={200} quality={100} />
 
           <div className={styles._textLeftContainer}>
             <p className={styles?._leftTitle}>{props?.standarTitle}</p>
@@ -55,7 +55,7 @@ const Services = forwardRef<HTMLDivElement>((props: any, ref) => {
           </div>
         </div>
         <div className={styles._rightContainerResponsive}>
-          <Image src={props?.custom} alt={props?.altSCustom} width={178} height={220} quality={100} />
+          <Image src={props?.custom} alt={props?.altSCustom} width={158} height={200} quality={100} />
 
           <div className={styles._textRightContainer}>
             <p className={styles?._rightTitle}>{props?.customTitle}</p>

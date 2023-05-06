@@ -50,8 +50,8 @@
   width: 70%;
 }
 
-._textContainer{
-width: 100%;
+._textContainer {
+  width: 100%;
 }
 
 ._goBack {
@@ -108,7 +108,7 @@ width: 100%;
   height: 60vh;
   position: absolute;
   left: 0;
-  
+
 }
 
 ._animationFormWrapper {
@@ -139,15 +139,17 @@ width: 100%;
   margin-top: 4.875rem;
   justify-content: space-around;
 }
-._textResponsive{
+
+._textResponsive {
   display: none;
 }
+
 @include responsive(lg) {
   ._content {
     flex-direction: column;
     height: 100%;
   }
- 
+
 
   ._textBox {
     width: 100%;
@@ -175,7 +177,7 @@ width: 100%;
     justify-content: center;
     align-items: center;
     margin: 0 2.5%;
-  
+
   }
 
   ._haveProjectText {
@@ -189,44 +191,47 @@ width: 100%;
   ._animationHaveProjectWrapper {
     left: 0;
   }
-  ._haveProjectButtons{
+
+  ._haveProjectButtons {
     flex-direction: column;
   }
-  ._button{
+
+  ._button {
     margin: 1rem 0;
-    
+
   }
 
-  ._textResponsive{
+  ._textResponsive {
     display: flex;
     justify-content: center;
     align-items: center;
     color: $white;
- 
+
     margin-top: 0.5rem;
     font-family: $helvetica14;
     width: 70%;
   }
 
-._text,
-._goBack {
-  font-size: $helvetica14;
- 
-}
+  ._text,
+  ._goBack {
+    font-size: $helvetica14;
 
-._text{
-  display: none;
-}
+  }
 
-._formWrapper{
-  flex-direction: column;
-}
+  ._text {
+    display: none;
+  }
 
-._buttonContainer{
-margin-bottom: 2rem;
-}
-._haveProjectButtons{
-  width: unset;
-}
+  ._formWrapper {
+    flex-direction: column;
+  }
+
+  ._buttonContainer {
+    margin-bottom: 2rem;
+  }
+
+  ._haveProjectButtons {
+    width: unset;
+  }
 
 }
