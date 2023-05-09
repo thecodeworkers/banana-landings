@@ -2,6 +2,7 @@
   "TECH": {
     "general": {
       "phone": "+584126350200",
+      "email": "a@gmail.com",
       "contactMessage": "!Hi team Banana! I would like more information about your products and services, I have attached my contact information.",
       "packsMessage": "!Hi team Banana! I would like more information about your product",
       "haveProjectMessage": "!Hi team Banana! I would like more information about your products, i have a project"
@@ -34,7 +35,7 @@
       "firstBold": "FUNCTIONAL",
       "secondBold": "& BEAUTIFUL",
       "secondTitle": "WEBSITES",
-      "phases": ["UX Research_", "Desing System_", "Wireframing_", "Development_", "Q/A_"],
+      "phases": ["UX Research_", "Desing System_", "Development_", "Q/A_", "Deployment_"],
       "image": "/resources/crystal.svg",
       "altImage": "crystal"
     },
@@ -195,7 +196,7 @@
     "portfolio": {
       "projects": [
         {
-          "name": "Puntu - Finance Platform",
+          "name": "Puntu - Finances  Platform",
           "image": "/resources/portfolio/puntu.svg",
           "alt": "puntu",
           "hoverImage": "/resources/portfolio/puntu-hover.gif",
@@ -262,12 +263,12 @@
         {
           "image": "/resources/tiktok.svg",
           "alt": "tiktok",
-          "link": "https://twitter.com/_bananacreative?lang=es"
+          "link": "https://www.tiktok.com/@_bananacreative?_t=8c4ErUhJZrC&_r=1"
         },
         {
           "image": "/resources/twitter.svg",
-          "alt": "linkein",
-          "link": "https://www.linkedin.com/company/bananacreative/mycompany/"
+          "alt": "twitter",
+          "link": "https://twitter.com/_bananacreative?lang=es"
         }
       ]
     }

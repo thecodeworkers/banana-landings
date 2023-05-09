@@ -150,11 +150,9 @@
     height: 100%;
   }
 
-
   ._textBox {
     width: 100%;
     align-items: flex-start;
-
   }
 
   ._title {
@@ -182,14 +180,18 @@
 
   ._haveProjectText {
     font-size: $helvetica40;
+    width: 70%;
+    text-align: center;
   }
 
   ._animationFormWrapper {
     right: 0;
+ 
   }
 
   ._animationHaveProjectWrapper {
     left: 0;
+
   }
 
   ._haveProjectButtons {
@@ -206,16 +208,15 @@
     justify-content: center;
     align-items: center;
     color: $white;
-
     margin-top: 0.5rem;
-    font-family: $helvetica14;
-    width: 70%;
+    font-family: $helvetica;
+    font-size: $helvetica14;
+    line-height: 1rem
   }
 
   ._text,
   ._goBack {
     font-size: $helvetica14;
-
   }
 
   ._text {
@@ -231,7 +232,10 @@
   }
 
   ._haveProjectButtons {
-    width: unset;
+   display: flex;
+   justify-content: center;
+   align-items: center;
   }
+ 
 
 }

@@ -27,15 +27,15 @@ const Products = forwardRef<HTMLDivElement>((props: any, ref) => {
       <div className={styles._contentResponsive}>
         <Slider {...settings}>
           {props?.logos?.map((logo: any, index: number | string) => {
-            if(logo?.image !== '') {
+            if (logo?.image !== '') {
               return (
                 <div key={index} className={styles._image}>
-                  <Image src={logo?.image} alt={logo?.alt} width={90} height={90} quality={100} />
+                  <Image src={logo?.image} alt={logo?.alt} width={72} height={72} quality={100} />
                 </div>
-              )
+              );
             }
 
-            return null
+            return null;
           })}
         </Slider>
       </div>

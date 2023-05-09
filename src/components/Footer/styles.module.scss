@@ -20,6 +20,20 @@
 
 ._textContainer {
     padding-bottom: 0.5rem;
+  
+}
+
+._iconContainer{
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    color: $white;
+}
+
+._icons{
+    margin:0 0.8rem 0 0;
+    cursor: pointer;
 }
 
 ._mediaContainer {
@@ -47,8 +61,6 @@
     }
 }
 
-
-
 ._text{
     color: $white;
     font-size: $helvetica16;
@@ -70,6 +82,7 @@
     ._text{
         font-size: $helvetica14;
         text-align: center;
+        line-height: 1rem
     }
     ._content{
         flex-direction: column;

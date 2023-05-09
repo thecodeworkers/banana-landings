@@ -15,7 +15,6 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
 
   const bookACall = () => {
     window.open(`https://api.whatsapp.com/send?phone=${props?.phone}&text=${props?.haveProjectMessage}`);
-    resetForm();
   };
   const [form, animateForm] = useAnimate();
   const [haveProject, animateProject] = useAnimate();
@@ -66,11 +65,14 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
                 </div>
               </div>
             </div>
+
             <Footer
               media={props?.media}
               phone={props?.phone}
               copyright={props?.copyright}
               mediaText={props?.mediaText}
+              message={props?.haveProjectMessage}
+              mail={props?.email}
             />
           </div>
         </div>

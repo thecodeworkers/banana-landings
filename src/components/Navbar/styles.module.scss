@@ -1,6 +1,6 @@
 @import '../../../public/styles/index.scss';
 
-$size: 2rem;
+$size: 1.4rem;
 
 @mixin baseStyle() {
 	display: flex;
@@ -10,7 +10,7 @@ $size: 2rem;
 	
 	border: 0;
 	background: transparent;
-	gap: .55rem;
+	gap: .35rem;
 	cursor: pointer;
 
 	& div {
