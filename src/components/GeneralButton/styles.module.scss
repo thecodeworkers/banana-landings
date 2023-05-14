@@ -48,6 +48,7 @@ color:white;
 @include responsive(lg) {
   ._text{
     font-size: $helvetica14;
+    font-weight: 400;
   }
   ._buttonContainer{
     width: 17rem;
