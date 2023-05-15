@@ -48,7 +48,7 @@
       "standarTitle": "STANDARD",
       "standarTypes": ["_Landing", "_Website", "_Blog", "_E-commerce"],
       "altSCustom": "custom",
-      "custom": "/resources/customs.svg",
+      "custom": "/resources/custom.svg",
       "customTitle": "CUSTOM",
       "customTypes": ["_Mobile Apps ", "_API’S", "_Web Apps", "_A.I"]
     },
@@ -57,7 +57,7 @@
       "packsContent": [
         {
           "title": "One page",
-          "text": "From $1.425",
+          "text": "USD $899",
           "buttonText": "Book a Call",
           "phone": "",
           "props": [
@@ -91,7 +91,7 @@
         },
         {
           "title": "Landing Page",
-          "text": "From $2.250",
+          "text": "USD $1,399",
           "buttonText": "Book a Call",
           "phone": "",
           "props": [
@@ -125,7 +125,7 @@
         },
         {
           "title": "E- commerce",
-          "text": "From $3.200  ",
+          "text": "USD $1,999",
           "buttonText": "Book a Call",
           "phone": "",
           "props": [
@@ -215,17 +215,17 @@
           "name": "Pix - Crypto Wallet",
           "image": "/resources/portfolio/pix.svg",
           "alt": "pix",
-          "hoverImage": "/resources/portfolio/puntu-hover.gif",
+          "hoverImage": "/resources/portfolio/pix-hover.gif",
           "link": "https://main--cool-sfogliatella-bfdf8f.netlify.app/",
           "backgroundColor": "#57D6AF"
         },
         {
-          "name": "empty",
-          "image": "",
+          "name": "New Project",
+          "image": "/resources/portfolio/coming-soon.svg",
           "alt": "",
           "hoverImage": "",
           "link": "",
-          "backgroundColor": "gray"
+          "backgroundColor": "#FFFFFF"
         }
       ]
     },

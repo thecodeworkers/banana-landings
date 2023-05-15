@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import React, { forwardRef } from 'react';
 import styles from './styles.module.scss';
-import services from '../../../public/resources/services.svg';
-import customs from '../../../public/resources/customs.svg';
 import FadeIn from '../../components/FadeIn';
 
 const Services = forwardRef<HTMLDivElement>((props: any, ref) => {

@@ -13,14 +13,14 @@ const Portfolio = forwardRef<HTMLDivElement>((props: any, ref) => {
             className={styles._imageContainer}
             style={{ cursor: project?.link !== '' ? 'pointer' : 'inherit' }}>
             <a href={project?.link !== '' ? project?.link : null} target='_blank' rel='noreferrer'>
-              <p className={project?.name !== 'empty' ? styles._text : styles._emptyText}>{project?.name}</p>
+              <p className={styles._text}>{project?.name}</p>
 
               <div className={styles._imageLeftContent} style={{ backgroundColor: project?.backgroundColor }}>
                 <div className={styles._imageBox}>
-                  {project?.name !== 'empty' && <Image src={project?.image} fill alt={project?.alt} quality={100} />}
+                  <Image src={project?.image} fill alt={project?.alt} quality={100} />
                 </div>
                 <div className={styles._imageHoverBox}>
-                  {project?.name !== 'empty' && (
+                  {project?.name !== 'New Project' && (
                     <Image src={project?.hoverImage} fill alt={project?.alt} quality={100} />
                   )}
                 </div>
