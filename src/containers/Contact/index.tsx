@@ -1,4 +1,4 @@
-import React, { forwardRef, useState } from 'react';
+import React, { forwardRef } from 'react';
 import styles from './styles.module.scss';
 import { FormikConfig } from './formik';
 import { Footer, GeneralButton, GeneralInput } from '@/components';
@@ -16,6 +16,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
   const bookACall = () => {
     window.open(`https://api.whatsapp.com/send?phone=${props?.phone}&text=${props?.haveProjectMessage}`);
   };
+  
   const [form, animateForm] = useAnimate();
   const [haveProject, animateProject] = useAnimate();
 

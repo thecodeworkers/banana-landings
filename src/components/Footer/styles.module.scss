@@ -20,19 +20,19 @@
 
 ._textContainer {
     padding-bottom: 0.5rem;
-  
+
 }
 
-._iconContainer{
+._iconContainer {
     padding-bottom: 0.5rem;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     color: $white;
 }
 
-._icons{
-    margin:0 0.8rem 0 0;
+._icons {
+    margin: 0 0.8rem 0 0;
     cursor: pointer;
 }
 
@@ -48,12 +48,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-   margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 
 ._icon {
-    margin:0 0.4rem;
+    margin: 0 0.4rem;
 
     &:last-child {
         margin-right: 0;
@@ -61,7 +61,7 @@
     }
 }
 
-._text{
+._text {
     color: $white;
     font-size: $helvetica16;
     font-family: $helvetica;
@@ -69,26 +69,30 @@
 }
 
 @include responsive(lg) {
-   
+
 
     ._iconsContainer {
         padding-right: 1rem;
     }
-    ._textBox{
-       align-items: center;
-       padding-left: 0;
+
+    ._textBox {
+        align-items: center;
+        padding-left: 0;
     }
 
-    ._text{
+    ._text {
         font-size: $helvetica14;
         text-align: center;
         line-height: 1rem
     }
-    ._content{
+
+    ._content {
+        margin-top: 3rem;
         flex-direction: column;
-        height: 0;
+        height: 100%;
     }
-    ._mediaContainer{
+
+    ._mediaContainer {
         padding-right: 0;
     }
 
