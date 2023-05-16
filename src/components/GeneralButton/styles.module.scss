@@ -1,8 +1,8 @@
 @import '../../../public/styles/index.scss';
 
 ._buttonContainer {
-  width: 15.313rem;
-  height: 2.5rem;
+  width: 285px;
+  height: 40px;
   box-sizing: border-box;
   border: 1px solid $white;
   border-radius: 1.25rem;
@@ -19,7 +19,7 @@
   align-items: center;
   position: relative;
   width: 100%;
- 
+
 }
 
 ._text {
@@ -30,27 +30,24 @@
   width: max-content;
 }
 
-._image{
- width: 100%;
- display: flex;
- justify-content: flex-start;
- align-items: center;
-color:white;
+._image {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
 
 }
 
-._container{
+._container {
   background-color: transparent;
   border: none;
-  
+
 }
 
 @include responsive(lg) {
-  ._text{
+  ._text {
     font-size: $helvetica14;
     font-weight: 400;
-  }
-  ._buttonContainer{
-    width: 17rem;
   }
 }
