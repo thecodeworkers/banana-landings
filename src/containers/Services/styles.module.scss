@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 ._content {
@@ -42,7 +42,7 @@
     opacity: 0;
   }
 
-  &:hover ._textLeftContainer  {
+  &:hover ._textLeftContainer {
     animation: fadeIn 0.55s linear forwards;
     -webkit-animation-name: fadeIn;
     -webkit-animation-duration: 0.55;
@@ -56,7 +56,7 @@
   width: 50%;
   height: 18.875rem;
   position: relative;
-  
+
   ._imageRight {
     transition: transform 750ms;
     will-change: transform;
@@ -75,7 +75,7 @@
     opacity: 0;
   }
 
-  &:hover ._textRightContainer  {
+  &:hover ._textRightContainer {
     animation: fadeIn 0.55s linear forwards;
     -webkit-animation-name: fadeIn;
     -webkit-animation-duration: 0.55;
@@ -103,32 +103,37 @@
   color: $white;
 }
 
-._contentResponsive{
+._contentResponsive {
   display: none;
 }
 
 @keyframes fadeIn {
-  0%{
+  0% {
     left: 75%;
     opacity: 0;
   }
-  20%{
+
+  20% {
     left: 70%;
     opacity: 0.2;
   }
-  40%{
+
+  40% {
     left: 65%;
     opacity: 0.4;
   }
-  60%{
+
+  60% {
     left: 60%;
     opacity: 0.6;
   }
-  80%{
+
+  80% {
     left: 55%;
     opacity: 0.8;
   }
-  100%{
+
+  100% {
     left: 50%;
     opacity: 1;
   }
@@ -136,66 +141,72 @@
 }
 
 @include responsive(lg) {
-  ._contentResponsive{
+  ._contentResponsive {
     flex-direction: column;
     align-items: center;
     height: 100%;
     display: flex;
   }
-  ._content{
+
+  ._content {
     display: none;
   }
 
-  ._leftContainer{
+  ._leftContainer {
     width: 100%;
-    
 
-  
+
+
     ._imageLeft {
       display: none;
-    } 
-     
-  ._textLeftContainer{
-    width: 100%;
-    transition:none;
-    opacity: 1;
-  }
+    }
+
+    ._textLeftContainer {
+      width: 100%;
+      transition: none;
+      opacity: 1;
+    }
 
   }
 
-  ._rightContainer{
+  ._rightContainer {
     width: 100%;
-    
-    
-  
+
+
+
     ._imageRight {
       display: none;
     }
-    ._textRightContainer{
+
+    ._textRightContainer {
       opacity: 1;
       position: unset;
-      transition:none
+      transition: none
     }
-  
+
   }
-  ._leftTitle{
+
+  ._leftTitle {
     font-size: $helvetica20
   }
-  ._rightTitle{
+
+  ._rightTitle {
     font-size: $helvetica20
   }
-  ._text{
+
+  ._text {
     font-size: $helvetica16
   }
 
-  ._leftContainerResponsive{
+  ._leftContainerResponsive {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
     margin: 2.5rem 0 3rem 0;
   }
-  ._rightContainerResponsive{
+
+  ._rightContainerResponsive {
     display: flex;
     justify-content: space-between;
     align-items: center;
