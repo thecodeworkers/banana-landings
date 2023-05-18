@@ -5,8 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 ._content {
@@ -14,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 95vh;
+  height: 90vh;
 }
 
 ._textBox {

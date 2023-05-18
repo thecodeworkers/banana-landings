@@ -7,7 +7,7 @@
   justify-content: center;
   margin-top: 10rem;
   margin-bottom: 12rem;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 ._content {
@@ -83,13 +83,13 @@
   ._content {
     flex-direction: column;
     justify-content: center;
-    
+
   }
 
-  ._imageContainer{
+  ._imageContainer {
     width: 98%;
-    margin: 1rem  0;
-  
+    margin: 1rem 0;
+
   }
 
   ._imageLeftContent,
@@ -109,8 +109,9 @@
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
-  ._imageBox{
+
+  ._imageBox {
     margin: 0 4rem;
   }
-  
+
 }

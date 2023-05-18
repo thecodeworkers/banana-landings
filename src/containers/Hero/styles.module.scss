@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 5rem;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 ._content {
@@ -43,6 +43,7 @@
   color: $white;
   font-family: $helvetica;
   line-height: 1;
+
   & span {
     color: $heliotrope;
     font-size: $helvetica90;

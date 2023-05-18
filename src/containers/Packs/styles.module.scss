@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 7rem;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 ._title {
@@ -111,24 +111,27 @@
 ._buttonContainer {
   margin-top: 2rem;
   margin-bottom: 3rem;
-  
+
 }
 
 @include responsive(lg) {
-  ._title{
+  ._title {
     font-size: $helvetica40;
   }
-  ._packTitle{
+
+  ._packTitle {
     font-size: $editorial24;
   }
-  ._packSubTitle{
+
+  ._packSubTitle {
     font-size: $editorial16;
   }
-  ._text{
+
+  ._text {
     font-size: $helvetica12;
-    
+
   }
-  
+
   ._main,
   ._packages,
   ._packages>*,

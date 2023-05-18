@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh; 
+  height: 250px;
 
 }
 
@@ -20,13 +20,13 @@
 }
 
 @include responsive(lg) {
-  
-  ._paragraph{
+
+  ._paragraph {
     font-size: $helvetica16;
     text-align: center;
     width: 90%;
     margin: 3rem auto 0 auto;
   }
-  
+
 
 }
