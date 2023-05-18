@@ -7,7 +7,7 @@ $size: 1.4rem;
 	flex-direction: column;
 	width: $size;
 	height: $size;
-	
+
 	border: 0;
 	background: transparent;
 	gap: .35rem;
@@ -21,7 +21,7 @@ $size: 1.4rem;
 		transition: all .5s;
 		transform-origin: right;
 	}
-} 
+}
 
 @mixin burguerAnimation() {
 	& div:first-child {
@@ -53,7 +53,7 @@ $size: 1.4rem;
 	margin: 0 auto;
 	max-width: $max-width;
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -96,7 +96,7 @@ $size: 1.4rem;
 	._navbar {
 		height: 4.75rem;
 	}
-	
+
 	._content {
 		height: 5rem;
 		padding: 0 1rem;
@@ -120,25 +120,31 @@ $size: 1.4rem;
 	._menu {
 		display: flex;
 		position: fixed;
-		justify-content: center;
 		align-items: flex-start;
-		height: 40vh;
-		min-height: 40vh;
+		height: 100vh;
 		flex-direction: column;
 		width: 100%;
 		background-color: $black;
-		top: 5rem;
+		top: 3rem;
 		z-index: 3;
 		animation: opacity .6s forwards;
 		transition: all .6s;
 		left: 0;
 		padding: 1.5625rem;
-		
 	}
 
 	@keyframes opacity {
-		from { opacity: 0 };
-		to { opacity: 1 };
+		from {
+			opacity: 0
+		}
+
+		;
+
+		to {
+			opacity: 1
+		}
+
+		;
 	}
 
 	._textContainer {
@@ -165,5 +171,5 @@ $size: 1.4rem;
 		@include baseStyle();
 		@include burguerAnimation();
 	}
-	
+
 }
