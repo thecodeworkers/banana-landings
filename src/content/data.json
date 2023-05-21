@@ -242,7 +242,7 @@
       "form": [
         { "name": "Company o Startup*", "key": "company" },
         { "name": "Email*", "key": "email" },
-        { "name": "Message*", "key": "message" }
+        { "name": "Message*", "key": "subject" }
       ],
       "media": [
         {

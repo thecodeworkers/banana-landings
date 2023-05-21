@@ -8,7 +8,7 @@ import { Icon } from '@iconify/react';
 const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
   const handleSubmit = (formValues: any) => {
     window.open(
-      `https://api.whatsapp.com/send?phone=${props?.phone}&text=${props?.contactMessage} Company: ${formValues?.company} , Email: ${formValues?.email} , Subject: ${formValues?.subject}`,
+      `https://api.whatsapp.com/send?phone=${props?.phone}&text=${props?.contactMessage} Company: ${values?.company} , Email: ${values?.email} , Subject: ${values?.subject}`,
     );
     resetForm();
   };
@@ -16,7 +16,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
   const bookACall = () => {
     window.open(`https://api.whatsapp.com/send?phone=${props?.phone}&text=${props?.haveProjectMessage}`);
   };
-  
+
   const [form, animateForm] = useAnimate();
   const [haveProject, animateProject] = useAnimate();
 
@@ -113,7 +113,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
                 ))}
 
                 <div className={styles._buttonContainer}>
-                  <GeneralButton text={props?.sendButton} />
+                  <GeneralButton method={handleSubmit} text={props?.sendButton} />
                 </div>
               </form>
               <div>
