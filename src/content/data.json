@@ -43,7 +43,7 @@
       "content": "THERE’S TWO WAYS TO APROACH YOUR PROJECT, CHOOSE THE ONE THAT BEST FITS YOUR NEEDS"
     },
     "services": {
-      "standar": "/resources/services.svg",
+      "standar": "/resources/standar.svg",
       "altStandar": "standar",
       "standarTitle": "STANDARD",
       "standarTypes": ["_Landing", "_Website", "_Blog", "_E-commerce"],
@@ -221,7 +221,7 @@
         },
         {
           "name": "New Project",
-          "image": "/resources/portfolio/coming-soon.svg",
+          "image": "/resources/portfolio/comming-soon.svg",
           "alt": "",
           "hoverImage": "",
           "link": "",
