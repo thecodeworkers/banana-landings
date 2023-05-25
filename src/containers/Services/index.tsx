@@ -32,12 +32,7 @@ const Services = forwardRef<HTMLDivElement>((props: any, ref) => {
     <div ref={ref} className={styles._main}>
       {/* web */}
       <FadeIn className={styles._content}>
-        <motion.div
-          initial="rest"
-          whileHover="hover"
-          animate="rest"
-          className={styles._leftContainer}
-        >
+        <motion.div initial='rest' whileHover='hover' animate='rest' className={styles._leftContainer}>
           <motion.div variants={SvgAnimation} className={styles._imageLeft}>
             <Image src={props?.standar} alt={props?.altStandar} width={228} height={302} quality={100} />
           </motion.div>
@@ -50,12 +45,7 @@ const Services = forwardRef<HTMLDivElement>((props: any, ref) => {
             ))}
           </motion.div>
         </motion.div>
-        <motion.div
-          initial="rest"
-          whileHover="hover"
-          animate="rest"
-          className={styles._rightContainer}
-        >
+        <motion.div initial='rest' whileHover='hover' animate='rest' className={styles._rightContainer}>
           <motion.div variants={SvgAnimation} className={styles._imageRight}>
             <Image src={props?.custom} alt={props?.altSCustom} width={228} height={302} quality={100} />
           </motion.div>
