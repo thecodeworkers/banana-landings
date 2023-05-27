@@ -17,11 +17,6 @@ type Props = {
   };
 };
 
-type Option = {
-  name: string;
-  scrollTo: string;
-};
-
 type ScrollOption = {
   aboutUs: any;
   services: any;
@@ -34,14 +29,6 @@ type ScrollOption = {
 
 const Navbar: FC<Props> = ({ data, refs }) => {
   const [show, setShow] = useState<boolean>(false);
-  const options: Option[] = [
-    { name: 'About Us', scrollTo: 'aboutUs' },
-    { name: 'What we do?', scrollTo: 'weDo' },
-    { name: 'Packs', scrollTo: 'packs' },
-    { name: 'Technologies', scrollTo: 'products' },
-    { name: 'Briefcase', scrollTo: 'portfolio' },
-    { name: 'Contact Us', scrollTo: 'contact' },
-  ];
 
   const handleShowMenu = () => setShow((show) => !show);
 
@@ -72,15 +59,15 @@ const Navbar: FC<Props> = ({ data, refs }) => {
 
           {show && (
             <div className={styles._menu}>
-              {options.map(({ name, scrollTo }: Option, index) => (
+              {data?.routes?.map((route: any, index: number | string) => (
                 <div key={index} className={styles._textContainer}>
                   <p
                     className={styles._text}
                     onClick={() => {
-                      scrolling(refs[scrollTo as keyof ScrollOption]);
+                      scrolling(refs[route?.ref as keyof ScrollOption]);
                       setShow(false);
                     }}>
-                    {name}
+                    {route?.name}
                   </p>
                 </div>
               ))}

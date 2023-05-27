@@ -230,7 +230,7 @@
       ]
     },
     "contactUs": {
-      "address": ["Avenida Eugenio Mendoza", "Torre IASA, Piso 8 Oficina 802-A", "La Castellana, Caracas, Venezuela"],
+      "address": [""],
       "copyright": "Copyright © BananaCreative 2023",
       "touchButton": "Get in touch",
       "callButton": "Book a Call",
@@ -275,10 +275,277 @@
   },
 
   "BRAND": {
+    "general": {
+      "phone": "+584126350200",
+      "email": "a@gmail.com",
+      "contactMessage": "!Hi team Banana! I would like more information about your products and services, I have attached my contact information.",
+      "packsMessage": "!Hi team Banana! I would like more information about your product",
+      "haveProjectMessage": "!Hi team Banana! I would like more information about your products, i have a project"
+    },
+    "navbar": {
+      "routes": [
+        { "name": "About Us", "ref": "aboutUs" },
+        { "name": "What we do?", "ref": "weDo" },
+        { "name": "Services", "ref": "services" },
+        { "name": "Packs", "ref": "packs" },
+        { "name": "Technologies", "ref": "products" },
+        { "name": "Briefcase", "ref": "portfolio" },
+        { "name": "Contact Us", "ref": "contact" }
+      ]
+    },
     "hero": {
       "title": "WE HELP YOU SHAPE YOUR",
       "bold": "BUSSINES",
-      "subtitle": "We develop, create and innovate your ideas."
+      "subtitle": "Creamos identidades, productos y experiencias que miran hacia el futuro.",
+      "button": "Contáctanos",
+      "image": "/resources/banana.svg",
+      "altImage": "Banana"
+    },
+    "firstParagraph": {
+      "content": "IS A TEAM OF EXPERTS FORMED BY SPECIALISTS IN SYSTEM ENGINEERING, UI-UX DESIGN, INFRASTRUCTURE AND INFORMATION SECURITY.",
+      "bolded": "BANANA TECH"
+    },
+    "aboutUs": {
+      "firstTitle": "WE CREATE",
+      "firstBold": "FUNCTIONAL",
+      "secondBold": "& BEAUTIFUL",
+      "secondTitle": "WEBS & APPS",
+      "phases": ["UX Research_", "Desing System_", "Development_", "Q/A_", "Deployment_"],
+      "image": "/resources/crystal.svg",
+      "altImage": "crystal"
+    },
+    "secondParagraph": {
+      "content": "THERE’S TWO WAYS TO APROACH YOUR PROJECT, CHOOSE THE ONE THAT BEST FITS YOUR NEEDS"
+    },
+    "services": {
+      "standar": "/resources/standar.svg",
+      "altStandar": "standar",
+      "standarTitle": "STANDARD",
+      "standarTypes": ["_Landing", "_Website", "_Blog", "_E-commerce"],
+      "altSCustom": "custom",
+      "custom": "/resources/custom.svg",
+      "customTitle": "CUSTOM",
+      "customTypes": ["_Mobile Apps ", "_API’S", "_Web Apps", "_A.I"]
+    },
+    "packs": {
+      "title": "STANDARD PACKS",
+      "packsContent": [
+        {
+          "title": "One page",
+          "text": "USD $899",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TEMPLATE COMPRISING A SINGLE VIEW WITH A MINIMUM OF 4 SECTIONS AND A MAXIMUM OF 8 SECTIONS"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WORDPRESS TEMPLATE" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "BANNER CUSTOMIZATION FOR ALL VIEWS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "ICON MODIFICATION" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE'S LOOK AND FEEL" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "WEBSITE'S COPIES"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM"
+            }
+          ]
+        },
+        {
+          "title": "Landing Page",
+          "text": "USD $1,399",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WORDPRESS TEMPLATE" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "BANNER CUSTOMIZATION FOR ALL VIEWS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "ICON MODIFICATION" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE'S LOOK AND FEEL" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "WEBSITE'S COPIES"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM"
+            }
+          ]
+        },
+        {
+          "title": "E- commerce",
+          "text": "USD $1,999",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TEMPLATE INCLUDING MAIN PAGE, SHOP, INDIVIDUAL PRODUCT, CART AND PAYMENT GATEWAY (9 TO 11 VIEWS)"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "SHOPIFY TEMPLATE" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "CUSTOMIZATION OF BANNERS FOR ALL VIEWS (DESIGNED FOR WEB AND RESPONSIVE)"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "FONT CUSTOMIZATION (NEW FONTS APPLIED TO THE BRAND)"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "ICON MODIFICATION ('ICON'S DESIGNED FOR THE BRAND)"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "LOOK AND FEEL OF THE ENTIRE WEB (VIDEO WITH THE DESIGN PROPOSAL OF THE ENTIRE WEB BEFORE PROCEEDING TO DEVELOPMENT)"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "WEBSITE'S COPIES"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE ELEMENTS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "50 PRODUCTS UPLOADS" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "MANUAL ON HOW TO ADMINISTRATE THE PLATFORM"
+            }
+          ]
+        }
+      ]
+    },
+    "products": {
+      "logos": [
+        { "image": "/resources/technologies/js.svg", "alt": "js" },
+        { "image": "/resources/technologies/py.svg", "alt": "py" },
+        { "image": "/resources/technologies/tail.svg", "alt": "tail" },
+        { "image": "/resources/technologies/go.svg", "alt": "go" },
+        { "image": "/resources/technologies/sass.svg", "alt": "sass" },
+        { "image": "/resources/technologies/gsap.svg", "alt": "gasp" },
+        { "image": "", "alt": "" },
+        { "image": "/resources/technologies/figma.svg", "alt": "figma" },
+        { "image": "/resources/technologies/ps.svg", "alt": "ps" },
+        { "image": "/resources/technologies/ai.svg", "alt": "ai" },
+        { "image": "/resources/technologies/xd.svg", "alt": "xd" },
+        { "image": "", "alt": "" }
+      ]
+    },
+    "portfolio": {
+      "projects": [
+        {
+          "name": "Puntu - Finances  Platform",
+          "image": "/resources/portfolio/puntu.svg",
+          "alt": "puntu",
+          "hoverImage": "/resources/portfolio/puntu-hover.gif",
+          "link": "https://puntu.io",
+          "backgroundColor": "#E6427A"
+        },
+        {
+          "name": "Vippo - Finance Platform",
+          "image": "/resources/portfolio/vippo.svg",
+          "alt": "vippo",
+          "hoverImage": "/resources/portfolio/vippo-hover.gif",
+          "link": "https://play.google.com/store/search?q=vippo&c=apps&hl=es_VE&gl=US",
+          "backgroundColor": "#A5BC51"
+        },
+        {
+          "name": "Pix - Crypto Wallet",
+          "image": "/resources/portfolio/pix.svg",
+          "alt": "pix",
+          "hoverImage": "/resources/portfolio/pix-hover.gif",
+          "link": "https://main--cool-sfogliatella-bfdf8f.netlify.app/",
+          "backgroundColor": "#57D6AF"
+        },
+        {
+          "name": "New Project",
+          "image": "/resources/portfolio/comming-soon.svg",
+          "alt": "",
+          "hoverImage": "",
+          "link": "",
+          "backgroundColor": "#FFFFFF"
+        }
+      ]
+    },
+    "contactUs": {
+      "address": [""],
+      "copyright": "Copyright © BananaCreative 2023",
+      "touchButton": "Get in touch",
+      "callButton": "Book a Call",
+      "sendButton": "Send",
+      "gotTitle": "GOT A PROJECT?",
+      "mediaText": "You can follow us at:",
+      "contactTitle": "LET’S GET IN TOUCH",
+      "goBackText": "Go Back",
+      "form": [
+        { "name": "Company o Startup*", "key": "company" },
+        { "name": "Email*", "key": "email" },
+        { "name": "Message*", "key": "subject" }
+      ],
+      "media": [
+        {
+          "image": "/resources/behance.svg",
+          "alt": "behance",
+          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users%7Cbanana+creative"
+        },
+        {
+          "image": "/resources/instagram.svg",
+          "alt": "instagram",
+          "link": "https://www.instagram.com/_bananacreative/"
+        },
+        {
+          "image": "/resources/linkedin.svg",
+          "alt": "linkein",
+          "link": "https://www.linkedin.com/company/bananacreative/mycompany/"
+        },
+        {
+          "image": "/resources/tiktok.svg",
+          "alt": "tiktok",
+          "link": "https://www.tiktok.com/@_bananacreative?_t=8c4ErUhJZrC&_r=1"
+        },
+        {
+          "image": "/resources/twitter.svg",
+          "alt": "twitter",
+          "link": "https://twitter.com/_bananacreative?lang=es"
+        }
+      ]
     }
   },
   "MOTION": {

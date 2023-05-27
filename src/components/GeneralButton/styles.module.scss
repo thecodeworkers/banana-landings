@@ -24,7 +24,7 @@
 
 ._text {
   font-size: $helvetica16;
-  color: white;
+  color: $white;
   font-family: $helvetica;
   margin-right: 1rem;
   width: max-content;
@@ -35,7 +35,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: white;
+  color: $white;
 
 }
 
