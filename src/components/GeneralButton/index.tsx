@@ -6,9 +6,10 @@ import { Icon } from '@iconify/react';
 type Props = {
   text: string;
   method?: any;
+  darkTheme?: boolean; //DARK THEME SET DEFAULT TRUE OTHERWISE SET FALSE
 };
 
-const GeneralButton: FC<Props> = ({ text, method }) => {
+const GeneralButton: FC<Props> = ({ text, method, darkTheme = false }) => {
   const textAnimation: Variants = {
     initial: {
       color: '#FFFFFF',
@@ -51,15 +52,29 @@ const GeneralButton: FC<Props> = ({ text, method }) => {
 
   return (
     <button type='submit' className={styles._container} onClick={method}>
-      <motion.div whileHover='hover' variants={buttonAnimation} className={styles._buttonContainer}>
+      <motion.div
+        whileHover='hover'
+        variants={buttonAnimation}
+        style={
+          darkTheme
+            ? { background: '#0000000', border: '1px solid #ffffff' }
+            : { background: '#fffffff', border: '1px solid #000000' }
+        }
+        className={styles._buttonContainer}>
         <div className={styles._button}>
           <div className={styles._textContainer}>
-            <motion.p className={styles._text} variants={textAnimation}>
+            <motion.p
+              className={styles._text}
+              style={darkTheme ? { color: '#ffffff' } : { color: '#000000' }}
+              variants={textAnimation}>
               {text}
             </motion.p>
           </div>
 
-          <motion.div variants={arrowAnimation} className={styles._image}>
+          <motion.div
+            variants={arrowAnimation}
+            className={styles._image}
+            style={darkTheme ? { color: '#ffffff' } : { color: '#000000' }}>
             <Icon icon='mdi:arrow-right' width={22} />
           </motion.div>
         </div>

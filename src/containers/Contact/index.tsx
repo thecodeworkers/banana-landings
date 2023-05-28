@@ -6,7 +6,7 @@ import { useAnimate } from 'framer-motion';
 import { Icon } from '@iconify/react';
 
 const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
-  const handleSubmit = (formValues: any) => {
+  const handleSubmit = () => {
     window.open(
       `https://api.whatsapp.com/send?phone=${props?.phone}&text=${props?.contactMessage} Company: ${values?.company} , Email: ${values?.email} , Subject: ${values?.subject}`,
     );
@@ -59,10 +59,10 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
               <p className={styles._haveProjectText}>{props?.gotTitle}</p>
               <div className={styles._haveProjectButtons}>
                 <div className={styles._button}>
-                  <GeneralButton text={props?.touchButton} method={toForm} />
+                  <GeneralButton text={props?.touchButton} darkTheme method={toForm} />
                 </div>
                 <div className={styles._button}>
-                  <GeneralButton method={() => bookACall()} text={props?.callButton} />
+                  <GeneralButton method={() => bookACall()} darkTheme text={props?.callButton} />
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
                 ))}
 
                 <div className={styles._buttonContainer}>
-                  <GeneralButton method={handleSubmit} text={props?.sendButton} />
+                  <GeneralButton method={handleSubmit} darkTheme text={props?.sendButton} />
                 </div>
               </form>
               <div>

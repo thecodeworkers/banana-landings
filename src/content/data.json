@@ -23,7 +23,7 @@
       "bold": "INTERFACE",
       "subtitle": "We develop, create and innovate your ideas.",
       "button": "Contact Us",
-      "image": "/resources/banana.svg",
+      "image": "/resources/banners/tech/banana.svg",
       "altImage": "Banana"
     },
     "firstParagraph": {
@@ -36,7 +36,7 @@
       "secondBold": "& BEAUTIFUL",
       "secondTitle": "WEBS & APPS",
       "phases": ["UX Research_", "Desing System_", "Development_", "Q/A_", "Deployment_"],
-      "image": "/resources/crystal.svg",
+      "image": "/resources/banners/tech/crystal.svg",
       "altImage": "crystal"
     },
     "secondParagraph": {
@@ -284,13 +284,12 @@
     },
     "navbar": {
       "routes": [
-        { "name": "About Us", "ref": "aboutUs" },
-        { "name": "What we do?", "ref": "weDo" },
-        { "name": "Services", "ref": "services" },
-        { "name": "Packs", "ref": "packs" },
-        { "name": "Technologies", "ref": "products" },
-        { "name": "Briefcase", "ref": "portfolio" },
-        { "name": "Contact Us", "ref": "contact" }
+        { "name": "Nosotros", "ref": "aboutUs" },
+        { "name": "Proceso", "ref": "weDo" },
+        { "name": "Paquetes", "ref": "packs" },
+        { "name": "Clientes", "ref": "products" },
+        { "name": "Portafolio", "ref": "portfolio" },
+        { "name": "Contacto", "ref": "contact" }
       ]
     },
     "hero": {
@@ -298,155 +297,282 @@
       "bold": "BUSSINES",
       "subtitle": "Creamos identidades, productos y experiencias que miran hacia el futuro.",
       "button": "Contáctanos",
-      "image": "/resources/banana.svg",
+      "image": "/resources/banners/brand/banana.svg",
       "altImage": "Banana"
     },
     "firstParagraph": {
-      "content": "IS A TEAM OF EXPERTS FORMED BY SPECIALISTS IN SYSTEM ENGINEERING, UI-UX DESIGN, INFRASTRUCTURE AND INFORMATION SECURITY.",
-      "bolded": "BANANA TECH"
+      "content": "ES UN EQUIPO DE DISEñADORES Y COMUNICADORES ESPECIALIZADOS EN EL DESARROLLO DE INDENTIDADES VISUALES Y VERBALES",
+      "bolded": "BANANA DESIGN"
     },
     "aboutUs": {
       "firstTitle": "WE CREATE",
       "firstBold": "FUNCTIONAL",
       "secondBold": "& BEAUTIFUL",
-      "secondTitle": "WEBS & APPS",
-      "phases": ["UX Research_", "Desing System_", "Development_", "Q/A_", "Deployment_"],
-      "image": "/resources/crystal.svg",
+      "secondTitle": "BRANDS",
+      "phases": ["Kick Off", "Investigación", "Análisis", "Identidad Verbal", "Identidad Visual"],
+      "image": "/resources/banners/brand/b.png",
       "altImage": "crystal"
     },
     "secondParagraph": {
-      "content": "THERE’S TWO WAYS TO APROACH YOUR PROJECT, CHOOSE THE ONE THAT BEST FITS YOUR NEEDS"
+      "content": ""
     },
     "services": {
-      "standar": "/resources/standar.svg",
-      "altStandar": "standar",
-      "standarTitle": "STANDARD",
-      "standarTypes": ["_Landing", "_Website", "_Blog", "_E-commerce"],
-      "altSCustom": "custom",
-      "custom": "/resources/custom.svg",
-      "customTitle": "CUSTOM",
-      "customTypes": ["_Mobile Apps ", "_API’S", "_Web Apps", "_A.I"]
+      "standar": "",
+      "altStandar": "",
+      "standarTitle": "",
+      "standarTypes": [""],
+      "altSCustom": "",
+      "custom": "",
+      "customTitle": "",
+      "customTypes": [""]
     },
     "packs": {
-      "title": "STANDARD PACKS",
+      "title": "BRAND PACKS",
       "packsContent": [
         {
-          "title": "One page",
-          "text": "USD $899",
-          "buttonText": "Book a Call",
+          "title": "Identidad Base",
+          "text": "USD $799",
+          "buttonText": "Agenda una llamada",
           "phone": "",
           "props": [
             {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "TEMPLATE COMPRISING A SINGLE VIEW WITH A MINIMUM OF 4 SECTIONS AND A MAXIMUM OF 8 SECTIONS"
+              "icon": "material-symbols:close",
+              "color": "#8A8A8A",
+              "name": "BENCHMARK"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WORDPRESS TEMPLATE" },
             {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW"
+              "icon": "material-symbols:close",
+              "color": "#8A8A8A",
+              "name": "INVESTIGACIÓN DE MERCADO"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "BANNER CUSTOMIZATION FOR ALL VIEWS" },
+            {
+              "icon": "material-symbols:close",
+              "color": "#8A8A8A",
+              "name": "ANÁLISIS DEL CONSUMIDOR"
+            },
+            {
+              "icon": "material-symbols:close",
+              "color": "#8A8A8A",
+              "name": "IDENTIDAD VERBAL / ADN"
+            },
+
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "ICON MODIFICATION" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE'S LOOK AND FEEL" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "LOGOTIPO RESPONSIVE" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PALETA DE COLORES" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "TIPOGRAFÍAS DE MARCA" },
             {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "WEBSITE'S COPIES"
+              "icon": "material-symbols:close",
+              "color": "#8A8A8A",
+              "name": "ICONOGRAFÍA"
+            },
+            {
+              "icon": "material-symbols:close",
+              "color": "#8A8A8A",
+              "name": "PACKS DE APLICACIONES"
+            },
+            {
+              "icon": "material-symbols:close",
+              "color": "#8A8A8A",
+              "name": "LOGO ANIMADO"
+            },
+            {
+              "icon": "material-symbols:close",
+              "color": "#8A8A8A",
+              "name": "MOTION GRAPHICS DE MARCA"
+            },
+            {
+              "icon": "material-symbols:close",
+              "color": "#8A8A8A",
+              "name": "3D DE MARCA"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM"
+              "name": "LOGO GUIDELINES"
             }
           ]
         },
         {
-          "title": "Landing Page",
-          "text": "USD $1,399",
-          "buttonText": "Book a Call",
-          "phone": "",
-          "props": [
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW"
-            },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WORDPRESS TEMPLATE" },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW"
-            },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "BANNER CUSTOMIZATION FOR ALL VIEWS" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "ICON MODIFICATION" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE'S LOOK AND FEEL" },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "WEBSITE'S COPIES"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM"
-            }
-          ]
-        },
-        {
-          "title": "E- commerce",
+          "title": "Identidad Visual",
           "text": "USD $1,999",
-          "buttonText": "Book a Call",
+          "buttonText": "Agenda una llamada",
           "phone": "",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "TEMPLATE INCLUDING MAIN PAGE, SHOP, INDIVIDUAL PRODUCT, CART AND PAYMENT GATEWAY (9 TO 11 VIEWS)"
+              "name": "BENCHMARK"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "SHOPIFY TEMPLATE" },
+            {
+              "icon": "material-symbols:close",
+              "color": "#8A8A8A",
+              "name": "INVESTIGACIÓN DE MERCADO"
+            },
+            {
+              "icon": "material-symbols:close",
+              "color": "#8A8A8A",
+              "name": "ANÁLISIS DEL CONSUMIDOR"
+            },
+            {
+              "icon": "material-symbols:close",
+              "color": "#8A8A8A",
+              "name": "IDENTIDAD VERBAL / ADN"
+            },
+
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "LOGOTIPO RESPONSIVE" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PALETA DE COLORES" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "TIPOGRAFÍAS DE MARCA" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "CUSTOMIZATION OF BANNERS FOR ALL VIEWS (DESIGNED FOR WEB AND RESPONSIVE)"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "FONT CUSTOMIZATION (NEW FONTS APPLIED TO THE BRAND)"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "ICON MODIFICATION ('ICON'S DESIGNED FOR THE BRAND)"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "LOOK AND FEEL OF THE ENTIRE WEB (VIDEO WITH THE DESIGN PROPOSAL OF THE ENTIRE WEB BEFORE PROCEEDING TO DEVELOPMENT)"
-            },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM"
+              "name": "ICONOGRAFÍA"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "WEBSITE'S COPIES"
+              "name": "PACKS DE APLICACIONES"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE ELEMENTS" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "50 PRODUCTS UPLOADS" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "MANUAL ON HOW TO ADMINISTRATE THE PLATFORM"
+              "name": "LOGO ANIMADO"
+            },
+            {
+              "icon": "material-symbols:close",
+              "color": "#8A8A8A",
+              "name": "MOTION GRAPHICS DE MARCA"
+            },
+            {
+              "icon": "material-symbols:close",
+              "color": "#8A8A8A",
+              "name": "3D DE MARCA"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "LOGO GUIDELINES"
+            }
+          ]
+        },
+        {
+          "title": "Identidad Corporativa",
+          "text": "USD $3,999",
+          "buttonText": "Agenda una llamada",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "BENCHMARK"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "INVESTIGACIÓN DE MERCADO"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "ANÁLISIS DEL CONSUMIDOR"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "IDENTIDAD VERBAL / ADN"
+            },
+
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "LOGOTIPO RESPONSIVE" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PALETA DE COLORES" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "TIPOGRAFÍAS DE MARCA" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "ICONOGRAFÍA"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "PACKS DE APLICACIONES"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "LOGO ANIMADO"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "MOTION GRAPHICS DE MARCA"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "3D DE MARCA"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "LOGO GUIDELINES"
+            }
+          ]
+        }
+      ]
+    },
+    "secondPacks": {
+      "title": "APPLICATION PACKS",
+      "packsContent": [
+        {
+          "title": "Diseño de empaque",
+          "text": "USD $299",
+          "buttonText": "Agenda una llamada",
+          "phone": "",
+          "props": [
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 EMPAQUE CON DISEÑO" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 ARTE TIRO O RETIRO" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 BOLSA DELIVERY" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3 STICKERS DE CIERRE" },
+
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "1 TROQUEL PRE EXISTENTE"
+            }
+          ]
+        },
+        {
+          "title": "Uniformes",
+          "text": "USD $299",
+          "buttonText": "Agenda una llamada",
+          "phone": "",
+          "props": [
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 DISEÑO DE 2 CAMISAS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 CARNET" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 LANYARD" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 GORRAS" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "1 HOODIE"
+            }
+          ]
+        },
+        {
+          "title": "Material POP",
+          "text": "USD $299",
+          "buttonText": "Agenda una llamada",
+          "phone": "",
+          "props": [
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 TERMO" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 TAZA" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 BOLÍGRAFO" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 PENDRIVE" },
+
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "5 STICKERS"
             }
           ]
         }
@@ -454,53 +580,47 @@
     },
     "products": {
       "logos": [
-        { "image": "/resources/technologies/js.svg", "alt": "js" },
-        { "image": "/resources/technologies/py.svg", "alt": "py" },
-        { "image": "/resources/technologies/tail.svg", "alt": "tail" },
-        { "image": "/resources/technologies/go.svg", "alt": "go" },
-        { "image": "/resources/technologies/sass.svg", "alt": "sass" },
-        { "image": "/resources/technologies/gsap.svg", "alt": "gasp" },
-        { "image": "", "alt": "" },
-        { "image": "/resources/technologies/figma.svg", "alt": "figma" },
-        { "image": "/resources/technologies/ps.svg", "alt": "ps" },
-        { "image": "/resources/technologies/ai.svg", "alt": "ai" },
-        { "image": "/resources/technologies/xd.svg", "alt": "xd" },
-        { "image": "", "alt": "" }
+        { "image": "/resources/technologies/brand/sotano.svg", "alt": "sotano siete" },
+        { "image": "/resources/technologies/brand/carbinox.svg", "alt": "carbinox" },
+        { "image": "/resources/technologies/brand/activo.svg", "alt": "activo" },
+        { "image": "/resources/technologies/brand/praline.svg", "alt": "praline" },
+        { "image": "/resources/technologies/brand/sonnon.svg", "alt": "sonnon" },
+        { "image": "/resources/technologies/brand/porfidio.svg", "alt": "porfidio" }
       ]
     },
     "portfolio": {
       "projects": [
         {
-          "name": "Puntu - Finances  Platform",
-          "image": "/resources/portfolio/puntu.svg",
-          "alt": "puntu",
-          "hoverImage": "/resources/portfolio/puntu-hover.gif",
+          "name": "Cantina - Identidad Visual",
+          "image": "/resources/portfolio/brand/cantina.svg",
+          "alt": "cantina",
+          "hoverImage": "/resources/portfolio/brand/cantina.gif",
           "link": "https://puntu.io",
-          "backgroundColor": "#E6427A"
+          "backgroundColor": "#E5E3D3"
         },
         {
-          "name": "Vippo - Finance Platform",
-          "image": "/resources/portfolio/vippo.svg",
-          "alt": "vippo",
-          "hoverImage": "/resources/portfolio/vippo-hover.gif",
+          "name": "Infoguía - Identidad Corporativa y UI",
+          "image": "/resources/portfolio/brand/infoguia.svg",
+          "alt": "infoguia",
+          "hoverImage": "/resources/portfolio/brand/infoguia.gif",
           "link": "https://play.google.com/store/search?q=vippo&c=apps&hl=es_VE&gl=US",
-          "backgroundColor": "#A5BC51"
+          "backgroundColor": "#000000"
         },
         {
-          "name": "Pix - Crypto Wallet",
-          "image": "/resources/portfolio/pix.svg",
-          "alt": "pix",
-          "hoverImage": "/resources/portfolio/pix-hover.gif",
+          "name": "Carbinox - Identidas Visual",
+          "image": "/resources/portfolio/brand/carbinox.svg",
+          "alt": "carbinox",
+          "hoverImage": "/resources/portfolio/brand/carbinox.gif",
           "link": "https://main--cool-sfogliatella-bfdf8f.netlify.app/",
-          "backgroundColor": "#57D6AF"
+          "backgroundColor": "#000000"
         },
         {
-          "name": "New Project",
-          "image": "/resources/portfolio/comming-soon.svg",
-          "alt": "",
-          "hoverImage": "",
+          "name": "Mia & Verssel - Identidad Corporativa",
+          "image": "/resources/portfolio/brand/mia-verssel.svg",
+          "alt": "mia-verssel",
+          "hoverImage": "/resources/portfolio/brand/mia-verssel.gif",
           "link": "",
-          "backgroundColor": "#FFFFFF"
+          "backgroundColor": "#E8C4BA"
         }
       ]
     },

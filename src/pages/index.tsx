@@ -35,9 +35,12 @@ export default function Home({ data }: any) {
         <Hero data={data?.hero} action={contactRef} />
         <Paragraph {...data?.firstParagraph} ref={aboutRef} />
         <AboutUs {...data?.aboutUs} ref={weDoRef} />
-        <Paragraph {...data?.secondParagraph} />
-        <Services {...data?.services} ref={servicesRef} />
+
+        {/* <Paragraph {...data?.secondParagraph} />
+        <Services {...data?.services} ref={servicesRef} /> */}
+
         <Packs {...data?.packs} {...data?.general} ref={packsRef} />
+        <Packs {...data?.secondPacks} {...data?.general} ref={packsRef} />
         <Products {...data?.products} ref={productsRef} />
         <Portfolio {...data?.portfolio} ref={portfolioRef} />
         <Contact {...data?.contactUs} {...data?.general} ref={contactRef} />
@@ -48,7 +51,7 @@ export default function Home({ data }: any) {
 
 export async function getStaticProps() {
   // const domain: string = process.env.DOMAIN || "TECH"
-  const domain: string = 'TECH';
+  const domain: string = 'BRAND';
 
   return {
     props: {

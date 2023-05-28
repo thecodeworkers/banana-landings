@@ -1,7 +1,7 @@
 @import '../../../public/styles/index.scss';
 
 ._inputContainer{
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid $footerWhite;
     width: 100%;
    
     background-color: transparent;
@@ -9,7 +9,7 @@
 ._validates{
     font-size: 0.750rem;
     margin-top: 0.5rem;
-    color: $white;
+    color: $footerWhite;
     font-family: $helvetica;
   }
 
@@ -17,11 +17,11 @@
     background-color: transparent;
     border: none;
     width: 100%;
-    color: $white;
+    color: $footerWhite;
     font-size: 0.875rem;
     margin-bottom: 1rem;
     &::placeholder {
-        color: $white; 
+        color: $footerWhite; 
       
     }
 }

@@ -1,7 +1,7 @@
 @import '../../../public/styles/index.scss';
 
 ._content {
-    background-color: $black;
+    background-color: $footerBlack;
     width: 100%;
     max-width: $max-width;
     height: 4.25rem;
@@ -28,7 +28,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: $white;
+    color: $footerWhite;
 }
 
 ._icons {
@@ -62,7 +62,7 @@
 }
 
 ._text {
-    color: $white;
+    color: $footerWhite;
     font-size: $helvetica16;
     font-family: $helvetica;
 

@@ -7,6 +7,7 @@
   justify-content: center;
   height: 65vh;
   overflow: hidden;
+  
 }
 
 ._content {
@@ -29,7 +30,7 @@
 
 ._title {
   font-size: $helvetica90;
-  color: $white;
+  color: $footerWhite;
   font-family: $helvetica;
   margin-bottom: 1rem;
   width: 80%;
@@ -45,7 +46,7 @@
 ._text,
 ._goBack {
   font-size: $helvetica16;
-  color: $white;
+  color: $footerWhite;
   margin-top: 0.5rem;
   font-family: $helvetica;
   width: 70%;
@@ -92,6 +93,8 @@
 
 ._haveProjectWrapper {
   height: 100%;
+  background-color: $footerBlack;
+ padding-top: 4rem;
   justify-content: space-between;
 }
 
@@ -118,6 +121,8 @@
   position: absolute;
   left: 100vw;
   padding-bottom: 2rem;
+  background-color: $footerBlack;
+  padding-top: 4rem;
 }
 
 ._formWrapper {
@@ -130,7 +135,7 @@
 ._haveProjectText {
   font-family: $helvetica;
   font-size: $helvetica90;
-  color: $white
+  color: $footerWhite;
 }
 
 ._haveProjectButtons {
@@ -205,7 +210,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $white;
+    color: $footerWhite;
     margin-top: 0.5rem;
     font-family: $helvetica;
     font-size: $helvetica14;
