@@ -164,6 +164,7 @@
     font-size: 3rem;
     text-align: flex-start;
     font-size: $helvetica40;
+  
   }
 
 
@@ -220,6 +221,7 @@
   ._text,
   ._goBack {
     font-size: $helvetica14;
+    margin-bottom: 1rem;
   }
 
   ._text {
@@ -228,6 +230,7 @@
 
   ._formWrapper {
     flex-direction: column;
+    margin-top: 0;
   }
 
   ._buttonContainer {

@@ -27,8 +27,14 @@ const AboutUs = forwardRef<HTMLDivElement>((props: any, ref): any => {
             />
           </div>
           <p className={styles._title}>
-            {props?.firstTitle} <span className={styles._greenTitleFirst}>{props?.firstBold}</span>
-            <span className={styles._greenTitleSecond}> {props?.secondBold} </span>
+            {props?.firstTitle}{' '}
+            <span style={{ color: props?.boldColor }} className={styles._greenTitleFirst}>
+              {props?.firstBold}
+            </span>
+            <span style={{ color: props?.boldColor }} className={styles._greenTitleSecond}>
+              {' '}
+              {props?.secondBold}{' '}
+            </span>
             {props?.secondTitle}
           </p>
         </div>

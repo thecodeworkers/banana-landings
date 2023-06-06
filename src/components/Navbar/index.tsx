@@ -2,7 +2,6 @@ import Image from 'next/image';
 import React, { FC, useState } from 'react';
 import { scrolling } from '../../utils/common';
 import styles from './styles.module.scss';
-import logo from '../../../public/resources/logo.svg';
 
 type Props = {
   data: any;
@@ -37,10 +36,10 @@ const Navbar: FC<Props> = ({ data, refs }) => {
       <div className={styles._navbar}>
         <div className={styles._content}>
           <div className={styles._imageBox}>
-            <Image src={logo} alt={'Banana Tech'} width={200} height={37} quality={100} />
+            <Image src={data?.image} alt={data?.alt} width={200} height={37} quality={100} />
           </div>
           <div className={styles._imageBoxResponsive}>
-            <Image src={logo} alt={'Banana Tech'} width={150} height={26} quality={100} />
+            <Image src={data?.image} alt={data?.alt} width={150} height={26} quality={100} />
           </div>
 
           <div className={styles._textBox}>

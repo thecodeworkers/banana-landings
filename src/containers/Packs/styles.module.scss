@@ -94,8 +94,9 @@
 }
 
 ._disableText {
-  color: $tundora;
+  color: $alabaster;
   font-family: $helvetica;
+  opacity: .5;
   font-size: 1rem;
   margin: 1rem 0 1rem 0.5rem;
   width: 80%;
@@ -119,6 +120,7 @@
 @include responsive(lg) {
   ._title {
     font-size: $helvetica40;
+    margin-top: 2.5rem;
   }
 
   ._packTitle {

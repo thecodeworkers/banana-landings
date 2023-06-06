@@ -8,13 +8,15 @@
       "haveProjectMessage": "!Hi team Banana! I would like more information about your products, i have a project"
     },
     "navbar": {
+      "image": "/resources/header/logo-tech.svg",
+      "alt": "Banana Tech",
       "routes": [
         { "name": "About Us", "ref": "aboutUs" },
         { "name": "What we do?", "ref": "weDo" },
         { "name": "Services", "ref": "services" },
         { "name": "Packs", "ref": "packs" },
         { "name": "Technologies", "ref": "products" },
-        { "name": "Briefcase", "ref": "portfolio" },
+        { "name": "Portfolio", "ref": "portfolio" },
         { "name": "Contact Us", "ref": "contact" }
       ]
     },
@@ -34,6 +36,7 @@
       "firstTitle": "WE CREATE",
       "firstBold": "FUNCTIONAL",
       "secondBold": "& BEAUTIFUL",
+      "boldColor": "#B8E19D",
       "secondTitle": "WEBS & APPS",
       "phases": ["UX Research_", "Desing System_", "Development_", "Q/A_", "Deployment_"],
       "image": "/resources/banners/tech/crystal.svg",
@@ -287,6 +290,8 @@
       "haveProjectMessage": "!Hi team Banana! I would like more information about your products, i have a project"
     },
     "navbar": {
+      "image": "/resources/header/logo-brand.svg",
+      "alt": "Banana Tech",
       "routes": [
         { "name": "Nosotros", "ref": "aboutUs" },
         { "name": "Proceso", "ref": "weDo" },
@@ -305,18 +310,19 @@
       "altImage": "Banana"
     },
     "firstParagraph": {
-      "content": "ES UN EQUIPO DE DISEñADORES Y COMUNICADORES ESPECIALIZADOS EN EL DESARROLLO DE INDENTIDADES VISUALES Y VERBALES",
+      "content": "ES UN EQUIPO DE DISEÑADORES Y COMUNICADORES ESPECIALIZADOS EN EL DESARROLLO DE INDENTIDADES VISUALES Y VERBALES",
       "bolded": "BANANA DESIGN"
     },
     "aboutUs": {
       "firstTitle": "WE CREATE",
       "firstBold": "FUNCTIONAL",
       "secondBold": "& BEAUTIFUL",
+      "boldColor": "#000000",
       "secondTitle": "BRANDS",
-      "phases": ["Kick Off", "Investigación", "Análisis", "Identidad Verbal", "Identidad Visual"],
+      "phases": ["Kick Off", "Investigación", "Análisis", "Identidad Verbal", "Identidad Visual & UI"],
       "image": "/resources/banners/brand/b.svg",
-      "imageWidth": 470,
-      "imageHeight": 500,
+      "imageWidth": 802,
+      "imageHeight": 494,
       "imageWidthResponsive": 184,
       "imageHeightResponsive": 155,
       "altImage": "brand"
@@ -364,7 +370,6 @@
               "name": "IDENTIDAD VERBAL / ADN"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "LOGOTIPO RESPONSIVE" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "PALETA DE COLORES" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "TIPOGRAFÍAS DE MARCA" },
@@ -427,7 +432,6 @@
               "name": "IDENTIDAD VERBAL / ADN"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "LOGOTIPO RESPONSIVE" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "PALETA DE COLORES" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "TIPOGRAFÍAS DE MARCA" },
@@ -490,7 +494,6 @@
               "name": "IDENTIDAD VERBAL / ADN"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "LOGOTIPO RESPONSIVE" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "PALETA DE COLORES" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "TIPOGRAFÍAS DE MARCA" },
@@ -635,17 +638,17 @@
     "contactUs": {
       "address": [""],
       "copyright": "Copyright © BananaCreative 2023",
-      "touchButton": "Get in touch",
-      "callButton": "Book a Call",
-      "sendButton": "Send",
+      "touchButton": "Contactanos",
+      "callButton": "Agenda una llamada",
+      "sendButton": "Enviar",
       "gotTitle": "GOT A PROJECT?",
-      "mediaText": "You can follow us at:",
+      "mediaText": "Siguenos en:",
       "contactTitle": "LET’S GET IN TOUCH",
-      "goBackText": "Go Back",
+      "goBackText": "Volver",
       "form": [
-        { "name": "Company o Startup*", "key": "company" },
-        { "name": "Email*", "key": "email" },
-        { "name": "Message*", "key": "subject" }
+        { "name": "Compañia*", "key": "company" },
+        { "name": "Correo Electrónico*", "key": "email" },
+        { "name": "Mensaje*", "key": "subject" }
       ],
       "media": [
         {
