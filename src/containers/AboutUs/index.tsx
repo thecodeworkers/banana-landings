@@ -9,10 +9,22 @@ const AboutUs = forwardRef<HTMLDivElement>((props: any, ref): any => {
       <FadeIn className={styles._content}>
         <div className={styles._textBox}>
           <div className={styles._backgroundImage}>
-            <Image src={props?.image} alt={props?.altImage} width={470} height={500} quality={100} />
+            <Image
+              src={props?.image}
+              alt={props?.altImage}
+              width={props?.imageWidth}
+              height={props?.imageHeight}
+              quality={100}
+            />
           </div>
           <div className={styles._backgroundImageResponsive}>
-            <Image src={props?.image} alt={props?.altImage} width={184} height={155} quality={100} />
+            <Image
+              src={props?.image}
+              alt={props?.altImage}
+              width={props?.imageWidthResponsive}
+              height={props?.imageHeightResponsive}
+              quality={100}
+            />
           </div>
           <p className={styles._title}>
             {props?.firstTitle} <span className={styles._greenTitleFirst}>{props?.firstBold}</span>

@@ -37,6 +37,10 @@
       "secondTitle": "WEBS & APPS",
       "phases": ["UX Research_", "Desing System_", "Development_", "Q/A_", "Deployment_"],
       "image": "/resources/banners/tech/crystal.svg",
+      "imageWidth": 470,
+      "imageHeight": 500,
+      "imageWidthResponsive": 184,
+      "imageHeightResponsive": 155,
       "altImage": "crystal"
     },
     "secondParagraph": {
@@ -310,8 +314,12 @@
       "secondBold": "& BEAUTIFUL",
       "secondTitle": "BRANDS",
       "phases": ["Kick Off", "Investigación", "Análisis", "Identidad Verbal", "Identidad Visual"],
-      "image": "/resources/banners/brand/b.png",
-      "altImage": "crystal"
+      "image": "/resources/banners/brand/b.svg",
+      "imageWidth": 470,
+      "imageHeight": 500,
+      "imageWidthResponsive": 184,
+      "imageHeightResponsive": 155,
+      "altImage": "brand"
     },
     "secondParagraph": {
       "content": ""
