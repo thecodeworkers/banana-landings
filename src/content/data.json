@@ -214,7 +214,7 @@
           "name": "Vippo - Finance Platform",
           "image": "/resources/portfolio/tech/vippo.svg",
           "alt": "vippo",
-          "hoverImage": "/resources/portfolio/brand/carbinox.gif",
+          "hoverImage": "/resources/portfolio/tech/vippo.gif",
 
           "link": "https://play.google.com/store/search?q=vippo&c=apps&hl=es_VE&gl=US",
           "backgroundColor": "#A5BC51"
@@ -223,8 +223,8 @@
           "name": "Pix - Crypto Wallet",
           "image": "/resources/portfolio/tech/pix.svg",
           "alt": "pix",
+          "hoverImage": "/resources/portfolio/tech/pix.gif",
 
-          "hoverImage": "/resources/portfolio/brand/carbinox.gif",
           "link": "https://main--cool-sfogliatella-bfdf8f.netlify.app/",
           "backgroundColor": "#57D6AF"
         },
