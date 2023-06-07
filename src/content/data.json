@@ -223,7 +223,8 @@
           "name": "Pix - Crypto Wallet",
           "image": "/resources/portfolio/tech/pix.svg",
           "alt": "pix",
-          "hoverImage": "/resources/portfolio/tech/pix.gif",
+
+          "hoverImage": "/resources/portfolio/brand/carbinox.gif",
           "link": "https://main--cool-sfogliatella-bfdf8f.netlify.app/",
           "backgroundColor": "#57D6AF"
         },
