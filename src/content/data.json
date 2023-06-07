@@ -206,7 +206,7 @@
           "name": "Puntu - Finances  Platform",
           "image": "/resources/portfolio/tech/puntu.svg",
           "alt": "puntu",
-          "hoverImage": "/resources/portfolio/tech/puntu-hover.gif",
+          "hoverImage": "/resources/portfolio/tech/puntu.gif",
           "link": "https://puntu.io",
           "backgroundColor": "#E6427A"
         },
@@ -214,7 +214,7 @@
           "name": "Vippo - Finance Platform",
           "image": "/resources/portfolio/tech/vippo.svg",
           "alt": "vippo",
-          "hoverImage": "/resources/portfolio/tech/vippo-hover.gif",
+          "hoverImage": "/resources/portfolio/tech/vippo.gif",
 
           "link": "https://play.google.com/store/search?q=vippo&c=apps&hl=es_VE&gl=US",
           "backgroundColor": "#A5BC51"
@@ -223,7 +223,7 @@
           "name": "Pix - Crypto Wallet",
           "image": "/resources/portfolio/tech/pix.svg",
           "alt": "pix",
-          "hoverImage": "/resources/portfolio/tech/pix-hover.gif",
+          "hoverImage": "/resources/portfolio/tech/pix.gif",
           "link": "https://main--cool-sfogliatella-bfdf8f.netlify.app/",
           "backgroundColor": "#57D6AF"
         },
