@@ -9,7 +9,7 @@ type Props = {
   darkTheme?: boolean; //DARK THEME SET DEFAULT TRUE OTHERWISE SET FALSE
 };
 
-const GeneralButton: FC<Props> = ({ text, method, darkTheme = false }) => {
+const GeneralButton: FC<Props> = ({ text, method, darkTheme = true }) => {
   const textAnimation: Variants = {
     initial: {
       color: '#FFFFFF',
