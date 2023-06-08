@@ -50,8 +50,7 @@ export default function Home({ data }: any) {
 }
 
 export async function getStaticProps() {
-  // const domain: string = process.env.DOMAIN || "TECH"
-  const domain: string = 'TECH';
+  const domain: string = process.env.DOMAIN || "TECH"
 
   return {
     props: {

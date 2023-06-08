@@ -680,6 +680,7 @@
       ]
     }
   },
+
   "MOTION": {
     "hero": {
       "title": "WE HELP BRING YOUR BRAND",
@@ -687,5 +688,6 @@
       "subtitle": "We develop, create and innovate your ideas."
     }
   },
+  
   "PRODUCTION": {}
 }

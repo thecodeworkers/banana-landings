@@ -10,10 +10,14 @@
 
 ._content {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 6rem;
+  row-gap: 2rem;
 }
 
 ._contentResponsive {
