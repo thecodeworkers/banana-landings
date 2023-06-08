@@ -40,7 +40,7 @@ export default function Home({ data }: any) {
         <Services {...data?.services} ref={servicesRef} /> */}
 
         <Packs {...data?.packs} {...data?.general} ref={packsRef} />
-        {/* <Packs {...data?.secondPacks} {...data?.general} ref={packsRef} /> */}
+        <Packs {...data?.secondPacks} {...data?.general} ref={packsRef} />
         <Products {...data?.products} ref={productsRef} />
         <Portfolio {...data?.portfolio} ref={portfolioRef} />
         <Contact {...data?.contactUs} {...data?.general} ref={contactRef} />

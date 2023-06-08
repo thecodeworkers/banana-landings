@@ -2,20 +2,21 @@ import React, { FC } from 'react';
 import styles from './styles.module.scss';
 import { motion, Variants } from 'framer-motion';
 import { Icon } from '@iconify/react';
+import scss from '../../../public/styles/variables.module.scss';
 
 type Props = {
   text: string;
   method?: any;
-  darkTheme?: boolean; //DARK THEME SET DEFAULT TRUE OTHERWISE SET FALSE
+  ignoreTheme?: boolean; // Ignore theme only for footer because not variant with selected theme
 };
 
-const GeneralButton: FC<Props> = ({ text, method, darkTheme = true }) => {
+const GeneralButton: FC<Props> = ({ text, method, ignoreTheme = false }) => {
   const textAnimation: Variants = {
     initial: {
-      color: '#FFFFFF',
+      color: ignoreTheme ? '#FFFFFF' : scss.white,
     },
     hover: {
-      color: '#000000',
+      color: ignoreTheme ? '#000000' : scss.black,
       transition: {
         duration: 0.1,
       },
@@ -24,12 +25,12 @@ const GeneralButton: FC<Props> = ({ text, method, darkTheme = true }) => {
 
   const buttonAnimation: Variants = {
     initial: {
-      backgroundColor: '#000000',
-      border: '1px solid #FFFFFF',
+      backgroundColor: ignoreTheme ? '#000000' : scss.black,
+      borderColor: ignoreTheme ? '#FFFFFF' : scss.white
     },
     hover: {
-      backgroundColor: '#BCE5A1',
-      border: '1px solid #BCE5A1',
+      backgroundColor: scss.apple,
+      borderColor: scss.apple,
       transition: {
         duration: 0.5,
       },
@@ -39,11 +40,11 @@ const GeneralButton: FC<Props> = ({ text, method, darkTheme = true }) => {
   const arrowAnimation: Variants = {
     initial: {
       width: '50%',
-      color: '#FFFFFF',
+      color: ignoreTheme ? '#FFFFFF' : scss.white,
     },
     hover: {
       x: '90%',
-      color: '#000000',
+      color: ignoreTheme ? '#000000' : scss.black,
       transition: {
         duration: 1,
       },
@@ -55,17 +56,12 @@ const GeneralButton: FC<Props> = ({ text, method, darkTheme = true }) => {
       <motion.div
         whileHover='hover'
         variants={buttonAnimation}
-        style={
-          darkTheme
-            ? { background: '#0000000', border: '1px solid #ffffff' }
-            : { background: '#fffffff', border: '1px solid #000000' }
-        }
-        className={styles._buttonContainer}>
+        className={[styles._buttonContainer, ignoreTheme ? styles._ignoreTheme : ''].join(' ')}>
         <div className={styles._button}>
           <div className={styles._textContainer}>
             <motion.p
               className={styles._text}
-              style={darkTheme ? { color: '#ffffff' } : { color: '#000000' }}
+              style={{ color: ignoreTheme ? '#FFFFFF' : scss.white }}
               variants={textAnimation}>
               {text}
             </motion.p>
@@ -74,7 +70,7 @@ const GeneralButton: FC<Props> = ({ text, method, darkTheme = true }) => {
           <motion.div
             variants={arrowAnimation}
             className={styles._image}
-            style={darkTheme ? { color: '#ffffff' } : { color: '#000000' }}>
+            style={{ color: ignoreTheme ? '#FFFFFF' : scss.white }}>
             <Icon icon='mdi:arrow-right' width={22} />
           </motion.div>
         </div>
