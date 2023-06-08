@@ -50,7 +50,6 @@
 
 ._packageContainer {
   display: table-cell;
-  height: 1350px;
 }
 
 ._packageContent {
@@ -107,14 +106,14 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  padding-left:3rem;
-  padding-right:3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 ._buttonContainer {
   margin-top: 2rem;
   margin-bottom: 3rem;
- 
+
 }
 
 @include responsive(lg) {

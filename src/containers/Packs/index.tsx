@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, useEffect, useState } from 'react';
 import { FadeIn, GeneralButton } from '@/components';
 import { Icon } from '@iconify/react';
 import Slider from 'react-slick';
@@ -7,6 +7,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import styles from './styles.module.scss';
 
 const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
+  const [height, setHeight] = useState<number>()
+  const allPacksRefs: any = []
   const settings = {
     dots: false,
     infinite: false,
@@ -35,6 +37,26 @@ const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
     window.open(`https://api.whatsapp.com/send?phone=${props?.phone}&text=${props?.packsMessage} "${pack}"`);
   };
 
+  const getMinHeight = () => {
+    const heights = allPacksRefs.map(({offsetHeight}: any) => offsetHeight)
+    setHeight(Math.max(...heights))
+  }
+
+  const setMinHeight = () => allPacksRefs.map((ref: any) => {
+    if (height) {
+      ref.style.height = `${height + 50}px`;
+    }
+    return null
+  })
+
+  useEffect(() => {
+    getMinHeight()
+  }, [allPacksRefs.lenght])
+
+  useEffect(() => {
+    setMinHeight()
+  }, [height])
+
   return (
     <div ref={ref} className={styles._main}>
       <FadeIn>
@@ -44,6 +66,7 @@ const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
             {props?.packsContent?.map((pack: any, index: number) => (
               <div
                 key={index}
+                ref={ref => allPacksRefs.push(ref)}
                 style={{ width: `${100 / props?.packsContent?.length}%` }}
                 className={styles._packageContainer}>
                 <div className={styles._packageContent}>
