@@ -322,10 +322,10 @@
       "secondTitle": "BRANDS",
       "phases": ["Kick Off", "Investigación", "Análisis", "Identidad Verbal", "Identidad Visual & UI"],
       "image": "/resources/banners/brand/b.svg",
-      "imageWidth": 802,
-      "imageHeight": 494,
-      "imageWidthResponsive": 184,
-      "imageHeightResponsive": 155,
+      "imageWidth": 600,
+      "imageHeight": 490,
+      "imageWidthResponsive": 284,
+      "imageHeightResponsive": 205,
       "altImage": "brand"
     },
     "secondParagraph": {
@@ -688,6 +688,6 @@
       "subtitle": "We develop, create and innovate your ideas."
     }
   },
-  
+
   "PRODUCTION": {}
 }
