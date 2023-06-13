@@ -36,8 +36,8 @@ export default function Home({ data }: any) {
         <Paragraph {...data?.firstParagraph} ref={aboutRef} />
         <AboutUs {...data?.aboutUs} ref={weDoRef} />
 
-        {/* <Paragraph {...data?.secondParagraph} />
-        <Services {...data?.services} ref={servicesRef} /> */}
+        <Paragraph {...data?.secondParagraph} />
+        <Services {...data?.services} ref={servicesRef} />
 
         <Packs {...data?.packs} {...data?.general} ref={packsRef} />
         <Packs {...data?.secondPacks} {...data?.general} ref={packsRef} />
