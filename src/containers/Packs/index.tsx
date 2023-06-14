@@ -50,7 +50,7 @@ const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
 
   const setMinHeight = () => allPacksRefs.map((ref: any) => {
     if (height) {
-      const varDivide = isMobile ? 20 : 16
+      const varDivide = isMobile ? 24 : 15
       ref.style.height = `${height/varDivide}rem`;
     }
     return null
