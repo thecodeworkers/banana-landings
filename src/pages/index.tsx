@@ -1,4 +1,4 @@
-import { Navbar, Footer } from '@/components';
+import { Navbar } from '@/components';
 import { Hero, AboutUs, Services, Products, Portfolio, Contact, Paragraph, Packs } from '@/containers';
 
 import styles from './styles.module.scss';
@@ -8,7 +8,7 @@ import content from '@/content/data.json';
 
 type DomainType = keyof typeof content;
 
-export default function Home({ data }: any) {
+export default function Home({ data, domain }: any) {
   const aboutRef = useRef(null);
   const servicesRef = useRef(null);
   const productsRef = useRef(null);
@@ -36,8 +36,9 @@ export default function Home({ data }: any) {
         <Paragraph {...data?.firstParagraph} ref={aboutRef} />
         <AboutUs {...data?.aboutUs} ref={weDoRef} />
 
-        <Paragraph {...data?.secondParagraph} />
-        <Services {...data?.services} ref={servicesRef} />
+        {data?.secondParagraph.content && <Paragraph {...data?.secondParagraph} />}
+
+        {domain === 'TECH' && <Services {...data?.services} ref={servicesRef} />}
 
         <Packs {...data?.packs} {...data?.general} ref={packsRef} />
         <Packs {...data?.secondPacks} {...data?.general} ref={packsRef} />
@@ -55,6 +56,7 @@ export async function getStaticProps() {
   return {
     props: {
       data: content[domain as DomainType],
+      domain
     },
   };
 }
