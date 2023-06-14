@@ -21,7 +21,13 @@ const Portfolio = forwardRef<HTMLDivElement>((props: any, ref) => {
                 </div>
                 <div className={styles._imageHoverBox}>
                   {project?.name !== 'New Project' && (
-                    <Image src={project?.hoverImage} fill alt={project?.alt} quality={100} />
+                    <Image
+                      src={project?.hoverImage}
+                      style={{ objectFit: 'cover' }}
+                      fill
+                      alt={project?.alt}
+                      quality={100}
+                    />
                   )}
                 </div>
               </div>
