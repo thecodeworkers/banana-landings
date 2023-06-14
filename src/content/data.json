@@ -639,11 +639,11 @@
     "contactUs": {
       "address": [""],
       "copyright": "Copyright © BananaCreative 2023",
-      "touchButton": "Contactanos",
+      "touchButton": "Contáctanos",
       "callButton": "Agenda una llamada",
       "sendButton": "Enviar",
       "gotTitle": "GOT A PROJECT?",
-      "mediaText": "Siguenos en:",
+      "mediaText": "Síguenos en:",
       "contactTitle": "LET’S GET IN TOUCH",
       "goBackText": "Volver",
       "form": [
