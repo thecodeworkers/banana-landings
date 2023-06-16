@@ -690,7 +690,7 @@
       "haveProjectMessage": "!Hi team Banana! I would like more information about your products, i have a project"
     },
     "navbar": {
-      "image": "/resources/header/logo-tech.svg",
+      "image": "/resources/header/logo-motion.svg",
       "alt": "Banana Tech",
       "routes": [
         { "name": "About Us", "ref": "aboutUs" },
@@ -703,7 +703,7 @@
       ]
     },
     "hero": {
-      "title": "WE BRING YOUR BRAND",
+      "title": "WE WILL MAKE YOUR BRAND COME",
       "bold": "TO LIFE",
       "subtitle": "Let us blow your mind",
       "button": "Contáctanos",
@@ -722,8 +722,8 @@
       "secondTitle": "GRAPICHS",
       "phases": ["Kick Off", "Storyboard", "Moodboard", "Process", "Display"],
       "image": "/resources/banners/motion/tablet.svg",
-      "imageWidth": 438,
-      "imageHeight": 425,
+      "imageWidth": 588,
+      "imageHeight": 585,
       "imageWidthResponsive": 220,
       "imageHeightResponsive": 213,
       "altImage": "crystal"
