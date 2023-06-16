@@ -36,7 +36,7 @@ export default function Home({ data, domain }: any) {
         <Paragraph {...data?.firstParagraph} ref={aboutRef} />
         <AboutUs {...data?.aboutUs} ref={weDoRef} />
 
-        {data?.secondParagraph.content && <Paragraph {...data?.secondParagraph} />}
+        {data?.secondParagraph?.content && <Paragraph {...data?.secondParagraph} />}
 
         {domain === 'TECH' && <Services {...data?.services} ref={servicesRef} />}
 
@@ -56,7 +56,7 @@ export async function getStaticProps() {
   return {
     props: {
       data: content[domain as DomainType],
-      domain
+      domain,
     },
   };
 }

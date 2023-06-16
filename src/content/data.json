@@ -615,7 +615,7 @@
           "image": "/resources/portfolio/brand/infoguia.svg",
           "alt": "infoguia",
           "hoverImage": "/resources/portfolio/brand/infoguia.gif",
-          "link": "https://play.google.com/store/search?q=vippo&c=apps&hl=es_VE&gl=US",
+          "link": "https://www.behance.net/gallery/171885495/INFOGUIA",
           "backgroundColor": "#000000"
         },
         {
@@ -623,7 +623,7 @@
           "image": "/resources/portfolio/brand/carbinox.svg",
           "alt": "carbinox",
           "hoverImage": "/resources/portfolio/brand/carbinox.gif",
-          "link": "https://main--cool-sfogliatella-bfdf8f.netlify.app/",
+          "link": "https://www.behance.net/gallery/171032385/CARBINOX",
           "backgroundColor": "#000000"
         },
         {
@@ -631,7 +631,7 @@
           "image": "/resources/portfolio/brand/mia-verssel.svg",
           "alt": "mia-verssel",
           "hoverImage": "/resources/portfolio/brand/mia-verssel.gif",
-          "link": "",
+          "link": "https://www.behance.net/gallery/125722493/Mia-Verssel",
           "backgroundColor": "#E8C4BA"
         }
       ]
@@ -682,10 +682,238 @@
   },
 
   "MOTION": {
+    "general": {
+      "phone": "+584126350200",
+      "email": "a@gmail.com",
+      "contactMessage": "!Hi team Banana! I would like more information about your products and services, I have attached my contact information.",
+      "packsMessage": "!Hi team Banana! I would like more information about your product",
+      "haveProjectMessage": "!Hi team Banana! I would like more information about your products, i have a project"
+    },
+    "navbar": {
+      "image": "/resources/header/logo-motion.svg",
+      "alt": "Banana Tech",
+      "routes": [
+        { "name": "About Us", "ref": "aboutUs" },
+        { "name": "What we do?", "ref": "weDo" },
+        { "name": "Services", "ref": "services" },
+        { "name": "Packs", "ref": "packs" },
+        { "name": "Technologies", "ref": "products" },
+        { "name": "Portfolio", "ref": "portfolio" },
+        { "name": "Contact Us", "ref": "contact" }
+      ]
+    },
     "hero": {
-      "title": "WE HELP BRING YOUR BRAND",
-      "bold": "TO LIVE",
-      "subtitle": "We develop, create and innovate your ideas."
+      "title": "WE WILL MAKE YOUR BRAND COME",
+      "bold": "TO LIFE",
+      "subtitle": "Let us blow your mind",
+      "button": "Contáctanos",
+      "image": "/resources/banners/motion/banana.svg",
+      "altImage": "Banana"
+    },
+    "firstParagraph": {
+      "content": "BANANA MOTION IS A TEAM OF CREATIVE EXPERTS SPECIALIZED IN CONCEPTUALIZING, COMMUNICATING, DEVELOPING STORYBOARDS AND 2D/3D VISUALS.",
+      "bolded": ""
+    },
+    "aboutUs": {
+      "firstTitle": "WE CREATE",
+      "firstBold": "BEAUTIFUL",
+      "secondBold": "MOTION",
+      "boldColor": "#B8E19D",
+      "secondTitle": "GRAPICHS",
+      "phases": ["Kick Off", "Storyboard", "Moodboard", "Process", "Display"],
+      "image": "/resources/banners/motion/tablet.svg",
+      "imageWidth": 588,
+      "imageHeight": 585,
+      "imageWidthResponsive": 220,
+      "imageHeightResponsive": 213,
+      "altImage": "crystal"
+    },
+    "packs": {
+      "title": "PACKS",
+      "packsContent": [
+        {
+          "title": "2D/3D Character",
+          "text": "USD  $499",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "CONCEPTUALIZATION"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "MOODBOARD" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "ILUSTRATION"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3 PERSPECTIVES" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 ANIMATED GESTURE" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "RESOURCES WILL BE DELIVERED IN THE .MP4 FORMAT"
+            }
+          ]
+        },
+        {
+          "title": "Broadcast 2D&3D",
+          "text": "USD $1,499",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "CONCEPTUALIZATION"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "MOODBOARD" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "STORYBOARD"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EVENT IDENTITY" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "LOGO ANIMATION" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "6 ANIMATED COVERS OF APPROXIMATELY 10 SECONDS"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "INSERTS" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "RESOURCES WILL BE DELIVERED IN THE .MP4 FORMAT"
+            }
+          ]
+        },
+        {
+          "title": "Visual performance",
+          "text": "USD $1,799",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "CONCEPTUALIZATION"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "MOODBOARD" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "STORYBOARD"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "RUNDOWN"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "4 SEQUENCES FROM 10 TO 15 SECONDS"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "RESOURCES WILL BE DELIVERED IN THE REQUESTED FORMAT"
+            }
+          ]
+        }
+      ]
+    },
+    "products": {
+      "logos": [
+        { "image": "/resources/technologies/motion/oficcetailor.svg", "alt": "oficcetailor" },
+        { "image": "/resources/technologies/motion/porfidio.svg", "alt": "porfidio" },
+        { "image": "/resources/technologies/motion/mayela.svg", "alt": "mayela" },
+        { "image": "/resources/technologies/motion/activo.svg", "alt": "activo" },
+        { "image": "/resources/technologies/motion/easy.svg", "alt": "easy" },
+        { "image": "/resources/technologies/motion/odey.svg", "alt": "odey" }
+      ]
+    },
+    "portfolio": {
+      "projects": [
+        {
+          "name": "Suela - Animación 3D",
+          "image": "/resources/portfolio/motion/suela.svg",
+          "alt": "puntu",
+          "hoverImage": "/resources/portfolio/tech/puntu.gif",
+          "link": "https://puntu.io",
+          "backgroundColor": "#FFFFFF"
+        },
+        {
+          "name": "Janssen - Broadcast",
+          "image": "/resources/portfolio/motion/janssen.svg",
+          "alt": "vippo",
+          "hoverImage": "/resources/portfolio/brand/carbinox.gif",
+          "link": "https://play.google.com/store/search?q=vippo&c=apps&hl=es_VE&gl=US",
+          "backgroundColor": "#FFFFFF"
+        },
+        {
+          "name": "EasyFreazy - Animación 3D",
+          "image": "/resources/portfolio/motion/eazyFreazy.svg",
+          "alt": "pix",
+          "hoverImage": "/resources/portfolio/tech/pix.gif",
+
+          "link": "https://main--cool-sfogliatella-bfdf8f.netlify.app/",
+          "backgroundColor": "#D9B2DB"
+        },
+        {
+          "name": "Office Tailor - Animación ilustrada 2D",
+          "image": "/resources/portfolio/motion/officeTailor.svg",
+          "alt": "",
+          "hoverImage": "",
+          "link": "",
+          "backgroundColor": "#FFFFFF"
+        }
+      ]
+    },
+    "contactUs": {
+      "address": [""],
+      "copyright": "Copyright © BananaCreative 2023",
+      "touchButton": "Get in touch",
+      "callButton": "Book a Call",
+      "sendButton": "Send",
+      "gotTitle": "GOT A PROJECT?",
+      "mediaText": "You can follow us at:",
+      "contactTitle": "LET’S GET IN TOUCH",
+      "goBackText": "Go Back",
+      "form": [
+        { "name": "Company o Startup*", "key": "company" },
+        { "name": "Email*", "key": "email" },
+        { "name": "Message*", "key": "subject" }
+      ],
+      "media": [
+        {
+          "image": "/resources/behance.svg",
+          "alt": "behance",
+          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users%7Cbanana+creative"
+        },
+        {
+          "image": "/resources/instagram.svg",
+          "alt": "instagram",
+          "link": "https://www.instagram.com/_bananacreative/"
+        },
+        {
+          "image": "/resources/linkedin.svg",
+          "alt": "linkein",
+          "link": "https://www.linkedin.com/company/bananacreative/mycompany/"
+        },
+        {
+          "image": "/resources/tiktok.svg",
+          "alt": "tiktok",
+          "link": "https://www.tiktok.com/@_bananacreative?_t=8c4ErUhJZrC&_r=1"
+        },
+        {
+          "image": "/resources/twitter.svg",
+          "alt": "twitter",
+          "link": "https://twitter.com/_bananacreative?lang=es"
+        }
+      ]
     }
   },
 
