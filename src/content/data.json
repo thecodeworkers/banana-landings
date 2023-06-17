@@ -726,7 +726,7 @@
       "imageHeight": 585,
       "imageWidthResponsive": 220,
       "imageHeightResponsive": 213,
-      "altImage": "crystal"
+      "altImage": "tablet"
     },
     "packs": {
       "title": "PACKS",
@@ -857,7 +857,7 @@
           "name": "EasyFreazy - Animación 3D",
           "image": "/resources/portfolio/motion/eazyFreazy.svg",
           "alt": "pix",
-          "hoverImage": "/resources/portfolio/tech/pix.gif",
+          "hoverImage": "/resources/portfolio/motion/easyFreazy.gif",
 
           "link": "https://main--cool-sfogliatella-bfdf8f.netlify.app/",
           "backgroundColor": "#D9B2DB"
