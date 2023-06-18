@@ -292,7 +292,7 @@
     },
     "navbar": {
       "image": "/resources/header/logo-brand.svg",
-      "alt": "Banana Tech",
+      "alt": "Banana Design",
       "routes": [
         { "name": "Nosotros", "ref": "aboutUs" },
         { "name": "Proceso", "ref": "weDo" },
@@ -691,7 +691,7 @@
     },
     "navbar": {
       "image": "/resources/header/logo-motion.svg",
-      "alt": "Banana Tech",
+      "alt": "Banana Motion",
       "routes": [
         { "name": "About Us", "ref": "aboutUs" },
         { "name": "What we do?", "ref": "weDo" },
@@ -917,5 +917,314 @@
     }
   },
 
-  "PRODUCTION": {}
+  "PRODUCTION": {
+    "general": {
+      "phone": "+584126350200",
+      "email": "a@gmail.com",
+      "contactMessage": "!Hi team Banana! I would like more information about your products and services, I have attached my contact information.",
+      "packsMessage": "!Hi team Banana! I would like more information about your product",
+      "haveProjectMessage": "!Hi team Banana! I would like more information about your products, i have a project"
+    },
+    "navbar": {
+      "image": "/resources/header/logo-brand.svg",
+      "alt": "Banana Production",
+      "routes": [
+        { "name": "Nosotros", "ref": "aboutUs" },
+        { "name": "Proceso", "ref": "weDo" },
+        { "name": "Paquetes", "ref": "packs" },
+        { "name": "Clientes", "ref": "products" },
+        { "name": "Portafolio", "ref": "portfolio" },
+        { "name": "Contacto", "ref": "contact" }
+      ]
+    },
+    "hero": {
+      "title": "WE HELP YOU CAPTURE YOUR",
+      "bold": "BRAND’S VISION",
+      "subtitle": "Creamos momentos únicos para tu marca, conceptualizando tu visión.",
+      "button": "Contact us",
+      "image": "/resources/banners/production/banana.svg",
+      "altImage": "Banana"
+    },
+    "firstParagraph": {
+      "content": "BANANA PRODUCTION ES UN EQUIPO DE FOTÓGRAFOS PROFESIONALES, ESPECIALIZADOS EN ILUMINACIÓN, CONCEPTUALIZACIÓN Y COLORIZACIÓN DE FOTOGRAFÍAS Y VIDEOS",
+      "bolded": ""
+    },
+    "aboutUs": {
+      "firstTitle": "WE CREATE FUNCTIONAL",
+      "firstBold": "BEAUTIFUL",
+      "secondBold": "BRANDS",
+      "secondTitle": "& UI",
+      "boldColor": "#000000",
+      "phases": ["Kick Off", "Moodboard", "Pre - producción", "Producción", "Post - producción"],
+      "image": "/resources/banners/production/p.svg",
+      "imageWidth": 600,
+      "imageHeight": 490,
+      "imageWidthResponsive": 284,
+      "imageHeightResponsive": 205,
+      "altImage": "brand"
+    },
+    "secondParagraph": {
+      "content": ""
+    },
+    "services": {
+      "standar": "",
+      "altStandar": "",
+      "standarTitle": "",
+      "standarTypes": [""],
+      "altSCustom": "",
+      "custom": "",
+      "customTitle": "",
+      "customTypes": [""]
+    },
+    "packs": {
+      "title": "PRODUCT PACKS",
+      "packsContent": [
+        {
+          "title": "15 fotos + 2 videos",
+          "text": "USD $449",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "MOODBOARD"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "SELECCION DE CASTING"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "4 HORAS DE FOTÓGRAFO"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "4 HORAS DE TRABAJO GRAFTER"
+            },
+
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 HORAS DE TRABAJO DE DIRECTOR" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 STYLING (FOOD O LOOKS) " },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TRANSPORTE DEL EQUIPO"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "15 FOTOS COLORIZADAS Y RETOCADAS"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "2 REELS 10 - 15 SEG COLORIZADOS"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "2 INSERTS ANIMADOS"
+            }
+          ]
+        },
+        {
+          "title": "25 fotos + 3 videos",
+          "text": "USD $649",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "MOODBOARD"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "SELECCION DE CASTING"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "4 HORAS DE FOTÓGRAFO"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "4 HORAS DE TRABAJO GRAFTER"
+            },
+
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 HORAS DE TRABAJO DE DIRECTOR" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 STYLING (FOOD O LOOKS) " },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TRANSPORTE DEL EQUIPO"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "25 FOTOS COLORIZADAS Y RETOCADAS"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "3 REELS 10 - 15 SEG COLORIZADOS"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "2 INSERTS ANIMADOS"
+            }
+          ]
+        },
+        {
+          "title": "35 fotos + 4 videos",
+          "text": "USD $699",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "MOODBOARD"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "SELECCION DE CASTING"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "6 HORAS DE FOTÓGRAFO"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "6 HORAS DE TRABAJO GRAFTER"
+            },
+
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 HORAS DE TRABAJO DE DIRECTOR" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 STYLING (FOOD O LOOKS) " },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TRANSPORTE DEL EQUIPO"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "35 FOTOS COLORIZADAS Y RETOCADAS"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "4 REELS 10 - 15 SEG COLORIZADOS"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "2 INSERTS ANIMADOS"
+            }
+          ]
+        }
+      ]
+    },
+    "products": {
+      "logos": [
+        { "image": "/resources/technologies/brand/sotano.svg", "alt": "sotano siete" },
+        { "image": "/resources/technologies/brand/carbinox.svg", "alt": "carbinox" },
+        { "image": "/resources/technologies/brand/activo.svg", "alt": "activo" },
+        { "image": "/resources/technologies/brand/praline.svg", "alt": "praline" },
+        { "image": "/resources/technologies/brand/sonnon.svg", "alt": "sonnon" },
+        { "image": "/resources/technologies/brand/porfidio.svg", "alt": "porfidio" }
+      ]
+    },
+    "portfolio": {
+      "projects": [
+        {
+          "name": "Holy Chicken- Foto Producto",
+          "image": "/resources/portfolio/production/holy.svg",
+          "alt": "holy",
+          "hoverImage": "/resources/portfolio/brand/cantina.gif",
+          "link": "https://puntu.io",
+          "backgroundColor": "#4087C0"
+        },
+        {
+          "name": "Oui - Foto Producto",
+          "image": "/resources/portfolio/production/oui.svg",
+          "alt": "oui",
+          "hoverImage": "/resources/portfolio/brand/infoguia.gif",
+          "link": "https://www.behance.net/gallery/171885495/INFOGUIA",
+          "backgroundColor": "#E3B1B4"
+        },
+        {
+          "name": "Made in Petare -  Fotografia Editorial",
+          "image": "/resources/portfolio/production/made-petare.svg",
+          "alt": "made in petare",
+          "hoverImage": "/resources/portfolio/brand/carbinox.gif",
+          "link": "https://www.behance.net/gallery/171032385/CARBINOX",
+          "backgroundColor": "#ECECEC"
+        },
+        {
+          "name": "Mayela Sain - Fotografía Editorial",
+          "image": "/resources/portfolio/production/mayela.svg",
+          "alt": "mayela",
+          "hoverImage": "/resources/portfolio/brand/mia-verssel.gif",
+          "link": "https://www.behance.net/gallery/125722493/Mia-Verssel",
+          "backgroundColor": "#000000"
+        }
+      ]
+    },
+    "contactUs": {
+      "address": [""],
+      "copyright": "Copyright © BananaCreative 2023",
+      "touchButton": "Get in touch",
+      "callButton": "Book a Call",
+      "sendButton": "Send",
+      "gotTitle": "GOT A PROJECT?",
+      "mediaText": "You can follow us at:",
+      "contactTitle": "LET’S GET IN TOUCH",
+      "goBackText": "Go Back",
+      "form": [
+        { "name": "Company o Startup*", "key": "company" },
+        { "name": "Email*", "key": "email" },
+        { "name": "Message*", "key": "subject" }
+      ],
+      "media": [
+        {
+          "image": "/resources/behance.svg",
+          "alt": "behance",
+          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users%7Cbanana+creative"
+        },
+        {
+          "image": "/resources/instagram.svg",
+          "alt": "instagram",
+          "link": "https://www.instagram.com/_bananacreative/"
+        },
+        {
+          "image": "/resources/linkedin.svg",
+          "alt": "linkein",
+          "link": "https://www.linkedin.com/company/bananacreative/mycompany/"
+        },
+        {
+          "image": "/resources/tiktok.svg",
+          "alt": "tiktok",
+          "link": "https://www.tiktok.com/@_bananacreative?_t=8c4ErUhJZrC&_r=1"
+        },
+        {
+          "image": "/resources/twitter.svg",
+          "alt": "twitter",
+          "link": "https://twitter.com/_bananacreative?lang=es"
+        }
+      ]
+    }
+  }
 }
