@@ -193,10 +193,10 @@
         { "image": "/resources/technologies/tech/sass.svg", "alt": "sass" },
         { "image": "/resources/technologies/tech/gsap.svg", "alt": "gasp" },
         { "image": "", "alt": "" },
-        { "image": "/resources/technologies/figma.svg", "alt": "figma" },
-        { "image": "/resources/technologies/ps.svg", "alt": "ps" },
-        { "image": "/resources/technologies/ai.svg", "alt": "ai" },
-        { "image": "/resources/technologies/xd.svg", "alt": "xd" },
+        { "image": "/resources/technologies/tech/figma.svg", "alt": "figma" },
+        { "image": "/resources/technologies/tech/ps.svg", "alt": "ps" },
+        { "image": "/resources/technologies/tech/ai.svg", "alt": "ai" },
+        { "image": "/resources/technologies/tech/xd.svg", "alt": "xd" },
         { "image": "", "alt": "" }
       ]
     },
@@ -214,7 +214,7 @@
           "name": "Vippo - Finance Platform",
           "image": "/resources/portfolio/tech/vippo.svg",
           "alt": "vippo",
-          "hoverImage": "/resources/portfolio/brand/carbinox.gif",
+          "hoverImage": "/resources/portfolio/tech/vippo.gif",
           "link": "https://play.google.com/store/search?q=vippo&c=apps&hl=es_VE&gl=US",
           "backgroundColor": "#A5BC51"
         },
