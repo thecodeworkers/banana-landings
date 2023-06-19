@@ -186,12 +186,12 @@
     },
     "products": {
       "logos": [
-        { "image": "/resources/technologies/js.svg", "alt": "js" },
-        { "image": "/resources/technologies/py.svg", "alt": "py" },
-        { "image": "/resources/technologies/tail.svg", "alt": "tail" },
-        { "image": "/resources/technologies/go.svg", "alt": "go" },
-        { "image": "/resources/technologies/sass.svg", "alt": "sass" },
-        { "image": "/resources/technologies/gsap.svg", "alt": "gasp" },
+        { "image": "/resources/technologies/tech/js.svg", "alt": "js" },
+        { "image": "/resources/technologies/tech/py.svg", "alt": "py" },
+        { "image": "/resources/technologies/tech/tail.svg", "alt": "tail" },
+        { "image": "/resources/technologies/tech/go.svg", "alt": "go" },
+        { "image": "/resources/technologies/tech/sass.svg", "alt": "sass" },
+        { "image": "/resources/technologies/tech/gsap.svg", "alt": "gasp" },
         { "image": "", "alt": "" },
         { "image": "/resources/technologies/figma.svg", "alt": "figma" },
         { "image": "/resources/technologies/ps.svg", "alt": "ps" },
@@ -607,7 +607,7 @@
           "image": "/resources/portfolio/brand/cantina.svg",
           "alt": "cantina",
           "hoverImage": "/resources/portfolio/brand/cantina.gif",
-          "link": "https://puntu.io",
+          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
           "backgroundColor": "#E5E3D3"
         },
         {
@@ -840,34 +840,33 @@
         {
           "name": "Suela - Animación 3D",
           "image": "/resources/portfolio/motion/suela.svg",
-          "alt": "puntu",
-          "hoverImage": "/resources/portfolio/tech/puntu.gif",
-          "link": "https://puntu.io",
+          "alt": "suela",
+          "hoverImage": "/resources/portfolio/motion/suela.gif",
+          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
           "backgroundColor": "#FFFFFF"
         },
         {
           "name": "Janssen - Broadcast",
           "image": "/resources/portfolio/motion/janssen.svg",
-          "alt": "vippo",
-          "hoverImage": "/resources/portfolio/brand/carbinox.gif",
-          "link": "https://play.google.com/store/search?q=vippo&c=apps&hl=es_VE&gl=US",
+          "alt": "janssen",
+          "hoverImage": "/resources/portfolio/motion/janssen.gif",
+          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
           "backgroundColor": "#FFFFFF"
         },
         {
           "name": "EasyFreazy - Animación 3D",
           "image": "/resources/portfolio/motion/eazyFreazy.svg",
-          "alt": "pix",
+          "alt": "easy freazy",
           "hoverImage": "/resources/portfolio/motion/easyFreazy.gif",
-
-          "link": "https://main--cool-sfogliatella-bfdf8f.netlify.app/",
+          "link": "https://www.behance.net/gallery/170956127/LAUNCH-OREO-EASY-FREAZY",
           "backgroundColor": "#D9B2DB"
         },
         {
           "name": "Office Tailor - Animación ilustrada 2D",
           "image": "/resources/portfolio/motion/officeTailor.svg",
-          "alt": "",
-          "hoverImage": "",
-          "link": "",
+          "alt": "office tailor",
+          "hoverImage": "/resources/portfolio/motion/officeTailor.gif",
+          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
           "backgroundColor": "#FFFFFF"
         }
       ]
@@ -926,7 +925,7 @@
       "haveProjectMessage": "!Hi team Banana! I would like more information about your products, i have a project"
     },
     "navbar": {
-      "image": "/resources/header/logo-brand.svg",
+      "image": "/resources/header/logo-production.svg",
       "alt": "Banana Production",
       "routes": [
         { "name": "Nosotros", "ref": "aboutUs" },
@@ -957,8 +956,8 @@
       "boldColor": "#000000",
       "phases": ["Kick Off", "Moodboard", "Pre - producción", "Producción", "Post - producción"],
       "image": "/resources/banners/production/p.svg",
-      "imageWidth": 600,
-      "imageHeight": 490,
+      "imageWidth": 700,
+      "imageHeight": 590,
       "imageWidthResponsive": 284,
       "imageHeightResponsive": 205,
       "altImage": "brand"
@@ -1139,12 +1138,12 @@
     },
     "products": {
       "logos": [
-        { "image": "/resources/technologies/brand/sotano.svg", "alt": "sotano siete" },
-        { "image": "/resources/technologies/brand/carbinox.svg", "alt": "carbinox" },
-        { "image": "/resources/technologies/brand/activo.svg", "alt": "activo" },
-        { "image": "/resources/technologies/brand/praline.svg", "alt": "praline" },
-        { "image": "/resources/technologies/brand/sonnon.svg", "alt": "sonnon" },
-        { "image": "/resources/technologies/brand/porfidio.svg", "alt": "porfidio" }
+        { "image": "/resources/technologies/production/sotano.svg", "alt": "sotano siete" },
+        { "image": "/resources/technologies/production/oui.svg", "alt": "oui" },
+        { "image": "/resources/technologies/production/activo.svg", "alt": "activo" },
+        { "image": "/resources/technologies/production/prana.svg", "alt": "prana" },
+        { "image": "/resources/technologies/production/sonnon.svg", "alt": "sonnon" },
+        { "image": "/resources/technologies/production/mayela.svg", "alt": "mayela" }
       ]
     },
     "portfolio": {
@@ -1153,32 +1152,32 @@
           "name": "Holy Chicken- Foto Producto",
           "image": "/resources/portfolio/production/holy.svg",
           "alt": "holy",
-          "hoverImage": "/resources/portfolio/brand/cantina.gif",
-          "link": "https://puntu.io",
+          "hoverImage": "/resources/portfolio/production/holy.gif",
+          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
           "backgroundColor": "#4087C0"
         },
         {
           "name": "Oui - Foto Producto",
           "image": "/resources/portfolio/production/oui.svg",
           "alt": "oui",
-          "hoverImage": "/resources/portfolio/brand/infoguia.gif",
-          "link": "https://www.behance.net/gallery/171885495/INFOGUIA",
+          "hoverImage": "/resources/portfolio/production/oui.gif",
+          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
           "backgroundColor": "#E3B1B4"
         },
         {
           "name": "Made in Petare -  Fotografia Editorial",
           "image": "/resources/portfolio/production/made-petare.svg",
           "alt": "made in petare",
-          "hoverImage": "/resources/portfolio/brand/carbinox.gif",
-          "link": "https://www.behance.net/gallery/171032385/CARBINOX",
+          "hoverImage": "/resources/portfolio/production/made-petare.gif",
+          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
           "backgroundColor": "#ECECEC"
         },
         {
           "name": "Mayela Sain - Fotografía Editorial",
           "image": "/resources/portfolio/production/mayela.svg",
           "alt": "mayela",
-          "hoverImage": "/resources/portfolio/brand/mia-verssel.gif",
-          "link": "https://www.behance.net/gallery/125722493/Mia-Verssel",
+          "hoverImage": "/resources/portfolio/production/mayela.gif",
+          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
           "backgroundColor": "#000000"
         }
       ]
