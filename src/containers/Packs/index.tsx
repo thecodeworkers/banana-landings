@@ -7,8 +7,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import styles from './styles.module.scss';
 
 const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
-  const [isMobile, setIsMobile] = useState<boolean>(false);
-  const [height, setHeight] = useState<number>()
+  // const [isMobile, setIsMobile] = useState<boolean>(false);
+  // const [height, setHeight] = useState<number>()
   const allPacksRefs: any = []
   const settings = {
     dots: false,
@@ -34,39 +34,20 @@ const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
     ],
   };
 
-  const getCurrentDimension = () => ({
-    width: window.innerWidth,
-    height: window.innerHeight
-  })
-
   const bookACall = (pack: string) => {
     window.open(`https://api.whatsapp.com/send?phone=${props?.phone}&text=${props?.packsMessage} "${pack}"`);
   };
 
-  const getMinHeight = () => {
-    const heights = allPacksRefs.map(({offsetHeight}: any) => offsetHeight)
-    setHeight(Math.max(...heights))
-  }
+  // const setMinHeight = () => allPacksRefs.map((ref: any) => {
+  //   if (height) {
+  //     ref.style.height = props.height
+  //   }
+  //   return null
+  // })
 
-  const setMinHeight = () => allPacksRefs.map((ref: any) => {
-    if (height) {
-      const varDivide = isMobile ? 24 : 15
-      ref.style.height = `${height/varDivide}rem`;
-    }
-    return null
-  })
-
-  useEffect(() => {
-    setIsMobile(getCurrentDimension().width < 500)
-  }, [])
-
-  useEffect(() => {
-    getMinHeight()
-  }, [allPacksRefs.lenght])
-
-  useEffect(() => {
-    setMinHeight()
-  }, [height])
+  // useEffect(() => {
+  //   setMinHeight()
+  // }, [])
 
   return (
     <div ref={ref} className={styles._main}>
