@@ -30,6 +30,18 @@ a {
   outline: none;
 }
 
+.slick-slide {
+  height: auto !important;
+
+  >* {
+    height: 100%;
+  }
+}
+
+.slick-track {
+  display: flex !important;
+}
+
 
 @font-face {
   font-family: "HelveticaNeue";
