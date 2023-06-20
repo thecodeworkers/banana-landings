@@ -61,6 +61,7 @@
     },
     "packs": {
       "title": "STANDARD PACKS",
+      "height": 1222,
       "packsContent": [
         {
           "title": "One page",
@@ -186,17 +187,17 @@
     },
     "products": {
       "logos": [
-        { "image": "/resources/technologies/tech/js.svg", "alt": "js" },
-        { "image": "/resources/technologies/tech/py.svg", "alt": "py" },
-        { "image": "/resources/technologies/tech/tail.svg", "alt": "tail" },
-        { "image": "/resources/technologies/tech/go.svg", "alt": "go" },
-        { "image": "/resources/technologies/tech/sass.svg", "alt": "sass" },
-        { "image": "/resources/technologies/tech/gsap.svg", "alt": "gasp" },
+        { "image": "/resources/technologies/js.svg", "alt": "js" },
+        { "image": "/resources/technologies/py.svg", "alt": "py" },
+        { "image": "/resources/technologies/tail.svg", "alt": "tail" },
+        { "image": "/resources/technologies/go.svg", "alt": "go" },
+        { "image": "/resources/technologies/sass.svg", "alt": "sass" },
+        { "image": "/resources/technologies/gsap.svg", "alt": "gasp" },
         { "image": "", "alt": "" },
-        { "image": "/resources/technologies/tech/figma.svg", "alt": "figma" },
-        { "image": "/resources/technologies/tech/ps.svg", "alt": "ps" },
-        { "image": "/resources/technologies/tech/ai.svg", "alt": "ai" },
-        { "image": "/resources/technologies/tech/xd.svg", "alt": "xd" },
+        { "image": "/resources/technologies/figma.svg", "alt": "figma" },
+        { "image": "/resources/technologies/ps.svg", "alt": "ps" },
+        { "image": "/resources/technologies/ai.svg", "alt": "ai" },
+        { "image": "/resources/technologies/xd.svg", "alt": "xd" },
         { "image": "", "alt": "" }
       ]
     },
@@ -214,7 +215,7 @@
           "name": "Vippo - Finance Platform",
           "image": "/resources/portfolio/tech/vippo.svg",
           "alt": "vippo",
-          "hoverImage": "/resources/portfolio/tech/vippo.gif",
+          "hoverImage": "/resources/portfolio/brand/carbinox.gif",
           "link": "https://play.google.com/store/search?q=vippo&c=apps&hl=es_VE&gl=US",
           "backgroundColor": "#A5BC51"
         },
@@ -292,7 +293,7 @@
     },
     "navbar": {
       "image": "/resources/header/logo-brand.svg",
-      "alt": "Banana Design",
+      "alt": "Banana Tech",
       "routes": [
         { "name": "Nosotros", "ref": "aboutUs" },
         { "name": "Proceso", "ref": "weDo" },
@@ -343,6 +344,7 @@
     },
     "packs": {
       "title": "BRAND PACKS",
+      "height": 1222,
       "packsContent": [
         {
           "title": "Identidad Base",
@@ -534,6 +536,7 @@
     },
     "secondPacks": {
       "title": "APPLICATION PACKS",
+      "height": 1222,
       "packsContent": [
         {
           "title": "Diseño de empaque",
@@ -607,7 +610,7 @@
           "image": "/resources/portfolio/brand/cantina.svg",
           "alt": "cantina",
           "hoverImage": "/resources/portfolio/brand/cantina.gif",
-          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
+          "link": "https://puntu.io",
           "backgroundColor": "#E5E3D3"
         },
         {
@@ -691,7 +694,7 @@
     },
     "navbar": {
       "image": "/resources/header/logo-motion.svg",
-      "alt": "Banana Motion",
+      "alt": "Banana Tech",
       "routes": [
         { "name": "About Us", "ref": "aboutUs" },
         { "name": "What we do?", "ref": "weDo" },
@@ -726,10 +729,11 @@
       "imageHeight": 585,
       "imageWidthResponsive": 220,
       "imageHeightResponsive": 213,
-      "altImage": "tablet"
+      "altImage": "crystal"
     },
     "packs": {
       "title": "PACKS",
+      "height": 1222,
       "packsContent": [
         {
           "title": "2D/3D Character",
@@ -840,33 +844,34 @@
         {
           "name": "Suela - Animación 3D",
           "image": "/resources/portfolio/motion/suela.svg",
-          "alt": "suela",
-          "hoverImage": "/resources/portfolio/motion/suela.gif",
-          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
+          "alt": "puntu",
+          "hoverImage": "/resources/portfolio/tech/puntu.gif",
+          "link": "https://puntu.io",
           "backgroundColor": "#FFFFFF"
         },
         {
           "name": "Janssen - Broadcast",
           "image": "/resources/portfolio/motion/janssen.svg",
-          "alt": "janssen",
-          "hoverImage": "/resources/portfolio/motion/janssen.gif",
-          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
+          "alt": "vippo",
+          "hoverImage": "/resources/portfolio/brand/carbinox.gif",
+          "link": "https://play.google.com/store/search?q=vippo&c=apps&hl=es_VE&gl=US",
           "backgroundColor": "#FFFFFF"
         },
         {
           "name": "EasyFreazy - Animación 3D",
           "image": "/resources/portfolio/motion/eazyFreazy.svg",
-          "alt": "easy freazy",
-          "hoverImage": "/resources/portfolio/motion/easyFreazy.gif",
-          "link": "https://www.behance.net/gallery/170956127/LAUNCH-OREO-EASY-FREAZY",
+          "alt": "pix",
+          "hoverImage": "/resources/portfolio/tech/pix.gif",
+
+          "link": "https://main--cool-sfogliatella-bfdf8f.netlify.app/",
           "backgroundColor": "#D9B2DB"
         },
         {
           "name": "Office Tailor - Animación ilustrada 2D",
           "image": "/resources/portfolio/motion/officeTailor.svg",
-          "alt": "office tailor",
-          "hoverImage": "/resources/portfolio/motion/officeTailor.gif",
-          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
+          "alt": "",
+          "hoverImage": "",
+          "link": "",
           "backgroundColor": "#FFFFFF"
         }
       ]
@@ -916,314 +921,5 @@
     }
   },
 
-  "PRODUCTION": {
-    "general": {
-      "phone": "+584126350200",
-      "email": "a@gmail.com",
-      "contactMessage": "!Hi team Banana! I would like more information about your products and services, I have attached my contact information.",
-      "packsMessage": "!Hi team Banana! I would like more information about your product",
-      "haveProjectMessage": "!Hi team Banana! I would like more information about your products, i have a project"
-    },
-    "navbar": {
-      "image": "/resources/header/logo-production.svg",
-      "alt": "Banana Production",
-      "routes": [
-        { "name": "Nosotros", "ref": "aboutUs" },
-        { "name": "Proceso", "ref": "weDo" },
-        { "name": "Paquetes", "ref": "packs" },
-        { "name": "Clientes", "ref": "products" },
-        { "name": "Portafolio", "ref": "portfolio" },
-        { "name": "Contacto", "ref": "contact" }
-      ]
-    },
-    "hero": {
-      "title": "WE HELP YOU CAPTURE YOUR",
-      "bold": "BRAND’S VISION",
-      "subtitle": "Creamos momentos únicos para tu marca, conceptualizando tu visión.",
-      "button": "Contact us",
-      "image": "/resources/banners/production/banana.svg",
-      "altImage": "Banana"
-    },
-    "firstParagraph": {
-      "content": "BANANA PRODUCTION ES UN EQUIPO DE FOTÓGRAFOS PROFESIONALES, ESPECIALIZADOS EN ILUMINACIÓN, CONCEPTUALIZACIÓN Y COLORIZACIÓN DE FOTOGRAFÍAS Y VIDEOS",
-      "bolded": ""
-    },
-    "aboutUs": {
-      "firstTitle": "WE CREATE FUNCTIONAL",
-      "firstBold": "BEAUTIFUL",
-      "secondBold": "BRANDS",
-      "secondTitle": "& UI",
-      "boldColor": "#000000",
-      "phases": ["Kick Off", "Moodboard", "Pre - producción", "Producción", "Post - producción"],
-      "image": "/resources/banners/production/p.svg",
-      "imageWidth": 700,
-      "imageHeight": 590,
-      "imageWidthResponsive": 284,
-      "imageHeightResponsive": 205,
-      "altImage": "brand"
-    },
-    "secondParagraph": {
-      "content": ""
-    },
-    "services": {
-      "standar": "",
-      "altStandar": "",
-      "standarTitle": "",
-      "standarTypes": [""],
-      "altSCustom": "",
-      "custom": "",
-      "customTitle": "",
-      "customTypes": [""]
-    },
-    "packs": {
-      "title": "PRODUCT PACKS",
-      "packsContent": [
-        {
-          "title": "15 fotos + 2 videos",
-          "text": "USD $449",
-          "buttonText": "Book a Call",
-          "phone": "",
-          "props": [
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "MOODBOARD"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "SELECCION DE CASTING"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "4 HORAS DE FOTÓGRAFO"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "4 HORAS DE TRABAJO GRAFTER"
-            },
-
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 HORAS DE TRABAJO DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 STYLING (FOOD O LOOKS) " },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "TRANSPORTE DEL EQUIPO"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "15 FOTOS COLORIZADAS Y RETOCADAS"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "2 REELS 10 - 15 SEG COLORIZADOS"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "2 INSERTS ANIMADOS"
-            }
-          ]
-        },
-        {
-          "title": "25 fotos + 3 videos",
-          "text": "USD $649",
-          "buttonText": "Book a Call",
-          "phone": "",
-          "props": [
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "MOODBOARD"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "SELECCION DE CASTING"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "4 HORAS DE FOTÓGRAFO"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "4 HORAS DE TRABAJO GRAFTER"
-            },
-
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 HORAS DE TRABAJO DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 STYLING (FOOD O LOOKS) " },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "TRANSPORTE DEL EQUIPO"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "25 FOTOS COLORIZADAS Y RETOCADAS"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "3 REELS 10 - 15 SEG COLORIZADOS"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "2 INSERTS ANIMADOS"
-            }
-          ]
-        },
-        {
-          "title": "35 fotos + 4 videos",
-          "text": "USD $699",
-          "buttonText": "Book a Call",
-          "phone": "",
-          "props": [
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "MOODBOARD"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "SELECCION DE CASTING"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "6 HORAS DE FOTÓGRAFO"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "6 HORAS DE TRABAJO GRAFTER"
-            },
-
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 HORAS DE TRABAJO DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 STYLING (FOOD O LOOKS) " },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "TRANSPORTE DEL EQUIPO"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "35 FOTOS COLORIZADAS Y RETOCADAS"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "4 REELS 10 - 15 SEG COLORIZADOS"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "2 INSERTS ANIMADOS"
-            }
-          ]
-        }
-      ]
-    },
-    "products": {
-      "logos": [
-        { "image": "/resources/technologies/production/sotano.svg", "alt": "sotano siete" },
-        { "image": "/resources/technologies/production/oui.svg", "alt": "oui" },
-        { "image": "/resources/technologies/production/activo.svg", "alt": "activo" },
-        { "image": "/resources/technologies/production/prana.svg", "alt": "prana" },
-        { "image": "/resources/technologies/production/sonnon.svg", "alt": "sonnon" },
-        { "image": "/resources/technologies/production/mayela.svg", "alt": "mayela" }
-      ]
-    },
-    "portfolio": {
-      "projects": [
-        {
-          "name": "Holy Chicken- Foto Producto",
-          "image": "/resources/portfolio/production/holy.svg",
-          "alt": "holy",
-          "hoverImage": "/resources/portfolio/production/holy.gif",
-          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
-          "backgroundColor": "#4087C0"
-        },
-        {
-          "name": "Oui - Foto Producto",
-          "image": "/resources/portfolio/production/oui.svg",
-          "alt": "oui",
-          "hoverImage": "/resources/portfolio/production/oui.gif",
-          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
-          "backgroundColor": "#E3B1B4"
-        },
-        {
-          "name": "Made in Petare -  Fotografia Editorial",
-          "image": "/resources/portfolio/production/made-petare.svg",
-          "alt": "made in petare",
-          "hoverImage": "/resources/portfolio/production/made-petare.gif",
-          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
-          "backgroundColor": "#ECECEC"
-        },
-        {
-          "name": "Mayela Sain - Fotografía Editorial",
-          "image": "/resources/portfolio/production/mayela.svg",
-          "alt": "mayela",
-          "hoverImage": "/resources/portfolio/production/mayela.gif",
-          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users|banana+creative",
-          "backgroundColor": "#000000"
-        }
-      ]
-    },
-    "contactUs": {
-      "address": [""],
-      "copyright": "Copyright © BananaCreative 2023",
-      "touchButton": "Get in touch",
-      "callButton": "Book a Call",
-      "sendButton": "Send",
-      "gotTitle": "GOT A PROJECT?",
-      "mediaText": "You can follow us at:",
-      "contactTitle": "LET’S GET IN TOUCH",
-      "goBackText": "Go Back",
-      "form": [
-        { "name": "Company o Startup*", "key": "company" },
-        { "name": "Email*", "key": "email" },
-        { "name": "Message*", "key": "subject" }
-      ],
-      "media": [
-        {
-          "image": "/resources/behance.svg",
-          "alt": "behance",
-          "link": "https://www.behance.net/Bananacreative?tracking_source=search_users%7Cbanana+creative"
-        },
-        {
-          "image": "/resources/instagram.svg",
-          "alt": "instagram",
-          "link": "https://www.instagram.com/_bananacreative/"
-        },
-        {
-          "image": "/resources/linkedin.svg",
-          "alt": "linkein",
-          "link": "https://www.linkedin.com/company/bananacreative/mycompany/"
-        },
-        {
-          "image": "/resources/tiktok.svg",
-          "alt": "tiktok",
-          "link": "https://www.tiktok.com/@_bananacreative?_t=8c4ErUhJZrC&_r=1"
-        },
-        {
-          "image": "/resources/twitter.svg",
-          "alt": "twitter",
-          "link": "https://twitter.com/_bananacreative?lang=es"
-        }
-      ]
-    }
-  }
+  "PRODUCTION": {}
 }
