@@ -944,7 +944,7 @@
       "title": "WE HELP YOU CAPTURE YOUR",
       "bold": "BRAND’S VISION",
       "subtitle": "Creamos momentos únicos para tu marca, conceptualizando tu visión.",
-      "button": "Contact us",
+      "button": "Contáctanos",
       "image": "/resources/banners/production/banana.svg",
       "altImage": "Banana"
     },
@@ -956,7 +956,7 @@
       "firstTitle": "WE CREATE FUNCTIONAL",
       "firstBold": "BEAUTIFUL",
       "secondBold": "BRANDS",
-      "secondTitle": "& UI",
+      "secondTitle": "",
       "boldColor": "#000000",
       "phases": ["Kick Off", "Moodboard", "Pre - producción", "Producción", "Post - producción"],
       "image": "/resources/banners/production/p.svg",
@@ -986,7 +986,7 @@
         {
           "title": "15 fotos + 2 videos",
           "text": "USD $449",
-          "buttonText": "Book a Call",
+          "buttonText": "Contáctanos",
           "phone": "",
           "props": [
             {
@@ -1007,7 +1007,7 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "4 HORAS DE TRABAJO GRAFTER"
+              "name": "4 HORAS DE TRABAJO GRAFFER"
             },
 
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 HORAS DE TRABAJO DE DIRECTOR" },
@@ -1038,7 +1038,7 @@
         {
           "title": "25 fotos + 3 videos",
           "text": "USD $649",
-          "buttonText": "Book a Call",
+          "buttonText": "Contáctanos",
           "phone": "",
           "props": [
             {
@@ -1059,7 +1059,7 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "4 HORAS DE TRABAJO GRAFTER"
+              "name": "4 HORAS DE TRABAJO GRAFFER"
             },
 
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 HORAS DE TRABAJO DE DIRECTOR" },
@@ -1090,7 +1090,7 @@
         {
           "title": "35 fotos + 4 videos",
           "text": "USD $699",
-          "buttonText": "Book a Call",
+          "buttonText": "Contáctanos",
           "phone": "",
           "props": [
             {
@@ -1111,7 +1111,7 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "6 HORAS DE TRABAJO GRAFTER"
+              "name": "6 HORAS DE TRABAJO GRAFFER"
             },
 
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 HORAS DE TRABAJO DE DIRECTOR" },
@@ -1190,17 +1190,17 @@
     "contactUs": {
       "address": [""],
       "copyright": "Copyright © BananaCreative 2023",
-      "touchButton": "Get in touch",
-      "callButton": "Book a Call",
-      "sendButton": "Send",
+      "touchButton": "Contáctanos",
+      "callButton": "Agenda una llamada",
+      "sendButton": "Enviar",
       "gotTitle": "GOT A PROJECT?",
-      "mediaText": "You can follow us at:",
+      "mediaText": "Síguenos en:",
       "contactTitle": "LET’S GET IN TOUCH",
-      "goBackText": "Go Back",
+      "goBackText": "Volver",
       "form": [
-        { "name": "Company o Startup*", "key": "company" },
-        { "name": "Email*", "key": "email" },
-        { "name": "Message*", "key": "subject" }
+        { "name": "Compañia*", "key": "company" },
+        { "name": "Correo Electrónico*", "key": "email" },
+        { "name": "Mensaje*", "key": "subject" }
       ],
       "media": [
         {
