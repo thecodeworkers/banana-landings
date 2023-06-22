@@ -348,7 +348,7 @@
       "packsContent": [
         {
           "title": "Identidad Base",
-          "text": "USD $799",
+          "text": "USD $999",
           "buttonText": "Agenda una llamada",
           "phone": "",
           "props": [
@@ -410,7 +410,7 @@
         },
         {
           "title": "Identidad Visual",
-          "text": "USD $1,999",
+          "text": "USD $2,499",
           "buttonText": "Agenda una llamada",
           "phone": "",
           "props": [
@@ -472,7 +472,7 @@
         },
         {
           "title": "Identidad Corporativa",
-          "text": "USD $3,999",
+          "text": "USD $4,799",
           "buttonText": "Agenda una llamada",
           "phone": "",
           "props": [
