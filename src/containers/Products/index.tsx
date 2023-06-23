@@ -16,30 +16,32 @@ const Products = forwardRef<HTMLDivElement>((props: any, ref) => {
   };
 
   return (
-    <FadeIn className={styles._main}>
-      <div ref={ref} className={styles._content}>
-        {props?.logos?.map((logo: any, index: number | string) => (
-          <div key={index} className={styles._image}>
-            {logo?.image !== '' && <Image src={logo?.image} alt={logo?.alt} width={90} height={90} quality={100} />}
-          </div>
-        ))}
-      </div>
-      <div className={styles._contentResponsive}>
-        <Slider {...settings}>
-          {props?.logos?.map((logo: any, index: number | string) => {
-            if (logo?.image !== '') {
-              return (
-                <div key={index} className={styles._image}>
-                  <Image src={logo?.image} alt={logo?.alt} width={72} height={72} quality={100} />
-                </div>
-              );
-            }
+    <div ref={ref} className={styles._main}>
+      <FadeIn>
+        <div className={styles._content}>
+          {props?.logos?.map((logo: any, index: number | string) => (
+            <div key={index} className={styles._image}>
+              {logo?.image !== '' && <Image src={logo?.image} alt={logo?.alt} width={90} height={90} quality={100} />}
+            </div>
+          ))}
+        </div>
+        <div className={styles._contentResponsive}>
+          <Slider {...settings}>
+            {props?.logos?.map((logo: any, index: number | string) => {
+              if (logo?.image !== '') {
+                return (
+                  <div key={index} className={styles._image}>
+                    <Image src={logo?.image} alt={logo?.alt} width={72} height={72} quality={100} />
+                  </div>
+                );
+              }
 
-            return null;
-          })}
-        </Slider>
-      </div>
-    </FadeIn>
+              return null;
+            })}
+          </Slider>
+        </div>
+      </FadeIn>
+    </div>
   );
 });
 
