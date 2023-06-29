@@ -1214,6 +1214,168 @@
         }
       ]
     },
+    "secondPacks": {
+      "title": "EDITORIAL PACKS",
+      "height": 1222,
+      "packsContent": [
+        {
+          "title": "15 fotos + 2 videos ",
+          "text": "USD $1.295",
+          "buttonText": "Contáctanos",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "MOODBOARD"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "SELECCION DE CASTING"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "5 HORAS DE TRABAJO DE FOTÓGRAFO  "
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "5 HORAS DE TRABAJO GRAFFER"
+            },
+
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5 HORAS DE TRABAJO DE DIRECTOR" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 CAMBIOS LOOKS STYLING" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TRANSPORTE DEL EQUIPO"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "15 FOTOS COLORIZADAS Y RETOCADAS"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "2 REELS 10 - 15 SEG COLORIZADOS"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "2 INSERTS ANIMADOS"
+            }
+          ]
+        },
+        {
+          "title": "25 fotos + 3 videos",
+          "text": "USD $1.499",
+          "buttonText": "Contáctanos",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "MOODBOARD"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "SELECCION DE CASTING"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "6 HORAS DE TRABAJO DE FOTÓGRAFO"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "6 HORAS DE TRABAJO GRAFFER"
+            },
+
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 HORAS DE TRABAJO DE DIRECTOR" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "8 CAMBIOS LOOKS STYLING" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TRANSPORTE DEL EQUIPO"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "25 FOTOS COLORIZADAS Y RETOCADAS"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "3 REELS 10 - 15 SEG COLORIZADOS"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "2 INSERTS ANIMADOS"
+            }
+          ]
+        },
+        {
+          "title": "35 fotos + 4 videos",
+          "text": "USD $1.999",
+          "buttonText": "Contáctanos",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "MOODBOARD"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "SELECCION DE CASTING"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "8 HORAS DE TRABAJO DE FOTÓGRAFO"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "8 HORAS DE TRABAJO GRAFFER"
+            },
+
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "8 HORAS DE TRABAJO DE DIRECTOR" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "10 CAMBIOS LOOKS STYLING" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "TRANSPORTE DEL EQUIPO"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "35 FOTOS COLORIZADAS Y RETOCADAS"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "4 REELS 10 - 15 SEG COLORIZADOS"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "2 INSERTS ANIMADOS"
+            }
+          ]
+        }
+      ]
+    },
     "products": {
       "logos": [
         { "image": "/resources/technologies/production/sotano.svg", "alt": "sotano siete" },
