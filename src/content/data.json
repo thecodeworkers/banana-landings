@@ -829,6 +829,79 @@
         }
       ]
     },
+    "secondPacks": {
+      "title": "",
+      "height": 1222,
+      "packsContent": [
+        {
+          "title": "Product",
+          "text": "USD  $499",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "MOODBOARD"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3D" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "EDITABLE"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3 PERSPECTIVES" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PREVIS" }
+          ]
+        },
+        {
+          "title": "Set Desing",
+          "text": "USD $1,499",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "MOODBOARD"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3D" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "EDITABLE"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 PERSPECTIVES" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PREVIS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONCEPT" }
+          ]
+        },
+        {
+          "title": "Animate  logo",
+          "text": "USD $1,499",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "MOODBOARD"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3D - 2D" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "EDITABLE"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3 PERSPECTIVES" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "GRAPHIC RESOURSES" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PREVIS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "ENTREGAS" }
+          ]
+        }
+      ]
+    },
+
     "products": {
       "logos": [
         { "image": "/resources/technologies/motion/oficcetailor.svg", "alt": "oficcetailor" },
