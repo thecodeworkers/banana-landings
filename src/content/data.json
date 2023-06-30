@@ -630,12 +630,12 @@
           "backgroundColor": "#000000"
         },
         {
-          "name": "Mia & Verssel - Identidad Corporativa",
-          "image": "/resources/portfolio/brand/mia-verssel.svg",
-          "alt": "mia-verssel",
-          "hoverImage": "/resources/portfolio/brand/mia-verssel.gif",
-          "link": "https://www.behance.net/gallery/125722493/Mia-Verssel",
-          "backgroundColor": "#E8C4BA"
+          "name": "Ulabel - Identidad Corporativa",
+          "image": "/resources/portfolio/brand/ulabel.svg",
+          "alt": "ubalel",
+          "hoverImage": "/resources/portfolio/brand/ulabel.gif",
+          "link": "https://www.behance.net/gallery/162563959/ULABEL",
+          "backgroundColor": "#000000"
         }
       ]
     },
