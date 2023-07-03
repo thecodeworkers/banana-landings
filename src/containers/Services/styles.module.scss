@@ -81,6 +81,14 @@
 }
 
 @include responsive(lg) {
+  ._main {
+    height: 100%
+  }
+
+  ._sticky {
+    display: none;
+  }
+
   ._contentResponsive {
     flex-direction: column;
     align-items: center;
