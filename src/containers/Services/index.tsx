@@ -1,10 +1,18 @@
+import React, { forwardRef, useRef } from 'react';
+import { motion, Variants, useScroll } from 'framer-motion';
 import Image from 'next/image';
-import React, { forwardRef } from 'react';
 import styles from './styles.module.scss';
 import FadeIn from '../../components/FadeIn';
-import { motion, Variants } from 'framer-motion';
 
 const Services = forwardRef<HTMLDivElement>((props: any, ref) => {
+  const containerRef = useRef(null)
+
+  const { scrollYProgress } = useScroll({
+    container: containerRef
+  })
+
+  console.log({ scrollYProgress })
+
   const SvgAnimation: Variants = {
     rest: {
       transform: 'translateX(0%)',
@@ -28,41 +36,44 @@ const Services = forwardRef<HTMLDivElement>((props: any, ref) => {
       transition: { duration: 1 },
     },
   };
+
   return (
     <div ref={ref} className={styles._main}>
       {/* web */}
-      <FadeIn className={styles._content}>
-        <motion.div initial='rest' whileHover='hover' animate='rest' className={styles._leftContainer}>
-          <motion.div variants={SvgAnimation} className={styles._imageLeft}>
-            <Image src={props?.standar} alt={props?.altStandar} width={228} height={302} quality={100} />
+      <div ref={containerRef} className={styles._sticky}>
+        <FadeIn className={styles._content}>
+          <motion.div className={styles._leftContainer}>
+            <motion.div className={styles._imageLeft}>
+              <Image src={props?.standar} alt={props?.altStandar} width={228} height={302} quality={100} />
+            </motion.div>
+            <motion.div className={styles._textLeftContainer}>
+              <p className={styles?._leftTitle}>{props?.standarTitle}</p>
+              {props?.standarTypes?.map((type: string, index: string | number) => (
+                <p key={index} className={styles?._text}>
+                  {type}
+                </p>
+              ))}
+            </motion.div>
           </motion.div>
-          <motion.div variants={TextAnimation} className={styles._textLeftContainer}>
-            <p className={styles?._leftTitle}>{props?.standarTitle}</p>
-            {props?.standarTypes?.map((type: string, index: string | number) => (
-              <p key={index} className={styles?._text}>
-                {type}
-              </p>
-            ))}
-          </motion.div>
-        </motion.div>
-        <motion.div initial='rest' whileHover='hover' animate='rest' className={styles._rightContainer}>
-          <motion.div variants={SvgAnimation} className={styles._imageRight}>
-            <Image src={props?.custom} alt={props?.altSCustom} width={228} height={302} quality={100} />
-          </motion.div>
+          <motion.div initial='rest' whileHover='hover' animate='rest' className={styles._rightContainer}>
+            <motion.div variants={SvgAnimation} className={styles._imageRight}>
+              <Image src={props?.custom} alt={props?.altSCustom} width={228} height={302} quality={100} />
+            </motion.div>
 
-          <motion.div variants={TextAnimation} className={styles._textRightContainer}>
-            <p className={styles?._rightTitle}>{props?.customTitle}</p>
-            {props?.customTypes?.map((type: string, index: string | number) => (
-              <p key={index} className={styles?._text}>
-                {type}
-              </p>
-            ))}
+            <motion.div variants={TextAnimation} className={styles._textRightContainer}>
+              <p className={styles?._rightTitle}>{props?.customTitle}</p>
+              {props?.customTypes?.map((type: string, index: string | number) => (
+                <p key={index} className={styles?._text}>
+                  {type}
+                </p>
+              ))}
+            </motion.div>
           </motion.div>
-        </motion.div>
-      </FadeIn>
+        </FadeIn>
+      </div>
       {/* web */}
       {/* responsive */}
-      <FadeIn className={styles._contentResponsive}>
+      {/* <FadeIn className={styles._contentResponsive}>
         <div className={styles._leftContainerResponsive}>
           <Image src={props?.standar} alt={props?.altStandar} width={158} height={200} quality={100} />
 
@@ -87,7 +98,7 @@ const Services = forwardRef<HTMLDivElement>((props: any, ref) => {
             ))}
           </div>
         </div>
-      </FadeIn>
+      </FadeIn> */}
       {/* responsive */}
     </div>
   );

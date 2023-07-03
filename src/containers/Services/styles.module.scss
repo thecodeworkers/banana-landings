@@ -4,8 +4,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
+  height: 3000px;
+}
+
+._sticky {
+  position: sticky;
+  height: fit-content;
+  top: 15%;
 }
 
 ._content {
