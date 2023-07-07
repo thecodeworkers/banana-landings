@@ -29,7 +29,7 @@ const Services = forwardRef<HTMLDivElement>((props: any, ref) => {
     },
   };
   return (
-    <div ref={containerRef} className={styles._main}>
+    <div ref={ref} className={styles._main}>
       {/* web */}
       <FadeIn className={styles._content}>
         <motion.div initial='rest' whileHover='hover' animate='rest' className={styles._leftContainer}>
