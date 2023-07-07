@@ -1,57 +1,65 @@
-import React, { forwardRef, useRef } from 'react';
-import { motion, Variants, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
+import React, { forwardRef } from 'react';
 import styles from './styles.module.scss';
 import FadeIn from '../../components/FadeIn';
+import { motion, Variants } from 'framer-motion';
 
 const Services = forwardRef<HTMLDivElement>((props: any, ref) => {
-  const containerRef = useRef(null)
+  const SvgAnimation: Variants = {
+    rest: {
+      transform: 'translateX(0%)',
+      transition: { duration: 0.25 },
+    },
+    hover: {
+      transform: 'translateX(-70%)',
+      transition: { duration: 0.5 },
+    },
+  };
 
-  const { scrollYProgress } = useScroll({
-    target: containerRef
-  })
-
-  const StandardSVG = useTransform(scrollYProgress, [0, 0.25, 0.5], ['0%', '-70%', '0%']);
-  const TextStandardOpacity = useTransform(scrollYProgress, [0, 0.25, 0.5], [0, 1, 0]);
-  const TextStandardTranslate = useTransform(scrollYProgress, [0, 0.25, 0.5], ['10%', '0%', '10%']);
-  const CustomSVG = useTransform(scrollYProgress, [0.5, 0.75, 1], ['0%', '-70%', '0%']);
-  const TextCustomOpacity = useTransform(scrollYProgress, [0.5, 0.75, 1], [0, 1, 0]);
-  const TextCustomTranslate = useTransform(scrollYProgress, [0.5, 0.75, 1], ['10%', '0%', '10%']);
-
+  const TextAnimation: Variants = {
+    rest: {
+      opacity: 0,
+      left: '55%',
+      transition: { duration: 0.1 },
+    },
+    hover: {
+      opacity: 1,
+      left: '55%',
+      transition: { duration: 1 },
+    },
+  };
   return (
     <div ref={containerRef} className={styles._main}>
       {/* web */}
-      <div ref={ref} className={styles._sticky}>
-        <FadeIn className={styles._content}>
-          <div className={styles._leftContainer}>
-            <motion.div style={{ translateX: StandardSVG }} className={styles._imageLeft}>
-              <Image src={props?.standar} alt={props?.altStandar} width={228} height={302} quality={100} />
-            </motion.div>
-            <motion.div style={{ opacity: TextStandardOpacity, right: TextStandardTranslate }} className={styles._textLeftContainer}>
-              <p className={styles?._leftTitle}>{props?.standarTitle}</p>
-              {props?.standarTypes?.map((type: string, index: string | number) => (
-                <p key={index} className={styles?._text}>
-                  {type}
-                </p>
-              ))}
-            </motion.div>
-          </div>
-          <div className={styles._rightContainer}>
-            <motion.div style={{ translateX: CustomSVG }} className={styles._imageRight}>
-              <Image src={props?.custom} alt={props?.altSCustom} width={228} height={302} quality={100} />
-            </motion.div>
+      <FadeIn className={styles._content}>
+        <motion.div initial='rest' whileHover='hover' animate='rest' className={styles._leftContainer}>
+          <motion.div variants={SvgAnimation} className={styles._imageLeft}>
+            <Image src={props?.standar} alt={props?.altStandar} width={228} height={302} quality={100} />
+          </motion.div>
+          <motion.div variants={TextAnimation} className={styles._textLeftContainer}>
+            <p className={styles?._leftTitle}>{props?.standarTitle}</p>
+            {props?.standarTypes?.map((type: string, index: string | number) => (
+              <p key={index} className={styles?._text}>
+                {type}
+              </p>
+            ))}
+          </motion.div>
+        </motion.div>
+        <motion.div initial='rest' whileHover='hover' animate='rest' className={styles._rightContainer}>
+          <motion.div variants={SvgAnimation} className={styles._imageRight}>
+            <Image src={props?.custom} alt={props?.altSCustom} width={228} height={302} quality={100} />
+          </motion.div>
 
-            <motion.div style={{ opacity: TextCustomOpacity, right: TextCustomTranslate }} className={styles._textRightContainer}>
-              <p className={styles?._rightTitle}>{props?.customTitle}</p>
-              {props?.customTypes?.map((type: string, index: string | number) => (
-                <p key={index} className={styles?._text}>
-                  {type}
-                </p>
-              ))}
-            </motion.div>
-          </div>
-        </FadeIn>
-      </div>
+          <motion.div variants={TextAnimation} className={styles._textRightContainer}>
+            <p className={styles?._rightTitle}>{props?.customTitle}</p>
+            {props?.customTypes?.map((type: string, index: string | number) => (
+              <p key={index} className={styles?._text}>
+                {type}
+              </p>
+            ))}
+          </motion.div>
+        </motion.div>
+      </FadeIn>
       {/* web */}
       {/* responsive */}
       <FadeIn className={styles._contentResponsive}>
