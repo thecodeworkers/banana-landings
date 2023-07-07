@@ -312,7 +312,7 @@
       "altImage": "Banana"
     },
     "firstParagraph": {
-      "content": "ES UN EQUIPO DE DISEÑADORES Y COMUNICADORES ESPECIALIZADOS EN EL DESARROLLO DE IDENTIDADES VISUALES Y VERBALES",
+      "content": "SE ESPECIALIZA EN EL DISEÑO DE ELEMENTOS VISUALES QUE GENERAN UNA IDENTIDAD PARA LA CONSOLIDACIÓN DE MARCAS Y LOS DIVERSOS ELEMENTOS QUE LA INTEGRAN TANTO EN MEDIOS FÍSICOS COMO DIGITALES.",
       "bolded": "BANANA DESIGN"
     },
     "aboutUs": {
@@ -321,7 +321,7 @@
       "secondBold": "& BEAUTIFUL",
       "boldColor": "#000000",
       "secondTitle": "BRANDS",
-      "phases": ["Kick Off", "Investigación", "Análisis", "Identidad Verbal", "Identidad Visual & UI"],
+      "phases": ["Kick-Off", "Investigación", "Análisis", "Identidad Verbal", "Identidad Visual & UI"],
       "image": "/resources/banners/brand/b.svg",
       "imageWidth": 600,
       "imageHeight": 490,
@@ -384,7 +384,7 @@
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "PACKS DE APLICACIONES"
+              "name": "PACK DE APLICACIONES"
             },
             {
               "icon": "material-symbols:close",
@@ -446,7 +446,7 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "PACKS DE APLICACIONES"
+              "name": "1 PACK DE APLICACIONES"
             },
             {
               "icon": "material-symbols:check",
@@ -466,7 +466,7 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "LOGO GUIDELINES"
+              "name": "BRAND GUIDELINES"
             }
           ]
         },
@@ -508,7 +508,7 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "PACKS DE APLICACIONES"
+              "name": "2 PACKS DE APLICACIONES"
             },
             {
               "icon": "material-symbols:check",
@@ -528,7 +528,7 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "LOGO GUIDELINES"
+              "name": "BRAND GUIDELINES"
             }
           ]
         }
@@ -545,14 +545,14 @@
           "phone": "",
           "props": [
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 EMPAQUE CON DISEÑO" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 ARTE TIRO O RETIRO" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 BOLSA DELIVERY" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3 STICKERS DE CIERRE" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 ARTE TIRO Y RETIRO" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 BOLSA" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3 STICKERS" },
 
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "1 TROQUEL PRE EXISTENTE"
+              "name": "1 TROQUEL PREEXISTENTE"
             }
           ]
         },
@@ -562,10 +562,10 @@
           "buttonText": "Agenda una llamada",
           "phone": "",
           "props": [
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 DISEÑO DE 2 CAMISAS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 T-SHIRTS" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 CARNET" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 LANYARD" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 GORRAS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 GORRA" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
@@ -574,21 +574,20 @@
           ]
         },
         {
-          "title": "Material POP",
-          "text": "USD $349",
+          "title": "Social media",
+          "text": "USD $449",
           "buttonText": "Agenda una llamada",
           "phone": "",
           "props": [
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 TERMO" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 TAZA" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 BOLÍGRAFO" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 PENDRIVE" },
-
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "AVATAR" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "HIGHLIGHTS" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "5 STICKERS"
-            }
+              "name": "3 POSTS INICIALES"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5 PLANTILLAS DE POST" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5 PLANTILLAS DE HISTORIAS" }
           ]
         }
       ]
@@ -622,7 +621,7 @@
           "backgroundColor": "#000000"
         },
         {
-          "name": "Carbinox - Identidas Visual",
+          "name": "Carbinox - Identidad Visual",
           "image": "/resources/portfolio/brand/carbinox.svg",
           "alt": "carbinox",
           "hoverImage": "/resources/portfolio/brand/carbinox.gif",
@@ -714,8 +713,8 @@
       "altImage": "Banana"
     },
     "firstParagraph": {
-      "content": "BANANA MOTION IS A TEAM OF CREATIVE EXPERTS SPECIALIZED IN CONCEPTUALIZING, COMMUNICATING, DEVELOPING STORYBOARDS AND 2D/3D VISUALS.",
-      "bolded": ""
+      "content": "SPECIALIZES IN CREATING AND DEVELOPING CONCEPTS THROUGH IMAGES AND ANIMATIONS IN 2D/3D FORMATS",
+      "bolded": "BANANA MOTION "
     },
     "aboutUs": {
       "firstTitle": "WE CREATE",
@@ -723,7 +722,7 @@
       "secondBold": "MOTION",
       "boldColor": "#B8E19D",
       "secondTitle": "GRAPHICS",
-      "phases": ["Kick Off", "Storyboard", "Moodboard", "Process", "Display"],
+      "phases": ["Kick-Off", "Storyboard", "Moodboard", "Process", "Display"],
       "image": "/resources/banners/motion/tablet.svg",
       "imageWidth": 588,
       "imageHeight": 585,
@@ -736,7 +735,7 @@
       "height": 1222,
       "packsContent": [
         {
-          "title": "2D/3D Character",
+          "title": "Character 2D/3D",
           "text": "USD  $499",
           "buttonText": "Book a Call",
           "phone": "",
@@ -757,12 +756,12 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "RESOURCES WILL BE DELIVERED IN THE .MP4 FORMAT"
+              "name": "RESOURCES WILL BE DELIVERED IN THE REQUESTED FORMAT"
             }
           ]
         },
         {
-          "title": "Broadcast 2D&3D",
+          "title": "Broadcast 2D/3D",
           "text": "USD $1,499",
           "buttonText": "Book a Call",
           "phone": "",
@@ -778,18 +777,18 @@
               "color": "#D380FF",
               "name": "STORYBOARD"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EVENT IDENTITY" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "GRAPHIC IDENTITY" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "LOGO ANIMATION" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "6 ANIMATED COVERS OF APPROXIMATELY 10 SECONDS"
+              "name": "6 ANIMATED SCREENS OF 10 SECS EA."
             },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "INSERTS" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "RESOURCES WILL BE DELIVERED IN THE .MP4 FORMAT"
+              "name": "RESOURCES WILL BE DELIVERED IN THE REQUESTED FORMAT"
             }
           ]
         },
@@ -818,7 +817,7 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "4 SEQUENCES FROM 10 TO 15 SECONDS"
+              "name": "4 SEQUENCES FROM 10-15 SECONDS"
             },
             {
               "icon": "material-symbols:check",
@@ -834,8 +833,8 @@
       "height": 1222,
       "packsContent": [
         {
-          "title": "Product",
-          "text": "USD  $499",
+          "title": "Product 3D modeling",
+          "text": "USD  $249",
           "buttonText": "Book a Call",
           "phone": "",
           "props": [
@@ -844,41 +843,41 @@
               "color": "#D380FF",
               "name": "MOODBOARD"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3D" },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "EDITABLE"
-            },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3 PERSPECTIVES" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PREVIS" }
-          ]
-        },
-        {
-          "title": "Set Desing",
-          "text": "USD $1,499",
-          "buttonText": "Book a Call",
-          "phone": "",
-          "props": [
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "MOODBOARD"
-            },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3D" },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "EDITABLE"
-            },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 PERSPECTIVES" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "PREVIS" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONCEPT" }
+
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3 PERSPECTIVES OF 1 PROD." },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "RESOURCES WILL BE DELIVERED IN THE REQUESTED FORMAT"
+            }
           ]
         },
         {
-          "title": "Animate  logo",
-          "text": "USD $1,499",
+          "title": "Set design ",
+          "text": "USD $499",
+          "buttonText": "Book a Call",
+          "phone": "",
+          "props": [
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONCEPTUALIZATION" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "MOODBOARD"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PREVIS" },
+
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 PERSPECTIVES OF 3 PROD. MAX." },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "RESOURCES WILL BE DELIVERED IN THE REQUESTED FORMAT"
+            }
+          ]
+        },
+        {
+          "title": "Animated 2D/3D logo",
+          "text": "USD $399",
           "buttonText": "Book a Call",
           "phone": "",
           "props": [
@@ -887,16 +886,16 @@
               "color": "#D380FF",
               "name": "MOODBOARD"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3D - 2D" },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "EDITABLE"
-            },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3 PERSPECTIVES" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PREVIS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5 SECONDS ANIMATION" },
+
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "GRAPHIC RESOURSES" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PREVIS" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "ENTREGAS" }
+
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "RESOURCES WILL BE DELIVERED IN THE REQUESTED FORMAT"
+            }
           ]
         }
       ]
@@ -915,7 +914,7 @@
     "portfolio": {
       "projects": [
         {
-          "name": "Suela - Animación 3D",
+          "name": "Suela - 3D Animation",
           "image": "/resources/portfolio/motion/suela.svg",
           "alt": "suela",
           "hoverImage": "/resources/portfolio/motion/suela.gif",
@@ -923,7 +922,7 @@
           "backgroundColor": "#FFFFFF"
         },
         {
-          "name": "Janssen - Broadcast",
+          "name": "Janssen - Broadcast Package",
           "image": "/resources/portfolio/motion/janssen.svg",
           "alt": "janssen",
           "hoverImage": "/resources/portfolio/motion/janssen.gif",
@@ -931,7 +930,7 @@
           "backgroundColor": "#FFFFFF"
         },
         {
-          "name": "EasyFreazy - Animación 3D",
+          "name": "EasyFreazy - 3D Animation",
           "image": "/resources/portfolio/motion/eazyFreazy.svg",
           "alt": "easy freazy",
           "hoverImage": "/resources/portfolio/motion/easyFreazy.gif",
@@ -939,7 +938,7 @@
           "backgroundColor": "#D9B2DB"
         },
         {
-          "name": "Office Tailor - Animación ilustrada 2D",
+          "name": "Office Tailor - Illustrated 2D Animation",
           "image": "/resources/portfolio/motion/officeTailor.svg",
           "alt": "office tailor",
           "hoverImage": "/resources/portfolio/motion/officeTailor.gif",
@@ -1016,22 +1015,22 @@
     "hero": {
       "title": "WE HELP YOU CAPTURE YOUR",
       "bold": "BRAND’S VISION",
-      "subtitle": "Creamos momentos únicos para tu marca, conceptualizando tu visión.",
+      "subtitle": "Conceptualizamos tu visión de marca creando escenarios audiovisuales únicos.",
       "button": "Contáctanos",
       "image": "/resources/banners/production/banana.svg",
       "altImage": "Banana"
     },
     "firstParagraph": {
-      "content": "BANANA PRODUCTION ES UN EQUIPO DE FOTÓGRAFOS PROFESIONALES, ESPECIALIZADOS EN ILUMINACIÓN, CONCEPTUALIZACIÓN Y COLORIZACIÓN DE FOTOGRAFÍAS Y MEDIOS AUDIOVISUALES",
-      "bolded": ""
+      "content": "SE ESPECIALIZA EN EL DESARROLLO DE PROYECTOS AUDIOVISUALES, PARTIENDO DE LA CONCEPTUALIZACIÓN, EJECUCIÓN Y POST-PRODUCCIÓN PARA GENERAR CONTENIDO DE CALIDAD QUE RESUENE CON LA ESTÉTICA DE TU MARCA.",
+      "bolded": "BANANA PRODUCTION"
     },
     "aboutUs": {
-      "firstTitle": "WE CREATE FUNCTIONAL",
-      "firstBold": "& BEAUTIFUL",
-      "secondBold": "BRANDS",
+      "firstTitle": "WE CREATE FUNCTIONAL ",
+      "firstBold": "CONTENT",
+      "secondBold": "",
       "secondTitle": "",
       "boldColor": "#000000",
-      "phases": ["Kick Off", "Moodboard", "Pre - producción", "Producción", "Post - producción"],
+      "phases": ["Kick-Off", "Moodboard", "Pre-producción", "Producción", "Post-producción"],
       "image": "/resources/banners/production/p.svg",
       "imageWidth": 700,
       "imageHeight": 590,
@@ -1070,7 +1069,7 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "SELECCION DE CASTING"
+              "name": "SELECCIÓN DE CASTING"
             },
             {
               "icon": "material-symbols:check",
@@ -1080,11 +1079,11 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "4 HORAS DE TRABAJO GRAFFER"
+              "name": "4 HORAS DE GAFFER"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 HORAS DE TRABAJO DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 STYLING (FOOD O LOOKS) " },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 HORAS DE DIRECTOR" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 LOOKS" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
             {
               "icon": "material-symbols:check",
@@ -1122,7 +1121,7 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "SELECCION DE CASTING"
+              "name": "SELECCIÓN DE CASTING"
             },
             {
               "icon": "material-symbols:check",
@@ -1132,11 +1131,11 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "4 HORAS DE TRABAJO GRAFFER"
+              "name": "4 HORAS DE GAFFER"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 HORAS DE TRABAJO DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 STYLING (FOOD O LOOKS) " },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 HORAS DE DIRECTOR" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 LOOKS" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
             {
               "icon": "material-symbols:check",
@@ -1174,7 +1173,7 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "SELECCION DE CASTING"
+              "name": "SELECCIÓN DE CASTING"
             },
             {
               "icon": "material-symbols:check",
@@ -1184,11 +1183,11 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "6 HORAS DE TRABAJO GRAFFER"
+              "name": "6 HORAS DE GAFFER"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 HORAS DE TRABAJO DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 STYLING (FOOD O LOOKS) " },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 HORAS DE DIRECTOR" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 LOOKS " },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
             {
               "icon": "material-symbols:check",
@@ -1232,21 +1231,21 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "SELECCION DE CASTING"
+              "name": "SELECCIÓN DE CASTING"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "5 HORAS DE TRABAJO DE FOTÓGRAFO  "
+              "name": "5 HORAS DE FOTÓGRAFO  "
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "5 HORAS DE TRABAJO GRAFFER"
+              "name": "5 HORAS DE GAFFER"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5 HORAS DE TRABAJO DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 CAMBIOS LOOKS STYLING" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5 HORAS DE DIRECTOR" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 LOOKS" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
             {
               "icon": "material-symbols:check",
@@ -1284,21 +1283,21 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "SELECCION DE CASTING"
+              "name": "SELECCIÓN DE CASTING"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "6 HORAS DE TRABAJO DE FOTÓGRAFO"
+              "name": "6 HORAS DE  FOTÓGRAFO"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "6 HORAS DE TRABAJO GRAFFER"
+              "name": "6 HORAS DE GAFFER"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 HORAS DE TRABAJO DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "8 CAMBIOS LOOKS STYLING" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 HORAS DE DIRECTOR" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "8 LOOKS" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
             {
               "icon": "material-symbols:check",
@@ -1336,21 +1335,21 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "SELECCION DE CASTING"
+              "name": "SELECCIÓN DE CASTING"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "8 HORAS DE TRABAJO DE FOTÓGRAFO"
+              "name": "8 HORAS DE FOTÓGRAFO"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "8 HORAS DE TRABAJO GRAFFER"
+              "name": "8 HORAS DE GAFFER"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "8 HORAS DE TRABAJO DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "10 CAMBIOS LOOKS STYLING" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "8 HORAS DE DIRECTOR" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "10 LOOKS" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
             {
               "icon": "material-symbols:check",
