@@ -11,21 +11,36 @@ services:
     restart: always
     ports:
       - 3000:3000
+    enviroment:
+      - VIRTUAL_HOST=motion.bananacreative.io
+      - LETSENCRYPT_HOST=motion.bananacreative.io
+      - LETSENCRYPT_EMAIL=infra.unionblock@gmail.com
+    depends_on:
+      - nginx_cont
+      - certbot_cont
   nginx:
-    image: nginx
+    image: nginxproxy/nginx-proxy
     container_name: nginx_cont
+    restart: always
     ports:
       - 80:80
-      - 443:433
+      - 443:443
     volumes:
-      - ./nginx/:/etc/nginx/:ro
-      - ./certbot/www:/var/www/certbot/:ro
-      - ./certbot/conf:/etc/letsencrypt/:ro
-    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - certs:/etc/nginx/certs:ro
+      - vhostd:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+    labels:
+      - com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy
   certbot:
-    image: certbot/certbot:latest
+    image: nginxproxy/acme-companion
     container_name: certbot_cont
+    restart: always
+    enviroment:
+      - DEFAULT_EMAIL='infra.unionblock@gmail.com'
     volumes:
-      - ./certbot/www/:/var/www/certbot/:rw
-      - ./certbot/conf:/etc/letsencrypt/:rw
-    command: certonly --webroot -w /var/www/certbot --force-renewal --email infra.unionblock@gmail.com -d ${DOMAIN_URL} --agree-tos
+      - certs:/etc/nginx/certs:rw
+      - vhostd:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - acme:/etc/acme.sh
