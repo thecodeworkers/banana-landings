@@ -1,23 +1,6 @@
 version: '3'
 
 services:
-  next-app:
-    container_name: app_cont
-    build:
-      context: .
-      dockerfile: Dockerfile
-      args:
-        DOMAIN: ${DOMAIN}
-    restart: always
-    ports:
-      - 3000:3000
-    enviroment:
-      - VIRTUAL_HOST=motion.bananacreative.io
-      - LETSENCRYPT_HOST=motion.bananacreative.io
-      - LETSENCRYPT_EMAIL=infra.unionblock@gmail.com
-    depends_on:
-      - nginx_cont
-      - certbot_cont
   nginx:
     image: nginxproxy/nginx-proxy
     container_name: nginx_cont
@@ -36,11 +19,34 @@ services:
     image: nginxproxy/acme-companion
     container_name: certbot_cont
     restart: always
-    enviroment:
-      - DEFAULT_EMAIL='infra.unionblock@gmail.com'
+    environment:
+      - DEFAULT_EMAIL=${EMAIL}
     volumes:
       - certs:/etc/nginx/certs:rw
       - vhostd:/etc/nginx/vhost.d
       - html:/usr/share/nginx/html
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - acme:/etc/acme.sh
+  next-app:
+    container_name: app_cont
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        DOMAIN: ${DOMAIN}
+    restart: always
+    ports:
+      - 3000:3000
+    environment:
+      - VIRTUAL_HOST=${DOMAIN_URL}
+      - LETSENCRYPT_HOST=${DOMAIN_URL}
+      - LETSENCRYPT_EMAIL=${EMAIL}
+    depends_on:
+      - nginx
+      - certbot
+
+volumes:
+    certs:
+    html:
+    vhostd:
+    acme:
