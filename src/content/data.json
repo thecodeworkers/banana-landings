@@ -1,5 +1,10 @@
 {
   "TECH": {
+    "metadata": {
+      "description": "We specialize in the development of technological solutions, security, UI/UX design and infrastructure to achieve a complete digital experience",
+      "ogImage": "/resources/metaResources/ogimage-tech.jpg",
+      "title": "BANANA TECH"
+    },
     "general": {
       "phone": "+584126350200",
       "email": "hello@bananacreative.io",
@@ -284,6 +289,11 @@
   },
 
   "BRAND": {
+    "metadata": {
+      "description": "We specialize in the design of visual elements that generate an identity for the consolidation of brands and the various elements that integrate it, both in physical and digital media",
+      "ogImage": "/resources/metaResources/ogimage-brand.jpg",
+      "title": "BANANA DESIGN"
+    },
     "general": {
       "phone": "+584126350200",
       "email": "hello@bananacreative.io",
@@ -684,6 +694,11 @@
   },
 
   "MOTION": {
+    "metadata": {
+      "description": "We specialize in the creation and development of concepts through images and animations in 2D and 3D format",
+      "ogImage": "/resources/metaResources/ogimage-motion.jpg",
+      "title": "BANANA MOTION"
+    },
     "general": {
       "phone": "+584126350200",
       "email": "hello@bananacreative.io",
@@ -993,6 +1008,11 @@
   },
 
   "PRODUCTION": {
+    "metadata": {
+      "description": "We specialize in the development of audiovisual projects, starting from the conceptualization, execution and post production to generate quality content that resonates with the aesthetics of your brand",
+      "ogImage": "/resources/metaResources/ogimage-prod.jpg",
+      "title": "BANANA PRODUCTION"
+    },
     "general": {
       "phone": "+584126350200",
       "email": "hello@bananacreative.io",

@@ -1,4 +1,5 @@
 import { Navbar } from '@/components';
+import Head from 'next/head';
 import { Hero, AboutUs, Services, Products, Portfolio, Contact, Paragraph, Packs } from '@/containers';
 
 import styles from './styles.module.scss';
@@ -29,6 +30,13 @@ export default function Home({ data, domain }: any) {
 
   return (
     <>
+      <Head>
+        <title>{data?.metadata.title}</title>
+        {/*<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />*/}
+        <meta name='description' content={data?.metadata.description} key={data?.metadata.title}/>
+        <meta property="og:image" content={data?.metadata.ogImage} />
+      </Head>
+
       <Navbar data={data?.navbar} refs={refs} />
 
       <main className={styles._main}>
