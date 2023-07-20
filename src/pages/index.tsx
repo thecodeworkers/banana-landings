@@ -33,7 +33,9 @@ export default function Home({ data, domain }: any) {
       <Head>
         <title>{data?.metadata.title}</title>
         {/*<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />*/}
-        <meta name='description' content={data?.metadata.description} key={data?.metadata.title}/>
+        <meta name='description' content={data?.metadata.description} key='desc' />
+        <meta property='og:title' content={data?.metadata.title} />
+        <meta property='og:description' content={data?.metadata.description} />
         <meta property="og:image" content={data?.metadata.ogImage} />
       </Head>
 
