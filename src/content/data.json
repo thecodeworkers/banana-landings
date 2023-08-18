@@ -1,16 +1,16 @@
 {
   "TECH": {
     "metadata": {
-      "description": "We specialize in the development of technological solutions, security, UI/UX design and infrastructure to achieve a complete digital experience",
+      "description": "We specialize in the development of technological solutions, security, UI/UX design, and infrastructure to achieve a complete digital experience",
       "ogImage": "/resources/metaResources/ogimage-tech.jpg",
       "title": "BANANA TECH"
     },
     "general": {
-      "phone": "+584126350200",
+      "phone": "+584124731515",
       "email": "hello@bananacreative.io",
-      "contactMessage": "!Hi team Banana! I would like more information about your products and services, I have attached my contact information.",
-      "packsMessage": "!Hi team Banana! I would like more information about your product",
-      "haveProjectMessage": "!Hi team Banana! I would like more information about your products, i have a project"
+      "contactMessage": "Hello Team Banana! I have a project and would like to book a meeting with the team of Tech",
+      "packsMessage": "!Hi team Banana! Thank you for your time. I’m interested in receiving more information from the Tech service:",
+      "haveProjectMessage": "Hello Team Banana! I have a project and would like to book a meeting with the team of Tech"
     },
     "navbar": {
       "image": "/resources/header/logo-tech.svg",
@@ -34,7 +34,7 @@
       "altImage": "Banana"
     },
     "firstParagraph": {
-      "content": "IS A TEAM OF EXPERTS FORMED BY SPECIALISTS IN SYSTEM ENGINEERING, UI-UX DESIGN, INFRASTRUCTURE AND INFORMATION SECURITY.",
+      "content": "IS A TEAM OF EXPERTS FORMED BY SPECIALISTS IN SYSTEM ENGINEERING, UI-UX DESIGN, INFRASTRUCTURE, AND INFORMATION SECURITY.",
       "bolded": "BANANA TECH"
     },
     "aboutUs": {
@@ -43,7 +43,7 @@
       "secondBold": "& BEAUTIFUL",
       "boldColor": "#B8E19D",
       "secondTitle": "WEBS & APPS",
-      "phases": ["UX Research_", "Desing System_", "Development_", "Q/A_", "Deployment_"],
+      "phases": ["UX Research_", "Design System_", "Development_", "Q/A_", "Deployment_"],
       "image": "/resources/banners/tech/crystal.svg",
       "imageWidth": 470,
       "imageHeight": 500,
@@ -52,7 +52,7 @@
       "altImage": "crystal"
     },
     "secondParagraph": {
-      "content": "THERE’S TWO WAYS TO APROACH YOUR PROJECT, CHOOSE THE ONE THAT BEST FITS YOUR NEEDS"
+      "content": "THERE ARE TWO WAYS TO APPROACH YOUR PROJECT; CHOOSE THE ONE THAT BEST FITS YOUR NEEDS"
     },
     "services": {
       "standar": "/resources/standar.svg",
@@ -69,10 +69,10 @@
       "height": 1222,
       "packsContent": [
         {
-          "title": "One page",
+          "title": "One Page",
           "text": "USD $899",
           "buttonText": "Book a Call",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -83,22 +83,21 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW"
+              "name": "BANNER CUSTOMIZATION FOR ALL SECTIONS (DESIGNED FOR WEB AND RESPONSIVE)"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "BANNER CUSTOMIZATION FOR ALL VIEWS" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "ICON MODIFICATION" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE'S LOOK AND FEEL" },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "WEBSITE'S COPIES"
-            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE'S COPIES" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
               "name": "WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "CMS (CONTENT MANAGER SYSTEM)"
             }
           ]
         },
@@ -106,7 +105,7 @@
           "title": "Landing Page",
           "text": "USD $1,399",
           "buttonText": "Book a Call",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -117,30 +116,29 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW"
+              "name": "BANNER CUSTOMIZATION FOR ALL SECTIONS (DESIGNED FOR WEB AND RESPONSIVE)"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "BANNER CUSTOMIZATION FOR ALL VIEWS" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "ICON MODIFICATION" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE'S LOOK AND FEEL" },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "WEBSITE'S COPIES"
-            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE'S COPIES" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
               "name": "WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "CMS (CONTENT MANAGER SYSTEM)"
             }
           ]
         },
         {
-          "title": "E- commerce",
+          "title": "E- Commerce",
           "text": "USD $1,999",
           "buttonText": "Book a Call",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -161,12 +159,7 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "ICON MODIFICATION ('ICON'S DESIGNED FOR THE BRAND)"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "LOOK AND FEEL OF THE ENTIRE WEB (VIDEO WITH THE DESIGN PROPOSAL OF THE ENTIRE WEB BEFORE PROCEEDING TO DEVELOPMENT)"
+              "name": "WEBSITE'S LOOK AND FEEL"
             },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
             {
@@ -179,12 +172,11 @@
               "color": "#D380FF",
               "name": "WEBSITE'S COPIES"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE ELEMENTS" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "50 PRODUCTS UPLOADS" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "MANUAL ON HOW TO ADMINISTRATE THE PLATFORM"
+              "name": "CMS (CONTENT MANAGER SYSTEM)"
             }
           ]
         }
@@ -234,12 +226,12 @@
           "backgroundColor": "#57D6AF"
         },
         {
-          "name": "New Project",
-          "image": "/resources/portfolio/tech/comming-soon.svg",
-          "alt": "",
-          "hoverImage": "",
-          "link": "",
-          "backgroundColor": "#FFFFFF"
+          "name": "Banco Activo",
+          "image": "/resources/portfolio/tech/activo.svg",
+          "alt": "banco-activo",
+          "hoverImage": "/resources/portfolio/tech/activo.gif",
+          "link": "https://www.bancoactivo.com/",
+          "backgroundColor": "#3D44C9"
         }
       ]
     },
@@ -295,11 +287,11 @@
       "title": "BANANA DESIGN"
     },
     "general": {
-      "phone": "+584126350200",
+      "phone": "+584124731515",
       "email": "hello@bananacreative.io",
-      "contactMessage": "!Hi team Banana! I would like more information about your products and services, I have attached my contact information.",
-      "packsMessage": "!Hi team Banana! I would like more information about your product",
-      "haveProjectMessage": "!Hi team Banana! I would like more information about your products, i have a project"
+      "contactMessage": "¡Hola Team Banana! Tengo un proyecto y estoy interesado en agendar una reunión con el equipo de Brand",
+      "packsMessage": "Hola Team Banana! Muchas gracias por su tiempo. Estoy interesado en recibir más información sobre el servicio de Brand:",
+      "haveProjectMessage": "¡Hola Team Banana! Tengo un proyecto y estoy interesado en agendar una reunión con el equipo de Brand"
     },
     "navbar": {
       "image": "/resources/header/logo-brand.svg",
@@ -360,7 +352,7 @@
           "title": "Identidad Base",
           "text": "USD $999",
           "buttonText": "Agenda una llamada",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:close",
@@ -422,7 +414,7 @@
           "title": "Identidad Visual",
           "text": "USD $2,499",
           "buttonText": "Agenda una llamada",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -484,7 +476,7 @@
           "title": "Identidad Corporativa",
           "text": "USD $4,799",
           "buttonText": "Agenda una llamada",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -552,7 +544,7 @@
           "title": "Diseño de empaque",
           "text": "USD $449",
           "buttonText": "Agenda una llamada",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 EMPAQUE CON DISEÑO" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 ARTE TIRO Y RETIRO" },
@@ -570,7 +562,7 @@
           "title": "Uniformes",
           "text": "USD $349",
           "buttonText": "Agenda una llamada",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 T-SHIRTS" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 CARNET" },
@@ -587,7 +579,7 @@
           "title": "Social media",
           "text": "USD $449",
           "buttonText": "Agenda una llamada",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "AVATAR" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "HIGHLIGHTS" },
@@ -700,11 +692,11 @@
       "title": "BANANA MOTION"
     },
     "general": {
-      "phone": "+584126350200",
+      "phone": "+584124731515",
       "email": "hello@bananacreative.io",
-      "contactMessage": "!Hi team Banana! I would like more information about your products and services, I have attached my contact information.",
-      "packsMessage": "!Hi team Banana! I would like more information about your product",
-      "haveProjectMessage": "!Hi team Banana! I would like more information about your products, i have a project"
+      "contactMessage": "Hello Team Banana! I have a project and would like to book a meeting with the team of Motion",
+      "packsMessage": "!Hi team Banana! Thank you for your time. I’m interested in receiving more information from the Motion Graphics service:",
+      "haveProjectMessage": "Hello Team Banana! I have a project and would like to book a meeting with the team of Motion"
     },
     "navbar": {
       "image": "/resources/header/logo-motion.svg",
@@ -753,7 +745,7 @@
           "title": "Character 2D/3D",
           "text": "USD  $499",
           "buttonText": "Book a Call",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -779,7 +771,7 @@
           "title": "Broadcast 2D/3D",
           "text": "USD $1,499",
           "buttonText": "Book a Call",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -808,10 +800,10 @@
           ]
         },
         {
-          "title": "Visual performance",
+          "title": "Visual Performance",
           "text": "USD $1,799",
           "buttonText": "Book a Call",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -848,10 +840,10 @@
       "height": 1222,
       "packsContent": [
         {
-          "title": "Product 3D modeling",
+          "title": "Product 3D Modeling",
           "text": "USD  $249",
           "buttonText": "Book a Call",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -869,10 +861,10 @@
           ]
         },
         {
-          "title": "Set design ",
+          "title": "Set Design ",
           "text": "USD $499",
           "buttonText": "Book a Call",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONCEPTUALIZATION" },
             {
@@ -891,10 +883,10 @@
           ]
         },
         {
-          "title": "Animated 2D/3D logo",
+          "title": "Animated 2D/3D Logo",
           "text": "USD $399",
           "buttonText": "Book a Call",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -1014,11 +1006,11 @@
       "title": "BANANA PRODUCTION"
     },
     "general": {
-      "phone": "+584126350200",
+      "phone": "+584124731515",
       "email": "hello@bananacreative.io",
-      "contactMessage": "!Hi team Banana! I would like more information about your products and services, I have attached my contact information.",
-      "packsMessage": "!Hi team Banana! I would like more information about your product",
-      "haveProjectMessage": "!Hi team Banana! I would like more information about your products, i have a project"
+      "contactMessage": "¡Hola Team Banana! Tengo un proyecto y estoy interesado en agendar una reunión con el equipo de Production",
+      "packsMessage": "Hola Team Banana! Muchas gracias por su tiempo. Estoy interesado en recibir más información sobre el servicio de Productions:",
+      "haveProjectMessage": "¡Hola Team Banana! Tengo un proyecto y estoy interesado en agendar una reunión con el equipo de Production"
     },
     "navbar": {
       "image": "/resources/header/logo-production.svg",
@@ -1079,7 +1071,7 @@
           "title": "15 fotos + 2 videos",
           "text": "USD $449",
           "buttonText": "Contáctanos",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -1131,7 +1123,7 @@
           "title": "25 fotos + 3 videos",
           "text": "USD $649",
           "buttonText": "Contáctanos",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -1181,9 +1173,9 @@
         },
         {
           "title": "35 fotos + 4 videos",
-          "text": "USD $699",
+          "text": "USD $799",
           "buttonText": "Contáctanos",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -1241,7 +1233,7 @@
           "title": "15 fotos + 2 videos ",
           "text": "USD $1.295",
           "buttonText": "Contáctanos",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -1293,7 +1285,7 @@
           "title": "25 fotos + 3 videos",
           "text": "USD $1.499",
           "buttonText": "Contáctanos",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
@@ -1345,7 +1337,7 @@
           "title": "35 fotos + 4 videos",
           "text": "USD $1.999",
           "buttonText": "Contáctanos",
-          "phone": "",
+          "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
