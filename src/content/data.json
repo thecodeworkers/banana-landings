@@ -70,7 +70,7 @@
       "packsContent": [
         {
           "title": "One Page",
-          "text": "USD $899",
+          "text": "USD $1000",
           "buttonText": "Book a Call",
           "phone": "+584124731515",
           "props": [
@@ -103,7 +103,7 @@
         },
         {
           "title": "Landing Page",
-          "text": "USD $1,399",
+          "text": "USD $1,700",
           "buttonText": "Book a Call",
           "phone": "+584124731515",
           "props": [
@@ -136,7 +136,7 @@
         },
         {
           "title": "E- Commerce",
-          "text": "USD $1,999",
+          "text": "USD $2,300",
           "buttonText": "Book a Call",
           "phone": "+584124731515",
           "props": [
@@ -350,7 +350,7 @@
       "packsContent": [
         {
           "title": "Identidad Base",
-          "text": "USD $999",
+          "text": "USD $1,300",
           "buttonText": "Agenda una llamada",
           "phone": "+584124731515",
           "props": [
@@ -412,7 +412,7 @@
         },
         {
           "title": "Identidad Visual",
-          "text": "USD $2,499",
+          "text": "USD $3,200",
           "buttonText": "Agenda una llamada",
           "phone": "+584124731515",
           "props": [
@@ -474,7 +474,7 @@
         },
         {
           "title": "Identidad Corporativa",
-          "text": "USD $4,799",
+          "text": "USD $5,200",
           "buttonText": "Agenda una llamada",
           "phone": "+584124731515",
           "props": [
@@ -542,7 +542,7 @@
       "packsContent": [
         {
           "title": "Diseño de empaque",
-          "text": "USD $449",
+          "text": "USD $600",
           "buttonText": "Agenda una llamada",
           "phone": "+584124731515",
           "props": [
@@ -559,37 +559,38 @@
           ]
         },
         {
-          "title": "Uniformes",
-          "text": "USD $349",
+          "title": "Merch",
+          "text": "USD $500",
           "buttonText": "Agenda una llamada",
           "phone": "+584124731515",
           "props": [
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 T-SHIRTS" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 CARNET" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 LANYARD" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 GORRA" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 TOTE BAG" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 HOODIE" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 T-SHIRT" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5 STICKERS" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "1 HOODIE"
+              "name": "2 CARNET Y LANYARD"
             }
           ]
         },
         {
-          "title": "Social media",
-          "text": "USD $449",
+          "title": "Papeleria",
+          "text": "USD $400",
           "buttonText": "Agenda una llamada",
           "phone": "+584124731515",
           "props": [
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "AVATAR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "HIGHLIGHTS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 HOJA CARTA" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 FIRMA DIGITAL" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "3 POSTS INICIALES"
+              "name": "5 TEMPLATES DE PRESENTACIÓN"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5 PLANTILLAS DE POST" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5 PLANTILLAS DE HISTORIAS" }
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 TARJETA DE PRESENTACIÓN" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5 STICKERS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 SOBRE" }
           ]
         }
       ]
@@ -1069,7 +1070,7 @@
       "packsContent": [
         {
           "title": "15 fotos + 2 videos",
-          "text": "USD $449",
+          "text": "USD $750",
           "buttonText": "Contáctanos",
           "phone": "+584124731515",
           "props": [
@@ -1121,7 +1122,7 @@
         },
         {
           "title": "25 fotos + 3 videos",
-          "text": "USD $649",
+          "text": "USD $950",
           "buttonText": "Contáctanos",
           "phone": "+584124731515",
           "props": [
@@ -1173,7 +1174,7 @@
         },
         {
           "title": "35 fotos + 4 videos",
-          "text": "USD $799",
+          "text": "USD $1,150",
           "buttonText": "Contáctanos",
           "phone": "+584124731515",
           "props": [
