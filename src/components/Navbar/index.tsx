@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React, { FC, useState } from 'react';
 import { scrolling } from '../../utils/common';
 import styles from './styles.module.scss';
+import PopUp from '../PopUp';
 
 type Props = {
   data: any;
@@ -14,6 +15,7 @@ type Props = {
     packs: any;
     weDo: any;
   };
+  popup?: any
 };
 
 type ScrollOption = {
@@ -26,7 +28,7 @@ type ScrollOption = {
   weDo: any;
 };
 
-const Navbar: FC<Props> = ({ data, refs }) => {
+const Navbar: FC<Props> = ({ data, refs, popup }) => {
   const [show, setShow] = useState<boolean>(false);
 
   const handleShowMenu = () => setShow((show) => !show);
@@ -34,6 +36,7 @@ const Navbar: FC<Props> = ({ data, refs }) => {
   return (
     <>
       <div className={styles._navbar}>
+        <PopUp {...popup} />
         <div className={styles._content}>
           <div className={styles._imageBox}>
             <Image src={data?.image} alt={data?.alt} width={200} height={37} quality={100} />
@@ -43,6 +46,9 @@ const Navbar: FC<Props> = ({ data, refs }) => {
           </div>
 
           <div className={styles._textBox}>
+            <a className={styles._text} href={data?.home?.link}>
+              {data?.home?.name}
+            </a>
             {data?.routes?.map((route: any, index: number | string) => (
               <p key={index} className={styles._text} onClick={() => scrolling(refs[route?.ref as keyof ScrollOption])}>
                 {route?.name}
