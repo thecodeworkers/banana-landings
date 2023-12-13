@@ -1,21 +1,23 @@
-import React, { useState } from 'react';
-import styles from './styles.module.scss';
-import { FormikConfig } from './formik';
-import GeneralInput from '../GeneralInput';
-import { Icon } from '@iconify/react';
+import React, { ReactComponentElement, useState } from "react";
+import styles from "./styles.module.scss";
+import { FormikConfig } from "./formik";
+import GeneralInput from "../GeneralInput";
+import { CircleCross } from "../../../public/resources/svg";
+import { Icon } from "@iconify/react";
 import { useMutation, gql } from '@apollo/client';
-import { CircleCross } from '../../../public/resources/svg';
 
 type Info = {
   title: string;
   text: string[];
   checkboxDisclaimer: string[];
   buttonText: string;
+  requiredEmail: string,
+  invalidEmail: string,
 };
 
 const SUBMIT_FORM = gql`
   mutation SubmitForm($email: String!) {
-    submitForm(input: { formId: 1, data: [{ id: 2, value: $email }] }) {
+    submitForm(input: { formId: 1, data: [{id: 2, value: $email},] }) {
       errors {
         fieldId
         message
@@ -29,14 +31,20 @@ const SUBMIT_FORM = gql`
 
 const PopUp = (info: Info) => {
   const [show, setShow] = useState(true);
+  const [check, setCheck] = useState(false)
   const [submitForm, { data, loading, error }] = useMutation(SUBMIT_FORM);
 
-  async function handleSubmit() {
-    if (Object.keys(errors).length < 1 && values?.email) {
+  const handleSubmit = () => {
+    if (Object.keys(errors).length < 1 && values?.email && check) {
       submitForm({ variables: { email: values.email } })
         .then(() => setShow(!show))
         .catch((error) => console.log(error));
     }
+  };
+
+  const messages = {
+    required: info?.requiredEmail,
+    invalid: info?.invalidEmail
   }
 
   const {
@@ -47,52 +55,77 @@ const PopUp = (info: Info) => {
     resetForm,
     touched,
     setTouched,
-  } = FormikConfig(handleSubmit);
+  } = FormikConfig(handleSubmit, messages);
 
   const handleOnTouched = (key: string) => {
     setTouched({ ...touched, [key]: true });
   };
 
   type FormType = {
-    key: 'email';
+    key: "email";
     name: string;
   };
 
   return (
     <>
-      <div className={show ? styles._popup : styles._hidden}>
-        <button className={styles._close} onClick={() => setShow(!show)}>
-          <CircleCross />
-        </button>
-        <h4 className={styles._title}>{info?.title}</h4>
-        <div className={styles._text}>
-          <h6>
-            {info?.text[0]}
-            <br className={styles._lineBreak} />
-            {info?.text[1]}
-          </h6>
-        </div>
-        <form className={styles._form} onSubmit={formikSubmit}>
-          <div className={styles._input}>
-            <GeneralInput
-              name='email'
-              id='email'
-              value={values['email']}
-              onChange={handleChange}
-              onFocus={() => handleOnTouched('email')}
-              placeholder={'Email*'}
-              error={errors['email'] && touched['email'] ? true : false}
-              errorMessage={errors['email']}
-              addStyle={styles._inputText}
-              colorBlack
-            />
-          </div>
-
-          <button type='submit' className={styles._button} onClick={handleSubmit}>
-            {info?.buttonText}
-            <Icon icon='mdi:arrow-right' width={22} className={styles._arrow} />
+      <div className={show ? styles._show : styles._hidden}>
+        <div className={styles._popup}>
+          <button className={styles._close} onClick={() => setShow(!show)}>
+            <CircleCross />
           </button>
-        </form>
+          <h1 className={styles._title}>{info?.title}</h1>
+          <div className={styles._text}>
+            <h3>
+              {info?.text[0]}
+              <br className={styles._lineBreak} />
+              {info?.text[1]}
+              <br className={styles._lineBreak} />
+              {info?.text[2]}
+            </h3>
+          </div>
+          <div className={styles._formContainer}>
+            <form className={styles._form} onSubmit={formikSubmit}>
+              <div className={styles._input}>
+                <GeneralInput
+                  name="email"
+                  id="email"
+                  value={values["email"]}
+                  onChange={handleChange}
+                  onFocus={() => handleOnTouched("email")}
+                  placeholder={"Email*"}
+                  error={errors["email"] && touched["email"] ? true : false}
+                  errorMessage={errors["email"]}
+                  addStyle={styles._inputText}
+                />
+              </div>
+
+              <div className={styles._checkboxLine}>
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  onClick={()=>{setCheck(!check)}}
+                  className={styles._checkbox}
+                />
+                <div className={styles._checkboxText}>
+                  <p>
+                    {info?.checkboxDisclaimer[0]}
+                    <br className={styles._lineBreak} />
+                    {info?.checkboxDisclaimer[1]}
+                  </p>
+                </div>
+              </div>
+
+              <button type="submit" className={styles._button} onClick={handleSubmit}>
+                {info?.buttonText}
+                <Icon
+                  icon="mdi:arrow-right"
+                  width={22}
+                  className={styles._arrow}
+                />
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </>
   );

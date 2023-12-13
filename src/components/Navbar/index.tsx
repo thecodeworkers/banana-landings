@@ -2,7 +2,6 @@ import Image from 'next/image';
 import React, { FC, useState } from 'react';
 import { scrolling } from '../../utils/common';
 import styles from './styles.module.scss';
-import PopUp from '../PopUp';
 
 type Props = {
   data: any;
@@ -15,7 +14,6 @@ type Props = {
     packs: any;
     weDo: any;
   };
-  popup?: any;
 };
 
 type ScrollOption = {
@@ -28,7 +26,7 @@ type ScrollOption = {
   weDo: any;
 };
 
-const Navbar: FC<Props> = ({ data, refs, popup }) => {
+const Navbar: FC<Props> = ({ data, refs }) => {
   const [show, setShow] = useState<boolean>(false);
 
   const handleShowMenu = () => setShow((show) => !show);
@@ -40,9 +38,6 @@ const Navbar: FC<Props> = ({ data, refs, popup }) => {
   return (
     <>
       <div className={styles._navbar}>
-        <div className={!show ? styles._popNav : styles._hidden}>
-          <PopUp {...popup} />
-        </div>
         <div className={styles._content}>
           <div className={styles._imageBox}>
             <Image src={data?.image} alt={data?.alt} width={200} height={37} quality={100} />

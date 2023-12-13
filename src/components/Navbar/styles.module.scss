@@ -98,13 +98,9 @@ $size: 1.4rem;
 }
 
 @include responsive(lg) {
-  ._navbar {
-    // height: 4.75rem;
-  }
-
-  ._popNav {
-    height: fit-content;
-  }
+  // ._navbar {
+  //   height: 4.75rem;
+  // }
 
   ._content {
     position: relative;

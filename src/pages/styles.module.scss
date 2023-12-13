@@ -9,6 +9,10 @@
   max-width: $max-width;
 }
 
+._zContainer{
+  position: relative;
+}
+
 @include responsive(lg) {
   ._main {
     width: 100%;

@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './styles.module.scss';
 
-const GeneralInput = ({ name, value, placeholder, onChange, id, error, errorMessage, onFocus, addStyle, colorBlack }: any) => {
+const GeneralInput = ({ name, value, placeholder, onChange, id, error, errorMessage, onFocus, addStyle}: any) => {
   return (
     <>
-      <div className={styles._inputContainer} style={colorBlack? {borderColor: "black"} : undefined}>
+      <div className={styles._inputContainer}>
         <input
-          className={addStyle? addStyle : styles._input}
+          className={`${styles._input} ${addStyle}`}
           name={name}
           id={id}
           autoComplete={'off'}
@@ -16,7 +16,7 @@ const GeneralInput = ({ name, value, placeholder, onChange, id, error, errorMess
           value={value}
         />
       </div>
-      {error && errorMessage && <p className={styles?._validates} style={colorBlack? {color: "black"} : undefined}>{errorMessage}</p>}
+      {error && errorMessage && <p className={styles?._validates}>{errorMessage}</p>}
     </>
   );
 };
