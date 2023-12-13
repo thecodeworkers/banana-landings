@@ -14,8 +14,11 @@
     },
     "popup": {
       "title": "JOIN US!",
-      "text": ["Subscribe to our newsletter and enjoy a 20% of discount on our ", "services, and receive surprises to start your 2024!"],
-      "buttonText": "Yes, i want a 20% discount"
+      "text": ["Subscribe to our newsletter and enjoy a ", "20% of discount on our services, and ", "receive surprises to start your 2024!"],
+      "checkboxDisclaimer": ["By submitting your information you will also be agreeing to receive emails and notifications from us! ", "You will also have the option of opt out at any time"],
+      "buttonText": "Yes, i want my 20% discount",
+      "requiredEmail": "Required field",
+      "invalidEmail": "Please enter a valid format, for example email@gmail.com"
     },
     "navbar": {
       "image": "/resources/header/logo-tech.svg",
@@ -79,7 +82,7 @@
       "packsContent": [
         {
           "title": "One Page",
-          "text": "USD $1000",
+          "text": "USD $1,000",
           "buttonText": "Book a Call",
           "phone": "+584124731515",
           "props": [
@@ -304,8 +307,11 @@
     },
     "popup": {
       "title": "JOIN US!",
-      "text": ["Suscríbete a nuestro newsletter y aprovecha un 20% de descuento ", "en nuestros servicios, ¡y recibe sorpresas para empezar tu 2024!"],
-      "buttonText": "Sí, quiero mi 20% de descuento"
+      "text": ["Suscríbete a nuestro newsletter y aprovecha ", "un 20% de descuento en nuestros servicios, ", "¡y recibe sorpresas para empezar tu 2024!"],
+      "checkboxDisclaimer": ["Al enviar tu información también estarás aceptando recibir correos y notificaciones de nosotros! ", "También tendrás la opción de darte de baja en cualquier momento."],
+      "buttonText": "Sí, quiero mi 20% de descuento",
+      "requiredEmail": "Campo requerido",
+      "invalidEmail": "Ingrese un formato válido, por ejemplo email@gmail.com"
     },
     "navbar": {
       "image": "/resources/header/logo-brand.svg",
@@ -341,7 +347,7 @@
       "secondBold": "& BEAUTIFUL",
       "boldColor": "#000000",
       "secondTitle": "BRANDS",
-      "phases": ["Kick-Off", "Investigación", "Análisis", "Identidad Verbal", "Identidad Visual & UI"],
+      "phases": ["Kick-Off", "Investigación", "Análisis", "Identidad Verbal", "Identidad Visual"],
       "image": "/resources/banners/brand/b.svg",
       "imageWidth": 600,
       "imageHeight": 490,
@@ -594,7 +600,7 @@
           ]
         },
         {
-          "title": "Papeleria",
+          "title": "Papelería",
           "text": "USD $400",
           "buttonText": "Agenda una llamada",
           "phone": "+584124731515",
@@ -719,8 +725,11 @@
     },
     "popup": {
       "title": "JOIN US!",
-      "text": ["Subscribe to our newsletter and enjoy a 20% of discount on our ", "services, and receive surprises to start your 2024!"],
-      "buttonText": "Yes, i want a 20% discount"
+      "text": ["Subscribe to our newsletter and enjoy a ", "20% of discount on our services, and ", "receive surprises to start your 2024!"],
+      "checkboxDisclaimer": ["By submitting your information you will also be agreeing to receive emails and notifications from us! ", "You will also have the option of opt out at any time"],
+      "buttonText": "Yes, i want my 20% discount",
+      "requiredEmail": "Required field",
+      "invalidEmail": "Please enter a valid format, for example email@gmail.com"
     },
     "navbar": {
       "image": "/resources/header/logo-motion.svg",
@@ -1042,8 +1051,11 @@
     },
     "popup": {
       "title": "JOIN US!",
-      "text": ["Suscríbete a nuestro newsletter y aprovecha un 20% de descuento ", "en nuestros servicios, ¡y recibe sorpresas para empezar tu 2024!"],
-      "buttonText": "Sí, quiero mi 20% de descuento"
+      "text": ["Suscríbete a nuestro newsletter y aprovecha ", "un 20% de descuento en nuestros servicios, ", "¡y recibe sorpresas para empezar tu 2024!"],
+      "checkboxDisclaimer": ["Al enviar tu información también estarás aceptando recibir correos y notificaciones de nosotros! ", "También tendrás la opción de darte de baja en cualquier momento."],
+      "buttonText": "Sí, quiero mi 20% de descuento",
+      "requiredEmail": "Campo requerido",
+      "invalidEmail": "Ingrese un formato válido, por ejemplo email@gmail.com"
     },
     "navbar": {
       "image": "/resources/header/logo-production.svg",
@@ -1268,7 +1280,7 @@
       "packsContent": [
         {
           "title": "15 fotos + 2 videos ",
-          "text": "USD $1.400",
+          "text": "USD $1,400",
           "buttonText": "Contáctanos",
           "phone": "+584124731515",
           "props": [
@@ -1320,7 +1332,7 @@
         },
         {
           "title": "25 fotos + 3 videos",
-          "text": "USD $1.600",
+          "text": "USD $1,600",
           "buttonText": "Contáctanos",
           "phone": "+584124731515",
           "props": [
