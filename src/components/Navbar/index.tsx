@@ -15,7 +15,7 @@ type Props = {
     packs: any;
     weDo: any;
   };
-  popup?: any
+  popup?: any;
 };
 
 type ScrollOption = {
@@ -33,10 +33,16 @@ const Navbar: FC<Props> = ({ data, refs, popup }) => {
 
   const handleShowMenu = () => setShow((show) => !show);
 
+  const goTo = () => {
+    window.open(data?.home?.link)
+  }
+
   return (
     <>
       <div className={styles._navbar}>
-        <PopUp {...popup} />
+        <div className={!show ? styles._popNav : styles._hidden}>
+          <PopUp {...popup} />
+        </div>
         <div className={styles._content}>
           <div className={styles._imageBox}>
             <Image src={data?.image} alt={data?.alt} width={200} height={37} quality={100} />
@@ -64,6 +70,11 @@ const Navbar: FC<Props> = ({ data, refs, popup }) => {
 
           {show && (
             <div className={styles._menu}>
+              <div className={styles._textContainer}>
+                <p className={styles._text} onClick={()=>goTo()}>
+                  {data?.home?.name}
+                </p>
+              </div>
               {data?.routes?.map((route: any, index: number | string) => (
                 <div key={index} className={styles._textContainer}>
                   <p
