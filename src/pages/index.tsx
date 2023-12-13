@@ -39,9 +39,7 @@ export default function Home({ data, domain }: any) {
         <meta property='og:image' content={data?.metadata.ogImage} />
       </Head>
 
-      <div className={styles._zcontainer}>
-        <Navbar data={data?.navbar} refs={refs} popup={data?.popup}/>
-      </div>
+      <Navbar data={data?.navbar} refs={refs} popup={data?.popup} />
 
       <main className={styles._main}>
         <Hero data={data?.hero} action={contactRef} />

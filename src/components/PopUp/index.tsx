@@ -4,6 +4,7 @@ import { FormikConfig } from './formik';
 import GeneralInput from '../GeneralInput';
 import { Icon } from '@iconify/react';
 import { useMutation, gql } from '@apollo/client';
+import { CircleCross } from '../../../public/resources/svg';
 
 type Info = {
   title: string;
@@ -14,7 +15,7 @@ type Info = {
 
 const SUBMIT_FORM = gql`
   mutation SubmitForm($email: String!) {
-    submitForm(input: { formId: 1, data: [{id: 2, value: $email},] }) {
+    submitForm(input: { formId: 1, data: [{ id: 2, value: $email }] }) {
       errors {
         fieldId
         message
@@ -32,9 +33,11 @@ const PopUp = (info: Info) => {
 
   async function handleSubmit() {
     if (Object.keys(errors).length < 1 && values?.email) {
-      submitForm({ variables: { email: values.email } }).then(()=>setShow(!show)).catch(error=>console.log(error));
+      submitForm({ variables: { email: values.email } })
+        .then(() => setShow(!show))
+        .catch((error) => console.log(error));
     }
-  };
+  }
 
   const {
     values,
@@ -58,6 +61,9 @@ const PopUp = (info: Info) => {
   return (
     <>
       <div className={show ? styles._popup : styles._hidden}>
+        <button className={styles._close} onClick={() => setShow(!show)}>
+          <CircleCross />
+        </button>
         <h4 className={styles._title}>{info?.title}</h4>
         <div className={styles._text}>
           <h6>
