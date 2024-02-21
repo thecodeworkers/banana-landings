@@ -16,7 +16,7 @@
       "title": "JOIN US!",
       "text": ["Subscribe to our newsletter and enjoy up to a ", "10% of discount on our services!", ""],
       "checkboxDisclaimer": ["By submitting your information you will also be agreeing to receive emails and notifications from us! ", "You will also have the option of opt out at any time"],
-      "buttonText": "Yes, i want my 20% discount",
+      "buttonText": "Yes, i want a discount!",
       "requiredEmail": "Required field",
       "invalidEmail": "Please enter a valid format, for example email@gmail.com"
     },
@@ -309,7 +309,7 @@
       "title": "JOIN US!",
       "text": ["Suscríbete a nuestro newsletter, !y ", "aprovecha hasta un 10% de descuento en nuestros servicios!", ""],
       "checkboxDisclaimer": ["Al enviar tu información también estarás aceptando recibir correos y notificaciones de nosotros! ", "También tendrás la opción de darte de baja en cualquier momento."],
-      "buttonText": "Sí, quiero mi 20% de descuento",
+      "buttonText": "¡Sí! Quiero mi descuento",
       "requiredEmail": "Campo requerido",
       "invalidEmail": "Ingrese un formato válido, por ejemplo email@gmail.com"
     },
@@ -727,7 +727,7 @@
       "title": "JOIN US!",
       "text": ["Subscribe to our newsletter and enjoy up to a ", "10% of discount on our services!", ""],
       "checkboxDisclaimer": ["By submitting your information you will also be agreeing to receive emails and notifications from us! ", "You will also have the option of opt out at any time"],
-      "buttonText": "Yes, i want my 20% discount",
+      "buttonText": "Yes, i want a discount!",
       "requiredEmail": "Required field",
       "invalidEmail": "Please enter a valid format, for example email@gmail.com"
     },
@@ -1053,7 +1053,7 @@
       "title": "JOIN US!",
       "text": ["Suscríbete a nuestro newsletter, !y ", "aprovecha hasta un 10% de descuento en nuestros servicios!", ""],
       "checkboxDisclaimer": ["Al enviar tu información también estarás aceptando recibir correos y notificaciones de nosotros! ", "También tendrás la opción de darte de baja en cualquier momento."],
-      "buttonText": "Sí, quiero mi 20% de descuento",
+      "buttonText": "¡Sí! Quiero mi descuento",
       "requiredEmail": "Campo requerido",
       "invalidEmail": "Ingrese un formato válido, por ejemplo email@gmail.com"
     },
