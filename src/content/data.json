@@ -14,7 +14,7 @@
     },
     "popup": {
       "title": "JOIN US!",
-      "text": ["Subscribe to our newsletter and enjoy a ", "20% of discount on our services, and ", "receive surprises to start your 2024!"],
+      "text": ["Subscribe to our newsletter and enjoy up to a ", "10% of discount on our services!", ""],
       "checkboxDisclaimer": ["By submitting your information you will also be agreeing to receive emails and notifications from us! ", "You will also have the option of opt out at any time"],
       "buttonText": "Yes, i want my 20% discount",
       "requiredEmail": "Required field",
@@ -307,7 +307,7 @@
     },
     "popup": {
       "title": "JOIN US!",
-      "text": ["Suscríbete a nuestro newsletter y aprovecha ", "un 20% de descuento en nuestros servicios, ", "¡y recibe sorpresas para empezar tu 2024!"],
+      "text": ["Suscríbete a nuestro newsletter, !y ", "aprovecha hasta un 10% de descuento en nuestros servicios!", ""],
       "checkboxDisclaimer": ["Al enviar tu información también estarás aceptando recibir correos y notificaciones de nosotros! ", "También tendrás la opción de darte de baja en cualquier momento."],
       "buttonText": "Sí, quiero mi 20% de descuento",
       "requiredEmail": "Campo requerido",
@@ -725,7 +725,7 @@
     },
     "popup": {
       "title": "JOIN US!",
-      "text": ["Subscribe to our newsletter and enjoy a ", "20% of discount on our services, and ", "receive surprises to start your 2024!"],
+      "text": ["Subscribe to our newsletter and enjoy up to a ", "10% of discount on our services!", ""],
       "checkboxDisclaimer": ["By submitting your information you will also be agreeing to receive emails and notifications from us! ", "You will also have the option of opt out at any time"],
       "buttonText": "Yes, i want my 20% discount",
       "requiredEmail": "Required field",
@@ -1051,7 +1051,7 @@
     },
     "popup": {
       "title": "JOIN US!",
-      "text": ["Suscríbete a nuestro newsletter y aprovecha ", "un 20% de descuento en nuestros servicios, ", "¡y recibe sorpresas para empezar tu 2024!"],
+      "text": ["Suscríbete a nuestro newsletter, !y ", "aprovecha hasta un 10% de descuento en nuestros servicios!", ""],
       "checkboxDisclaimer": ["Al enviar tu información también estarás aceptando recibir correos y notificaciones de nosotros! ", "También tendrás la opción de darte de baja en cualquier momento."],
       "buttonText": "Sí, quiero mi 20% de descuento",
       "requiredEmail": "Campo requerido",
