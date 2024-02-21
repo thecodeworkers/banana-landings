@@ -16,7 +16,7 @@
       "title": "JOIN US!",
       "text": ["Subscribe to our newsletter and enjoy up to a ", "10% of discount on our services!", ""],
       "checkboxDisclaimer": ["By submitting your information you will also be agreeing to receive emails and notifications from us! ", "You will also have the option of opt out at any time"],
-      "buttonText": "Yes, i want up to 20% discount",
+      "buttonText": "Yes, i want up to 10% discount",
       "requiredEmail": "Required field",
       "invalidEmail": "Please enter a valid format, for example email@gmail.com"
     },
