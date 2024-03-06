@@ -14,7 +14,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
   };
 
   const bookACall = () => {
-    window.open(`https://calendly.com/bananacreative/diagnostic-meeting`);
+    window.open(`https://wkf.ms/442Kkju`);
   };
 
   const [form, animateForm] = useAnimate();
