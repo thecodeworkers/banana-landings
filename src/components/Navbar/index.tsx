@@ -31,6 +31,10 @@ const Navbar: FC<Props> = ({ data, refs }) => {
 
   const handleShowMenu = () => setShow((show) => !show);
 
+  const goTo = () => {
+    window.open(data?.home?.link)
+  }
+
   return (
     <>
       <div className={styles._navbar}>
@@ -43,6 +47,9 @@ const Navbar: FC<Props> = ({ data, refs }) => {
           </div>
 
           <div className={styles._textBox}>
+            <a className={styles._text} href={data?.home?.link}>
+              {data?.home?.name}
+            </a>
             {data?.routes?.map((route: any, index: number | string) => (
               <p key={index} className={styles._text} onClick={() => scrolling(refs[route?.ref as keyof ScrollOption])}>
                 {route?.name}
@@ -58,6 +65,11 @@ const Navbar: FC<Props> = ({ data, refs }) => {
 
           {show && (
             <div className={styles._menu}>
+              <div className={styles._textContainer}>
+                <p className={styles._text} onClick={()=>goTo()}>
+                  {data?.home?.name}
+                </p>
+              </div>
               {data?.routes?.map((route: any, index: number | string) => (
                 <div key={index} className={styles._textContainer}>
                   <p

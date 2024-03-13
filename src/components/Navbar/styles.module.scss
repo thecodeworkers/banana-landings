@@ -3,173 +3,175 @@
 $size: 1.4rem;
 
 @mixin baseStyle() {
-	display: flex;
-	flex-direction: column;
-	width: $size;
-	height: $size;
+  display: flex;
+  flex-direction: column;
+  width: $size;
+  height: $size;
 
-	border: 0;
-	background: transparent;
-	gap: .35rem;
-	cursor: pointer;
+  border: 0;
+  background: transparent;
+  gap: 0.35rem;
+  cursor: pointer;
 
-	& div {
-		height: 0.125rem;
-		background-color: $white;
-		width: 100%;
-		border-radius: 0.3125rem;
-		transition: all .5s;
-		transform-origin: right;
-	}
+  & div {
+    height: 0.125rem;
+    background-color: $white;
+    width: 100%;
+    border-radius: 0.3125rem;
+    transition: all 0.5s;
+    transform-origin: right;
+  }
 }
 
 @mixin burguerAnimation() {
-	& div:first-child {
-		rotate: -45deg;
-	}
+  & div:first-child {
+    rotate: -45deg;
+  }
 
-	& div:nth-child(2) {
-		opacity: 0;
-	}
+  & div:nth-child(2) {
+    opacity: 0;
+  }
 
-	& div:last-child {
-		rotate: 45deg;
-	}
+  & div:last-child {
+    rotate: 45deg;
+  }
 }
 
 ._navbar {
-	background-color: $black;
-	width: 100vw;
-	height: 6.25rem;
-	border-bottom: 1px solid $gray;
-	position: fixed;
-	display: flex;
-	align-items: center;
-	z-index: 2;
+  background-color: $black;
+  width: 100vw;
+  border-bottom: 1px solid $gray;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
 }
 
 ._content {
-	width: 100%;
-	margin: 0 auto;
-	max-width: $max-width;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  height: 6.25rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: $max-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ._imageBox {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ._imageBoxResponsive {
-	display: none;
+  display: none;
 }
 
 ._textBox {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-	._text:not(:first-child) {
-		margin-left: 2.5rem;
-	}
+  ._text:not(:first-child) {
+    margin-left: 2.5rem;
+  }
 }
 
 ._text {
-	color: $gallery;
-	font-size: $helvetica16;
-	cursor: pointer;
-	font-family: $helvetica;
+  color: $gallery;
+  font-size: $helvetica16;
+  cursor: pointer;
+  font-family: $helvetica;
 }
 
 ._menu ._menuIcon {
-	display: none;
+  display: none;
 }
 
 ._menuBurguer {
-	display: none;
+  display: none;
+}
+
+._hidden{
+  display: none;
 }
 
 @include responsive(lg) {
-	._navbar {
-		height: 4.75rem;
-	}
+  // ._navbar {
+  //   height: 4.75rem;
+  // }
 
-	._content {
-		height: 5rem;
-		padding: 0 1rem;
-	}
+  ._content {
+    position: relative;
+    height: 5.25rem;
+    left: 0.15rem;
+    padding: 0 1rem;
+  }
 
-	._imageBoxResponsive {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 100%;
-	}
+  ._imageBoxResponsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 
-	._imageBox {
-		display: none;
-	}
+  ._imageBox {
+    display: none;
+  }
 
-	._textBox {
-		display: none;
-	}
+  ._textBox {
+    display: none;
+  }
 
-	._menu {
-		display: flex;
-		position: fixed;
-		align-items: flex-start;
-		height: 100vh;
-		flex-direction: column;
-		width: 100%;
-		background-color: $black;
-		top: 3rem;
-		z-index: 3;
-		animation: opacity .6s forwards;
-		transition: all .6s;
-		left: 0;
-		padding: 1.5625rem;
-	}
+  ._menu {
+    display: flex;
+    position: fixed;
+    align-items: flex-start;
+    height: 100vh;
+    flex-direction: column;
+    width: 100%;
+    background-color: $black;
+    top: 3rem;
+    z-index: 3;
+    animation: opacity 0.6s forwards;
+    transition: all 0.6s;
+    left: 0;
+    padding: 1.5625rem;
+  }
 
-	@keyframes opacity {
-		from {
-			opacity: 0
-		}
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
 
-		;
+    to {
+      opacity: 1;
+    }
+  }
 
-		to {
-			opacity: 1
-		}
+  ._textContainer {
+    width: 100%;
+    border-bottom: 1px solid $gray;
+  }
 
-		;
-	}
+  ._text {
+    margin: 1rem 0;
+    width: 100%;
+  }
 
-	._textContainer {
-		width: 100%;
-		border-bottom: 1px solid $gray;
-	}
+  ._menuIcon {
+    display: flex;
+    color: $white;
+    padding: 2rem;
+  }
 
-	._text {
-		margin: 1rem 0;
-		width: 100%;
-	}
+  ._menuBurguer {
+    @include baseStyle();
+  }
 
-	._menuIcon {
-		display: flex;
-		color: $white;
-		padding: 2rem;
-	}
-
-	._menuBurguer {
-		@include baseStyle()
-	}
-
-	._closedMenu {
-		@include baseStyle();
-		@include burguerAnimation();
-	}
-
+  ._closedMenu {
+    @include baseStyle();
+    @include burguerAnimation();
+  }
 }

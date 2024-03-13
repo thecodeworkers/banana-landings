@@ -1,4 +1,4 @@
-import { Navbar } from '@/components';
+import { Navbar, PopUp } from '@/components';
 import Head from 'next/head';
 import { Hero, AboutUs, Services, Products, Portfolio, Contact, Paragraph, Packs } from '@/containers';
 
@@ -36,10 +36,14 @@ export default function Home({ data, domain }: any) {
         <meta name='description' content={data?.metadata.description} key='desc' />
         <meta property='og:title' content={data?.metadata.title} />
         <meta property='og:description' content={data?.metadata.description} />
-        <meta property="og:image" content={data?.metadata.ogImage} />
+        <meta property='og:image' content={data?.metadata.ogImage} />
       </Head>
 
-      <Navbar data={data?.navbar} refs={refs} />
+      <div className={styles._zContainer}>
+        <Navbar data={data?.navbar} refs={refs} />
+
+        <PopUp {...data?.popup} />
+      </div>
 
       <main className={styles._main}>
         <Hero data={data?.hero} action={contactRef} />

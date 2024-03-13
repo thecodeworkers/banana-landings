@@ -12,9 +12,21 @@
       "packsMessage": "!Hi team Banana! Thank you for your time. I’m interested in receiving more information from the Tech service:",
       "haveProjectMessage": "Hello Team Banana! I have a project and would like to book a meeting with the team of Tech"
     },
+    "popup": {
+      "title": "JOIN US!",
+      "text": ["Subscribe to our newsletter and enjoy up to a ", "10% of discount on our services!", ""],
+      "checkboxDisclaimer": ["By submitting your information you will also be agreeing to receive emails and notifications from us! ", "You will also have the option of opt out at any time"],
+      "buttonText": "Yes, i want a discount!",
+      "requiredEmail": "Required field",
+      "invalidEmail": "Please enter a valid format, for example email@gmail.com"
+    },
     "navbar": {
       "image": "/resources/header/logo-tech.svg",
       "alt": "Banana Tech",
+      "home": {
+        "name": "Home",
+        "link": "https://bananacreative.io"
+      },
       "routes": [
         { "name": "About Us", "ref": "aboutUs" },
         { "name": "What we do?", "ref": "weDo" },
@@ -70,7 +82,7 @@
       "packsContent": [
         {
           "title": "One Page",
-          "text": "USD $1000",
+          "text": "USD $1,000",
           "buttonText": "Book a Call",
           "phone": "+584124731515",
           "props": [
@@ -293,9 +305,21 @@
       "packsMessage": "Hola Team Banana! Muchas gracias por su tiempo. Estoy interesado en recibir más información sobre el servicio de Brand:",
       "haveProjectMessage": "¡Hola Team Banana! Tengo un proyecto y estoy interesado en agendar una reunión con el equipo de Brand"
     },
+    "popup": {
+      "title": "JOIN US!",
+      "text": ["Suscríbete a nuestro newsletter, !y ", "aprovecha hasta un 10% de descuento en nuestros servicios!", ""],
+      "checkboxDisclaimer": ["Al enviar tu información también estarás aceptando recibir correos y notificaciones de nosotros! ", "También tendrás la opción de darte de baja en cualquier momento."],
+      "buttonText": "¡Sí! Quiero mi descuento",
+      "requiredEmail": "Campo requerido",
+      "invalidEmail": "Ingrese un formato válido, por ejemplo email@gmail.com"
+    },
     "navbar": {
       "image": "/resources/header/logo-brand.svg",
       "alt": "Banana Design",
+      "home": {
+        "name": "Inicio",
+        "link": "https://bananacreative.io"
+      },
       "routes": [
         { "name": "Nosotros", "ref": "aboutUs" },
         { "name": "Proceso", "ref": "weDo" },
@@ -323,7 +347,7 @@
       "secondBold": "& BEAUTIFUL",
       "boldColor": "#000000",
       "secondTitle": "BRANDS",
-      "phases": ["Kick-Off", "Investigación", "Análisis", "Identidad Verbal", "Identidad Visual & UI"],
+      "phases": ["Kick-Off", "Investigación", "Análisis", "Identidad Verbal", "Identidad Visual"],
       "image": "/resources/banners/brand/b.svg",
       "imageWidth": 600,
       "imageHeight": 490,
@@ -576,7 +600,7 @@
           ]
         },
         {
-          "title": "Papeleria",
+          "title": "Papelería",
           "text": "USD $400",
           "buttonText": "Agenda una llamada",
           "phone": "+584124731515",
@@ -699,9 +723,21 @@
       "packsMessage": "!Hi team Banana! Thank you for your time. I’m interested in receiving more information from the Motion Graphics service:",
       "haveProjectMessage": "Hello Team Banana! I have a project and would like to book a meeting with the team of Motion"
     },
+    "popup": {
+      "title": "JOIN US!",
+      "text": ["Subscribe to our newsletter and enjoy up to a ", "10% of discount on our services!", ""],
+      "checkboxDisclaimer": ["By submitting your information you will also be agreeing to receive emails and notifications from us! ", "You will also have the option of opt out at any time"],
+      "buttonText": "Yes, i want a discount!",
+      "requiredEmail": "Required field",
+      "invalidEmail": "Please enter a valid format, for example email@gmail.com"
+    },
     "navbar": {
       "image": "/resources/header/logo-motion.svg",
       "alt": "Banana Motion",
+      "home": {
+        "name": "Home",
+        "link": "https://bananacreative.io"
+      },
       "routes": [
         { "name": "About Us", "ref": "aboutUs" },
         { "name": "What we do?", "ref": "weDo" },
@@ -744,7 +780,7 @@
       "packsContent": [
         {
           "title": "Character 2D/3D",
-          "text": "USD  $499",
+          "text": "USD  $500",
           "buttonText": "Book a Call",
           "phone": "+584124731515",
           "props": [
@@ -770,7 +806,7 @@
         },
         {
           "title": "Broadcast 2D/3D",
-          "text": "USD $1,499",
+          "text": "USD $1,500",
           "buttonText": "Book a Call",
           "phone": "+584124731515",
           "props": [
@@ -802,7 +838,7 @@
         },
         {
           "title": "Visual Performance",
-          "text": "USD $1,799",
+          "text": "USD $1,800",
           "buttonText": "Book a Call",
           "phone": "+584124731515",
           "props": [
@@ -842,7 +878,7 @@
       "packsContent": [
         {
           "title": "Product 3D Modeling",
-          "text": "USD  $249",
+          "text": "USD  $350",
           "buttonText": "Book a Call",
           "phone": "+584124731515",
           "props": [
@@ -863,7 +899,7 @@
         },
         {
           "title": "Set Design ",
-          "text": "USD $499",
+          "text": "USD $750",
           "buttonText": "Book a Call",
           "phone": "+584124731515",
           "props": [
@@ -885,7 +921,7 @@
         },
         {
           "title": "Animated 2D/3D Logo",
-          "text": "USD $399",
+          "text": "USD $400",
           "buttonText": "Book a Call",
           "phone": "+584124731515",
           "props": [
@@ -1013,9 +1049,21 @@
       "packsMessage": "Hola Team Banana! Muchas gracias por su tiempo. Estoy interesado en recibir más información sobre el servicio de Productions:",
       "haveProjectMessage": "¡Hola Team Banana! Tengo un proyecto y estoy interesado en agendar una reunión con el equipo de Production"
     },
+    "popup": {
+      "title": "JOIN US!",
+      "text": ["Suscríbete a nuestro newsletter, !y ", "aprovecha hasta un 10% de descuento en nuestros servicios!", ""],
+      "checkboxDisclaimer": ["Al enviar tu información también estarás aceptando recibir correos y notificaciones de nosotros! ", "También tendrás la opción de darte de baja en cualquier momento."],
+      "buttonText": "¡Sí! Quiero mi descuento",
+      "requiredEmail": "Campo requerido",
+      "invalidEmail": "Ingrese un formato válido, por ejemplo email@gmail.com"
+    },
     "navbar": {
       "image": "/resources/header/logo-production.svg",
       "alt": "Banana Production",
+      "home": {
+        "name": "Inicio",
+        "link": "https://bananacreative.io"
+      },
       "routes": [
         { "name": "Nosotros", "ref": "aboutUs" },
         { "name": "Proceso", "ref": "weDo" },
@@ -1232,7 +1280,7 @@
       "packsContent": [
         {
           "title": "15 fotos + 2 videos ",
-          "text": "USD $1.295",
+          "text": "USD $1,400",
           "buttonText": "Contáctanos",
           "phone": "+584124731515",
           "props": [
@@ -1284,7 +1332,7 @@
         },
         {
           "title": "25 fotos + 3 videos",
-          "text": "USD $1.499",
+          "text": "USD $1,600",
           "buttonText": "Contáctanos",
           "phone": "+584124731515",
           "props": [
@@ -1336,7 +1384,7 @@
         },
         {
           "title": "35 fotos + 4 videos",
-          "text": "USD $1.999",
+          "text": "USD $2,000",
           "buttonText": "Contáctanos",
           "phone": "+584124731515",
           "props": [

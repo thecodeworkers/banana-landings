@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.8",
     "@iconify/react": "^4.1.0",
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
@@ -17,6 +18,7 @@
     "eslint-config-next": "13.2.4",
     "formik": "^2.2.9",
     "framer-motion": "^10.11.2",
+    "graphql": "^16.8.1",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",

@@ -35,7 +35,7 @@ const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
   };
 
   const bookACall = (pack: string) => {
-    window.open(`https://api.whatsapp.com/send?phone=${props?.phone}&text=${props?.packsMessage} ${pack}`);
+    window.open(`https://wkf.ms/442Kkju`);
   };
 
   // const setMinHeight = () => allPacksRefs.map((ref: any) => {
