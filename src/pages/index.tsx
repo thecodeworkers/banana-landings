@@ -11,7 +11,7 @@ import content from '@/content/data.json';
 
 type DomainType = keyof typeof content;
 
-export default function Home({ data, domain }: any) {
+export default function Home({ data, domain, gtmSrc }: any) {
   const aboutRef = useRef(null);
   const servicesRef = useRef(null);
   const productsRef = useRef(null);
@@ -33,8 +33,6 @@ export default function Home({ data, domain }: any) {
     packs: packsRef,
     weDo: weDoRef,
   };
-
-  const gtmSrc: string = `https://www.googletagmanager.com/ns.html?id=${process.env.GTM}`;
 
   return (
     <>
@@ -78,11 +76,13 @@ export default function Home({ data, domain }: any) {
 
 export async function getStaticProps() {
   const domain: string = process.env.DOMAIN || 'TECH';
+  const gtmSrc: string = `https://www.googletagmanager.com/ns.html?id=${process.env.GTM}`;
 
   return {
     props: {
       data: content[domain as DomainType],
       domain,
+      gtmSrc
     },
   };
 }
