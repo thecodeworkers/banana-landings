@@ -4,10 +4,13 @@ import styles from './styles.module.scss';
 import { GeneralButton } from '@/components/';
 import { motion, useAnimate, useInView } from 'framer-motion';
 import { scrolling } from '../../utils/common';
+import useTranslation from "next-translate/useTranslation";
 
 const Hero = ({ data, action }: any) => {
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope, { once: true });
+
+  const { t } = useTranslation("common");
 
   useEffect(() => {
     if (isInView) animate(scope.current, { opacity: 1, marginTop: 0 }, { duration: 1, delay: 0.3, ease: 'linear' });
@@ -18,13 +21,13 @@ const Hero = ({ data, action }: any) => {
       <div className={styles._content}>
         <div className={styles._textBox}>
           <p className={styles._title}>
-            {data?.title} <span> {data?.bold} </span>
+            {t(data?.title)} <span> {t(data?.bold)} </span>
           </p>
 
-          <p className={styles._text}>{data?.subtitle}</p>
+          <p className={styles._text}>{t(data?.subtitle)}</p>
 
           <div className={styles._buttonContainer}>
-            <GeneralButton method={() => scrolling(action)} text={data?.button} />
+            <GeneralButton method={() => scrolling(action)} text={t(data?.button)} />
           </div>
         </div>
         <motion.div

@@ -2,8 +2,11 @@ import Image from 'next/image';
 import React, { forwardRef } from 'react';
 import styles from './styles.module.scss';
 import FadeIn from '../../components/FadeIn';
+import useTranslation from "next-translate/useTranslation";
 
 const AboutUs = forwardRef<HTMLDivElement>((props: any, ref): any => {
+  const { t } = useTranslation("common");
+
   return (
     <div ref={ref} className={styles._main}>
       <FadeIn className={styles._content}>
@@ -27,21 +30,21 @@ const AboutUs = forwardRef<HTMLDivElement>((props: any, ref): any => {
             />
           </div>
           <p className={styles._title}>
-            {props?.firstTitle}{' '}
+            {t(props?.firstTitle)}{' '}
             <span style={{ color: props?.boldColor }} className={styles._greenTitleFirst}>
-              {props?.firstBold}
+              {t(props?.firstBold)}
             </span>
             <span style={{ color: props?.boldColor }} className={styles._greenTitleSecond}>
               {' '}
-              {props?.secondBold}{' '}
+              {t(props?.secondBold)}{' '}
             </span>
-            {props?.secondTitle}
+            {t(props?.secondTitle)}
           </p>
         </div>
         <div className={styles._rightBox}>
           {props?.phases?.map((phase: string, index: string | number) => (
             <p key={index} className={styles._text}>
-              {phase}
+              {t(phase)}
             </p>
           ))}
         </div>

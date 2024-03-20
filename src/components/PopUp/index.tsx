@@ -5,6 +5,7 @@ import GeneralInput from "../GeneralInput";
 import { CircleCross } from "../../../public/resources/svg";
 import { Icon } from "@iconify/react";
 import { useMutation, gql } from '@apollo/client';
+import useTranslation from "next-translate/useTranslation";
 
 type Info = {
   title: string;
@@ -30,6 +31,8 @@ const SUBMIT_FORM = gql`
 `;
 
 const PopUp = (info: Info) => {
+  const { t } = useTranslation("common");
+
   const [show, setShow] = useState(true);
   const [check, setCheck] = useState(false)
   const [submitForm, { data, loading, error }] = useMutation(SUBMIT_FORM);
@@ -43,8 +46,8 @@ const PopUp = (info: Info) => {
   };
 
   const messages = {
-    required: info?.requiredEmail,
-    invalid: info?.invalidEmail
+    required: t(info?.requiredEmail),
+    invalid: t(info?.invalidEmail)
   }
 
   const {
@@ -73,14 +76,14 @@ const PopUp = (info: Info) => {
           <button className={styles._close} onClick={() => setShow(!show)}>
             <CircleCross />
           </button>
-          <h1 className={styles._title}>{info?.title}</h1>
+          <h1 className={styles._title}>{t(info?.title)}</h1>
           <div className={styles._text}>
             <h3>
-              {info?.text[0]}
+              {t(info?.text[0])}
               <br className={styles._lineBreak} />
-              {info?.text[1]}
+              {t(info?.text[1])}
               <br className={styles._lineBreak} />
-              {info?.text[2]}
+              {t(info?.text[2])}
             </h3>
           </div>
           <div className={styles._formContainer}>
@@ -108,15 +111,15 @@ const PopUp = (info: Info) => {
                 />
                 <div className={styles._checkboxText}>
                   <p>
-                    {info?.checkboxDisclaimer[0]}
+                    {t(info?.checkboxDisclaimer[0])}
                     <br className={styles._lineBreak} />
-                    {info?.checkboxDisclaimer[1]}
+                    {t(info?.checkboxDisclaimer[1])}
                   </p>
                 </div>
               </div>
 
               <button type="submit" className={styles._button} onClick={handleSubmit}>
-                {info?.buttonText}
+                {t(info?.buttonText)}
                 <Icon
                   icon="mdi:arrow-right"
                   width={22}

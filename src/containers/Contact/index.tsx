@@ -4,11 +4,14 @@ import { FormikConfig } from './formik';
 import { Footer, GeneralButton, GeneralInput } from '@/components';
 import { useAnimate } from 'framer-motion';
 import { Icon } from '@iconify/react';
+import useTranslation from "next-translate/useTranslation";
 
 const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
+  const { t } = useTranslation("common");
+
   const handleSubmit = () => {
     window.open(
-      `https://api.whatsapp.com/send?phone=${props?.phone}&text=${props?.contactMessage} Company: ${values?.company} , Email: ${values?.email} , Subject: ${values?.subject}`,
+      `https://api.whatsapp.com/send?phone=${props?.phone}&text=${t(props?.contactMessage)} Company: ${values?.company} , Email: ${values?.email} , Subject: ${values?.subject}`,
     );
     resetForm();
   };
@@ -20,6 +23,8 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
   const [form, animateForm] = useAnimate();
   const [haveProject, animateProject] = useAnimate();
 
+  const messages: string[] = [t(props?.requiredMessages[0]), t(props?.requiredMessages[1])];
+
   const {
     values,
     handleSubmit: formikSubmit,
@@ -27,8 +32,8 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
     errors,
     resetForm,
     touched,
-    setTouched,
-  } = FormikConfig(handleSubmit);
+    setTouched
+  } = FormikConfig(handleSubmit, messages);
 
   const handleOnTouched = (key: string) => {
     setTouched({ ...touched, [key]: true });
@@ -56,13 +61,13 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
         <div ref={haveProject} className={styles._animationHaveProjectWrapper}>
           <div className={styles._haveProjectWrapper}>
             <div className={styles._haveProject}>
-              <p className={styles._haveProjectText}>{props?.gotTitle}</p>
+              <p className={styles._haveProjectText}>{t(props?.gotTitle)}</p>
               <div className={styles._haveProjectButtons}>
                 <div className={styles._button}>
-                  <GeneralButton text={props?.touchButton} ignoreTheme method={toForm} />
+                  <GeneralButton text={t(props?.touchButton)} ignoreTheme method={toForm} />
                 </div>
                 <div className={styles._button}>
-                  <GeneralButton method={() => bookACall()} ignoreTheme text={props?.callButton} />
+                  <GeneralButton method={() => bookACall()} ignoreTheme text={t(props?.callButton)} />
                 </div>
               </div>
             </div>
@@ -72,7 +77,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
               phone={props?.phone}
               copyright={props?.copyright}
               mediaText={props?.mediaText}
-              message={props?.haveProjectMessage}
+              message={t(props?.haveProjectMessage)}
               mail={props?.email}
             />
           </div>
@@ -83,9 +88,9 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
             <div className={styles._textBox}>
               <p className={styles._goBack} onClick={toHaveProject}>
                 <Icon icon='mdi:arrow-left' width={22} />
-                {props?.goBackText}
+                {t(props?.goBackText)}
               </p>
-              <p className={styles._title}>{props?.contactTitle}</p>
+              <p className={styles._title}>{t(props?.contactTitle)}</p>
               <div className={styles._textContainer}>
                 {props?.address?.map((address: any, index: number | string) => (
                   <p key={index} className={styles._text}>
@@ -105,7 +110,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
                       value={values[field.key]}
                       onChange={handleChange}
                       onFocus={() => handleOnTouched(field?.key)}
-                      placeholder={field?.name}
+                      placeholder={t(field?.name)}
                       error={errors[field.key] && touched[field.key] ? true : false}
                       errorMessage={errors[field.key]}
                     />
@@ -113,7 +118,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
                 ))}
 
                 <div className={styles._buttonContainer}>
-                  <GeneralButton method={handleSubmit} ignoreTheme text={props?.sendButton} />
+                  <GeneralButton method={handleSubmit} ignoreTheme text={t(props?.sendButton)} />
                 </div>
               </form>
               <div>
