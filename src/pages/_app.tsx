@@ -1,6 +1,7 @@
 import '../../public/styles/global.scss';
 import type { AppProps } from 'next/app';
 import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const client = new ApolloClient({
   uri: 'https://wordpress.bananacreative.tech/graphql',
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <ApolloProvider client={client}>
         <Component {...pageProps} />
+        <GoogleTagManager gtmId={process.env.GTM ? process.env.GTM : ""}/>
       </ApolloProvider>
     </>
   );

@@ -1,6 +1,8 @@
 import { Navbar, PopUp } from '@/components';
 import Head from 'next/head';
 import { Hero, AboutUs, Services, Products, Portfolio, Contact, Paragraph, Packs } from '@/containers';
+import { useRouter } from 'next/router';
+import useTranslation from "next-translate/useTranslation";
 
 import styles from './styles.module.scss';
 import { useRef } from 'react';
@@ -18,6 +20,10 @@ export default function Home({ data, domain }: any) {
   const packsRef = useRef(null);
   const weDoRef = useRef(null);
 
+  const { t } = useTranslation("common");
+
+  const router = useRouter();
+
   const refs = {
     aboutUs: aboutRef,
     services: servicesRef,
@@ -28,16 +34,22 @@ export default function Home({ data, domain }: any) {
     weDo: weDoRef,
   };
 
+  const gtmSrc: string = `https://www.googletagmanager.com/ns.html?id=${process.env.GTM}`;
+
   return (
     <>
       <Head>
-        <title>{data?.metadata.title}</title>
+        <title>{t(data?.metadata.title)}</title>
         {/*<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />*/}
-        <meta name='description' content={data?.metadata.description} key='desc' />
-        <meta property='og:title' content={data?.metadata.title} />
-        <meta property='og:description' content={data?.metadata.description} />
+        <meta name='description' content={t(data?.metadata.description)} key='desc' />
+        <meta property='og:title' content={t(data?.metadata.title)} />
+        <meta property='og:description' content={t(data?.metadata.description)} />
         <meta property='og:image' content={data?.metadata.ogImage} />
       </Head>
+      <noscript
+        dangerouslySetInnerHTML={{
+          __html: `<iframe src=${gtmSrc} height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+        }}></noscript>
 
       <div className={styles._zContainer}>
         <Navbar data={data?.navbar} refs={refs} />

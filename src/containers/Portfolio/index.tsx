@@ -2,8 +2,11 @@ import Image from 'next/image';
 import React, { forwardRef } from 'react';
 import styles from './styles.module.scss';
 import FadeIn from '../../components/FadeIn';
+import useTranslation from "next-translate/useTranslation";
 
 const Portfolio = forwardRef<HTMLDivElement>((props: any, ref) => {
+  const { t } = useTranslation("common");
+
   return (
     <div ref={ref} className={styles._main}>
       <FadeIn className={styles._content}>
@@ -13,7 +16,7 @@ const Portfolio = forwardRef<HTMLDivElement>((props: any, ref) => {
             className={styles._imageContainer}
             style={{ cursor: project?.link !== '' ? 'pointer' : 'inherit' }}>
             <a href={project?.link !== '' ? project?.link : null} target='_blank' rel='noreferrer'>
-              <p className={styles._text}>{project?.name}</p>
+              <p className={styles._text}>{t(project?.name)}</p>
 
               <div className={styles._imageLeftContent} style={{ backgroundColor: project?.backgroundColor }}>
                 <div className={styles._imageBox}>

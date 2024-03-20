@@ -5,8 +5,10 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from './styles.module.scss';
+import useTranslation from "next-translate/useTranslation";
 
 const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
+  const { t } = useTranslation("common");
   // const [isMobile, setIsMobile] = useState<boolean>(false);
   // const [height, setHeight] = useState<number>()
   const allPacksRefs: any = []
@@ -52,7 +54,7 @@ const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
   return (
     <div ref={ref} className={styles._main}>
       <FadeIn>
-        <p className={styles._title}>{props?.title}</p>
+        <h1 className={styles._title}>{t(props?.title)}</h1>
         <div className={styles._packages}>
           <Slider {...settings}>
             {props?.packsContent?.map((pack: any, index: number) => (
@@ -63,7 +65,7 @@ const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
                 className={styles._packageContainer}>
                 <div className={styles._packageContent}>
                   <div className={styles._textContent}>
-                    <p className={styles._packTitle}>{pack?.title}</p>
+                    <h4 className={styles._packTitle}>{t(pack?.title)}</h4>
                     <p className={styles._packSubTitle}>{pack?.text}</p>
                     <div className={styles._divider} />
                   </div>
@@ -72,7 +74,7 @@ const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
                       <div key={idx} className={styles._propContainer}>
                         <Icon icon={prop?.icon} color={prop?.color} width={22} height={22} />
                         <p className={prop?.icon == 'material-symbols:close' ? styles._disableText : styles._text}>
-                          {prop?.name}
+                          {t(prop?.name)}
                         </p>
                       </div>
                     ))}
@@ -81,9 +83,9 @@ const Packs = forwardRef<HTMLDivElement>((props: any, ref) => {
                     <div className={styles._buttonContainer}>
                       <GeneralButton
                         method={() => {
-                          bookACall(pack?.title);
+                          bookACall(t(pack?.title));
                         }}
-                        text={pack?.buttonText}
+                        text={t(pack?.buttonText)}
                       />
                     </div>
                   </div>

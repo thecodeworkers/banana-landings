@@ -85,6 +85,17 @@ $size: 1.4rem;
   font-family: $helvetica;
 }
 
+._textLang {
+  color: $gallery;
+  font-size: $helvetica16;
+  cursor: pointer;
+  font-family: $helvetica;
+  margin-left: 1.362rem;
+  width: 2.25rem;
+  background-color: inherit;
+  border: none;
+}
+
 ._menu ._menuIcon {
   display: none;
 }
