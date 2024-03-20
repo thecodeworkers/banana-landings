@@ -14,11 +14,11 @@ export const FormikConfig = (handleSubmit: any, messages: string[]) =>
     },
 
     validationSchema: Yup.object({
-      company: Yup.string().required(messages[0]),
+      company: Yup.string().required(messages?.[0]),
       email: Yup.string()
-        .required(messages[0])
-        .matches(emailRegex, messages[1]),
-      subject: Yup.string().required(messages[0]),
+        .required(messages?.[0])
+        .matches(emailRegex, messages?.[1]),
+      subject: Yup.string().required(messages?.[0]),
     }),
 
     onSubmit: (values) => {

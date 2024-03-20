@@ -23,7 +23,7 @@ const Contact = forwardRef<HTMLDivElement>((props: any, ref) => {
   const [form, animateForm] = useAnimate();
   const [haveProject, animateProject] = useAnimate();
 
-  const messages: string[] = [t(props?.requiredMessages[0]), t(props?.requiredMessages[1])];
+  const messages: string[] = [t(props?.requiredMessages?.[0]), t(props?.requiredMessages?.[1])];
 
   const {
     values,
