@@ -3,8 +3,11 @@ import React, { forwardRef } from 'react';
 import styles from './styles.module.scss';
 import FadeIn from '../../components/FadeIn';
 import { motion, Variants } from 'framer-motion';
+import useTranslation from "next-translate/useTranslation";
 
 const Services = forwardRef<HTMLDivElement>((props: any, ref) => {
+  const { t } = useTranslation("common");
+
   const SvgAnimation: Variants = {
     rest: {
       transform: 'translateX(0%)',
@@ -40,7 +43,7 @@ const Services = forwardRef<HTMLDivElement>((props: any, ref) => {
             <p className={styles?._leftTitle}>{props?.standarTitle}</p>
             {props?.standarTypes?.map((type: string, index: string | number) => (
               <p key={index} className={styles?._text}>
-                {type}
+                {t(type)}
               </p>
             ))}
           </motion.div>
@@ -54,7 +57,7 @@ const Services = forwardRef<HTMLDivElement>((props: any, ref) => {
             <p className={styles?._rightTitle}>{props?.customTitle}</p>
             {props?.customTypes?.map((type: string, index: string | number) => (
               <p key={index} className={styles?._text}>
-                {type}
+                {t(type)}
               </p>
             ))}
           </motion.div>

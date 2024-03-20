@@ -2,6 +2,8 @@ import Image from 'next/image';
 import React, { FC, useState } from 'react';
 import { scrolling } from '../../utils/common';
 import styles from './styles.module.scss';
+import setLanguage from "next-translate/setLanguage";
+import useTranslation from "next-translate/useTranslation";
 
 type Props = {
   data: any;
@@ -28,6 +30,16 @@ type ScrollOption = {
 
 const Navbar: FC<Props> = ({ data, refs }) => {
   const [show, setShow] = useState<boolean>(false);
+  const { t } = useTranslation("common");
+  const language = t("language");
+
+  const ChangeLang = () => {
+    if (language === "ENG") {
+      setLanguage("es");
+    } else {
+      setLanguage("en");
+    }
+  };
 
   const handleShowMenu = () => setShow((show) => !show);
 
@@ -48,13 +60,16 @@ const Navbar: FC<Props> = ({ data, refs }) => {
 
           <div className={styles._textBox}>
             <a className={styles._text} href={data?.home?.link}>
-              {data?.home?.name}
+              {t(data?.home?.name)}
             </a>
             {data?.routes?.map((route: any, index: number | string) => (
               <p key={index} className={styles._text} onClick={() => scrolling(refs[route?.ref as keyof ScrollOption])}>
-                {route?.name}
+                {t(route?.name)}
               </p>
             ))}
+            <button className={styles._textLang} onClick={() => ChangeLang()}>
+              {language}
+            </button>
           </div>
 
           <button className={!show ? styles._menuBurguer : styles._closedMenu} onClick={handleShowMenu}>
@@ -67,7 +82,7 @@ const Navbar: FC<Props> = ({ data, refs }) => {
             <div className={styles._menu}>
               <div className={styles._textContainer}>
                 <p className={styles._text} onClick={()=>goTo()}>
-                  {data?.home?.name}
+                  {t(data?.home?.name)}
                 </p>
               </div>
               {data?.routes?.map((route: any, index: number | string) => (
@@ -78,10 +93,13 @@ const Navbar: FC<Props> = ({ data, refs }) => {
                       scrolling(refs[route?.ref as keyof ScrollOption]);
                       setShow(false);
                     }}>
-                    {route?.name}
+                    {t(route?.name)}
                   </p>
                 </div>
               ))}
+              <button className={styles._textLang} onClick={() => ChangeLang()}>
+                {t("language")}
+              </button>
             </div>
           )}
         </div>

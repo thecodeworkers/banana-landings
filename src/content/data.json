@@ -1,61 +1,60 @@
 {
   "TECH": {
     "metadata": {
-      "description": "We specialize in the development of technological solutions, security, UI/UX design, and infrastructure to achieve a complete digital experience",
+      "description": "techMetaDescription",
       "ogImage": "/resources/metaResources/ogimage-tech.jpg",
-      "title": "BANANA TECH"
+      "title": "techMetaTitle"
     },
     "general": {
       "phone": "+584124731515",
       "email": "hello@bananacreative.io",
-      "contactMessage": "Hello Team Banana! I have a project and would like to book a meeting with the team of Tech",
-      "packsMessage": "!Hi team Banana! Thank you for your time. I’m interested in receiving more information from the Tech service:",
-      "haveProjectMessage": "Hello Team Banana! I have a project and would like to book a meeting with the team of Tech"
+      "contactMessage": "techContactMessage",
+      "packsMessage": "techPacksMessage",
+      "haveProjectMessage": "techHaveProjectMessage"
     },
     "popup": {
-      "title": "JOIN US!",
-      "text": ["Subscribe to our newsletter and enjoy up to a ", "10% of discount on our services!", ""],
-      "checkboxDisclaimer": ["By submitting your information you will also be agreeing to receive emails and notifications from us! ", "You will also have the option of opt out at any time"],
-      "buttonText": "Yes, i want a discount!",
-      "requiredEmail": "Required field",
-      "invalidEmail": "Please enter a valid format, for example email@gmail.com"
+      "title": "joinUs",
+      "text": ["newsletterTextLine1", "newsletterTextLine2", "newsletterTextLine3"],
+      "checkboxDisclaimer": ["newsletterDisclaimerLine1", "newsletterDisclaimerLine2"],
+      "buttonText": "discountButtonText",
+      "requiredEmail": "requiredField",
+      "invalidEmail": "invalidEmail"
     },
     "navbar": {
       "image": "/resources/header/logo-tech.svg",
       "alt": "Banana Tech",
       "home": {
-        "name": "Home",
+        "name": "home",
         "link": "https://bananacreative.io"
       },
       "routes": [
-        { "name": "About Us", "ref": "aboutUs" },
-        { "name": "What we do?", "ref": "weDo" },
-        { "name": "Services", "ref": "services" },
-        { "name": "Packs", "ref": "packs" },
-        { "name": "Technologies", "ref": "products" },
-        { "name": "Portfolio", "ref": "portfolio" },
-        { "name": "Contact Us", "ref": "contact" }
+        { "name": "weDO", "ref": "weDo" },
+        { "name": "services", "ref": "services" },
+        { "name": "packs", "ref": "packs" },
+        { "name": "technologies", "ref": "products" },
+        { "name": "portfolio", "ref": "portfolio" },
+        { "name": "contact", "ref": "contact" }
       ]
     },
     "hero": {
-      "title": "WE HELP YOU BOOST YOUR",
-      "bold": "INTERFACE",
-      "subtitle": "We develop, create and innovate your ideas.",
-      "button": "Contact Us",
+      "title": "techHeroTitle",
+      "bold": "techHeroBold",
+      "subtitle": "techHeroSubtitle",
+      "button": "heroButton",
       "image": "/resources/banners/tech/banana.svg",
       "altImage": "Banana"
     },
     "firstParagraph": {
-      "content": "IS A TEAM OF EXPERTS FORMED BY SPECIALISTS IN SYSTEM ENGINEERING, UI-UX DESIGN, INFRASTRUCTURE, AND INFORMATION SECURITY.",
-      "bolded": "BANANA TECH"
+      "content": "techFirstParaContent",
+      "bolded": "techFirstParaBolded"
     },
     "aboutUs": {
-      "firstTitle": "WE CREATE",
-      "firstBold": "FUNCTIONAL",
-      "secondBold": "& BEAUTIFUL",
+      "firstTitle": "techUsFirstTitle",
+      "firstBold": "techUsFirstBold",
+      "secondBold": "techUsSecondBold",
       "boldColor": "#B8E19D",
-      "secondTitle": "WEBS & APPS",
-      "phases": ["UX Research_", "Design System_", "Development_", "Q/A_", "Deployment_"],
+      "secondTitle": "techUsSecondTitle",
+      "phases": ["UXresearch", "designSystem", "development", "Q/A", "deployment"],
       "image": "/resources/banners/tech/crystal.svg",
       "imageWidth": 470,
       "imageHeight": 500,
@@ -64,131 +63,131 @@
       "altImage": "crystal"
     },
     "secondParagraph": {
-      "content": "THERE ARE TWO WAYS TO APPROACH YOUR PROJECT; CHOOSE THE ONE THAT BEST FITS YOUR NEEDS"
+      "content": "techSecondParagraph"
     },
     "services": {
       "standar": "/resources/standar.svg",
       "altStandar": "standar",
       "standarTitle": "STANDARD",
-      "standarTypes": ["_Landing", "_Website", "_Blog", "_E-commerce"],
+      "standarTypes": ["landing", "website", "blog", "ecommerce"],
       "altSCustom": "custom",
       "custom": "/resources/custom.svg",
       "customTitle": "CUSTOM",
-      "customTypes": ["_Mobile Apps ", "_API’S", "_Web Apps", "_A.I"]
+      "customTypes": ["mobileApps", "apis", "webApps", "ai"]
     },
     "packs": {
-      "title": "STANDARD PACKS",
+      "title": "techPacksTitle",
       "height": 1222,
       "packsContent": [
         {
-          "title": "One Page",
+          "title": "onePageTitle",
           "text": "USD $1,000",
-          "buttonText": "Book a Call",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "TEMPLATE COMPRISING A SINGLE VIEW WITH A MINIMUM OF 4 SECTIONS AND A MAXIMUM OF 8 SECTIONS"
+              "name": "onePageTemplate"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WORDPRESS TEMPLATE" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "wpTemplate" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "BANNER CUSTOMIZATION FOR ALL SECTIONS (DESIGNED FOR WEB AND RESPONSIVE)"
+              "name": "customBanner"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE'S LOOK AND FEEL" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE'S COPIES" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "customFont" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "contactForm" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "lookFeel" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "webCopy" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM"
+              "name": "webInteractions"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "CMS (CONTENT MANAGER SYSTEM)"
+              "name": "includesCMS"
             }
           ]
         },
         {
-          "title": "Landing Page",
+          "title": "blogTitle",
           "text": "USD $1,700",
-          "buttonText": "Book a Call",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "TEMPLATE COMPRISING 5 VIEWS AND 4 SECTIONS PER VIEW"
+              "name": "blogTemplate"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WORDPRESS TEMPLATE" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "wpTemplate" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "BANNER CUSTOMIZATION FOR ALL SECTIONS (DESIGNED FOR WEB AND RESPONSIVE)"
+              "name": "customBanner"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "FONT CUSTOMIZATION" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE'S LOOK AND FEEL" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "WEBSITE'S COPIES" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "customFont" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "contactForm" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "lookFeel" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "webCopy" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM"
+              "name": "webInteractions"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "CMS (CONTENT MANAGER SYSTEM)"
+              "name": "includesCMS"
             }
           ]
         },
         {
-          "title": "E- Commerce",
+          "title": "ecommTitle",
           "text": "USD $2,300",
-          "buttonText": "Book a Call",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "TEMPLATE INCLUDING MAIN PAGE, SHOP, INDIVIDUAL PRODUCT, CART AND PAYMENT GATEWAY (9 TO 11 VIEWS)"
+              "name": "ecommTemplate"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "SHOPIFY TEMPLATE" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "shopifyTemplate" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "CUSTOMIZATION OF BANNERS FOR ALL VIEWS (DESIGNED FOR WEB AND RESPONSIVE)"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "FONT CUSTOMIZATION (NEW FONTS APPLIED TO THE BRAND)"
+              "name": "customBanner"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "WEBSITE'S LOOK AND FEEL"
-            },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONTACT FORM" },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "WEB INTERACTIONS WILL BE BASED ON THOSE PROVIDED BY THE DEFAULT TEMPLATE MANUAL ON HOW TO MANAGE THE PLATFORM"
+              "name": "newFontCustom"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "WEBSITE'S COPIES"
+              "name": "lookFeel"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "50 PRODUCTS UPLOADS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "contactForm" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "CMS (CONTENT MANAGER SYSTEM)"
+              "name": "webInteractions"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "webCopy"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "prodUpload" },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "includesCMS"
             }
           ]
         }
@@ -213,7 +212,7 @@
     "portfolio": {
       "projects": [
         {
-          "name": "Puntu - Finance  Platform",
+          "name": "puntu",
           "image": "/resources/portfolio/tech/puntu.svg",
           "alt": "puntu",
           "hoverImage": "/resources/portfolio/tech/puntu.gif",
@@ -221,7 +220,7 @@
           "backgroundColor": "#E6427A"
         },
         {
-          "name": "Vippo - Finance Platform",
+          "name": "vippo",
           "image": "/resources/portfolio/tech/vippo.svg",
           "alt": "vippo",
           "hoverImage": "/resources/portfolio/tech/vippo.gif",
@@ -229,7 +228,7 @@
           "backgroundColor": "#A5BC51"
         },
         {
-          "name": "Pix - Crypto Wallet",
+          "name": "pix",
           "image": "/resources/portfolio/tech/pix.svg",
           "alt": "pix",
           "hoverImage": "/resources/portfolio/tech/pix.gif",
@@ -238,7 +237,7 @@
           "backgroundColor": "#57D6AF"
         },
         {
-          "name": "Banco Activo",
+          "name": "bancoActivo",
           "image": "/resources/portfolio/tech/activo.svg",
           "alt": "banco-activo",
           "hoverImage": "/resources/portfolio/tech/activo.gif",
@@ -250,17 +249,21 @@
     "contactUs": {
       "address": [""],
       "copyright": "Copyright © BananaCreative 2023",
-      "touchButton": "Get in touch",
-      "callButton": "Book a Call",
-      "sendButton": "Send",
-      "gotTitle": "GOT A PROJECT?",
-      "mediaText": "You can follow us at:",
-      "contactTitle": "LET’S GET IN TOUCH",
-      "goBackText": "Go Back",
+      "touchButton": "getInTouch",
+      "callButton": "bookAcall",
+      "sendButton": "contactSend",
+      "gotTitle": "gotProject",
+      "mediaText": "followUs",
+      "contactTitle": "contactTitle",
+      "goBackText": "goBack",
       "form": [
-        { "name": "Company o Startup*", "key": "company" },
-        { "name": "Email*", "key": "email" },
-        { "name": "Message*", "key": "subject" }
+        { "name": "companyName", "key": "company" },
+        { "name": "emailAccount", "key": "email" },
+        { "name": "messageBody", "key": "subject" }
+      ],
+      "requiredMessages": [
+        "requiredField",
+        "invalidEmail"
       ],
       "media": [
         {
@@ -294,60 +297,59 @@
 
   "BRAND": {
     "metadata": {
-      "description": "Nos especializamos en el diseño de elementos visuales que generan una identidad para la consolidación de marcas y los diversos elementos que la integran tanto en medios físicos como digitales",
+      "description": "brandMetaDescription",
       "ogImage": "/resources/metaResources/ogimage-brand.jpg",
-      "title": "BANANA DESIGN"
+      "title": "brandMetaTitle"
     },
     "general": {
       "phone": "+584124731515",
       "email": "hello@bananacreative.io",
-      "contactMessage": "¡Hola Team Banana! Tengo un proyecto y estoy interesado en agendar una reunión con el equipo de Brand",
-      "packsMessage": "Hola Team Banana! Muchas gracias por su tiempo. Estoy interesado en recibir más información sobre el servicio de Brand:",
-      "haveProjectMessage": "¡Hola Team Banana! Tengo un proyecto y estoy interesado en agendar una reunión con el equipo de Brand"
+      "contactMessage": "brandContactMessage",
+      "packsMessage": "brandPacksMessage",
+      "haveProjectMessage": "brandHaveProjectMessage"
     },
     "popup": {
-      "title": "JOIN US!",
-      "text": ["Suscríbete a nuestro newsletter, !y ", "aprovecha hasta un 10% de descuento en nuestros servicios!", ""],
-      "checkboxDisclaimer": ["Al enviar tu información también estarás aceptando recibir correos y notificaciones de nosotros! ", "También tendrás la opción de darte de baja en cualquier momento."],
-      "buttonText": "¡Sí! Quiero mi descuento",
-      "requiredEmail": "Campo requerido",
-      "invalidEmail": "Ingrese un formato válido, por ejemplo email@gmail.com"
+      "title": "joinUs",
+      "text": ["newsletterTextLine1", "newsletterTextLine2", "newsletterTextLine3"],
+      "checkboxDisclaimer": ["newsletterDisclaimerLine1", "newsletterDisclaimerLine2"],
+      "buttonText": "discountButtonText",
+      "requiredEmail": "requiredField",
+      "invalidEmail": "invalidEmail"
     },
     "navbar": {
       "image": "/resources/header/logo-brand.svg",
       "alt": "Banana Design",
       "home": {
-        "name": "Inicio",
+        "name": "home",
         "link": "https://bananacreative.io"
       },
       "routes": [
-        { "name": "Nosotros", "ref": "aboutUs" },
-        { "name": "Proceso", "ref": "weDo" },
-        { "name": "Paquetes", "ref": "packs" },
-        { "name": "Clientes", "ref": "products" },
-        { "name": "Portafolio", "ref": "portfolio" },
-        { "name": "Contacto", "ref": "contact" }
+        { "name": "process", "ref": "weDo" },
+        { "name": "packs", "ref": "packs" },
+        { "name": "clients", "ref": "products" },
+        { "name": "portfolio", "ref": "portfolio" },
+        { "name": "contact", "ref": "contact" }
       ]
     },
     "hero": {
-      "title": "WE HELP YOU SHAPE YOUR",
-      "bold": "BUSINESS",
-      "subtitle": "Creamos identidades, productos y experiencias que miran hacia el futuro.",
-      "button": "Contáctanos",
+      "title": "brandHeroTitle",
+      "bold": "brandHeroBold",
+      "subtitle": "brandHeroSubtitle",
+      "button": "heroButton",
       "image": "/resources/banners/brand/banana.svg",
       "altImage": "Banana"
     },
     "firstParagraph": {
-      "content": "SE ESPECIALIZA EN EL DISEÑO DE ELEMENTOS VISUALES QUE GENERAN UNA IDENTIDAD PARA LA CONSOLIDACIÓN DE MARCAS Y LOS DIVERSOS ELEMENTOS QUE LA INTEGRAN TANTO EN MEDIOS FÍSICOS COMO DIGITALES.",
-      "bolded": "BANANA DESIGN"
+      "content": "brandFirstParaContent",
+      "bolded": "brandFirstParaBolded"
     },
     "aboutUs": {
-      "firstTitle": "WE CREATE",
-      "firstBold": "FUNCTIONAL",
-      "secondBold": "& BEAUTIFUL",
+      "firstTitle": "brandUsFirstTitle",
+      "firstBold": "brandUsFirstBold",
+      "secondBold": "brandUsSecondBold",
       "boldColor": "#000000",
-      "secondTitle": "BRANDS",
-      "phases": ["Kick-Off", "Investigación", "Análisis", "Identidad Verbal", "Identidad Visual"],
+      "secondTitle": "brandUsSecondTitle",
+      "phases": ["kickOff", "investigation", "analysis", "verbalIdentity", "visualIdentity"],
       "image": "/resources/banners/brand/b.svg",
       "imageWidth": 600,
       "imageHeight": 490,
@@ -369,252 +371,252 @@
       "customTypes": [""]
     },
     "packs": {
-      "title": "BRAND PACKS",
+      "title": "packsTitle",
       "height": 1222,
       "packsContent": [
         {
-          "title": "Identidad Base",
+          "title": "baseIdentity",
           "text": "USD $1,300",
-          "buttonText": "Agenda una llamada",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "BENCHMARK"
+              "name": "benchmark"
             },
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "INVESTIGACIÓN DE MERCADO"
+              "name": "marketInvestigation"
             },
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "ANÁLISIS DEL CONSUMIDOR"
+              "name": "consumerAnalysis"
             },
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "IDENTIDAD VERBAL / ADN"
+              "name": "verbalIdADN"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "LOGOTIPO RESPONSIVE" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PALETA DE COLORES" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "TIPOGRAFÍAS DE MARCA" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "responisveLogo" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "colorPalette" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "brandTipography" },
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "ICONOGRAFÍA"
+              "name": "iconography"
             },
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "PACK DE APLICACIONES"
+              "name": "appsPack"
             },
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "LOGO ANIMADO"
+              "name": "animatedLogo"
             },
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "MOTION GRAPHICS DE MARCA"
+              "name": "brandMotion"
             },
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "3D DE MARCA"
+              "name": "brand3D"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "LOGO GUIDELINES"
+              "name": "logoGuidelines"
             }
           ]
         },
         {
-          "title": "Identidad Visual",
+          "title": "visualIdentity",
           "text": "USD $3,200",
-          "buttonText": "Agenda una llamada",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "BENCHMARK"
+              "name": "benchmark"
             },
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "INVESTIGACIÓN DE MERCADO"
+              "name": "marketInvestigation"
             },
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "ANÁLISIS DEL CONSUMIDOR"
+              "name": "consumerAnalysis"
             },
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "IDENTIDAD VERBAL / ADN"
+              "name": "verbalIdADN"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "LOGOTIPO RESPONSIVE" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PALETA DE COLORES" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "TIPOGRAFÍAS DE MARCA" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "responisveLogo" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "colorPalette" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "brandTipography" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "ICONOGRAFÍA"
+              "name": "iconography"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "1 PACK DE APLICACIONES"
+              "name": "appsPack"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "LOGO ANIMADO"
+              "name": "animatedLogo"
             },
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "MOTION GRAPHICS DE MARCA"
+              "name": "brandMotion"
             },
             {
               "icon": "material-symbols:close",
               "color": "#8A8A8A",
-              "name": "3D DE MARCA"
+              "name": "brand3D"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "BRAND GUIDELINES"
+              "name": "brandGuidelines"
             }
           ]
         },
         {
-          "title": "Identidad Corporativa",
+          "title": "corpoIdentity",
           "text": "USD $5,200",
-          "buttonText": "Agenda una llamada",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "BENCHMARK"
+              "name": "benchmark"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "INVESTIGACIÓN DE MERCADO"
+              "name": "marketInvestigation"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "ANÁLISIS DEL CONSUMIDOR"
+              "name": "consumerAnalysis"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "IDENTIDAD VERBAL / ADN"
+              "name": "verbalIdADN"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "LOGOTIPO RESPONSIVE" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PALETA DE COLORES" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "TIPOGRAFÍAS DE MARCA" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "responisveLogo" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "colorPalette" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "brandTipography" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "ICONOGRAFÍA"
+              "name": "iconography"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "2 PACKS DE APLICACIONES"
+              "name": "2appsPack"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "LOGO ANIMADO"
+              "name": "animatedLogo"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "MOTION GRAPHICS DE MARCA"
+              "name": "brandMotion"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "3D DE MARCA"
+              "name": "brand3D"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "BRAND GUIDELINES"
+              "name": "brandGuidelines"
             }
           ]
         }
       ]
     },
     "secondPacks": {
-      "title": "APPLICATION PACKS",
+      "title": "appPacks",
       "height": 1222,
       "packsContent": [
         {
-          "title": "Diseño de empaque",
+          "title": "packDesign",
           "text": "USD $600",
-          "buttonText": "Agenda una llamada",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 EMPAQUE CON DISEÑO" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 ARTE TIRO Y RETIRO" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 BOLSA" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3 STICKERS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "designedPackage" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "frontbackArtwork" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "deliveryBag" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3stickers" },
 
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "1 TROQUEL PREEXISTENTE"
+              "name": "packageCutout"
             }
           ]
         },
         {
-          "title": "Merch",
+          "title": "merch",
           "text": "USD $500",
-          "buttonText": "Agenda una llamada",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 TOTE BAG" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 HOODIE" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 T-SHIRT" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5 STICKERS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "toteBag" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "hoodie" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "t-shirt" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5stickers" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "2 CARNET Y LANYARD"
+              "name": "idLanyard"
             }
           ]
         },
         {
-          "title": "Papelería",
+          "title": "stationary",
           "text": "USD $400",
-          "buttonText": "Agenda una llamada",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 HOJA CARTA" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 FIRMA DIGITAL" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "letterSheet" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "digitalSignature" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "5 TEMPLATE DE PRESENTACIÓN"
+              "name": "presentationTemplate"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 TARJETA DE PRESENTACIÓN" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5 STICKERS" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 SOBRE" }
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "businessCard" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5stickers" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "envelope" }
           ]
         }
       ]
@@ -632,7 +634,7 @@
     "portfolio": {
       "projects": [
         {
-          "name": "Cantina - Identidad Visual",
+          "name": "cantina",
           "image": "/resources/portfolio/brand/cantina.svg",
           "alt": "cantina",
           "hoverImage": "/resources/portfolio/brand/cantina.gif",
@@ -640,7 +642,7 @@
           "backgroundColor": "#E5E3D3"
         },
         {
-          "name": "Infoguía - Identidad Corporativa y UI",
+          "name": "infoguia",
           "image": "/resources/portfolio/brand/infoguia.svg",
           "alt": "infoguia",
           "hoverImage": "/resources/portfolio/brand/infoguia.gif",
@@ -648,7 +650,7 @@
           "backgroundColor": "#000000"
         },
         {
-          "name": "Carbinox - Identidad Visual",
+          "name": "carbinox",
           "image": "/resources/portfolio/brand/carbinox.svg",
           "alt": "carbinox",
           "hoverImage": "/resources/portfolio/brand/carbinox.gif",
@@ -656,7 +658,7 @@
           "backgroundColor": "#000000"
         },
         {
-          "name": "Ulabel - Identidad Corporativa",
+          "name": "ulabel",
           "image": "/resources/portfolio/brand/ulabel.svg",
           "alt": "ubalel",
           "hoverImage": "/resources/portfolio/brand/ulabel.gif",
@@ -668,17 +670,21 @@
     "contactUs": {
       "address": [""],
       "copyright": "Copyright © BananaCreative 2023",
-      "touchButton": "Contáctanos",
-      "callButton": "Agenda una llamada",
-      "sendButton": "Enviar",
-      "gotTitle": "GOT A PROJECT?",
-      "mediaText": "Síguenos en:",
-      "contactTitle": "LET’S GET IN TOUCH",
-      "goBackText": "Volver",
+      "touchButton": "contact",
+      "callButton": "bookAcall",
+      "sendButton": "contactSend",
+      "gotTitle": "gotProject",
+      "mediaText": "followUs",
+      "contactTitle": "contactTitle",
+      "goBackText": "goBack",
       "form": [
-        { "name": "Compañia*", "key": "company" },
-        { "name": "Correo Electrónico*", "key": "email" },
-        { "name": "Mensaje*", "key": "subject" }
+        { "name": "companyName", "key": "company" },
+        { "name": "emailAccount", "key": "email" },
+        { "name": "messageBody", "key": "subject" }
+      ],
+      "requiredMessages": [
+        "requiredField",
+        "invalidEmail"
       ],
       "media": [
         {
@@ -712,61 +718,60 @@
 
   "MOTION": {
     "metadata": {
-      "description": "We specialize in the creation and development of concepts through images and animations in 2D and 3D format",
+      "description": "motionMetaDescription",
       "ogImage": "/resources/metaResources/ogimage-motion.jpg",
-      "title": "BANANA MOTION"
+      "title": "motionMetaTitle"
     },
     "general": {
       "phone": "+584124731515",
       "email": "hello@bananacreative.io",
-      "contactMessage": "Hello Team Banana! I have a project and would like to book a meeting with the team of Motion",
-      "packsMessage": "!Hi team Banana! Thank you for your time. I’m interested in receiving more information from the Motion Graphics service:",
-      "haveProjectMessage": "Hello Team Banana! I have a project and would like to book a meeting with the team of Motion"
+      "contactMessage": "motionContactMessage",
+      "packsMessage": "motionPacksMessage",
+      "haveProjectMessage": "motionHaveProjectMessage"
     },
     "popup": {
-      "title": "JOIN US!",
-      "text": ["Subscribe to our newsletter and enjoy up to a ", "10% of discount on our services!", ""],
-      "checkboxDisclaimer": ["By submitting your information you will also be agreeing to receive emails and notifications from us! ", "You will also have the option of opt out at any time"],
-      "buttonText": "Yes, i want a discount!",
-      "requiredEmail": "Required field",
-      "invalidEmail": "Please enter a valid format, for example email@gmail.com"
+      "title": "joinUs",
+      "text": ["newsletterTextLine1", "newsletterTextLine2", "newsletterTextLine3"],
+      "checkboxDisclaimer": ["newsletterDisclaimerLine1", "newsletterDisclaimerLine2"],
+      "buttonText": "discountButtonText",
+      "requiredEmail": "requiredField",
+      "invalidEmail": "invalidEmail"
     },
     "navbar": {
       "image": "/resources/header/logo-motion.svg",
       "alt": "Banana Motion",
       "home": {
-        "name": "Home",
+        "name": "home",
         "link": "https://bananacreative.io"
       },
       "routes": [
-        { "name": "About Us", "ref": "aboutUs" },
-        { "name": "What we do?", "ref": "weDo" },
-        { "name": "Services", "ref": "services" },
-        { "name": "Packs", "ref": "packs" },
-        { "name": "Technologies", "ref": "products" },
-        { "name": "Portfolio", "ref": "portfolio" },
-        { "name": "Contact Us", "ref": "contact" }
+        { "name": "weDO", "ref": "weDo" },
+        { "name": "services", "ref": "services" },
+        { "name": "packs", "ref": "packs" },
+        { "name": "technologies", "ref": "products" },
+        { "name": "portfolio", "ref": "portfolio" },
+        { "name": "contact", "ref": "contact" }
       ]
     },
     "hero": {
-      "title": "WE WILL MAKE YOUR BRAND COME",
-      "bold": "TO LIFE",
-      "subtitle": "Let us blow your mind",
-      "button": "Contact Us",
+      "title": "motionHeroTitle",
+      "bold": "motionHeroBold",
+      "subtitle": "motionHeroSubtitle",
+      "button": "heroButton",
       "image": "/resources/banners/motion/banana.svg",
       "altImage": "Banana"
     },
     "firstParagraph": {
-      "content": "SPECIALIZES IN CREATING AND DEVELOPING CONCEPTS THROUGH IMAGES AND ANIMATIONS IN 2D/3D FORMATS",
-      "bolded": "BANANA MOTION "
+      "content": "motionFirstParaContent",
+      "bolded": "motionFirstParaBolded"
     },
     "aboutUs": {
-      "firstTitle": "WE CREATE",
-      "firstBold": "BEAUTIFUL",
-      "secondBold": "MOTION",
+      "firstTitle": "motionUsFirstTitle",
+      "firstBold": "motionUsFirstBold",
+      "secondBold": "motionUsSecondBold",
       "boldColor": "#B8E19D",
-      "secondTitle": "GRAPHICS",
-      "phases": ["Kick-Off", "Storyboard", "Moodboard", "Process", "Display"],
+      "secondTitle": "motionUsSecondTitle",
+      "phases": ["kickOff", "storyboard", "moodboard", "processUs", "displayUs"],
       "image": "/resources/banners/motion/tablet.svg",
       "imageWidth": 588,
       "imageHeight": 585,
@@ -775,98 +780,98 @@
       "altImage": "tablet"
     },
     "packs": {
-      "title": "PACKS",
+      "title": "motionPacks",
       "height": 1222,
       "packsContent": [
         {
-          "title": "Character 2D/3D",
+          "title": "character2D3D",
           "text": "USD  $500",
-          "buttonText": "Book a Call",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "CONCEPTUALIZATION"
+              "name": "concept"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "MOODBOARD" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "moodboardMayus" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "ILUSTRATION"
+              "name": "ilustration"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3 PERSPECTIVES" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "1 ANIMATED GESTURE" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "perspectives" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "animatedGesture" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "RESOURCES WILL BE DELIVERED IN THE REQUESTED FORMAT"
+              "name": "resourcesDelivered"
             }
           ]
         },
         {
-          "title": "Broadcast 2D/3D",
+          "title": "broadcast2D3D",
           "text": "USD $1,500",
-          "buttonText": "Book a Call",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "CONCEPTUALIZATION"
+              "name": "concept"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "MOODBOARD" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "moodboardMayus" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "STORYBOARD"
+              "name": "storyboardMayus"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "GRAPHIC IDENTITY" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "LOGO ANIMATION" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "graphicIdentity" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "logoAnimation" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "6 ANIMATED SCREENS OF 10 SECS EA."
+              "name": "6animatedScreens"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "INSERTS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "inserts" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "RESOURCES WILL BE DELIVERED IN THE REQUESTED FORMAT"
+              "name": "resourcesDelivered"
             }
           ]
         },
         {
-          "title": "Visual Performance",
+          "title": "visualPerformance",
           "text": "USD $1,800",
-          "buttonText": "Book a Call",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "CONCEPTUALIZATION"
+              "name": "concept"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "MOODBOARD" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "moodboardMayus" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "STORYBOARD"
-            },
-            {
-              "icon": "material-symbols:check",
-              "color": "#D380FF",
-              "name": "RUNDOWN"
+              "name": "storyboardMayus"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "4 SEQUENCES FROM 10-15 SECONDS"
+              "name": "rundown"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "RESOURCES WILL BE DELIVERED IN THE REQUESTED FORMAT"
+              "name": "4animatedScreens"
+            },
+            {
+              "icon": "material-symbols:check",
+              "color": "#D380FF",
+              "name": "resourcesDelivered"
             }
           ]
         }
@@ -877,68 +882,68 @@
       "height": 1222,
       "packsContent": [
         {
-          "title": "Product 3D Modeling",
+          "title": "product3D",
           "text": "USD  $350",
-          "buttonText": "Book a Call",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "MOODBOARD"
+              "name": "moodboardMayus"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PREVIS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "previs" },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3 PERSPECTIVES OF 1 PROD." },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3perspectives" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "RESOURCES WILL BE DELIVERED IN THE REQUESTED FORMAT"
+              "name": "resourcesDelivered"
             }
           ]
         },
         {
-          "title": "Set Design ",
+          "title": "setDesign",
           "text": "USD $750",
-          "buttonText": "Book a Call",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "CONCEPTUALIZATION" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "concept" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "MOODBOARD"
+              "name": "moodboardMayus"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PREVIS" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "previs" },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2 PERSPECTIVES OF 3 PROD. MAX." },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "2perspectives" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "RESOURCES WILL BE DELIVERED IN THE REQUESTED FORMAT"
+              "name": "resourcesDelivered"
             }
           ]
         },
         {
-          "title": "Animated 2D/3D Logo",
+          "title": "animated2D3D",
           "text": "USD $400",
-          "buttonText": "Book a Call",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "MOODBOARD"
+              "name": "moodboardMayus"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "PREVIS" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5 SECONDS ANIMATION" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "previs" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5secsAnimation" },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "GRAPHIC RESOURSES" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "graphicResources" },
 
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "RESOURCES WILL BE DELIVERED IN THE REQUESTED FORMAT"
+              "name": "resourcesDelivered"
             }
           ]
         }
@@ -958,7 +963,7 @@
     "portfolio": {
       "projects": [
         {
-          "name": "Suela - 3D Animation",
+          "name": "suela",
           "image": "/resources/portfolio/motion/suela.svg",
           "alt": "suela",
           "hoverImage": "/resources/portfolio/motion/suela.gif",
@@ -966,7 +971,7 @@
           "backgroundColor": "#FFFFFF"
         },
         {
-          "name": "Janssen - Broadcast Package",
+          "name": "janssen",
           "image": "/resources/portfolio/motion/janssen.svg",
           "alt": "janssen",
           "hoverImage": "/resources/portfolio/motion/janssen.gif",
@@ -974,7 +979,7 @@
           "backgroundColor": "#FFFFFF"
         },
         {
-          "name": "EasyFreazy - 3D Animation",
+          "name": "easyFreazy",
           "image": "/resources/portfolio/motion/eazyFreazy.svg",
           "alt": "easy freazy",
           "hoverImage": "/resources/portfolio/motion/easyFreazy.gif",
@@ -982,7 +987,7 @@
           "backgroundColor": "#D9B2DB"
         },
         {
-          "name": "Office Tailor - Illustrated 2D Animation",
+          "name": "officeTaylor",
           "image": "/resources/portfolio/motion/officeTailor.svg",
           "alt": "office tailor",
           "hoverImage": "/resources/portfolio/motion/officeTailor.gif",
@@ -994,17 +999,21 @@
     "contactUs": {
       "address": [""],
       "copyright": "Copyright © BananaCreative 2023",
-      "touchButton": "Get in touch",
-      "callButton": "Book a Call",
-      "sendButton": "Send",
-      "gotTitle": "GOT A PROJECT?",
-      "mediaText": "You can follow us at:",
-      "contactTitle": "LET’S GET IN TOUCH",
-      "goBackText": "Go Back",
+      "touchButton": "contact",
+      "callButton": "bookAcall",
+      "sendButton": "contactSend",
+      "gotTitle": "gotProject",
+      "mediaText": "followUs",
+      "contactTitle": "contactTitle",
+      "goBackText": "goBack",
       "form": [
-        { "name": "Company o Startup*", "key": "company" },
-        { "name": "Email*", "key": "email" },
-        { "name": "Message*", "key": "subject" }
+        { "name": "companyName", "key": "company" },
+        { "name": "emailAccount", "key": "email" },
+        { "name": "messageBody", "key": "subject" }
+      ],
+      "requiredMessages": [
+        "requiredField",
+        "invalidEmail"
       ],
       "media": [
         {
@@ -1038,60 +1047,59 @@
 
   "PRODUCTION": {
     "metadata": {
-      "description": "Nos especializamos en el desarrollo de proyectos audiovisuales, partiendo de la conceptualización, ejecución y post producción para  generar contenido de calidad que resuene con la estética de tu marca",
+      "description": "prodMetaDescription",
       "ogImage": "/resources/metaResources/ogimage-prod.jpg",
-      "title": "BANANA PRODUCTION"
+      "title": "prodMetaTitle"
     },
     "general": {
       "phone": "+584124731515",
       "email": "hello@bananacreative.io",
-      "contactMessage": "¡Hola Team Banana! Tengo un proyecto y estoy interesado en agendar una reunión con el equipo de Production",
-      "packsMessage": "Hola Team Banana! Muchas gracias por su tiempo. Estoy interesado en recibir más información sobre el servicio de Productions:",
-      "haveProjectMessage": "¡Hola Team Banana! Tengo un proyecto y estoy interesado en agendar una reunión con el equipo de Production"
+      "contactMessage": "prodContactMessage",
+      "packsMessage": "prodPacksMessage",
+      "haveProjectMessage": "prodHaveProjectMessage"
     },
     "popup": {
-      "title": "JOIN US!",
-      "text": ["Suscríbete a nuestro newsletter, !y ", "aprovecha hasta un 10% de descuento en nuestros servicios!", ""],
-      "checkboxDisclaimer": ["Al enviar tu información también estarás aceptando recibir correos y notificaciones de nosotros! ", "También tendrás la opción de darte de baja en cualquier momento."],
-      "buttonText": "¡Sí! Quiero mi descuento",
-      "requiredEmail": "Campo requerido",
-      "invalidEmail": "Ingrese un formato válido, por ejemplo email@gmail.com"
+      "title": "joinUs",
+      "text": ["newsletterTextLine1", "newsletterTextLine2", "newsletterTextLine3"],
+      "checkboxDisclaimer": ["newsletterDisclaimerLine1", "newsletterDisclaimerLine2"],
+      "buttonText": "discountButtonText",
+      "requiredEmail": "requiredField",
+      "invalidEmail": "invalidEmail"
     },
     "navbar": {
       "image": "/resources/header/logo-production.svg",
       "alt": "Banana Production",
       "home": {
-        "name": "Inicio",
+        "name": "home",
         "link": "https://bananacreative.io"
       },
       "routes": [
-        { "name": "Nosotros", "ref": "aboutUs" },
-        { "name": "Proceso", "ref": "weDo" },
-        { "name": "Paquetes", "ref": "packs" },
-        { "name": "Clientes", "ref": "products" },
-        { "name": "Portafolio", "ref": "portfolio" },
-        { "name": "Contacto", "ref": "contact" }
+        { "name": "process", "ref": "weDo" },
+        { "name": "packs", "ref": "packs" },
+        { "name": "clients", "ref": "products" },
+        { "name": "portfolio", "ref": "portfolio" },
+        { "name": "contact", "ref": "contact" }
       ]
     },
     "hero": {
-      "title": "WE HELP YOU CAPTURE YOUR",
-      "bold": "BRAND’S VISION",
-      "subtitle": "Conceptualizamos tu visión de marca creando escenarios audiovisuales únicos.",
-      "button": "Contáctanos",
+      "title": "prodHeroTitle",
+      "bold": "prodHeroBold",
+      "subtitle": "prodHeroSubtitle",
+      "button": "heroButton",
       "image": "/resources/banners/production/banana.svg",
       "altImage": "Banana"
     },
     "firstParagraph": {
-      "content": "SE ESPECIALIZA EN EL DESARROLLO DE PROYECTOS AUDIOVISUALES, PARTIENDO DE LA CONCEPTUALIZACIÓN, EJECUCIÓN Y POST-PRODUCCIÓN PARA GENERAR CONTENIDO DE CALIDAD QUE RESUENE CON LA ESTÉTICA DE TU MARCA.",
-      "bolded": "BANANA PRODUCTION"
+      "content": "prodFirstParaContent",
+      "bolded": "prodFirstParaBolded"
     },
     "aboutUs": {
-      "firstTitle": "WE CREATE FUNCTIONAL ",
-      "firstBold": "CONTENT",
+      "firstTitle": "prodUsFirstTitle",
+      "firstBold": "prodUsFirstBold",
       "secondBold": "",
       "secondTitle": "",
       "boldColor": "#000000",
-      "phases": ["Kick-Off", "Moodboard", "Pre-producción", "Producción", "Post-producción"],
+      "phases": ["kickOff", "moodboard", "preProduction", "production", "postProduction"],
       "image": "/resources/banners/production/p.svg",
       "imageWidth": 700,
       "imageHeight": 590,
@@ -1113,324 +1121,324 @@
       "customTypes": [""]
     },
     "packs": {
-      "title": "PRODUCT PACKS",
+      "title": "productPacks",
       "height": 1222,
       "packsContent": [
         {
-          "title": "15 fotos + 2 videos",
+          "title": "15photo2videos",
           "text": "USD $750",
-          "buttonText": "Contáctanos",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "MOODBOARD"
+              "name": "moodboardMayus"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "SELECCIÓN DE CASTING"
+              "name": "castingSelection"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "4 HORAS DE FOTÓGRAFO"
+              "name": "4hPhotographer"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "4 HORAS DE GAFFER"
+              "name": "4hGaffer"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 HORAS DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 LOOKS" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4hDirector" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4looks" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "audiovisualEquipment" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "TRANSPORTE DEL EQUIPO"
+              "name": "equipmentTransportation"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "15 FOTOS COLORIZADAS Y RETOCADAS"
+              "name": "15photosEdit"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "2 REELS 10 - 15 SEG COLORIZADOS"
+              "name": "2reelsEdit"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "2 INSERTS ANIMADOS"
+              "name": "2animatedInserts"
             }
           ]
         },
         {
-          "title": "25 fotos + 3 videos",
+          "title": "25photos3videos",
           "text": "USD $950",
-          "buttonText": "Contáctanos",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "MOODBOARD"
+              "name": "moodboardMayus"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "SELECCIÓN DE CASTING"
+              "name": "castingSelection"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "4 HORAS DE FOTÓGRAFO"
+              "name": "4hPhotographer"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "4 HORAS DE GAFFER"
+              "name": "4hGaffer"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 HORAS DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4 LOOKS" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4hDirector" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "4looks" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "audiovisualEquipment" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "TRANSPORTE DEL EQUIPO"
+              "name": "equipmentTransportation"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "25 FOTOS COLORIZADAS Y RETOCADAS"
+              "name": "25photosEdit"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "3 REELS 10 - 15 SEG COLORIZADOS"
+              "name": "3reelsEdit"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "2 INSERTS ANIMADOS"
+              "name": "2animatedInserts"
             }
           ]
         },
         {
-          "title": "35 fotos + 4 videos",
+          "title": "35photos4videos",
           "text": "USD $1,150",
-          "buttonText": "Contáctanos",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "MOODBOARD"
+              "name": "moodboardMayus"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "SELECCIÓN DE CASTING"
+              "name": "castingSelection"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "6 HORAS DE FOTÓGRAFO"
+              "name": "6hPhotographer"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "6 HORAS DE GAFFER"
+              "name": "6hGaffer"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 HORAS DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 LOOKS " },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6hDirector" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6looks" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "audiovisualEquipment" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "TRANSPORTE DEL EQUIPO"
+              "name": "equipmentTransportation"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "35 FOTOS COLORIZADAS Y RETOCADAS"
+              "name": "35photosEdit"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "4 REELS 10 - 15 SEG COLORIZADOS"
+              "name": "4reelsEdit"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "2 INSERTS ANIMADOS"
+              "name": "2animatedInserts"
             }
           ]
         }
       ]
     },
     "secondPacks": {
-      "title": "EDITORIAL PACKS",
+      "title": "editorialPacks",
       "height": 1222,
       "packsContent": [
         {
-          "title": "15 fotos + 2 videos ",
+          "title": "15photo2videos",
           "text": "USD $1,400",
-          "buttonText": "Contáctanos",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "MOODBOARD"
+              "name": "moodboardMayus"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "SELECCIÓN DE CASTING"
+              "name": "castingSelection"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "5 HORAS DE FOTÓGRAFO  "
+              "name": "5hPhotographer"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "5 HORAS DE GAFFER"
+              "name": "5hGaffer"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5 HORAS DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 LOOKS" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5hDirector" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6looks" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "audiovisualEquipment" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "TRANSPORTE DEL EQUIPO"
+              "name": "equipmentTransportation"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "15 FOTOS COLORIZADAS Y RETOCADAS"
+              "name": "15photosEdit"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "2 REELS 10 - 15 SEG COLORIZADOS"
+              "name": "2reelsEdit"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "2 INSERTS ANIMADOS"
+              "name": "2animatedInserts"
             }
           ]
         },
         {
-          "title": "25 fotos + 3 videos",
+          "title": "25photos3videos",
           "text": "USD $1,600",
-          "buttonText": "Contáctanos",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "MOODBOARD"
+              "name": "moodboardMayus"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "SELECCIÓN DE CASTING"
+              "name": "castingSelection"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "6 HORAS DE  FOTÓGRAFO"
+              "name": "6hPhotographer"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "6 HORAS DE GAFFER"
+              "name": "6hGaffer"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6 HORAS DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "8 LOOKS" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "6hDirector" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "8looks" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "audiovisualEquipment" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "TRANSPORTE DEL EQUIPO"
+              "name": "equipmentTransportation"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "25 FOTOS COLORIZADAS Y RETOCADAS"
+              "name": "25photosEdit"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "3 REELS 10 - 15 SEG COLORIZADOS"
+              "name": "3reelsEdit"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "2 INSERTS ANIMADOS"
+              "name": "2animatedInserts"
             }
           ]
         },
         {
-          "title": "35 fotos + 4 videos",
+          "title": "35photos4videos",
           "text": "USD $2,000",
-          "buttonText": "Contáctanos",
+          "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "MOODBOARD"
+              "name": "moodboardMayus"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "SELECCIÓN DE CASTING"
+              "name": "castingSelection"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "8 HORAS DE FOTÓGRAFO"
+              "name": "8hPhotographer"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "8 HORAS DE GAFFER"
+              "name": "8hGaffer"
             },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "8 HORAS DE DIRECTOR" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "10 LOOKS" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "EQUIPOS AUDIOVISUALES DE BANANA" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "8hDirector" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "10looks" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "audiovisualEquipment" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "TRANSPORTE DEL EQUIPO"
+              "name": "equipmentTransportation"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "35 FOTOS COLORIZADAS Y RETOCADAS"
+              "name": "35photosEdit"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "4 REELS 10 - 15 SEG COLORIZADOS"
+              "name": "4reelsEdit"
             },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "2 INSERTS ANIMADOS"
+              "name": "2animatedInserts"
             }
           ]
         }
@@ -1449,7 +1457,7 @@
     "portfolio": {
       "projects": [
         {
-          "name": "Holy Chicken- Foto Producto",
+          "name": "holyChicken",
           "image": "/resources/portfolio/production/holy.svg",
           "alt": "holy",
           "hoverImage": "/resources/portfolio/production/holy.gif",
@@ -1457,7 +1465,7 @@
           "backgroundColor": "#4087C0"
         },
         {
-          "name": "Oui - Foto Producto",
+          "name": "oui",
           "image": "/resources/portfolio/production/oui.svg",
           "alt": "oui",
           "hoverImage": "/resources/portfolio/production/oui.gif",
@@ -1465,7 +1473,7 @@
           "backgroundColor": "#E3B1B4"
         },
         {
-          "name": "Made in Petare -  Fotografia Editorial",
+          "name": "madeInPetare",
           "image": "/resources/portfolio/production/made-petare.svg",
           "alt": "made in petare",
           "hoverImage": "/resources/portfolio/production/made-petare.gif",
@@ -1473,7 +1481,7 @@
           "backgroundColor": "#ECECEC"
         },
         {
-          "name": "Mayela Sain - Fotografía Editorial",
+          "name": "mayelaSain",
           "image": "/resources/portfolio/production/mayela.svg",
           "alt": "mayela",
           "hoverImage": "/resources/portfolio/production/mayela.gif",
@@ -1485,17 +1493,21 @@
     "contactUs": {
       "address": [""],
       "copyright": "Copyright © BananaCreative 2023",
-      "touchButton": "Contáctanos",
-      "callButton": "Agenda una llamada",
-      "sendButton": "Enviar",
-      "gotTitle": "GOT A PROJECT?",
-      "mediaText": "Síguenos en:",
-      "contactTitle": "LET’S GET IN TOUCH",
-      "goBackText": "Volver",
+      "touchButton": "contact",
+      "callButton": "bookAcall",
+      "sendButton": "contactSend",
+      "gotTitle": "gotProject",
+      "mediaText": "followUs",
+      "contactTitle": "contactTitle",
+      "goBackText": "goBack",
       "form": [
-        { "name": "Compañia*", "key": "company" },
-        { "name": "Correo Electrónico*", "key": "email" },
-        { "name": "Mensaje*", "key": "subject" }
+        { "name": "companyName", "key": "company" },
+        { "name": "emailAccount", "key": "email" },
+        { "name": "messageBody", "key": "subject" }
+      ],
+      "requiredMessages": [
+        "requiredField",
+        "invalidEmail"
       ],
       "media": [
         {
