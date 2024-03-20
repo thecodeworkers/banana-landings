@@ -17,6 +17,8 @@ RUN \
   fi
 
 COPY src ./src
+COPY locales ./locales
+COPY i18n.js ./
 COPY public ./public
 COPY next.config.js .
 COPY tsconfig.json .
