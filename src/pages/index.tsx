@@ -5,13 +5,13 @@ import { useRouter } from 'next/router';
 import useTranslation from "next-translate/useTranslation";
 
 import styles from './styles.module.scss';
-import { useRef } from 'react';
+import { useMemo, useRef } from 'react';
 
 import content from '@/content/data.json';
 
 type DomainType = keyof typeof content;
 
-export default function Home({ data, domain, gtmSrc }: any) {
+export default function Home({ data, domain }: any) {
   const aboutRef = useRef(null);
   const servicesRef = useRef(null);
   const productsRef = useRef(null);
@@ -34,6 +34,14 @@ export default function Home({ data, domain, gtmSrc }: any) {
     weDo: weDoRef,
   };
 
+  const gtmSrc = () => {
+    if (domain === "TECH") {return "GTM-5BCWD79K"}
+    else if (domain === "BRAND") {return "GTM-NKH3343V"}
+    else if (domain === "MOTION") {return "GTM-NQDRFWW4"}
+    else if (domain === "PRODUCTION") {return "GTM-PD6S6XWG"}
+    else {return ""}
+  }
+
   return (
     <>
       <Head>
@@ -46,7 +54,7 @@ export default function Home({ data, domain, gtmSrc }: any) {
       </Head>
       <noscript
         dangerouslySetInnerHTML={{
-          __html: `<iframe src=${gtmSrc} height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+          __html: `<iframe src=${gtmSrc()} height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
         }}></noscript>
 
       <div className={styles._zContainer}>
@@ -82,7 +90,6 @@ export async function getStaticProps() {
     props: {
       data: content[domain as DomainType],
       domain,
-      gtmSrc
     },
   };
 }
