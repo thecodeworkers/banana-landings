@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import useTranslation from "next-translate/useTranslation";
 
 import styles from './styles.module.scss';
-import { useMemo, useRef } from 'react';
+import { useRef } from 'react';
 
 import content from '@/content/data.json';
 
