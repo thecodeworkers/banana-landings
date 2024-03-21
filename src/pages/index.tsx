@@ -84,7 +84,6 @@ export default function Home({ data, domain }: any) {
 
 export async function getStaticProps() {
   const domain: string = process.env.DOMAIN || 'TECH';
-  const gtmSrc: string = `https://www.googletagmanager.com/ns.html?id=${process.env.GTM}`;
 
   return {
     props: {
