@@ -34,7 +34,13 @@ export default function Home({ data, domain }: any) {
     weDo: weDoRef,
   };
 
-  const gtmSrc: string = `https://www.googletagmanager.com/ns.html?id=${process.env.GTM}`;
+  const gtmSrc = () => {
+    if (domain === "TECH") {return "GTM-5BCWD79K"}
+    else if (domain === "BRAND") {return "GTM-NKH3343V"}
+    else if (domain === "MOTION") {return "GTM-NQDRFWW4"}
+    else if (domain === "PRODUCTION") {return "GTM-PD6S6XWG"}
+    else {return ""}
+  }
 
   return (
     <>
@@ -48,7 +54,7 @@ export default function Home({ data, domain }: any) {
       </Head>
       <noscript
         dangerouslySetInnerHTML={{
-          __html: `<iframe src=${gtmSrc} height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+          __html: `<iframe src=${gtmSrc()} height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
         }}></noscript>
 
       <div className={styles._zContainer}>
