@@ -748,7 +748,7 @@
         { "name": "weDO", "ref": "weDo" },
         { "name": "services", "ref": "services" },
         { "name": "packs", "ref": "packs" },
-        { "name": "technologies", "ref": "products" },
+        { "name": "clients", "ref": "products" },
         { "name": "portfolio", "ref": "portfolio" },
         { "name": "contact", "ref": "contact" }
       ]

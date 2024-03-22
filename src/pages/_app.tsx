@@ -8,17 +8,16 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-const domain: string = process.env.DOMAIN || 'TECH';
-
-const gtmSrc = () => {
-  if (domain === "TECH") {return "GTM-5BCWD79K"}
-  else if (domain === "BRAND") {return "GTM-NKH3343V"}
-  else if (domain === "MOTION") {return "GTM-NQDRFWW4"}
-  else if (domain === "PRODUCTION") {return "GTM-PD6S6XWG"}
-  else {return ""}
-}
-
 export default function App({ Component, pageProps }: AppProps) {
+
+  const gtmSrc = () => {
+    if (pageProps.domain === "TECH") {return "GTM-5BCWD79K"}
+    else if (pageProps.domain === "BRAND") {return "GTM-NKH3343V"}
+    else if (pageProps.domain === "MOTION") {return "GTM-NQDRFWW4"}
+    else if (pageProps.domain === "PRODUCTION") {return "GTM-PD6S6XWG"}
+    else {return ""}
+  }
+
   return (
     <>
       <ApolloProvider client={client}>
@@ -27,4 +26,14 @@ export default function App({ Component, pageProps }: AppProps) {
       </ApolloProvider>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const domain: string = process.env.DOMAIN || 'TECH';
+
+  return {
+    props: {
+      domain,
+    },
+  };
 }

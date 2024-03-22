@@ -21,7 +21,7 @@ const Hero = ({ data, action }: any) => {
       <div className={styles._content}>
         <div className={styles._textBox}>
           <p className={styles._title}>
-            {t(data?.title)} <span> {t(data?.bold)} </span>
+            {t(data?.title)} <br/><span> {t(data?.bold)} </span>
           </p>
 
           <p className={styles._text}>{t(data?.subtitle)}</p>
