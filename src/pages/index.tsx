@@ -67,7 +67,6 @@ export default function Home({ data, domain }: any) {
         <Hero data={data?.hero} action={contactRef} />
         <Paragraph {...data?.firstParagraph} ref={aboutRef} />
         <AboutUs {...data?.aboutUs} ref={weDoRef} />
-
         {data?.secondParagraph?.content && <Paragraph {...data?.secondParagraph} />}
 
         {domain === 'TECH' && <Services {...data?.services} ref={servicesRef} />}
