@@ -2,10 +2,10 @@ import Image from 'next/image';
 import React, { forwardRef } from 'react';
 import styles from './styles.module.scss';
 import FadeIn from '../../components/FadeIn';
-import useTranslation from "next-translate/useTranslation";
+import useTranslation from 'next-translate/useTranslation';
 
 const AboutUs = forwardRef<HTMLDivElement>((props: any, ref): any => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation('common');
 
   return (
     <div ref={ref} className={styles._main}>
@@ -30,15 +30,17 @@ const AboutUs = forwardRef<HTMLDivElement>((props: any, ref): any => {
             />
           </div>
           <p className={styles._title}>
-            {t(props?.firstTitle)}{' '}
-            <span style={{ color: props?.boldColor }} className={styles._greenTitleFirst}>
-              {t(props?.firstBold)}
-            </span>
-            <span style={{ color: props?.boldColor }} className={styles._greenTitleSecond}>
-              {' '}
-              {t(props?.secondBold)}{' '}
-            </span>
-            {t(props?.secondTitle)}
+            {t(props?.firstTitle)} 
+            <br/>
+            {t(props?.boldedSecond) == "true" ? <span style={{ color: props?.boldColor }}>{t(props?.firstBold)}</span> : t(props?.firstBold)}
+            <br/>
+            {t(props?.boldedThird) == "true" ? <span style={{ color: props?.boldColor }}> {t(props?.secondBold)} </span> : t(props?.secondBold)}
+            <br/>
+            {t(props?.boldedFourth)  == "true" ? (
+              <span style={{ color: props?.boldColor }}>{t(props?.secondTitle)}</span>
+            ) : (
+              t(props?.secondTitle)
+            )}
           </p>
         </div>
         <div className={styles._rightBox}>
