@@ -28,7 +28,7 @@
         "link": "https://bananacreative.io"
       },
       "routes": [
-        { "name": "weDO", "ref": "weDo" },
+        { "name": "process", "ref": "weDo" },
         { "name": "services", "ref": "services" },
         { "name": "packs", "ref": "packs" },
         { "name": "technologies", "ref": "products" },
@@ -37,9 +37,11 @@
       ]
     },
     "hero": {
-      "title": "techHeroTitle",
+      "titleFirstLine": "techHeroTitleFirstLine",
+      "titleSecondLine": "techHeroTitleSecondLine",
       "bold": "techHeroBold",
-      "subtitle": "techHeroSubtitle",
+      "subtitleFirstLine": "techHeroSubtitleFirstLine",
+      "subtitleSecondLine": "techHeroSubtitleSecondLine",
       "button": "heroButton",
       "image": "/resources/banners/tech/banana.svg",
       "altImage": "Banana"
@@ -51,9 +53,11 @@
     "aboutUs": {
       "firstTitle": "techUsFirstTitle",
       "firstBold": "techUsFirstBold",
+      "boldedSecond": "techUsBoldedSecond",
       "secondBold": "techUsSecondBold",
       "boldColor": "#B8E19D",
       "secondTitle": "techUsSecondTitle",
+      "boldedFourth": "techUsBoldedFourth",
       "phases": ["UXresearch", "designSystem", "development", "Q/A", "deployment"],
       "image": "/resources/banners/tech/crystal.svg",
       "imageWidth": 470,
@@ -332,9 +336,11 @@
       ]
     },
     "hero": {
-      "title": "brandHeroTitle",
+      "titleFirstLine": "brandHeroTitleFirstLine",
+      "titleSecondLine": "brandHeroTitleSecondLine",
       "bold": "brandHeroBold",
-      "subtitle": "brandHeroSubtitle",
+      "subtitleFirstLine": "brandHeroSubtitleFirstLine",
+      "subtitleSecondLine": "brandHeroSubtitleSecondLine",
       "button": "heroButton",
       "image": "/resources/banners/brand/banana.svg",
       "altImage": "Banana"
@@ -536,7 +542,7 @@
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "2appsPack"
+              "name": "appsPack"
             },
             {
               "icon": "material-symbols:check",
@@ -745,8 +751,7 @@
         "link": "https://bananacreative.io"
       },
       "routes": [
-        { "name": "weDO", "ref": "weDo" },
-        { "name": "services", "ref": "services" },
+        { "name": "process", "ref": "weDo" },
         { "name": "packs", "ref": "packs" },
         { "name": "clients", "ref": "products" },
         { "name": "portfolio", "ref": "portfolio" },
@@ -754,9 +759,11 @@
       ]
     },
     "hero": {
-      "title": "motionHeroTitle",
+      "titleFirstLine": "motionHeroTitleFirstLine",
+      "titleSecondLine": "motionHeroTitleSecondLine",
       "bold": "motionHeroBold",
-      "subtitle": "motionHeroSubtitle",
+      "subtitleFirstLine": "motionHeroSubtitleFirstLine",
+      "subtitleSecondLine": "motionHeroSubtitleSecondLine",
       "button": "heroButton",
       "image": "/resources/banners/motion/banana.svg",
       "altImage": "Banana"
@@ -768,10 +775,13 @@
     "aboutUs": {
       "firstTitle": "motionUsFirstTitle",
       "firstBold": "motionUsFirstBold",
+      "boldedSecond": "motionUsBoldedSecond",
       "secondBold": "motionUsSecondBold",
+      "boldedThird": "motionUsBoldedThird",
       "boldColor": "#B8E19D",
       "secondTitle": "motionUsSecondTitle",
-      "phases": ["kickOff", "storyboard", "moodboard", "processUs", "displayUs"],
+      "boldedFourth": "motionUsBoldedFourth",
+      "phases": ["kickOff", "conceptUs", "moodboard", "storyboard", "displayUs"],
       "image": "/resources/banners/motion/tablet.svg",
       "imageWidth": 588,
       "imageHeight": 585,
@@ -826,7 +836,7 @@
               "color": "#D380FF",
               "name": "storyboardMayus"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "graphicIdentity" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "eventIdentity" },
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "logoAnimation" },
             {
               "icon": "material-symbols:check",
@@ -892,14 +902,15 @@
               "color": "#D380FF",
               "name": "moodboardMayus"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "previs" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3D" },
 
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3perspectives" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "previs" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "resourcesDelivered"
-            }
+              "name": "3perspectives"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "editable" }
           ]
         },
         {
@@ -908,20 +919,21 @@
           "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "concept" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "moodboardMayus" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "moodboardMayus"
+              "name": "3D"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "previs" },
-
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "2perspectives" },
+
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "previs" },
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "resourcesDelivered"
-            }
+              "name": "conceptMayus"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "editable" }
           ]
         },
         {
@@ -935,16 +947,17 @@
               "color": "#D380FF",
               "name": "moodboardMayus"
             },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "previs" },
-            { "icon": "material-symbols:check", "color": "#D380FF", "name": "5secsAnimation" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3D - 2D" },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "3perspectives" },
 
             { "icon": "material-symbols:check", "color": "#D380FF", "name": "graphicResources" },
 
             {
               "icon": "material-symbols:check",
               "color": "#D380FF",
-              "name": "resourcesDelivered"
-            }
+              "name": "previs"
+            },
+            { "icon": "material-symbols:check", "color": "#D380FF", "name": "editable" }
           ]
         }
       ]
@@ -1082,9 +1095,11 @@
       ]
     },
     "hero": {
-      "title": "prodHeroTitle",
+      "titleFirstLine": "prodHeroTitleFirstLine",
+      "titleSecondLine": "prodHeroTitleSecondLine",
       "bold": "prodHeroBold",
-      "subtitle": "prodHeroSubtitle",
+      "subtitleFirstLine": "prodHeroSubtitleFirstLine",
+      "subtitleSecondLine": "prodHeroSubtitleSecondLine",
       "button": "heroButton",
       "image": "/resources/banners/production/banana.svg",
       "altImage": "Banana"
@@ -1096,10 +1111,10 @@
     "aboutUs": {
       "firstTitle": "prodUsFirstTitle",
       "firstBold": "prodUsFirstBold",
-      "secondBold": "",
-      "secondTitle": "",
+      "secondBold": "prodUsSecondBold",
+      "secondTitle": "prodUsSecondTitle",
       "boldColor": "#000000",
-      "phases": ["kickOff", "moodboard", "preProduction", "production", "postProduction"],
+      "phases": ["kickOff", "conceptUs", "preProduction", "production", "postProduction"],
       "image": "/resources/banners/production/p.svg",
       "imageWidth": 700,
       "imageHeight": 590,

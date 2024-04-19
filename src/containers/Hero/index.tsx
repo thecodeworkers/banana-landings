@@ -21,10 +21,12 @@ const Hero = ({ data, action }: any) => {
       <div className={styles._content}>
         <div className={styles._textBox}>
           <p className={styles._title}>
-            {t(data?.title)} <br/><span> {t(data?.bold)} </span>
+            {t(data?.titleFirstLine)} <br/>
+            {t(data?.titleSecondLine)} <br/>
+            <span> {t(data?.bold)} </span>
           </p>
 
-          <p className={styles._text}>{t(data?.subtitle)}</p>
+          <p className={styles._text}>{t(data?.subtitleFirstLine)}<br/>{t(data?.subtitleSecondLine)}</p>
 
           <div className={styles._buttonContainer}>
             <GeneralButton method={() => scrolling(action)} text={t(data?.button)} />
