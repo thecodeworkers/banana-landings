@@ -26,9 +26,9 @@
   "prodHaveProjectMessage": "Hello Team Banana! I have a project and would like to book a meeting with the team of Production",
 
   "joinUs": "JOIN US!",
-  "newsletterTextLine1": "Subscribe to our newsletter and enjoy up to a ",
-  "newsletterTextLine2": "10% of discount on our services!",
-  "newsletterTextLine3": "",
+  "newsletterTextLine1": "Subscribe to our newsletter ",
+  "newsletterTextLine2": "and enjoy up to a 10% of discount ",
+  "newsletterTextLine3": "on our services!",
   "newsletterDisclaimerLine1": "By submitting your information you will also be agreeing to receive emails and notifications from us! ",
   "newsletterDisclaimerLine2": "You will also have the option of opt out at any time",
   "discountButtonText": "Yes, i want a discount!",
