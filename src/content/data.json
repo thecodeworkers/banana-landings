@@ -18,7 +18,8 @@
       "checkboxDisclaimer": ["newsletterDisclaimerLine1", "newsletterDisclaimerLine2"],
       "buttonText": "discountButtonText",
       "requiredEmail": "requiredField",
-      "invalidEmail": "invalidEmail"
+      "invalidEmail": "invalidEmail",
+      "success": "popUpSuccess"
     },
     "navbar": {
       "image": "/resources/header/logo-tech.svg",
@@ -318,7 +319,8 @@
       "checkboxDisclaimer": ["newsletterDisclaimerLine1", "newsletterDisclaimerLine2"],
       "buttonText": "discountButtonText",
       "requiredEmail": "requiredField",
-      "invalidEmail": "invalidEmail"
+      "invalidEmail": "invalidEmail",
+      "success": "popUpSuccess"
     },
     "navbar": {
       "image": "/resources/header/logo-brand.svg",
@@ -741,7 +743,8 @@
       "checkboxDisclaimer": ["newsletterDisclaimerLine1", "newsletterDisclaimerLine2"],
       "buttonText": "discountButtonText",
       "requiredEmail": "requiredField",
-      "invalidEmail": "invalidEmail"
+      "invalidEmail": "invalidEmail",
+      "success": "popUpSuccess"
     },
     "navbar": {
       "image": "/resources/header/logo-motion.svg",
@@ -1077,7 +1080,8 @@
       "checkboxDisclaimer": ["newsletterDisclaimerLine1", "newsletterDisclaimerLine2"],
       "buttonText": "discountButtonText",
       "requiredEmail": "requiredField",
-      "invalidEmail": "invalidEmail"
+      "invalidEmail": "invalidEmail",
+      "success": "popUpSuccess"
     },
     "navbar": {
       "image": "/resources/header/logo-production.svg",
