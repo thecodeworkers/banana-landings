@@ -26,12 +26,13 @@
   "prodHaveProjectMessage": "¡Hola Team Banana! Tengo un proyecto y estoy interesado en agendar una reunión con el equipo de Producción",
 
   "joinUs": "JOIN US!",
-  "newsletterTextLine1": "Suscríbete a nuestro newsletter, !y ",
-  "newsletterTextLine2": "aprovecha hasta un 10% de descuento ",
+  "newsletterTextLine1": "Suscríbete a nuestro newsletter, ",
+  "newsletterTextLine2": "!y aprovecha hasta un 10% de descuento ",
   "newsletterTextLine3": "en nuestros servicios!",
   "newsletterDisclaimerLine1": "Al enviar tu información también estarás aceptando recibir correos y notificaciones de nosotros! ",
   "newsletterDisclaimerLine2": "También tendrás la opción de darte de baja en cualquier momento.",
   "discountButtonText": "¡Sí! Quiero mi descuento",
+  "popUpSuccess": "Su correo ha sido recibido!",
 
   "home": "Inicio",
   "weDO": "¿Qué hacemos?",
