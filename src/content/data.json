@@ -792,7 +792,7 @@
       "packsContent": [
         {
           "title": "character2D3D",
-          "text": "USD  $500",
+          "text": "USD  $800",
           "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
@@ -818,7 +818,7 @@
         },
         {
           "title": "broadcast2D3D",
-          "text": "USD $1,500",
+          "text": "USD $1,950",
           "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
@@ -850,7 +850,7 @@
         },
         {
           "title": "visualPerformance",
-          "text": "USD $1,800",
+          "text": "USD $2,400",
           "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
@@ -890,7 +890,7 @@
       "packsContent": [
         {
           "title": "product3D",
-          "text": "USD  $350",
+          "text": "USD  $500",
           "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
@@ -912,7 +912,7 @@
         },
         {
           "title": "setDesign",
-          "text": "USD $750",
+          "text": "USD $950",
           "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
@@ -935,7 +935,7 @@
         },
         {
           "title": "animated2D3D",
-          "text": "USD $400",
+          "text": "USD $750",
           "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
