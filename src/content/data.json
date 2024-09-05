@@ -266,10 +266,7 @@
         { "name": "emailAccount", "key": "email" },
         { "name": "messageBody", "key": "subject" }
       ],
-      "requiredMessages": [
-        "requiredField",
-        "invalidEmail"
-      ],
+      "requiredMessages": ["requiredField", "invalidEmail"],
       "media": [
         {
           "image": "/resources/behance.svg",
@@ -384,7 +381,7 @@
       "packsContent": [
         {
           "title": "baseIdentity",
-          "text": "USD $1,300",
+          "text": "USD $1,900",
           "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
@@ -446,7 +443,7 @@
         },
         {
           "title": "visualIdentity",
-          "text": "USD $3,200",
+          "text": "USD $3,900",
           "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
@@ -508,7 +505,7 @@
         },
         {
           "title": "corpoIdentity",
-          "text": "USD $5,200",
+          "text": "USD $6,200",
           "buttonText": "bookAcall",
           "phone": "+584124731515",
           "props": [
@@ -690,10 +687,7 @@
         { "name": "emailAccount", "key": "email" },
         { "name": "messageBody", "key": "subject" }
       ],
-      "requiredMessages": [
-        "requiredField",
-        "invalidEmail"
-      ],
+      "requiredMessages": ["requiredField", "invalidEmail"],
       "media": [
         {
           "image": "/resources/behance.svg",
@@ -1027,10 +1021,7 @@
         { "name": "emailAccount", "key": "email" },
         { "name": "messageBody", "key": "subject" }
       ],
-      "requiredMessages": [
-        "requiredField",
-        "invalidEmail"
-      ],
+      "requiredMessages": ["requiredField", "invalidEmail"],
       "media": [
         {
           "image": "/resources/behance.svg",
@@ -1524,10 +1515,7 @@
         { "name": "emailAccount", "key": "email" },
         { "name": "messageBody", "key": "subject" }
       ],
-      "requiredMessages": [
-        "requiredField",
-        "invalidEmail"
-      ],
+      "requiredMessages": ["requiredField", "invalidEmail"],
       "media": [
         {
           "image": "/resources/behance.svg",
